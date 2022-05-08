@@ -158,7 +158,6 @@ def draw_graph():
                         arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='red', edgecolor='red'))
             ax.text(x_max, a * x_max, "Spatial axis of A", c='red')
             ax.text(x_max, a * x_max + b, "Simultaneous line of A", c='gray')
-            ax.add_patch(cl3)
     except:
         pass
     # Hyperbolic curve; ct**2 - x**2 = 1 (y**2 - x**2 = 1)
