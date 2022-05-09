@@ -87,7 +87,8 @@ def draw_graph():
     ax.cla()
     set_axis()
     # World line of Photon
-    ax.plot([x_min, 0., x_max], [y_max, 0., y_max], linestyle='--', c='orange')
+    ax.plot([x_min, 0., x_max], [y_max, 0., y_max], linestyle='--', c='orange',
+            label='World line of light')
     ax.plot([x_min, 0., x_max], [y_min, 0., y_min], linestyle='--', c='orange', linewidth=1)
     # World line of B
     ax.annotate('', xy=[0., y_max], xytext=[0., y_min], arrowprops=dict(width=1, headwidth=4, headlength=4,
@@ -168,8 +169,8 @@ def draw_graph():
     ax.legend(loc='lower right')
 
     draw_rocket(beta)
-    draw_person(0.2, y_min + 1., 1.0, 'blue')
-    ax.text(0.2, -2.8, "Observer B", c='blue')
+    draw_person(0.2, y_min + 2., 1.0, 'blue')
+    ax.text(0.3, -2.8, "Observer B", c='blue')
     canvas.draw()
     ax.grid()
 
