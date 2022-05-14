@@ -12,8 +12,8 @@ def draw_person(x_p, y_p, scale_p, col):
     head = patches.Circle(xy=(x_p, y_p), radius=size_head, fc=col)
     ax.add_patch(head)
     ax.plot([x_p, x_p], [y_p, y_p - 0.5 * scale_p], linestyle='-', c=col, linewidth=1)
-    ax.plot([x_p - 0.2 * scale_p, x_p, x_p + 0.2 * scale_p], [y_p - 0.4 * scale_p, y_p - 0.2 * scale_p,
-                                                              y_p - 0.4 * scale_p], linestyle='-', c=col, linewidth=1)
+    ax.plot([x_p - 0.2 * scale_p, x_p, x_p + 0.2 * scale_p],
+            [y_p - 0.4 * scale_p, y_p - 0.2 * scale_p, y_p - 0.4 * scale_p], linestyle='-', c=col, linewidth=1)
     ax.plot([x_p - 0.1 * scale_p, x_p, x_p + 0.1 * scale_p],
             [y_p - 0.8 * scale_p, y_p - 0.5 * scale_p, y_p - 0.8 * scale_p], linestyle='-', c=col, linewidth=1)
 
@@ -23,45 +23,45 @@ def draw_rocket(bt):
     width_body = 0.6
     y_rocket = 3.
     x_rocket = bt * 3.
-    bdy = patches.Rectangle(xy=[x_rocket - length_body / 2., y_rocket - width_body / 2.], width=length_body,
-                            height=width_body, fill=False, ec='red')
-    ax.add_patch(bdy)
     x_body_right = x_rocket + length_body / 2.
     x_body_left = x_rocket - length_body / 2.
     y_body_top = y_rocket + width_body / 2.
     y_body_bottom = y_rocket - width_body / 2.
+    # draw body
+    bdy = patches.Rectangle(xy=[x_body_left, y_body_bottom], width=length_body,
+                            height=width_body, fill=False, ec='red')
+    ax.add_patch(bdy)
+    # draw nose corn and fins
     if bt >= 0.:
         nose = plt.Polygon(((x_body_right, y_body_top), (x_body_right + 0.5, y_rocket),
                            (x_body_right, y_body_bottom)), fill=False, ec='red')
-
         fin1 = plt.Polygon(((x_body_left, y_body_top), (x_body_left, y_body_top + 0.3),
                            (x_body_left + 0.5, y_body_top)), fill=False, ec='red')
-
         fin2 = plt.Polygon(((x_body_left, y_body_bottom), (x_body_left, y_body_bottom - 0.3),
                             (x_body_left + 0.5, y_body_bottom)), fill=False, ec='red')
-
     else:
         nose = plt.Polygon(((x_body_left, y_body_top), (x_body_left - 0.5, y_rocket),
                             (x_body_left, y_body_bottom)), fill=False, ec='red')
-
         fin1 = plt.Polygon(((x_body_right, y_body_top), (x_body_right, y_body_top + 0.3),
                             (x_body_right - 0.5, y_body_top)), fill=False, ec='red')
-
         fin2 = plt.Polygon(((x_body_right, y_body_bottom), (x_body_right, y_body_bottom - 0.3),
                             (x_body_right - 0.5, y_body_bottom)), fill=False, ec='red')
     ax.add_patch(nose)
     ax.add_patch(fin1)
     ax.add_patch(fin2)
+    # draw walls
     ax.plot([x_rocket + distance_right_wall, x_rocket + distance_right_wall],
             [y_rocket - width_body / 2., y_rocket + width_body / 2.], linestyle='-', c='green', linewidth=2)
     ax.plot([x_rocket + distance_left_wall, x_rocket + distance_left_wall],
             [y_rocket - width_body / 2., y_rocket + width_body / 2.], linestyle='-', c='green', linewidth=2)
+    # draw lights in rocket
     ax.annotate('', xy=[x_rocket + distance_right_wall, y_rocket],
                 xytext=[x_rocket + 0.2, y_rocket],
                 arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='orange', edgecolor='orange'))
     ax.annotate('', xy=[x_rocket + distance_left_wall, y_rocket],
                 xytext=[x_rocket - 0.2, y_rocket],
                 arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='orange', edgecolor='orange'))
+    # draw lamp in rocket
     lamp1 = patches.Circle(xy=(x_rocket, y_rocket), radius=0.16, fc='orange')
     ax.add_patch(lamp1)
     lamp2 = patches.Circle(xy=(x_rocket, y_rocket - 0.01), radius=0.1, fc='yellow')
@@ -69,6 +69,7 @@ def draw_rocket(bt):
     lamp3 = patches.Rectangle(xy=[x_rocket - 0.08, y_rocket - 0.25], width=0.16,
                               height=0.12, fc='gray', ec='gray')
     ax.add_patch(lamp3)
+    # draw observer A
     draw_person(x_rocket + 0.3, y_rocket - 0.06, 0.2, 'red')
     ax.text(x_rocket, y_rocket - 0.5, "Observer A", c='red')
 
@@ -86,7 +87,7 @@ def set_axis():
 def draw_graph():
     ax.cla()
     set_axis()
-    # World line of Photon
+    # World line of light
     ax.plot([x_min, 0., x_max], [y_max, 0., y_max], linestyle='--', c='orange',
             label='World line of light')
     ax.plot([x_min, 0., x_max], [y_min, 0., y_min], linestyle='--', c='orange', linewidth=1)
@@ -97,73 +98,60 @@ def draw_graph():
     ax.annotate('', xy=[x_max, 0.], xytext=[x_min, 0.], arrowprops=dict(width=1, headwidth=4, headlength=4,
                                                                         facecolor='blue', edgecolor='blue'))
     # World line of A (lamp)
-    beta = v_percentage / 100. * c
+    beta = v_percentage / 100. / c
     ax.annotate('', xy=[x_max * beta, y_max], xytext=[x_min * beta, y_min],
                 arrowprops=dict(width=1, headwidth=4, headlength=4, facecolor='red', edgecolor='red'))
     ax.text(x_max * beta, y_max - 0.3, "World line of Lamp", c='red')
     # World line of A (right wall)
-    if x_min + distance_right_wall * 2. <= x_max * beta + distance_right_wall <= x_max:
-        ax.annotate('', xy=[x_max * beta + distance_right_wall, y_max],
-                    xytext=[x_min * beta + distance_right_wall, y_min],
-                    arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='green', edgecolor='green'))
-    elif x_max * beta + distance_right_wall > x_max:
-        ax.annotate('', xy=[x_max, 1. / beta * (x_max - distance_right_wall)],
-                    xytext=[x_min * beta + distance_right_wall, y_min],
-                    arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='green', edgecolor='green'))
-    elif x_max * beta + distance_right_wall < x_min + distance_right_wall * 2.:
-        ax.annotate('', xy=[x_max * beta + distance_right_wall, y_max],
-                    xytext=[x_max, 1. / beta * (x_max - distance_right_wall)],
-                    arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='green', edgecolor='green'))
-    ax.text(x_max * beta + distance_right_wall, y_max - 0.5, "World line of right wall", c='green')
+    x_head_rw = beta * y_max + distance_right_wall
+    x_tail_rw = beta * y_min + distance_right_wall
+    y_head_rw = y_max
+    y_tail_rw = y_min
+    if x_head_rw > x_max:
+        x_head_rw = x_max
+        y_head_rw = (x_max - distance_right_wall) / beta
+    if x_tail_rw > x_max:
+        x_tail_rw = x_max
+        y_tail_rw = (x_max - distance_right_wall) / beta
+    ax.annotate('', xy=[x_head_rw, y_head_rw], xytext=[x_tail_rw, y_tail_rw],
+                arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='green', edgecolor='green'))
+    ax.text(x_head_rw, y_max - 0.5, "World line of right wall", c='green')
     # World line of A (left wall)
-    if x_min <= x_max * beta + distance_left_wall <= x_max + distance_left_wall * 2.:
-        ax.annotate('', xy=[x_max * beta + distance_left_wall, y_max],
-                    xytext=[x_min * beta + distance_left_wall, y_min],
-                    arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='green', edgecolor='green'))
-    elif x_max * beta + distance_left_wall > x_max + distance_left_wall * 2.:
-        ax.annotate('', xy=[x_max * beta + distance_left_wall, y_max],
-                    xytext=[x_min, 1. / beta * (x_min - distance_left_wall)],
-                    arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='green', edgecolor='green'))
-    elif x_max * beta + distance_left_wall < x_min:
-        ax.annotate('', xy=[x_min, 1. / beta * (x_min - distance_left_wall)],
-                    xytext=[x_min * beta + distance_left_wall, y_min],
-                    arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='green', edgecolor='green'))
-    ax.text(x_max * beta + distance_left_wall, y_max - 0.7, "World line of left wall", c='green')
-    # Crossing points
-    if beta != 0.:
-        if beta != 1. and beta != -1.:
-            x_cp1 = - distance_right_wall * (1. / beta) / (1 - (1. / beta))
-            y_cp1 = x_cp1
-            cl1 = patches.Circle(xy=(x_cp1, y_cp1), radius=0.1, fc='orange')
-            ax.add_patch(cl1)
-            x_cp2 = distance_left_wall * (1. / beta) / (1 + (1. / beta))
-            y_cp2 = - x_cp2
-            cl2 = patches.Circle(xy=(x_cp2, y_cp2), radius=0.1, fc='orange')
-            ax.add_patch(cl2)
-    else:
-        x_cp1 = distance_right_wall
-        y_cp1 = x_cp1
+    x_head_lw = beta * y_max + distance_left_wall
+    x_tail_lw = beta * y_min + distance_left_wall
+    y_head_lw = y_max
+    y_tail_lw = y_min
+    if x_head_lw < x_min:
+        x_head_lw = x_min
+        y_head_lw = (x_min - distance_left_wall) / beta
+    if x_tail_lw < x_min:
+        x_tail_lw = x_min
+        y_tail_lw = (x_min - distance_left_wall) / beta
+    ax.annotate('', xy=[x_head_lw, y_head_lw], xytext=[x_tail_lw, y_tail_lw],
+                arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='green', edgecolor='green'))
+    ax.text(x_head_lw, y_max - 0.7, "World line of left wall", c='green')
+    # Crossing points, simultaneous line and spatial axis
+    if - 0.999 <= beta <= 0.999:
+        # Crossing points
+        y_cp1 = distance_right_wall / (1 - beta)
+        x_cp1 = y_cp1
+        y_cp2 = - distance_left_wall / (1 + beta)
+        x_cp2 = - y_cp2
         cl1 = patches.Circle(xy=(x_cp1, y_cp1), radius=0.1, fc='orange')
         ax.add_patch(cl1)
-        x_cp2 = distance_left_wall
-        y_cp2 = - x_cp2
         cl2 = patches.Circle(xy=(x_cp2, y_cp2), radius=0.1, fc='orange')
         ax.add_patch(cl2)
-    # Simultaneous line and spatial axis
-    try:
-        if (x_cp2 - x_cp1) != 0.:
-            a = (y_cp2 - y_cp1) / (x_cp2 - x_cp1)
-            b = y_cp1 - a * x_cp1
-            ax.plot([x_min, x_max], [a * x_min + b, a * x_max + b], linestyle='-.', c='grey')
-            ax.annotate('', xy=[x_max, a * x_max], xytext=[x_min, a * x_min],
-                        arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='red', edgecolor='red'))
-            ax.text(x_max, a * x_max, "Spatial axis of A", c='red')
-            ax.text(x_max, a * x_max + b, "Simultaneous line of A", c='gray')
-    except:
-        pass
-    # Hyperbolic curve; ct**2 - x**2 = 1 (y**2 - x**2 = 1)
+        # Simultaneous line and spatial axis
+        a = (y_cp2 - y_cp1) / (x_cp2 - x_cp1)
+        b = y_cp1 - a * x_cp1
+        ax.plot([x_min, x_max], [a * x_min + b, a * x_max + b], linestyle='-.', c='grey')
+        ax.annotate('', xy=[x_max, a * x_max], xytext=[x_min, a * x_min],
+                    arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='red', edgecolor='red'))
+        ax.text(x_max, a * x_max, "Spatial axis of A", c='red')
+        ax.text(x_max, a * x_max + b, "Simultaneous line of A", c='gray')
+    # Hyperbolic curve; ct**2 - x**2 = 1**2 (y**2 - x**2 = 1**2)
     y = np.sqrt(1. + x ** 2.)
-    ax.plot(x, y, linewidth=1, c='magenta', label='ct**2 - x**2 = 1')
+    ax.plot(x, y, linewidth=1, c='magenta', label='ct**2 - x**2 = 1**2')
     y = - np.sqrt(1. + x ** 2.)
     ax.plot(x, y, linewidth=1, c='magenta')
     ax.legend(loc='lower right')
