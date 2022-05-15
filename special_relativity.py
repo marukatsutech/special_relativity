@@ -55,11 +55,9 @@ def draw_rocket(bt):
     ax.plot([x_rocket + distance_left_wall, x_rocket + distance_left_wall],
             [y_rocket - width_body / 2., y_rocket + width_body / 2.], linestyle='-', c='green', linewidth=2)
     # draw lights in rocket
-    ax.annotate('', xy=[x_rocket + distance_right_wall, y_rocket],
-                xytext=[x_rocket + 0.2, y_rocket],
+    ax.annotate('', xy=[x_rocket + distance_right_wall, y_rocket], xytext=[x_rocket + 0.2, y_rocket],
                 arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='orange', edgecolor='orange'))
-    ax.annotate('', xy=[x_rocket + distance_left_wall, y_rocket],
-                xytext=[x_rocket - 0.2, y_rocket],
+    ax.annotate('', xy=[x_rocket + distance_left_wall, y_rocket], xytext=[x_rocket - 0.2, y_rocket],
                 arrowprops=dict(width=0.5, headwidth=4, headlength=4, facecolor='orange', edgecolor='orange'))
     # draw lamp in rocket
     lamp1 = patches.Circle(xy=(x_rocket, y_rocket), radius=0.16, fc='orange')
