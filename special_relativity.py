@@ -64,8 +64,7 @@ def draw_rocket(bt):
     ax.add_patch(lamp1)
     lamp2 = patches.Circle(xy=(x_rocket, y_rocket - 0.01), radius=0.1, fc='yellow')
     ax.add_patch(lamp2)
-    lamp3 = patches.Rectangle(xy=[x_rocket - 0.08, y_rocket - 0.25], width=0.16,
-                              height=0.12, fc='gray', ec='gray')
+    lamp3 = patches.Rectangle(xy=[x_rocket - 0.08, y_rocket - 0.25], width=0.16, height=0.12, fc='gray', ec='gray')
     ax.add_patch(lamp3)
     # draw observer A
     draw_person(x_rocket + 0.3, y_rocket - 0.06, 0.2, 'red')
