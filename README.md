@@ -6,7 +6,7 @@ Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime.
 Watch my video for more detail!  
 https://youtu.be/AwRgGn6AzzU  
 
-![image_special_relativity](https://github.com/marukatsutech/sine_wave_animation/blob/master/image_sine_wave.png)
+![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
 
 
 ## Source code
