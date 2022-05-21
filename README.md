@@ -13,8 +13,9 @@ https://youtu.be/AwRgGn6AzzU
 GitHub
 https://github.com/marukatsutech/special_relativity  
 files:  
-* special_relativity_moire.py :
-* special_relativuty_rot.py :
+* special_relativity_moire.py : The similarity of Minkowski spacetime and moire pattern
+* special_relativuty_rot.py : Lorentz transformation and rotation
+* special_relativity.py : Lorentz transformation
 
 ## Reference
 * Wikipedia: Special relativity
