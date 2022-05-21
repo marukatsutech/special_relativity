@@ -10,8 +10,6 @@ https://youtu.be/AwRgGn6AzzU
 
 
 ## Source code
-GitHub
-https://github.com/marukatsutech/special_relativity  
 files:  
 * special_relativity_moire.py : The similarity of Minkowski spacetime and moire pattern
 * special_relativuty_rot.py : Lorentz transformation and rotation
