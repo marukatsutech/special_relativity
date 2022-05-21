@@ -1,4 +1,4 @@
-# Special relativity 2
+# Special relativity (Lorentz transformation and rotation)
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 from matplotlib.figure import Figure
