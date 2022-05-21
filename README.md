@@ -12,7 +12,9 @@ https://youtu.be/AwRgGn6AzzU
 ## Source code
 GitHub
 https://github.com/marukatsutech/special_relativity  
-file: special_relativity_moire.py
+files:  
+* special_relativity_moire.py :
+* special_relativuty_rot.py :
 
 ## Reference
 * Wikipedia: Special relativity
