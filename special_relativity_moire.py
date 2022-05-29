@@ -147,6 +147,22 @@ def draw_rocket_rot(th):
     ax1.text(person_rot[0], person_rot[1] - 0.5, "Observer A", c='red')
 
 
+def draw_light_m(th):
+    rot = np.array([[np.cos(th), -np.sin(th)], [np.sin(th), np.cos(th)]])  # Matrix of horizontal rotation
+    light_r1 = np.array([x_max, y_max])
+    light_l1 = np.array([x_min, y_max])
+    light_r1_rot = np.dot(rot, light_r1)
+    light_l1_rot = np.dot(rot, light_l1)
+    ax2.plot([light_l1_rot[0], 0., light_r1_rot[0]], [light_l1_rot[1], 0., light_r1_rot[1]],
+             linestyle='--', c='darkred', linewidth=1)
+    light_r2 = np.array([x_max, -y_max])
+    light_l2 = np.array([x_min, -y_max])
+    light_r2_rot = np.dot(rot, light_r2)
+    light_l2_rot = np.dot(rot, light_l2)
+    ax2.plot([light_l2_rot[0], 0., light_r2_rot[0]], [light_l2_rot[1], 0., light_r2_rot[1]],
+             linestyle='--', c='darkred', linewidth=1)
+
+
 def draw_light(th):
     rot = np.array([[np.cos(th), -np.sin(th)], [np.sin(th), np.cos(th)]])  # Matrix of horizontal rotation
     light_r1 = np.array([x_max, y_max])
@@ -245,6 +261,15 @@ def set_axis():
     ax2.set_aspect("equal")
 
 
+def draw_hyperbolic_rot_m_a(th):
+    rot = np.array([[np.cos(th), -np.sin(th)], [np.sin(th), np.cos(th)]])  # Matrix of horizontal rotation
+    for i in range(4):
+        hyperbolic1_rotated = np.dot(rot, hyperbolic1s_rot[i])
+        hyperbolic2_rotated = np.dot(rot, hyperbolic2s_rot[i])
+        ax2.plot(hyperbolic1_rotated[0], hyperbolic1_rotated[1], linewidth=1, c='darkred', linestyle='-')
+        ax2.plot(hyperbolic2_rotated[0], hyperbolic2_rotated[1], linewidth=1, c='darkred', linestyle='-')
+
+
 def draw_hyperbolic_rot(th):
     rot = np.array([[np.cos(th), -np.sin(th)], [np.sin(th), np.cos(th)]])  # Matrix of horizontal rotation
     hyperbolic1_rotated = np.dot(rot, hyperbolic1_rot)
@@ -252,6 +277,17 @@ def draw_hyperbolic_rot(th):
     ax1.plot(hyperbolic1_rotated[0], hyperbolic1_rotated[1], linewidth=1, c='magenta',
              label='ct**2 - x**2 = 1 (A)', linestyle=':')
     ax1.plot(hyperbolic2_rotated[0], hyperbolic2_rotated[1], linewidth=1, c='magenta', linestyle=':')
+
+
+def draw_hyperbolic_m_b():
+    # Hyperbolic curve; ct**2 - x**2 = 1 (y**2 - x**2 = 1)
+    ax2.plot((x_min, x_max), (y_min, y_max), linewidth=1, c='darkblue', linestyle='--')
+    ax2.plot((x_min, x_max), (y_max, y_min), linewidth=1, c='darkblue', linestyle='--')
+    for i in range(4):
+        y = np.sqrt(((i + 1) * 0.5) ** 2. + x ** 2.)
+        ax2.plot(x, y, linewidth=1, c='darkblue', linestyle='-')
+        y = - np.sqrt(((i + 1) * 0.5) ** 2. + x ** 2.)
+        ax2.plot(x, y, linewidth=1, c='darkblue', linestyle='-')
 
 
 def draw_hyperbolic():
@@ -329,9 +365,12 @@ def draw_rotation():
     draw_light_rot(-theta)
     draw_hyperbolic_rot(-theta)
     # Draw moire
-    if show_both_lines:
-        draw_parallel_lines(0., 0., 0., 6., 6., pitch_parallel * pitch_percent / 100., 'blue', 2)
-    draw_parallel_lines(-theta, 0., 0., 6., 6., pitch_parallel * pitch_percent / 100., 'red', 2)
+    if var_lines_a.get():
+        draw_parallel_lines(-theta, 0., 0., 6., 6., pitch_parallel * pitch_percent / 100., 'red', 2)
+    # Draw hyperbolic curves and light in moire
+    if var_hyperbolic_a.get():
+        draw_hyperbolic_rot_m_a(-theta)
+        draw_light_m(-theta)
 
 
 def draw_lorentz():
@@ -388,8 +427,6 @@ def draw_lorentz():
         ax1.text(x_max, a * x_max, "Spatial axis of A", c='red')
         ax1.text(x_max, a * x_max + b, "Simultaneous line\n of A", c='gray')
         draw_rocket(beta)
-    # Draw moire
-    draw_parallel_lines(0., 0., 0., 6., 6., pitch_parallel * pitch_percent / 100., 'blue', 2)
 
 
 def draw_common():
@@ -426,6 +463,12 @@ def draw_graph():
         draw_rotation()
     draw_common()
     draw_hyperbolic()
+    # Draw moire
+    if var_lines_b.get():
+        draw_parallel_lines(0., 0., 0., 6., 6., pitch_parallel * pitch_percent / 100., 'blue', 2)
+    # Draw hyperbolic curves B in moire
+    if var_hyperbolic_b.get():
+        draw_hyperbolic_m_b()
     ax1.legend(loc='lower right')
     canvas.draw()
     ax1.grid()
@@ -449,12 +492,7 @@ def slider_changed(event):
     draw_graph()
 
 
-def switch_show():
-    global show_both_lines
-    if show_both_lines:
-        show_both_lines = False
-    else:
-        show_both_lines = True
+def redraw():
     draw_graph()
 
 
@@ -490,6 +528,16 @@ y2_rot = - np.sqrt(1. + x ** 2.)
 hyperbolic1_rot = np.vstack((x_rot, y1_rot))
 hyperbolic2_rot = np.vstack((x_rot, y2_rot))
 
+hyperbolic1s_rot = []
+hyperbolic2s_rot = []
+for ii in range(4):
+    yy1_rot = np.sqrt(((ii + 1) * 0.5) ** 2. + x ** 2.)
+    yy2_rot = - np.sqrt(((ii + 1) * 0.5) ** 2. + x ** 2.)
+    h1_rot = np.vstack((x_rot, yy1_rot))
+    h2_rot = np.vstack((x_rot, yy2_rot))
+    hyperbolic1s_rot.append(h1_rot)
+    hyperbolic2s_rot.append(h2_rot)
+
 # Generate tkinter
 root = tk.Tk()
 root.title("Special relativity (Lorentz transformation and moire pattern)")
@@ -503,8 +551,6 @@ ax2 = fig.add_subplot(122)
 canvas = FigureCanvasTkAgg(fig, root)
 canvas.get_tk_widget().pack(expand=True, fill='both')
 
-# Draw circles as initial
-draw_graph()
 
 # Add toolbar
 toolbar = NavigationToolbar2Tk(canvas, root)
@@ -537,9 +583,30 @@ s_pitch = tk.Spinbox(
     )
 s_pitch.pack(side='left')
 
-var_both = tk.BooleanVar(root)    # Variable for checkbutton
-check_both = tk.Checkbutton(root, text="Show both parallel pattern", variable=var_both, command=switch_show)
-check_both.pack(side='left')
+frm_lines = ttk.Labelframe(root, relief="ridge", text="Parallel lines", labelanchor="n", width=100)
+frm_lines.pack(side='left')
+var_lines_a = tk.BooleanVar(root)    # Variable for checkbutton
+check_lines_a = tk.Checkbutton(frm_lines, text="Observer A", variable=var_lines_a, command=redraw)
+check_lines_a.pack(anchor=tk.W)
+var_lines_a.set(False)
+var_lines_b = tk.BooleanVar(root)    # Variable for checkbutton
+check_lines_b = tk.Checkbutton(frm_lines, text="Observer B", variable=var_lines_b, command=redraw)
+check_lines_b.pack(anchor=tk.W)
+var_lines_b.set(True)
+
+frm_hyperbolic = ttk.Labelframe(root, relief="ridge", text="hyperbolic curves", labelanchor="n", width=100)
+frm_hyperbolic.pack(side='left')
+var_hyperbolic_a = tk.BooleanVar(root)    # Variable for checkbutton
+check_hyperbolic_a = tk.Checkbutton(frm_hyperbolic, text="Observer A", variable=var_hyperbolic_a, command=redraw)
+check_hyperbolic_a.pack(anchor=tk.W)
+var_hyperbolic_a.set(False)
+var_hyperbolic_b = tk.BooleanVar(root)    # Variable for checkbutton
+check_hyperbolic_b = tk.Checkbutton(frm_hyperbolic, text="Observer B", variable=var_hyperbolic_b, command=redraw)
+check_hyperbolic_b.pack(anchor=tk.W)
+var_hyperbolic_b.set(False)
+
+# Draw initial graph
+draw_graph()
 
 # main loop
 set_axis()
