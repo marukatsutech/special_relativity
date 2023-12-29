@@ -65,13 +65,18 @@ def update_plots():
     # waves and markers
     if abs(xy_light_pass_1[1]) > 0.000001:
         slope_pass_1 = xy_light_pass_1[0] / xy_light_pass_1[1]
-        if var_rd_k.get() == 1 :
+        if var_rd_k.get() == 1:
             k1 = 1.
         elif var_rd_k.get() == 2:
             k1 = 1. / slope_pass_1
         elif var_rd_k.get() == 3:
             k1 = slope_pass_1
-        c1 = slope_pass_1
+        if var_rd_c.get() == 1:
+            c1 = 1.
+        elif var_rd_c.get() == 2:
+            c1 = 1. / slope_pass_1
+        elif var_rd_c.get() == 3:
+            c1 = slope_pass_1
         y_1 = a1 * np.cos(2. * np.pi * (k1 * x - c1 * time_observer))
         wave_curve_1.set_ydata(y_1 + time_observer)
         # Origin markers
@@ -84,7 +89,12 @@ def update_plots():
             k2 = 1. / slope_pass_2
         elif var_rd_k.get() == 3:
             k2 = slope_pass_2
-        c2 = slope_pass_2
+        if var_rd_c.get() == 1:
+            c2 = 1.
+        elif var_rd_c.get() == 2:
+            c2 = 1. / slope_pass_2
+        elif var_rd_c.get() == 3:
+            c2 = slope_pass_2
         y_2 = a2 * np.cos(2. * np.pi * (k2 * x - c2 * time_observer))
         wave_curve_2.set_ydata(y_2 + time_observer)
         # Origin markers
@@ -97,7 +107,12 @@ def update_plots():
             k3 = 1. / slope_pass_3
         elif var_rd_k.get() == 3:
             k3 = slope_pass_3
-        c3 = slope_pass_3
+        if var_rd_c.get() == 1:
+            c3 = 1.
+        elif var_rd_c.get() == 2:
+            c3 = 1. / slope_pass_3
+        elif var_rd_c.get() == 3:
+            c3 = slope_pass_3
         y_3 = a3 * np.cos(2. * np.pi * (k3 * x - c3 * time_observer))
         wave_curve_3.set_ydata(y_3 + time_observer)
         # Origin markers
@@ -119,6 +134,12 @@ def update_plots():
                 kn = 1. / slope_n
             elif var_rd_k.get() == 3:
                 kn = slope_n
+            if var_rd_c.get() == 1:
+                cn = 1.
+            elif var_rd_c.get() == 2:
+                cn = 1. / slope_n
+            elif var_rd_c.get() == 3:
+                cn = slope_n
             y_n = np.cos(2. * np.pi * (kn * x - cn * time_observer))
             y_multi = y_multi + y_n
         wave_curve_supervised_multi.set_ydata(y_multi / num_of_waves + time_observer)
@@ -220,11 +241,11 @@ arrow_light_pass_3 = ax0.annotate('', xy=xy_light_pass_3, xytext=[0., 0.], arrow
 # Phase curve
 x = np.linspace(x_min, x_max, 1000)
 y_1 = x * 0.
-wave_curve_1, = ax0.plot(x, y_1, linestyle='-', color="darkorange", linewidth=0.5, label='y=cos(k1*x-slope1*t)')
+wave_curve_1, = ax0.plot(x, y_1, linestyle='-', color="darkorange", linewidth=0.5, label='y=cos(2pi*(k1*x-c1*t))')
 y_2 = x * 0.
-wave_curve_2, = ax0.plot(x, y_2, linestyle='-', color="green", linewidth=0.5, label='y=cos(k2*x-slope2*t)')
+wave_curve_2, = ax0.plot(x, y_2, linestyle='-', color="green", linewidth=0.5, label='y=cos(2pi*k2*x-c2*t)')
 y_3 = x * 0.
-wave_curve_3, = ax0.plot(x, y_3, linestyle='-', color="blue", linewidth=0.5, label='y=cos(k3*x-slope3*t)')
+wave_curve_3, = ax0.plot(x, y_3, linestyle='-', color="blue", linewidth=0.5, label='y=cos(2pi*k3*x-c3*t)')
 ax0.legend(loc='upper right')
 y_3 = x * 0.
 wave_curve_supervised_3, = ax0.plot(x, y_3, linestyle='-', color="brown",
@@ -250,22 +271,39 @@ canvas.get_tk_widget().pack(expand=True, fill='both')
 toolbar = NavigationToolbar2Tk(canvas, root)
 canvas.get_tk_widget().pack()
 
-# Parameter setting
-frm_parameter = ttk.Labelframe(root, relief="ridge", text="Parameter setting", labelanchor="n")
-frm_parameter.pack(side='left', fill=tk.Y)
+# Parameter setting(k)
+frm_parameter_k = ttk.Labelframe(root, relief="ridge", text="Parameter setting(k)", labelanchor="n")
+frm_parameter_k.pack(side='left', fill=tk.Y)
 # Radio button
 var_rd_k = tk.IntVar(root)
 # Radio button 1st
-rd_k1 = tk.Radiobutton(frm_parameter, text="kn = 1", value=1, var=var_rd_k)
+rd_k1 = tk.Radiobutton(frm_parameter_k, text="kn = 1", value=1, var=var_rd_k)
 rd_k1.pack()
 # Radio button 2nd
-rd_k2 = tk.Radiobutton(frm_parameter, text="kn = 1 / slope_n", value=2, var=var_rd_k)
+rd_k2 = tk.Radiobutton(frm_parameter_k, text="kn = 1 / slope_n", value=2, var=var_rd_k)
 rd_k2.pack()
 # Radio button 3rd
-rd_k3 = tk.Radiobutton(frm_parameter, text="kn = slope_n", value=3, var=var_rd_k)
+rd_k3 = tk.Radiobutton(frm_parameter_k, text="kn = slope_n", value=3, var=var_rd_k)
 rd_k3.pack()
 # Default
 var_rd_k.set(1)  # set default
+
+# Parameter setting(c)
+frm_parameter_c = ttk.Labelframe(root, relief="ridge", text="Parameter setting(c)", labelanchor="n")
+frm_parameter_c.pack(side='left', fill=tk.Y)
+# Radio button
+var_rd_c = tk.IntVar(root)
+# Radio button 1st
+rd_c1 = tk.Radiobutton(frm_parameter_c, text="cn = 1", value=1, var=var_rd_c)
+rd_c1.pack()
+# Radio button 2nd
+rd_c2 = tk.Radiobutton(frm_parameter_c, text="cn = 1 / slope_n", value=2, var=var_rd_c)
+rd_c2.pack()
+# Radio button 3rd
+rd_c3 = tk.Radiobutton(frm_parameter_c, text="cn = slope_n", value=3, var=var_rd_c)
+rd_c3.pack()
+# Default
+var_rd_c.set(1)  # set default
 
 # Checkbutton for show/hide waves
 frm_cs = ttk.Labelframe(root, relief="ridge", text="Show/hide waves", labelanchor="n")
