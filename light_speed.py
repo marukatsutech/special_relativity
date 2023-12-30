@@ -126,8 +126,10 @@ def update_plots():
     if var_wsm.get():
         y_multi = x * 0.
         for j in range(num_of_waves):
-            slope_n = j + 1.
-            cn = j + 1.
+            # slope_n = j + 1.
+            # cn = j + 1.
+            slope_n = 0.1 * (j + 1)
+            cn = 0.1 * (j + 1)
             if var_rd_k.get() == 1:
                 kn = 1.
             elif var_rd_k.get() == 2:
@@ -142,7 +144,7 @@ def update_plots():
                 cn = slope_n
             y_n = np.cos(2. * np.pi * (kn * x - cn * time_observer))
             y_multi = y_multi + y_n
-        wave_curve_supervised_multi.set_ydata(y_multi / num_of_waves + time_observer)
+        wave_curve_supervised_multi.set_ydata(y_multi / num_of_waves / 1. + time_observer)
     else:
         wave_curve_supervised_multi.set_ydata(x * 0. + time_observer)
     # Slope info.
@@ -239,13 +241,13 @@ arrow_light_pass_3 = ax0.annotate('', xy=xy_light_pass_3, xytext=[0., 0.], arrow
     width=1, headwidth=4, headlength=4, facecolor='blue', edgecolor='blue'))
 
 # Phase curve
-x = np.linspace(x_min, x_max, 1000)
+x = np.linspace(x_min, x_max, 3000)
 y_1 = x * 0.
 wave_curve_1, = ax0.plot(x, y_1, linestyle='-', color="darkorange", linewidth=0.5, label='y=cos(2pi*(k1*x-c1*t))')
 y_2 = x * 0.
-wave_curve_2, = ax0.plot(x, y_2, linestyle='-', color="green", linewidth=0.5, label='y=cos(2pi*k2*x-c2*t)')
+wave_curve_2, = ax0.plot(x, y_2, linestyle='-', color="green", linewidth=0.5, label='y=cos(2pi*(k2*x-c2*t))')
 y_3 = x * 0.
-wave_curve_3, = ax0.plot(x, y_3, linestyle='-', color="blue", linewidth=0.5, label='y=cos(2pi*k3*x-c3*t)')
+wave_curve_3, = ax0.plot(x, y_3, linestyle='-', color="blue", linewidth=0.5, label='y=cos(2pi*(k3*x-c3*t))')
 ax0.legend(loc='upper right')
 y_3 = x * 0.
 wave_curve_supervised_3, = ax0.plot(x, y_3, linestyle='-', color="brown",
