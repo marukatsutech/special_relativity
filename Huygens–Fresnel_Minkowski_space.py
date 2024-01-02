@@ -46,9 +46,9 @@ def update_plots():
     if abs(xy_light_pass_1[1]) > 0.000001:
         slope1 = xy_light_pass_1[0] / xy_light_pass_1[1]
         k1 = 1. / slope1
-        # c1 = slope1
-        # y_1 = np.cos(2. * np.pi * (k1 * (x - c1 * time_observer)))
-        # y_1 = np.cos(2. * np.pi * (k1 * x - k1 * c1 * time_observer))
+        # omega = slope1
+        # y_1 = np.cos(2. * np.pi * (k1 * (x - omega1 * time_observer)))
+        # y_1 = np.cos(2. * np.pi * (k1 * x - k1 * omega1 * time_observer))
         y_1 = np.cos(2. * np.pi * (k1 * x - 1. * time_observer))
         wave_curve_1.set_ydata(y_1 + time_observer)
 
@@ -65,13 +65,7 @@ start_guide = -12
 end_guide = 12
 num_of_guide = end_guide - start_guide + 1
 time_observer = 0.
-# c = 1.
-# slope_pass_1 = 1.
-# slope_pass_2 = 2.
-# slope_pass_3 = 3.
 theta_light_pass_1 = np.arctan2(1., 1.)
-# theta_light_pass_2 = np.arctan2(2., 1.)
-# theta_light_pass_3 = np.arctan2(3., 1.)
 
 # Data array
 range_x_min = -1.
@@ -183,7 +177,8 @@ line_spatial, = ax0.plot(xx_line_spatial, yy_line_spatial, color='brown', linest
 # Phase curve
 x = np.linspace(x_min, x_max, 1000)
 y_1 = x * 0.
-wave_curve_1, = ax0.plot(x, y_1, linestyle='-', color="red", linewidth=1, label='y=cos(2pi*(k*x-c*t), (k=1/slope, c=1)')
+wave_curve_1, = ax0.plot(x, y_1, linestyle='-', color="red", linewidth=1,
+                         label='y=cos(2pi*(k*x-omega*t), (k=1/slope, omega=1)')
 ax0.legend(loc='upper right')
 
 # Tkinter
