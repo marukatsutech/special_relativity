@@ -209,6 +209,10 @@ ax0.set_yticklabels(y_ticks, fontsize=6)
 
 # Generate graphic items
 # Guide lines and circles
+xx_line_light = [0., y_max]
+yy_line_light = [0., y_max]
+line_light, = ax0.plot(xx_line_light, yy_line_light, color='gray', linestyle="-", linewidth=1)
+
 for i in range(1, 13):
     circle_light = patches.Circle(xy=(0., 0.), radius=i, color='gray', fill=False, linestyle=":", linewidth=2)
     ax0.add_patch(circle_light)
