@@ -11,11 +11,22 @@ import matplotlib.ticker as ticker
 
 
 def update_plots():
-    pass
-
-
-def reset_arrows():
-    pass
+    global secondary_circles, theta, xy_pass1
+    for i in range(num_of_pass1):
+        if var_rd_sw.get() == 1:
+            secondary_circles[i].set_center([100., 100.])
+        elif var_rd_sw.get() == 2:
+            theta = i * 2 * np.pi / num_of_pass1
+            xy_pass1 = [np.cos(theta), np.sin(theta)]
+            secondary_circles[i].set_center(xy_pass1)
+        else:
+            theta = i * 2 * np.pi / num_of_pass1
+            xy_pass1 = [np.cos(theta), np.sin(theta)]
+            if np.abs(xy_pass1[1]) > 0.00001:
+                slp = xy_pass1[0] / xy_pass1[1]
+                secondary_circles[i].set_center([slp, 1.])
+            else:
+                secondary_circles[i].set_center([100., 100.])
 
 
 def update(f):
@@ -29,8 +40,8 @@ time_event = 1.
 
 range_x_min = -3.
 range_x_max = 3.
-range_y_min = -2.
-range_y_max = 2.
+range_y_min = -3.
+range_y_max = 3.
 
 # Generate figure and axes
 title_ax0 = "Light arrows"
@@ -81,6 +92,7 @@ for k in range(num_of_pass1):
                                                facecolor='darkorange', edgecolor='darkorange'))
 
 # Event points on spatial line of observer
+secondary_circles = []
 for k in range(num_of_pass1):
     theta = k * 2 * np.pi / num_of_pass1
     xy_pass1 = [np.cos(theta), np.sin(theta)]
@@ -102,6 +114,12 @@ for k in range(num_of_pass1):
     line_pass1, = ax0.plot(xx_line_pass1, yy_line_pass1, color='darkorange', linestyle="-.", linewidth=0.5)
 
 
+# Secondary wave circles
+for m in range(num_of_pass1):
+    circle_secondary = patches.Circle(xy=(100, 100), radius=1., color='green', fill=False, linestyle="--")
+    ax0.add_patch(circle_secondary)
+    secondary_circles.append(circle_secondary)
+
 # Tkinter
 root = tk.Tk()
 root.title(title_tk)
@@ -111,6 +129,23 @@ canvas.get_tk_widget().pack(expand=True, fill='both')
 toolbar = NavigationToolbar2Tk(canvas, root)
 canvas.get_tk_widget().pack()
 
+# Parameter setting: secondary waves
+frm_parameter_sw = ttk.Labelframe(root, relief="ridge", text="Secondary waves", labelanchor="n")
+frm_parameter_sw.pack(side='left', fill=tk.Y)
+# Radio button
+var_rd_sw = tk.IntVar(root)
+# Radio button 1st
+rd_sw_hide = tk.Radiobutton(frm_parameter_sw, text="Hide", value=1, var=var_rd_sw)
+rd_sw_hide.pack()
+# Radio button 2nd
+rd_sw_on_circle = tk.Radiobutton(frm_parameter_sw, text="On light circle", value=2, var=var_rd_sw)
+rd_sw_on_circle.pack()
+# Radio button 3rd
+rd_sw_on_spatial = tk.Radiobutton(frm_parameter_sw, text="On spatial line of observer", value=3, var=var_rd_sw)
+rd_sw_on_spatial.pack()
+# Default
+var_rd_sw.set(1)  # set default
+
 # Start main loop
-# anim = animation.FuncAnimation(fig, update, interval=100)
+anim = animation.FuncAnimation(fig, update, interval=100)
 root.mainloop()
