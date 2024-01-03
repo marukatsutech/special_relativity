@@ -10,6 +10,14 @@ from tkinter import ttk
 import matplotlib.ticker as ticker
 
 
+def change_show_hide_status():
+    global a1
+    if var_w1.get():
+        a1 = 1.
+    else:
+        a1 = 0.
+
+
 def update_plots():
     global theta_light_pass_1, xy_light_pass_1, circles_marker, circles_light_marker, arrows_light_marker
     global lines_connection, time_observer, y_1
@@ -47,9 +55,9 @@ def update_plots():
         slope1 = xy_light_pass_1[0] / xy_light_pass_1[1]
         k1 = 1. / slope1
         # omega = slope1
-        # y_1 = np.cos(2. * np.pi * (k1 * (x - omega1 * time_observer)))
-        # y_1 = np.cos(2. * np.pi * (k1 * x - k1 * omega1 * time_observer))
-        y_1 = np.cos(2. * np.pi * (k1 * x - 1. * time_observer))
+        # y_1 = a1 * np.cos(2. * np.pi * (k1 * (x - omega1 * time_observer)))
+        # y_1 = a1 * np.cos(2. * np.pi * (k1 * x - k1 * omega1 * time_observer))
+        y_1 = a1 * np.cos(2. * np.pi * (k1 * x - 1. * time_observer))
         wave_curve_1.set_ydata(y_1 + time_observer)
 
 
@@ -66,6 +74,7 @@ end_guide = 12
 num_of_guide = end_guide - start_guide + 1
 time_observer = 0.
 theta_light_pass_1 = np.arctan2(1., 1.)
+a1 = 1.
 
 # Data array
 range_x_min = -1.
@@ -113,6 +122,7 @@ for i in range(1, 13):
     if color_idx >= len(colors):
         color_idx = 0
 
+# Secondary waves
 for i in range(num_of_guide):
     xx_guide = [0., start_guide + i]
     yy_guide = [0., 1.]
@@ -189,6 +199,14 @@ canvas.get_tk_widget().pack(expand=True, fill='both')
 
 toolbar = NavigationToolbar2Tk(canvas, root)
 canvas.get_tk_widget().pack()
+
+# Checkbutton for show/hide a wave
+frm_cs = ttk.Labelframe(root, relief="ridge", text="Show/hide wave", labelanchor="n")
+frm_cs.pack(side='left', fill=tk.Y)
+var_w1 = tk.BooleanVar(root)    # Variable for checkbutton
+check_w1 = tk.Checkbutton(frm_cs, text="wave:", variable=var_w1, command=change_show_hide_status)
+check_w1.pack()
+var_w1.set(True)
 
 # Light passes control
 frm_lp = ttk.Labelframe(root, relief="ridge", text="Angle of light passes (degree)", labelanchor="n")
