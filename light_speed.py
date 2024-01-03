@@ -10,7 +10,7 @@ from tkinter import ttk
 import matplotlib.ticker as ticker
 
 
-def change_show_hide_state():
+def change_show_hide_status():
     global a1, a2, a3
     if var_w1.get():
         a1 = 1.
@@ -315,25 +315,25 @@ var_rd_c.set(1)  # set default
 frm_cs = ttk.Labelframe(root, relief="ridge", text="Show/hide waves", labelanchor="n")
 frm_cs.pack(side='left', fill=tk.Y)
 var_w1 = tk.BooleanVar(root)    # Variable for checkbutton
-check_w1 = tk.Checkbutton(frm_cs, text="wave 1 (Orange):", variable=var_w1, command=change_show_hide_state)
+check_w1 = tk.Checkbutton(frm_cs, text="wave 1 (Orange):", variable=var_w1, command=change_show_hide_status)
 check_w1.pack()
 var_w1.set(True)
 var_w2 = tk.BooleanVar(root)    # Variable for checkbutton
-check_w2 = tk.Checkbutton(frm_cs, text="wave 2 (Green):", variable=var_w2, command=change_show_hide_state)
+check_w2 = tk.Checkbutton(frm_cs, text="wave 2 (Green):", variable=var_w2, command=change_show_hide_status)
 check_w2.pack()
 var_w2.set(True)
 var_w3 = tk.BooleanVar(root)    # Variable for checkbutton
-check_w3 = tk.Checkbutton(frm_cs, text="wave 3 (Blue):", variable=var_w3, command=change_show_hide_state)
+check_w3 = tk.Checkbutton(frm_cs, text="wave 3 (Blue):", variable=var_w3, command=change_show_hide_status)
 check_w3.pack()
 var_w3.set(True)
 var_ws3 = tk.BooleanVar(root)    # Variable for checkbutton
 check_ws3 = tk.Checkbutton(frm_cs, text="Supervised wave of 3 waves(Brown):",
-                           variable=var_ws3, command=change_show_hide_state)
+                           variable=var_ws3, command=change_show_hide_status)
 check_ws3.pack()
 var_ws3.set(True)
 var_wsm = tk.BooleanVar(root)    # Variable for checkbutton
 check_wsm = tk.Checkbutton(frm_cs, text="Supervised wave of 100 waves(Red)",
-                           variable=var_wsm, command=change_show_hide_state)
+                           variable=var_wsm, command=change_show_hide_status)
 check_wsm.pack()
 var_wsm.set(True)
 
