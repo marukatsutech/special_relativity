@@ -12,9 +12,11 @@ import matplotlib.ticker as ticker
 
 def update_plots():
     global secondary_circles, theta, xy_pass1
+    global slopes, event_points, pass_lines, slope, xy_event_space, line_spatial
+    # Secondary waves
     for i in range(num_of_pass1):
         if var_rd_sw.get() == 1:
-            secondary_circles[i].set_center([100., 100.])
+            secondary_circles[i].set_center([out_of_range, out_of_range])
         elif var_rd_sw.get() == 2:
             theta = i * 2 * np.pi / num_of_pass1
             xy_pass1 = [np.cos(theta), np.sin(theta)]
@@ -26,7 +28,41 @@ def update_plots():
                 slp = xy_pass1[0] / xy_pass1[1]
                 secondary_circles[i].set_center([slp, 1.])
             else:
-                secondary_circles[i].set_center([100., 100.])
+                secondary_circles[i].set_center([out_of_range, out_of_range])
+    # Event points on spatial line and slop of arrows
+    for j in range(num_of_pass1):
+        if var_rd_op.get() == 1:
+            slopes[j].set_position([out_of_range, out_of_range])
+            event_points[j].set_center([out_of_range, out_of_range])
+            x_ = [out_of_range, out_of_range]
+            y_ = [out_of_range, out_of_range]
+            pass_lines[j].set_xdata(x_)
+            pass_lines[j].set_ydata(y_)
+            x_ = [out_of_range, out_of_range]
+            y_ = [out_of_range, out_of_range]
+            line_spatial.set_xdata(x_)
+            line_spatial.set_ydata(y_)
+        else:
+            theta = j * 2 * np.pi / num_of_pass1
+            xy_pass1 = [np.cos(theta), np.sin(theta)]
+            slope = 0.
+            if np.abs(xy_pass1[1]) > 0.00001:
+                slope = xy_pass1[0] / xy_pass1[1]
+            else:
+                slope = xy_pass1[0] / 0.00001
+            slopes[j].set_position([xy_pass1[0], xy_pass1[1]])
+            xy_event_space = [slope * time_event, time_event]
+            event_points[j].set_center(xy_event_space)
+            # pass line
+            x_ = [xy_event_space[0], xy_pass1[0]]
+            y_ = [xy_event_space[1], xy_pass1[1]]
+            pass_lines[j].set_xdata(x_)
+            pass_lines[j].set_ydata(y_)
+            # Spatial line of observer
+            x_ = [x_min, x_max]
+            y_ = [time_event, time_event]
+            line_spatial.set_xdata(x_)
+            line_spatial.set_ydata(y_)
 
 
 def update(f):
@@ -34,6 +70,7 @@ def update(f):
 
 
 # Global variables
+out_of_range = 100
 # Parameters
 num_of_pass1 = 16
 time_event = 1.
@@ -44,7 +81,7 @@ range_y_min = -3.
 range_y_max = 3.
 
 # Generate figure and axes
-title_ax0 = "Light arrows"
+title_ax0 = "Circular wave (light arrows) in Minkowski space"
 title_tk = title_ax0
 x_min = range_x_min
 x_max = range_x_max
@@ -79,9 +116,9 @@ circle_light1 = patches.Circle(xy=(0., 0.), radius=1., color='darkorange', fill=
 ax0.add_patch(circle_light1)
 
 # World and space lines
-xx_line_spatial_virtual = [x_min, x_max]
-yy_line_spatial_virtual = [time_event, time_event]
-line_world_virtual, = ax0.plot(xx_line_spatial_virtual, yy_line_spatial_virtual, color='darkorange', linestyle="--")
+xx_line_spatial = [out_of_range, out_of_range]
+yy_line_spatial = [out_of_range, out_of_range]
+line_spatial, = ax0.plot(xx_line_spatial, yy_line_spatial, color='darkorange', linestyle="--")
 
 # Arrow light passes
 for k in range(num_of_pass1):
@@ -92,31 +129,38 @@ for k in range(num_of_pass1):
                                                facecolor='darkorange', edgecolor='darkorange'))
 
 # Event points on spatial line of observer
-secondary_circles = []
+event_points = []
+pass_lines = []
+slopes = []
 for k in range(num_of_pass1):
     theta = k * 2 * np.pi / num_of_pass1
     xy_pass1 = [np.cos(theta), np.sin(theta)]
     # Event points on spatial line and slop of arrows
-    gradient_x_div_t_pass1 = 0.
+    slope = 0.
     if np.abs(xy_pass1[1]) > 0.00001:
-        gradient_x_div_t_pass1 = xy_pass1[0] / xy_pass1[1]
-        slope = str(round(gradient_x_div_t_pass1, 2))
+        slope = xy_pass1[0] / xy_pass1[1]
+        slope_str = str(round(slope, 2))
     else:
-        gradient_x_div_t_pass1 = xy_pass1[0] / 0.00001
-        slope = 'Infinity'
-    ax0.text(xy_pass1[0], xy_pass1[1], slope, c='black')
-    xy_event_space = [gradient_x_div_t_pass1 * time_event, time_event]
+        slope = xy_pass1[0] / 0.00001
+        slope_str = 'Infinity'
+    txt_slope = ax0.text(out_of_range, out_of_range, slope_str, c='black')
+    slopes.append(txt_slope)
+    xy_event_space = [out_of_range, out_of_range ]
     circle_event_space = patches.Circle(xy=xy_event_space, radius=0.05, color='darkorange')
     ax0.add_patch(circle_event_space)
+    event_points.append(circle_event_space)
     # pass line
-    xx_line_pass1 = [xy_event_space[0], xy_pass1[0]]
-    yy_line_pass1 = [xy_event_space[1], xy_pass1[1]]
+    xx_line_pass1 = [out_of_range, out_of_range ]
+    yy_line_pass1 = [out_of_range, out_of_range ]
     line_pass1, = ax0.plot(xx_line_pass1, yy_line_pass1, color='darkorange', linestyle="-.", linewidth=0.5)
+    pass_lines.append(line_pass1)
 
 
 # Secondary wave circles
+secondary_circles = []
 for m in range(num_of_pass1):
-    circle_secondary = patches.Circle(xy=(100, 100), radius=1., color='green', fill=False, linestyle="--")
+    circle_secondary = patches.Circle(xy=(out_of_range, out_of_range),
+                                      radius=1., color='green', fill=False, linestyle="--")
     ax0.add_patch(circle_secondary)
     secondary_circles.append(circle_secondary)
 
@@ -128,6 +172,20 @@ canvas.get_tk_widget().pack(expand=True, fill='both')
 
 toolbar = NavigationToolbar2Tk(canvas, root)
 canvas.get_tk_widget().pack()
+
+# Parameter setting: Event points on spatial line of observer
+frm_parameter_op = ttk.Labelframe(root, relief="ridge", text="Observation points", labelanchor="n")
+frm_parameter_op.pack(side='left', fill=tk.Y)
+# Radio button
+var_rd_op = tk.IntVar(root)
+# Radio button 1st
+rd_op_hide = tk.Radiobutton(frm_parameter_op, text="Hide", value=1, var=var_rd_op)
+rd_op_hide.pack()
+# Radio button 2nd
+rd_op_show = tk.Radiobutton(frm_parameter_op, text="Show", value=2, var=var_rd_op)
+rd_op_show.pack()
+# Default
+var_rd_op.set(1)  # set default
 
 # Parameter setting: secondary waves
 frm_parameter_sw = ttk.Labelframe(root, relief="ridge", text="Secondary waves", labelanchor="n")
@@ -147,5 +205,5 @@ rd_sw_on_spatial.pack()
 var_rd_sw.set(1)  # set default
 
 # Start main loop
-anim = animation.FuncAnimation(fig, update, interval=100)
+anim = animation.FuncAnimation(fig, update, interval=out_of_range )
 root.mainloop()
