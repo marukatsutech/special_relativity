@@ -36,7 +36,10 @@ My argument in the last video was that light is a sphere spread out in Minkowski
 
 ![image_fig1-1](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
 
+Fig 1-1. Light spreading spherically in Minkowski space
+
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
+
 Fig 1-2. Minkowski space and moiré pattern
 
 Watch my video for overview!  
