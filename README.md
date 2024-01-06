@@ -1,13 +1,18 @@
 # Special relativity: Why is the speed of light constant?
-Python exercise - 34  
-Simple exercise of matplotlib-animation of Python.
+# Chapter - 1. Light sphere
 
-Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime.   
+Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime. 
+* Light(Photon) is not a dot but a sphere.
+* We can only observe our world with discretization (quantization)  just like moire pattern.
+* That is why light speed does not change depending on the viewpoint of every observers.
+
 Watch my video for more detail!  
 https://youtu.be/AwRgGn6AzzU  
 
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
 
+## Python exercise - 34  
+Simple exercise of matplotlib-animation of Python.
 
 ## Source code
 files:  
