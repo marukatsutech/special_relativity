@@ -58,36 +58,54 @@ Fig 2-1. Light circle seen from observers A and B
 Next, we will look at how light spreads when viewed from observer A. Assuming that the length of each arrow is 1(Fig 2-2a), each arrow indicates the direction (velocity) in which light spreads. In Minkowski space, the slope of a straight line indicating the movement of an object indicates its speed, and a slope of 1 indicates the speed of light, so the speed of a light arrow that spreads out in a circular shape (hereinafter referred to as light-arrow) is equal to the slope of light-arrow from the standpoint of observer A. From then on, it should appear to progress from 0 to ± infinity.
 In Minkowski space, the region exceeding the speed of light (slope = 1) is called a spacelike region, and is ignored because the law of causality does not hold, but here we will proceed with the idea without ignoring it and assuming that superluminal speed exists.
 
+![image_fig2-2a](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-2a.png)
+
 Fig 2-2a. The light circle (light-arrow) seen by the observer
+
 (Try light_arrows.py for Fig 2-2a.)
 
 The arrival point of each light-arrow for observer A at time t=1 is plotted on the straight line at time t=1 as shown in Fig 2-2.b This is like a Mercator projection map that represents the spherical Earth on a flat surface.
 
+![image_fig2-2b](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-2b.png)
+
 Fig 2-2b. How the light circle spreads as seen by the observer 
+
 (Try light_arrows.py for Fig 2-2b.)
 
 
 According to the Huygens-Fresnel principle, the wavefront at the next moment is formed by the overlap of circular secondary waves (elementary waves) from each point on the wavefront(Fig 2-3). 
 
+![image_fig2-3](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-3.png)
+
 Fig 2-3. How secondary waves of light (elementary waves) spread in the speed-of-light space 
+
 (Try light_arrows.py for Fig 2-3.)
 
 Therefore, a wave spreads out in a circle from each point at time t = 1, and the circular wave is plotted in a straight line at time t = 2 in Minkowski space(Fig 2-4, 2-5). In this way, a wave that spreads circularly in light-speed-space will spread flatly in Minkowski space.
 
+![image_fig2-4](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-4.png)
+
 Fig 2-4. How secondary waves (elementary waves) of light spread as seen from the observer in Minkowski space 
 (Try light_arrows.py for Fig 2-4.)
 
+![image_fig2-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-5.png)
+
 Fig 2-5. Waves spreading in a plane in Minkowski space 
+
 (Try Huygens–Fresnel_Minkowski_space.py for Fig 2-5.)
 
 ## 3. Wave superposition and delta function
 It turns out that a wave of light that spreads out in a circle spreads out in a plane in Minkowski space. Next, we need to converge the waves on this plane to a single point. The delta function(Fig 3-1, 3-2.) is a superposition of waves with an infinite frequency band.
 
-Fig 3-1, 3-2. Superposition of waves 
+![image_fig3-1_3-2](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-1_3-2.png)
+
+Fig 3-1, 3-2. Superposition of waves
+
 (Try superposed_wave.py for Fig 3-1, 3-2.)
 
 Fortunately, as mentioned above, the slope (= velocity) of light-arrow, which is the element of the wave that spreads circularly in Minkowski space, appears from 0 to ± infinity speed from observer A, so this Let's use 0 to ± infinity to realize the superposition of waves with an infinite frequency width.
 The equation of the wave in the video above is as follows(Equation 3-1). This is because in order to make it easier to see how circular light spreads out into a flat plane, the speed (=slope) of the light-arrow was made to match the advance of the phase.
+
 y = cos(2π(kx -ωt))  ...Equation 3-1
  k (wave number) = 1 / slope (=reciprocal of the slope of the arrow of light)
  ω (angular frequency) = 1
@@ -114,7 +132,10 @@ y(n) = cos(2π(k(n)x - ω(n)t))…Equation 3-5
  
 Unfortunately, since the phase velocities are different, as time progresses, the phases shift and the peak collapses.
 
+![image_fig3-3](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-3.png)
+
 Fig 3-3. Superposition of waves with k(n) =1 /slope(n),　ωn= 1 
+
 (Try light_speed.py for Fig 3-3.)
 
 Furthermore, although the phase velocity is proportional to the slope of light-arrow, the fact that the angular frequency corresponding to the traveling velocity of the traveling wave (Equation 3-6) is constant is not worth removing the limit of light velocity.
@@ -128,7 +149,10 @@ y(n) = cos(2π(k(n)x - ω(n)t)) …Equation 3-7
 
 In this case, k(n) = 1 / slope(n), ω(n) = slope(n), so the phase velocity vp(n) = ω(n) / k(n) = slope(n) ** 2, which is the square of the slope of the light-arrow, and in this case However, as time progresses, the phase shifts and the peak collapses.
 
+![image_fig3-4](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-4.png)
+
 Fig 3-4. Superposition of waves with k(n) =1 /slope(n),　ω(n)= slope(n)
+
 (Try light_speed.py for Fig 3-4.)
 
 So, what is the combination of wave number k and angular frequency ω that does not shift the phase velocity? That is  the group velocities (vp;group velocities) are equal. Group velocity is the traveling speed of a wave packet created by superposition of waves, and can also be said to be the speed at which points with equal phase difference of waves travel, and its formula is as follows.
@@ -156,7 +180,10 @@ Furthermore, since the phase velocity in this case is
   
 You can see a wave packet traveling at a phase velocity of 1 while maintaining the peak due to the superposition of waves.
 
+![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-5.png)
+
 Fig 3-5. Superposition of waves with kn = slope(n),　ωn= slope(n)
+
 (Try light_speed.py for Fig 3-5.)
 
 Now, if we look at the wave equation from earlier,
@@ -169,7 +196,10 @@ It is a collection of waves with wave number slope(n) times y = cos(2π * (x - t
 Now, in the previous video, three waves were superposed, but let's increase the number of superpositions. 
 The following video is a superposition of 100 waves with k(n) = ω(n) = slope(n) (n= 0.1, 0.2, 0.3…~10).
 
+![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-6.png)
+
 Fig 3-6. Superposition of 100 waves with kn = slope(n),　ωn= slope(n)
+
 (Try light_speed.py for Fig 3-6.)
 
 The peak is clear compared to the superposition of three waves. It is still a superposition of 100 waves and two peaks appear, but if we further increase the number of superpositions and superimpose waves of infinite frequency (corresponding to the slope of light arrow from 0 to ± infinity), we get It should be in the form of a delta function with one peak.
