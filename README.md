@@ -85,6 +85,8 @@ Therefore, a wave spreads out in a circle from each point at time t = 1, and the
 Fig 2-4. How secondary waves (elementary waves) of light spread as seen from the observer in Minkowski space 
 (Try light_arrows.py for Fig 2-4.)
 
+![image_fig2-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-5.png)
+
 Fig 2-5. Waves spreading in a plane in Minkowski space 
 (Try Huygens–Fresnel_Minkowski_space.py for Fig 2-5.)
 
