@@ -148,9 +148,9 @@ def update_plots():
     else:
         wave_curve_supervised_multi.set_ydata(x * 0. + time_observer)
     # Slope info.
-    lbl_lp1['text'] = "Light pass 1 (orange)(slope1=" + str(round(slope_pass_1, 2)) + "):"
-    lbl_lp2['text'] = "Light pass 2 (green)(slope2=" + str(round(slope_pass_2, 2)) + "):"
-    lbl_lp3['text'] = "Light pass 3 (blue)(slope3=" + str(round(slope_pass_3, 2)) + "):"
+    lbl_lp1['text'] = "Light pass A (orange)(slope A=" + str(round(slope_pass_1, 2)) + "):"
+    lbl_lp2['text'] = "Light pass B (green)(slope B=" + str(round(slope_pass_2, 2)) + "):"
+    lbl_lp3['text'] = "Light pass C (blue)(slope C=" + str(round(slope_pass_3, 2)) + "):"
 
 
 def update(f):
@@ -247,17 +247,17 @@ arrow_light_pass_3 = ax0.annotate('', xy=xy_light_pass_3, xytext=[0., 0.], arrow
 # Phase curve
 x = np.linspace(x_min, x_max, 3000)
 y_1 = x * 0.
-wave_curve_1, = ax0.plot(x, y_1, linestyle='-', color="darkorange", linewidth=0.5, label='y=cos(2pi*(k1*x-c1*t))')
+wave_curve_1, = ax0.plot(x, y_1, linestyle='-', color="darkorange", linewidth=0.5, label='y=cos(2pi*(k_A*x-omega_A*t))')
 y_2 = x * 0.
-wave_curve_2, = ax0.plot(x, y_2, linestyle='-', color="green", linewidth=0.5, label='y=cos(2pi*(k2*x-c2*t))')
+wave_curve_2, = ax0.plot(x, y_2, linestyle='-', color="green", linewidth=0.5, label='y=cos(2pi*(k_B*x-omega_B*t))')
 y_3 = x * 0.
-wave_curve_3, = ax0.plot(x, y_3, linestyle='-', color="blue", linewidth=0.5, label='y=cos(2pi*(k3*x-c3*t))')
+wave_curve_3, = ax0.plot(x, y_3, linestyle='-', color="blue", linewidth=0.5, label='y=cos(2pi*(k_C*x-omega_C*t))')
 ax0.legend(loc='upper right')
 y_3 = x * 0.
 wave_curve_supervised_3, = ax0.plot(x, y_3, linestyle='-', color="brown",
-                                    linewidth=1, label='Suppevised wave of 3 waves')
+                                    linewidth=2, label='Suppevised wave of 3 waves')
 wave_curve_supervised_multi, = ax0.plot(x, y_3, linestyle='-', color="red",
-                                        linewidth=2, label='Suppevised wave of 100 waves')
+                                        linewidth=3, label='Suppevised wave of 100 waves')
 ax0.legend(loc='upper right')
 
 # origin markers
@@ -283,30 +283,30 @@ frm_parameter_k.pack(side='left', fill=tk.Y)
 # Radio button
 var_rd_k = tk.IntVar(root)
 # Radio button 1st
-rd_k1 = tk.Radiobutton(frm_parameter_k, text="kn = 1", value=1, var=var_rd_k)
+rd_k1 = tk.Radiobutton(frm_parameter_k, text="k(n) = 1", value=1, var=var_rd_k)
 rd_k1.pack()
 # Radio button 2nd
-rd_k2 = tk.Radiobutton(frm_parameter_k, text="kn = 1 / slope_n", value=2, var=var_rd_k)
+rd_k2 = tk.Radiobutton(frm_parameter_k, text="k(n) = 1 / slope(n)", value=2, var=var_rd_k)
 rd_k2.pack()
 # Radio button 3rd
-rd_k3 = tk.Radiobutton(frm_parameter_k, text="kn = slope_n", value=3, var=var_rd_k)
+rd_k3 = tk.Radiobutton(frm_parameter_k, text="k(n) = slope(n)", value=3, var=var_rd_k)
 rd_k3.pack()
 # Default
 var_rd_k.set(1)  # set default
 
 # Parameter setting(c)
-frm_parameter_c = ttk.Labelframe(root, relief="ridge", text="Parameter setting(c)", labelanchor="n")
+frm_parameter_c = ttk.Labelframe(root, relief="ridge", text="Parameter setting(omega)", labelanchor="n")
 frm_parameter_c.pack(side='left', fill=tk.Y)
 # Radio button
 var_rd_c = tk.IntVar(root)
 # Radio button 1st
-rd_c1 = tk.Radiobutton(frm_parameter_c, text="cn = 1", value=1, var=var_rd_c)
+rd_c1 = tk.Radiobutton(frm_parameter_c, text="omega(n) = 1", value=1, var=var_rd_c)
 rd_c1.pack()
 # Radio button 2nd
-rd_c2 = tk.Radiobutton(frm_parameter_c, text="cn = 1 / slope_n", value=2, var=var_rd_c)
+rd_c2 = tk.Radiobutton(frm_parameter_c, text="omega(n) = 1 / slope(n)", value=2, var=var_rd_c)
 rd_c2.pack()
 # Radio button 3rd
-rd_c3 = tk.Radiobutton(frm_parameter_c, text="cn = slope_n", value=3, var=var_rd_c)
+rd_c3 = tk.Radiobutton(frm_parameter_c, text="omega(n) = slope(n))", value=3, var=var_rd_c)
 rd_c3.pack()
 # Default
 var_rd_c.set(1)  # set default
@@ -315,15 +315,15 @@ var_rd_c.set(1)  # set default
 frm_cs = ttk.Labelframe(root, relief="ridge", text="Show/hide waves", labelanchor="n")
 frm_cs.pack(side='left', fill=tk.Y)
 var_w1 = tk.BooleanVar(root)    # Variable for checkbutton
-check_w1 = tk.Checkbutton(frm_cs, text="wave 1 (Orange):", variable=var_w1, command=change_show_hide_status)
+check_w1 = tk.Checkbutton(frm_cs, text="wave A(Orange):", variable=var_w1, command=change_show_hide_status)
 check_w1.pack()
 var_w1.set(True)
 var_w2 = tk.BooleanVar(root)    # Variable for checkbutton
-check_w2 = tk.Checkbutton(frm_cs, text="wave 2 (Green):", variable=var_w2, command=change_show_hide_status)
+check_w2 = tk.Checkbutton(frm_cs, text="wave B (Green):", variable=var_w2, command=change_show_hide_status)
 check_w2.pack()
 var_w2.set(True)
 var_w3 = tk.BooleanVar(root)    # Variable for checkbutton
-check_w3 = tk.Checkbutton(frm_cs, text="wave 3 (Blue):", variable=var_w3, command=change_show_hide_status)
+check_w3 = tk.Checkbutton(frm_cs, text="wave C (Blue):", variable=var_w3, command=change_show_hide_status)
 check_w3.pack()
 var_w3.set(True)
 var_ws3 = tk.BooleanVar(root)    # Variable for checkbutton
