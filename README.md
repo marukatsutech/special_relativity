@@ -93,6 +93,8 @@ Fig 2-5. Waves spreading in a plane in Minkowski space
 ## 3. Wave superposition and delta function
 It turns out that a wave of light that spreads out in a circle spreads out in a plane in Minkowski space. Next, we need to converge the waves on this plane to a single point. The delta function(Fig 3-1, 3-2.) is a superposition of waves with an infinite frequency band.
 
+![image_fig3-1_3-2](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-1_3-2.png)
+
 Fig 3-1, 3-2. Superposition of waves 
 (Try superposed_wave.py for Fig 3-1, 3-2.)
 
