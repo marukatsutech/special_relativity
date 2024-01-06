@@ -32,7 +32,6 @@ def update_plots():
     # Event points on spatial line and slop of arrows
     for j in range(num_of_pass1):
         if var_rd_op.get() == 1:
-            slopes[j].set_position([out_of_range, out_of_range])
             event_points[j].set_center([out_of_range, out_of_range])
             x_ = [out_of_range, out_of_range]
             y_ = [out_of_range, out_of_range]
@@ -50,7 +49,6 @@ def update_plots():
                 slope = xy_pass1[0] / xy_pass1[1]
             else:
                 slope = xy_pass1[0] / 0.00001
-            slopes[j].set_position([xy_pass1[0], xy_pass1[1]])
             xy_event_space = [slope * time_event, time_event]
             event_points[j].set_center(xy_event_space)
             # pass line
@@ -63,6 +61,13 @@ def update_plots():
             y_ = [time_event, time_event]
             line_spatial.set_xdata(x_)
             line_spatial.set_ydata(y_)
+        if var_rd_sp.get() == 1:
+            slopes[j].set_position([out_of_range, out_of_range])
+        else:
+            theta = j * 2 * np.pi / num_of_pass1
+            xy_pass1 = [np.cos(theta), np.sin(theta)]
+            slopes[j].set_position([xy_pass1[0], xy_pass1[1]])
+
 
 
 def update(f):
@@ -172,6 +177,20 @@ canvas.get_tk_widget().pack(expand=True, fill='both')
 
 toolbar = NavigationToolbar2Tk(canvas, root)
 canvas.get_tk_widget().pack()
+
+# Parameter setting: Slopes
+frm_parameter_sp = ttk.Labelframe(root, relief="ridge", text="Slope (=speed) of arrows", labelanchor="n")
+frm_parameter_sp.pack(side='left', fill=tk.Y)
+# Radio button
+var_rd_sp = tk.IntVar(root)
+# Radio button 1st
+rd_sp_hide = tk.Radiobutton(frm_parameter_sp, text="Hide", value=1, var=var_rd_sp)
+rd_sp_hide.pack()
+# Radio button 2nd
+rd_sp_show = tk.Radiobutton(frm_parameter_sp, text="Show", value=2, var=var_rd_sp)
+rd_sp_show.pack()
+# Default
+var_rd_sp.set(1)  # set default
 
 # Parameter setting: Event points on spatial line of observer
 frm_parameter_op = ttk.Labelframe(root, relief="ridge", text="Observation points", labelanchor="n")
