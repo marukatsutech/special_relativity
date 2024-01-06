@@ -104,7 +104,7 @@ Fig 3-1, 3-2. Superposition of waves
 (Try superposed_wave.py for Fig 3-1, 3-2.)
 
 Fortunately, as mentioned above, the slope (= velocity) of light-arrow, which is the element of the wave that spreads circularly in Minkowski space, appears from 0 to ± infinity speed from observer A, so this Let's use 0 to ± infinity to realize the superposition of waves with an infinite frequency width.
-The equation of the wave in the video above is as follows(Equation 3-1). This is because in order to make it easier to see how circular light spreads out into a flat plane, the speed (=slope) of the light-arrow was made to match the advance of the phase.
+The equation of the wave in Fig 3-3 is as follows(Equation 3-1). This is because in order to make it easier to see how circular light spreads out into a flat plane, the speed (=slope) of the light-arrow was made to match the advance of the phase.
 
 y = cos(2π(kx -ωt))  ...Equation 3-1
  k (wave number) = 1 / slope (=reciprocal of the slope of the arrow of light)
