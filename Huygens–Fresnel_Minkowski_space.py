@@ -53,11 +53,21 @@ def update_plots():
     # Wave curve
     if abs(xy_light_pass_1[1]) > 0.000001:
         slope1 = xy_light_pass_1[0] / xy_light_pass_1[1]
-        k1 = 1. / slope1
-        # omega = slope1
-        # y_1 = a1 * np.cos(2. * np.pi * (k1 * (x - omega1 * time_observer)))
-        # y_1 = a1 * np.cos(2. * np.pi * (k1 * x - k1 * omega1 * time_observer))
-        y_1 = a1 * np.cos(2. * np.pi * (k1 * x - 1. * time_observer))
+        if var_rd_k.get() == 1:
+            k = 1.
+        elif var_rd_k.get() == 2:
+            k = 1. / slope1
+        elif var_rd_k.get() == 3:
+            k = slope1
+        if var_rd_c.get() == 1:
+            omega = 1.
+        elif var_rd_c.get() == 2:
+            omega = 1. / slope1
+        elif var_rd_c.get() == 3:
+            omega = slope1
+        # y_1 = a1 * np.cos(2. * np.pi * (k * (x - omega1 * time_observer)))
+        # y_1 = a1 * np.cos(2. * np.pi * (k * x - k * omega1 * time_observer))
+        y_1 = a1 * np.cos(2. * np.pi * (k * x - omega * time_observer))
         wave_curve_1.set_ydata(y_1 + time_observer)
 
 
@@ -188,7 +198,7 @@ line_spatial, = ax0.plot(xx_line_spatial, yy_line_spatial, color='brown', linest
 x = np.linspace(x_min, x_max, 1000)
 y_1 = x * 0.
 wave_curve_1, = ax0.plot(x, y_1, linestyle='-', color="red", linewidth=1,
-                         label='y=cos(2pi*(k*x-omega*t), (k=1/slope, omega=1)')
+                         label='y=cos(2pi*(k*x-omega*t)')
 ax0.legend(loc='upper right')
 
 # Tkinter
@@ -207,6 +217,40 @@ var_w1 = tk.BooleanVar(root)    # Variable for checkbutton
 check_w1 = tk.Checkbutton(frm_cs, text="wave:", variable=var_w1, command=change_show_hide_status)
 check_w1.pack()
 var_w1.set(True)
+
+# Parameter setting(k)
+frm_parameter_k = ttk.Labelframe(root, relief="ridge", text="Parameter setting(k)", labelanchor="n")
+frm_parameter_k.pack(side='left', fill=tk.Y)
+# Radio button
+var_rd_k = tk.IntVar(root)
+# Radio button 1st
+rd_k1 = tk.Radiobutton(frm_parameter_k, text="k = 1", value=1, var=var_rd_k)
+rd_k1.pack()
+# Radio button 2nd
+rd_k2 = tk.Radiobutton(frm_parameter_k, text="k = 1 / slope", value=2, var=var_rd_k)
+rd_k2.pack()
+# Radio button 3rd
+rd_k3 = tk.Radiobutton(frm_parameter_k, text="k = slope", value=3, var=var_rd_k)
+rd_k3.pack()
+# Default
+var_rd_k.set(1)  # set default
+
+# Parameter setting(c)
+frm_parameter_c = ttk.Labelframe(root, relief="ridge", text="Parameter setting(omega)", labelanchor="n")
+frm_parameter_c.pack(side='left', fill=tk.Y)
+# Radio button
+var_rd_c = tk.IntVar(root)
+# Radio button 1st
+rd_c1 = tk.Radiobutton(frm_parameter_c, text="omega = 1", value=1, var=var_rd_c)
+rd_c1.pack()
+# Radio button 2nd
+rd_c2 = tk.Radiobutton(frm_parameter_c, text="omega = 1 / slope_n", value=2, var=var_rd_c)
+rd_c2.pack()
+# Radio button 3rd
+rd_c3 = tk.Radiobutton(frm_parameter_c, text="omega = slope_n", value=3, var=var_rd_c)
+rd_c3.pack()
+# Default
+var_rd_c.set(1)  # set default
 
 # Light passes control
 frm_lp = ttk.Labelframe(root, relief="ridge", text="Angle of light passes (degree)", labelanchor="n")
