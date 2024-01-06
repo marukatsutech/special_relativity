@@ -244,10 +244,10 @@ var_rd_c = tk.IntVar(root)
 rd_c1 = tk.Radiobutton(frm_parameter_c, text="omega = 1", value=1, var=var_rd_c)
 rd_c1.pack()
 # Radio button 2nd
-rd_c2 = tk.Radiobutton(frm_parameter_c, text="omega = 1 / slope_n", value=2, var=var_rd_c)
+rd_c2 = tk.Radiobutton(frm_parameter_c, text="omega = 1 / slope", value=2, var=var_rd_c)
 rd_c2.pack()
 # Radio button 3rd
-rd_c3 = tk.Radiobutton(frm_parameter_c, text="omega = slope_n", value=3, var=var_rd_c)
+rd_c3 = tk.Radiobutton(frm_parameter_c, text="omega = slope", value=3, var=var_rd_c)
 rd_c3.pack()
 # Default
 var_rd_c.set(1)  # set default
