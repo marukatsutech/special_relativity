@@ -63,27 +63,27 @@ Fig 2-2a. How the light circle spreads as seen by the observer
 
 The arrival point of each light-arrow for observer A at time t=1 is plotted on the straight line at time t=1 as shown in Fig 2-2.b This is like a Mercator projection map that represents the spherical Earth on a flat surface.
 
-Fig 2-2b. How the light circle spreads as seen by the observer
+Fig 2-2b. How the light circle spreads as seen by the observer 
 (Try light_arrows.py for Fig 2-2b.)
 
 
 According to the Huygens-Fresnel principle, the wavefront at the next moment is formed by the overlap of circular secondary waves (elementary waves) from each point on the wavefront(Fig 2-3). 
 
-Fig 2-3. How secondary waves of light (elementary waves) spread in the speed-of-light space
+Fig 2-3. How secondary waves of light (elementary waves) spread in the speed-of-light space 
 (Try light_arrows.py for Fig 2-3.)
 
 Therefore, a wave spreads out in a circle from each point at time t = 1, and the circular wave is plotted in a straight line at time t = 2 in Minkowski space(Fig 2-4, 2-5). In this way, a wave that spreads circularly in light-speed-space will spread flatly in Minkowski space.
 
-Fig 2-4. How secondary waves (elementary waves) of light spread as seen from the observer in Minkowski space
+Fig 2-4. How secondary waves (elementary waves) of light spread as seen from the observer in Minkowski space 
 (Try light_arrows.py for Fig 2-4.)
 
-Fig 2-5. Waves spreading in a plane in Minkowski space
+Fig 2-5. Waves spreading in a plane in Minkowski space 
 (Try Huygens–Fresnel_Minkowski_space.py for Fig 2-5.)
 
 ## 3. Wave superposition and delta function
 It turns out that a wave of light that spreads out in a circle spreads out in a plane in Minkowski space. Next, we need to converge the waves on this plane to a single point. The delta function(Fig 3-1, 3-2.) is a superposition of waves with an infinite frequency band.
 
-Fig 3-1, 3-2. Superposition of waves
+Fig 3-1, 3-2. Superposition of waves 
 (Try superposed_wave.py for Fig 3-1, 3-2.)
 
 Fortunately, as mentioned above, the slope (= velocity) of light-arrow, which is the element of the wave that spreads circularly in Minkowski space, appears from 0 to ± infinity speed from observer A, so this Let's use 0 to ± infinity to realize the superposition of waves with an infinite frequency width.
@@ -97,43 +97,80 @@ y = cos(2π(kx -ωt))  ...Equation 3-1
 
 The phase velocity vp (Phase velocity) of the wave expressed by the equation of 
 y = cos(kx - ωt)) ...Equation 3-2 (k: wavenumber, ω: angular frequency)  is as follows.
-vp = ω / k …Equation 3-3
-Since the wave number k of the wave corresponding to each light-arrow is kn = 1 / slope(n), the phase velocity of each wave is as follows(Equation 3-4), and if the fundamental angular frequency ω is 1, then The speed of each wave is the slope of light-arrow = the speed of light (here, the speed of light is not constant, but ranges from 0 to ± infinity).
-vp(n) = ω * slope(n)…Equation 3-4
 
-Note; n or (n) is a suffix, and the variables with n or (n) hereafter represent the physical quantities of each light-arrow (n = 0 to ± infinity) and the corresponding wave.
+vp = ω / k …Equation 3-3
+
+Since the wave number k of the wave corresponding to each light-arrow is k(n) = 1 / slope(n), the phase velocity of each wave is as follows(Equation 3-4), and if the fundamental angular frequency ω(n) is 1, then The speed of each wave is the slope of light-arrow = the speed of light (here, the speed of light is not constant, but ranges from 0 to ± infinity).
+
+vp(n) = ω * slope(n) …Equation 3-4
+
+Note; (n) is a suffix, and the variables with (n) hereafter represent the physical quantities of each light-arrow (n = 0 to ± infinity) and the corresponding wave.
+      So, slope(n) = n (= 0 to ± infinity)
+
 Then, if we superpose these waves with wave numbers 0 to ±infinity (the equation is as follows), can we obtain a delta function?
-y(n) = cos(2π(knx - ωnt))…Equation 3-5
-  kn =1 / slope(n) (= reciprocal of the slope of the arrow of light), ω=1 
+
+y(n) = cos(2π(k(n)x - ω(n)t))…Equation 3-5
+  k(n) =1 / slope(n) (= reciprocal of the slope of the arrow of light), ω(n)=1 
+ 
 Unfortunately, since the phase velocities are different, as time progresses, the phases shift and the peak collapses.
 
-Furthermore, although the phase velocity is proportional to the slope of light-arrow, the fact that the angular frequency corresponding to the traveling velocity of the traveling wave (Equation 3-6) is constant is not worth removing the limit of light velocity.
-y(t, x ) = f (x − vt)　…Equation 3-6
-Now, let's assume that ω is proportional to the speed (= slope) of light-arrow. The wave equation in this case is as below.
-y(n) = cos(2π(knx - ωnt))…Equation 3-7
- kn = 1 / slope(n) (= reciprocal of the slope of the arrow), ω = slope(n) 
+Fig 3-3. Superposition of waves with k(n) =1 /slope(n),　ωn= 1 
+(Try light_speed.py for Fig 3-3.)
 
-In this case, kn = 1 / slope(n), ωn = slope(n), so the phase velocity vp(n) = ωn / kn = slope(n) ** 2, which is the square of the slope of the light-arrow, and in this case However, as time progresses, the phase shifts and the peak collapses.
+Furthermore, although the phase velocity is proportional to the slope of light-arrow, the fact that the angular frequency corresponding to the traveling velocity of the traveling wave (Equation 3-6) is constant is not worth removing the limit of light velocity.
+
+y(t, x ) = f (x − vt)　…Equation 3-6
+
+Now, let's assume that ω is proportional to the speed (= slope) of light-arrow. The wave equation in this case is as below.
+
+y(n) = cos(2π(k(n)x - ω(n)t)) …Equation 3-7
+ k(n) = 1 / slope(n) (= reciprocal of the slope of the arrow), ω(n) = slope(n) 
+
+In this case, k(n) = 1 / slope(n), ω(n) = slope(n), so the phase velocity vp(n) = ω(n) / k(n) = slope(n) ** 2, which is the square of the slope of the light-arrow, and in this case However, as time progresses, the phase shifts and the peak collapses.
+
+Fig 3-4. Superposition of waves with k(n) =1 /slope(n),　ω(n)= slope(n)
+(Try light_speed.py for Fig 3-4.)
 
 So, what is the combination of wave number k and angular frequency ω that does not shift the phase velocity? That is  the group velocities (vp;group velocities) are equal. Group velocity is the traveling speed of a wave packet created by superposition of waves, and can also be said to be the speed at which points with equal phase difference of waves travel, and its formula is as follows.
-vg = dω / dk …Equation 3-8
-When applied to this case, it is sufficient to satisfy the following conditions in which the standards ω and k are each 1, and in the simplest case, ωn = kn.
-(ωn - 1) / (kn - 1) = constant ...Equation 3-9
 
-When ωn = kn, the wave equation is as follows.
-y(n) = cos(2π(knx - ωnt))
-…Equation 3-10,
- kn = slope(n), ωn = slope(n) ( = k) 
+vg = dω / dk ... Equation 3-8
+
+When applied to this case, it is sufficient to satisfy the following conditions in which the standards ω and k are each 1, and in the simplest case, ω(n) = k(n).
+
+(ω(n) - 1) / (k(n) - 1) = constant ... Equation 3-9
+
+When ω(n) = k(n), the wave equation is as follows.
+
+y(n) = cos(2π(k(n)x - ω(n)t)) ... Equation 3-10,
+ k(n) =  ω(n) = slope(n) = n (n = 0 to ± infinity)
+
+So, the equation of the superposed wave of Equation 3-10 is as following.
+
+![image_equation3-11](https://github.com/marukatsutech/special_relativity/blob/master/image_equation3-11.png)
+
+... Equation 3-11
+ 
 Furthermore, since the phase velocity in this case is 
-  ωn = kn, vp(n) = ωn / kn = 1.
+
+  ω(n) = k(n), vp(n) = ω(n) / k(n) = 1.
+  
 You can see a wave packet traveling at a phase velocity of 1 while maintaining the peak due to the superposition of waves.
 
+Fig 3-5. Superposition of waves with kn = slope(n),　ωn= slope(n)
+(Try light_speed.py for Fig 3-5.)
+
 Now, if we look at the wave equation from earlier,
-y(n) = cos(2π(knx - ωnt)), kn = slope(n),　ωn = slope(n) ( = k)
+
+y(n) = cos(2π(k(n)x - ω(nt))), k(n) = slope(n),　ω(n) = slope(n) ( = k)
   -> y = cos(2π(slope(n) * x - slope(n) * t))
-  -> y = cos(2π* slope(n) * (x - t))  ...Equation 3-11
- It is a collection of waves with wave number slope(n) times y = cos(2π * (x - t)), so there is no need to bring up group velocity.
-Now, in the previous video, three waves were superposed, but let's increase the number of superpositions. The following video is a superposition of 100 waves with kn = ωn = slope(n) (n= 0,1, 0,2, 0,3…~10).
+  -> y = cos(2π* slope(n) * (x - t))  ...Equation 3-12
+
+It is a collection of waves with wave number slope(n) times y = cos(2π * (x - t)), so there is no need to bring up group velocity.
+Now, in the previous video, three waves were superposed, but let's increase the number of superpositions. 
+The following video is a superposition of 100 waves with k(n) = ω(n) = slope(n) (n= 0.1, 0.2, 0.3…~10).
+
+Fig 3-6. Superposition of 100 waves with kn = slope(n),　ωn= slope(n)
+(Try light_speed.py for Fig 3-6.)
 
 The peak is clear compared to the superposition of three waves. It is still a superposition of 100 waves and two peaks appear, but if we further increase the number of superpositions and superimpose waves of infinite frequency (corresponding to the slope of light arrow from 0 to ± infinity), we get It should be in the form of a delta function with one peak.
 
