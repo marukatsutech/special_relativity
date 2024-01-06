@@ -126,11 +126,11 @@ This is all for my presentation.
 Thanks for watching!
 
 ### Source code
-files:  
-*light_arrows.py 
-*light_speed.py 
-*Huygens–Fresnel_Minkowski_space.py 
-*superposed_wave.py 
+files: 
+* light_arrows.py
+* light_speed.py
+* Huygens–Fresnel_Minkowski_space.py
+* superposed_wave.py
 
 
 
