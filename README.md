@@ -32,7 +32,7 @@ https://en.wikipedia.org/wiki/Moir%C3%A9_pattern
 
 # Chapter - 2. The mechanism by which light spreading out as a sphere is observed at a single point.
 ## 1. Introduction
-My argument in the last video was that light is a sphere spread out in Minkowski space(Fig 1-1). However, in reality, light is observed not as a surface but as a point. Regarding this, in the previous video, we only suggested that we could see what appeared to be light trajectories through the moiré patterns (interference fringes) created by concentric circles and stripes(Fig 1-2). This time, we will consider the mechanism by which light spreading out as a sphere is observed at a single point.
+My argument in the last video (chapter - 1)was that light is a sphere spread out in Minkowski space(Fig 1-1). However, in reality, light is observed not as a surface but as a point. Regarding this, in the previous video, we only suggested that we could see what appeared to be light trajectories through the moiré patterns (interference fringes) created by concentric circles and stripes(Fig 1-2). This time, we will consider the mechanism by which light spreading out as a sphere is observed at a single point.
 
 ![image_fig1-1](https://github.com/marukatsutech/special_relativity/blob/master/image_fig1-1.png)
 
@@ -51,15 +51,40 @@ Let's apply the Huygens-Fresnel principle to how waves propagate in Minkowski sp
 Here, for simplicity, we will reduce the dimensions and consider a plane (two dimensions). First, when light is generated, it spreads out as a circle in a certain space (hereinafter referred to as light-speed-space). Here, for light, neither time nor space is fixed.
 If this is observed from the standpoint of observer A,  the light seen from the observer will be as shown in the figure(Fig 2-1). (Although the space-time coordinates of observer B, who has a different relative speed than observer A, are tilted with respect to the space-time coordinates of A, the light spreads in a circle, so the light appears the same to both observers A and B.).
 
-Next, we will look at how light spreads when viewed from observer A. Assuming that the length of each arrow is 1(Fig 2-2), each arrow indicates the direction (velocity) in which light spreads. In Minkowski space, the slope of a straight line indicating the movement of an object indicates its speed, and a slope of 1 indicates the speed of light, so the speed of a light arrow that spreads out in a circular shape (hereinafter referred to as light-arrow) is equal to the slope of light-arrow from the standpoint of observer A. From then on, it should appear to progress from 0 to ± infinity.
+![image_fig2-1](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-1.png)
+
+Fig 2-1. Light circle seen from observers A and B
+
+Next, we will look at how light spreads when viewed from observer A. Assuming that the length of each arrow is 1(Fig 2-2a), each arrow indicates the direction (velocity) in which light spreads. In Minkowski space, the slope of a straight line indicating the movement of an object indicates its speed, and a slope of 1 indicates the speed of light, so the speed of a light arrow that spreads out in a circular shape (hereinafter referred to as light-arrow) is equal to the slope of light-arrow from the standpoint of observer A. From then on, it should appear to progress from 0 to ± infinity.
 In Minkowski space, the region exceeding the speed of light (slope = 1) is called a spacelike region, and is ignored because the law of causality does not hold, but here we will proceed with the idea without ignoring it and assuming that superluminal speed exists.
 
-The arrival point of each light-arrow for observer A at time t=1 is plotted on the straight line at time t=1 as shown in Fig 2-2. This is like a Mercator projection map that represents the spherical Earth on a flat surface.
+Fig 2-2a. How the light circle spreads as seen by the observer
+(Try light_arrows.py for Fig 2-2a.)
 
-According to the Huygens-Fresnel principle, the wavefront at the next moment is formed by the overlap of circular secondary waves (elementary waves) from each point on the wavefront(Fig 2-3). Therefore, a wave spreads out in a circle from each point at time t = 1, and the circular wave is plotted in a straight line at time t = 2 in Minkowski space(Fig 2-3, 2-4). In this way, a wave that spreads circularly in light-speed-space will spread flatly in Minkowski space.
+The arrival point of each light-arrow for observer A at time t=1 is plotted on the straight line at time t=1 as shown in Fig 2-2.b This is like a Mercator projection map that represents the spherical Earth on a flat surface.
+
+Fig 2-2b. How the light circle spreads as seen by the observer
+(Try light_arrows.py for Fig 2-2b.)
+
+
+According to the Huygens-Fresnel principle, the wavefront at the next moment is formed by the overlap of circular secondary waves (elementary waves) from each point on the wavefront(Fig 2-3). 
+
+Fig 2-3. How secondary waves of light (elementary waves) spread in the speed-of-light space
+(Try light_arrows.py for Fig 2-3.)
+
+Therefore, a wave spreads out in a circle from each point at time t = 1, and the circular wave is plotted in a straight line at time t = 2 in Minkowski space(Fig 2-4, 2-5). In this way, a wave that spreads circularly in light-speed-space will spread flatly in Minkowski space.
+
+Fig 2-4. How secondary waves (elementary waves) of light spread as seen from the observer in Minkowski space
+(Try light_arrows.py for Fig 2-4.)
+
+Fig 2-5. Waves spreading in a plane in Minkowski space
+(Try Huygens–Fresnel_Minkowski_space.py for Fig 2-5.)
 
 ## 3. Wave superposition and delta function
-It turns out that a wave of light that spreads out in a circle spreads out in a plane in Minkowski space. Next, we need to converge the waves on this plane to a single point. The delta function is a superposition of waves with an infinite frequency width.
+It turns out that a wave of light that spreads out in a circle spreads out in a plane in Minkowski space. Next, we need to converge the waves on this plane to a single point. The delta function(Fig 3-1, 3-2.) is a superposition of waves with an infinite frequency band.
+
+Fig 3-1, 3-2. Superposition of waves
+(Try superposed_wave.py for Fig 3-1, 3-2.)
 
 Fortunately, as mentioned above, the slope (= velocity) of light-arrow, which is the element of the wave that spreads circularly in Minkowski space, appears from 0 to ± infinity speed from observer A, so this Let's use 0 to ± infinity to realize the superposition of waves with an infinite frequency width.
 The equation of the wave in the video above is as follows(Equation 3-1). This is because in order to make it easier to see how circular light spreads out into a flat plane, the speed (=slope) of the light-arrow was made to match the advance of the phase.
