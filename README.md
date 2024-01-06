@@ -34,6 +34,11 @@ https://en.wikipedia.org/wiki/Moir%C3%A9_pattern
 ## 1. Introduction
 My argument in the last video was that light is a sphere spread out in Minkowski space(Fig 1-1). However, in reality, light is observed not as a surface but as a point. Regarding this, in the previous video, we only suggested that we could see what appeared to be light trajectories through the moiré patterns (interference fringes) created by concentric circles and stripes(Fig 1-2). This time, we will consider the mechanism by which light spreading out as a sphere is observed at a single point.
 
+![image_fig1-1](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
+
+![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
+Fig 1-2. Minkowski space and moiré pattern
+
 Watch my video for overview!  
 [https://youtu.be/AwRgGn6AzzU ](https://youtu.be/aw-4OaHOQQU) 
 
