@@ -69,7 +69,6 @@ def update_plots():
             slopes[j].set_position([xy_pass1[0], xy_pass1[1]])
 
 
-
 def update(f):
     update_plots()
 
