@@ -223,5 +223,5 @@ rd_sw_on_spatial.pack()
 var_rd_sw.set(1)  # set default
 
 # Start main loop
-anim = animation.FuncAnimation(fig, update, interval=out_of_range )
+anim = animation.FuncAnimation(fig, update, interval=100)
 root.mainloop()
