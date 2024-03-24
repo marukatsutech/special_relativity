@@ -149,13 +149,13 @@ for k in range(num_of_pass1):
         slope_str = 'Infinity'
     txt_slope = ax0.text(out_of_range, out_of_range, slope_str, c='black')
     slopes.append(txt_slope)
-    xy_event_space = [out_of_range, out_of_range ]
+    xy_event_space = [out_of_range, out_of_range]
     circle_event_space = patches.Circle(xy=xy_event_space, radius=0.05, color='darkorange')
     ax0.add_patch(circle_event_space)
     event_points.append(circle_event_space)
     # pass line
-    xx_line_pass1 = [out_of_range, out_of_range ]
-    yy_line_pass1 = [out_of_range, out_of_range ]
+    xx_line_pass1 = [out_of_range, out_of_range]
+    yy_line_pass1 = [out_of_range, out_of_range]
     line_pass1, = ax0.plot(xx_line_pass1, yy_line_pass1, color='darkorange', linestyle="-.", linewidth=0.5)
     pass_lines.append(line_pass1)
 
