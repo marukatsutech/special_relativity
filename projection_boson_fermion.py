@@ -10,15 +10,44 @@ from tkinter import ttk
 import matplotlib.ticker as ticker
 
 
+def switch():
+    global is_play
+    if is_play:
+        is_play = False
+    else:
+        is_play = True
+
+
 def update(f):
-    pass
-    #  update_plots()
+    global slope_arrow, txt_slope0, txt_slope1, arrow_light0, arrow_light1, line_slope0, line_slope1
+    if is_play:
+        txt_slope0.set_text("Slope of arrow=" + str(slope_arrow))
+        txt_slope1.set_text("Slope of arrow=" + str(slope_arrow))
+        theta = np.arctan2(1., slope_arrow)
+        arrow_light0.xy = [np.cos(theta), np.sin(theta)]
+        arrow_light1.xy = [np.cos(theta), np.sin(theta)]
+        line_slope0.set_xdata([0., slope_arrow])
+        line_slope0.set_ydata([0., 1.])
+        if slope_arrow != 0.:
+            line_slope1.set_xdata([0., np.sqrt(slope_arrow)])
+            line_slope1.set_ydata([- np.sqrt(slope_arrow) / slope_arrow + 1., 1.])
+        else:
+            line_slope1.set_xdata([0., 0.])
+            line_slope1.set_ydata([1., y_min])
+        slope_arrow += 0.5
+        if slope_arrow > 4.5:
+            slope_arrow = 0.
 
 
 # Global variables
-num_of_points_x = 100
+
+# Animation control
+is_play = False
 
 # Parameters
+num_of_points_x = 100
+slope_arrow = 0.
+
 range_x_min = -3.
 range_x_max = 3.
 range_y_min = -2.
@@ -74,6 +103,10 @@ ax1.yaxis.set_major_locator(ticker.FixedLocator(y_ticks))
 ax1.set_xticklabels(x_ticks, fontsize=8)
 ax1.set_yticklabels(y_ticks, fontsize=8)
 
+# Generate text items
+txt_slope0 = ax0.text(x_min, y_max * 0.95, "Slope of arrow=" + str(slope_arrow))
+txt_slope1 = ax1.text(x_min, y_max * 0.95, "Slope of arrow=" + str(slope_arrow))
+
 # Generate graphic items
 
 # Light circles
@@ -95,6 +128,12 @@ plot_parabola, = ax1.plot(x, y_parabola, color='blue', linewidth=1)
 # Projection points
 x_ = 0.
 y_ = 0.
+circle_dot0 = patches.Circle(xy=[x_, y_ + 1.], radius=0.05, color='blue')
+ax0.add_patch(circle_dot0)
+circle_dot1 = patches.Circle(xy=[x_, y_ + 1.], radius=0.05, color='blue')
+ax1.add_patch(circle_dot1)
+line_slope0, = ax0.plot([0., 0.], [1., 0.], color='blue', linewidth=0.5)
+line_slope1, = ax1.plot([0., 0.], [1., y_min], color='blue', linewidth=0.5)
 for i_ in range(1, 10):
     x_ = x_ + 0.5
     y_ = y_ + 0.5
@@ -111,6 +150,19 @@ for i_ in range(1, 10):
     line_guide_v1, = ax1.plot([np.sqrt(y_), np.sqrt(y_)], [1., y_ + 1.], color='blue', linewidth=0.5)
     line_slope1, = ax1.plot([np.sqrt(y_), 0.], [1., - np.sqrt(y_) / y_ + 1.], color='blue', linewidth=0.5)
 
+# Light arrow
+arrow_light0 = ax0.annotate('', xy=[0., 1.], xytext=[0., 0.],
+                            arrowprops=dict(width=1, headwidth=6, headlength=6,
+                                            facecolor='darkorange', edgecolor='darkorange'))
+
+arrow_light1 = ax1.annotate('', xy=[0., 1.], xytext=[0., 0.],
+                            arrowprops=dict(width=1, headwidth=6, headlength=6,
+                                            facecolor='darkorange', edgecolor='darkorange'))
+
+# Light guide
+line_slope0, = ax0.plot([0., 0.], [1., 0.], c='darkorange', linewidth=1)
+line_slope1, = ax1.plot([0., 0.], [1., y_min], c='darkorange', linewidth=1)
+
 # Tkinter
 root = tk.Tk()
 root.title(title_tk)
@@ -120,6 +172,10 @@ canvas.get_tk_widget().pack(expand=True, fill='both')
 toolbar = NavigationToolbar2Tk(canvas, root)
 canvas.get_tk_widget().pack()
 
+# Play and pause button
+btn_pp = tk.Button(root, text="Play/Pause", command=lambda: switch())
+btn_pp.pack()
+
 # Start main loop
-# anim = animation.FuncAnimation(fig, update, interval=100)
+anim = animation.FuncAnimation(fig, update, interval=500)
 root.mainloop()
