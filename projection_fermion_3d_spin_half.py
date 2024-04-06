@@ -17,14 +17,15 @@ def update_diagram():
     global x1, y1, z1, u1, v1, w1, qvr_light_arrow
     global plt_guide_circle
     global line_projection
+    global c_upper0_guide, line_light_arrow_projection, line_spin_axis_projection, line_spin_axis_projection_guide
+    # Rotate spin axis
     rot_matrix_z = Rotation.from_rotvec(theta_rad_spin_axis * vector_z_axis)
     vector_rotated_spin_axis_z = rot_matrix_z.apply(vector_spin_axis_initial)
     x0, y0, z0 = 0., 0., 0.
     u0, v0, w0 = vector_rotated_spin_axis_z[0], vector_rotated_spin_axis_z[1], vector_rotated_spin_axis_z[2]
     qvr_spin_axis.remove()
-    qvr_spin_axis = ax0.quiver(x0, y0, z0, u0, v0, w0, length=1, color='blue', normalize=True,
-                               label='Axis of spin')
-
+    qvr_spin_axis = ax0.quiver(x0, y0, z0, u0, v0, w0, length=1, color='blue', normalize=True, label='Axis of spin')
+    # Rotate light arrow
     vector_rotated_light_arrow_z = rot_matrix_z.apply(vector_light_arrow_initial)
     rot_matrix_spin_axis_rotated = Rotation.from_rotvec(theta_rad_light_arrow * vector_rotated_spin_axis_z)
     vector_rotated_light_arrow = rot_matrix_spin_axis_rotated.apply(vector_rotated_light_arrow_z)
@@ -33,6 +34,7 @@ def update_diagram():
     u1, v1, w1 = vector_rotated_light_arrow[0], vector_rotated_light_arrow[1], vector_rotated_light_arrow[2]
     qvr_light_arrow = ax0.quiver(x1, y1, z1, u1, v1, w1, length=1, color='darkorange', normalize=True,
                                  label='Phase(light arrow)')
+    # Rotate Guide circle
     x_guide_circle_rotated_z = []
     y_guide_circle_rotated_z = []
     z_guide_circle_rotated_z = []
@@ -45,15 +47,23 @@ def update_diagram():
     plt_guide_circle.set_xdata(np.array(x_guide_circle_rotated_z))
     plt_guide_circle.set_ydata(np.array(y_guide_circle_rotated_z))
     plt_guide_circle.set_3d_properties(np.array(z_guide_circle_rotated_z))
-
-    theta_rad_spin_axis = (theta_rad_spin_axis - step_rotation) % (2. * np.pi)
-    theta_rad_light_arrow = (theta_rad_light_arrow - step_rotation)
-    slope_x_z = 0.
-    slope_y_z = 0.
+    # Projection
     if vector_rotated_light_arrow[2] != 0.:
         slope_x_z = vector_rotated_light_arrow[0] / vector_rotated_light_arrow[2]
         slope_y_z = vector_rotated_light_arrow[1] / vector_rotated_light_arrow[2]
         line_projection.set_data_3d([0., slope_x_z], [0., slope_y_z], [0., 1.])
+        c_upper0_guide.remove()
+        r = np.sqrt(slope_x_z ** 2. + slope_y_z ** 2.)
+        c_upper0_guide = Circle((0., 0.), r, ec='green', fill=False, linewidth=1, linestyle='--')
+        ax0.add_patch(c_upper0_guide)
+        art3d.pathpatch_2d_to_3d(c_upper0_guide, z=1, zdir='z')
+        line_light_arrow_projection.set_data_3d([x_min * 10., x_max * 10.], [r, r], [1., 1.])
+        projection_point = r * np.tan(- theta_rad_spin_axis)
+        line_spin_axis_projection.set_data_3d([projection_point, 0.], [r, 0.], [1., 1.])
+        line_spin_axis_projection_guide.set_data_3d([projection_point, projection_point], [r, 0.], [1., 1.])
+    # Change theta
+    theta_rad_spin_axis = (theta_rad_spin_axis - step_rotation) % (2. * np.pi)
+    theta_rad_light_arrow = (theta_rad_light_arrow - step_rotation)
 
 
 def reset():
@@ -80,7 +90,6 @@ def update(f):
 
 
 # Global variables
-
 
 # Animation control
 cnt = 0
@@ -177,15 +186,27 @@ plt_light_arrow_pass, = ax0.plot(np.array(x_light_arrow_pass), np.array(y_light_
                                  np.array(z_light_arrow_pass), color='darkorange')
 
 # Parabola
-x_parabola = np.arange(x_min, x_max, 0.01)
-z_parabola = x_parabola * 0. + 1.
-y_parabola0 = 2. * x_parabola ** 2.
-parabola0 = art3d.Line3D(x_parabola, y_parabola0, z_parabola, color='magenta', ls='--', linewidth=1)
-ax0.add_line(parabola0)
-y_parabola1 = - 2. * x_parabola ** 2.
-parabola1 = art3d.Line3D(x_parabola, y_parabola1, z_parabola, color='magenta', ls='--', linewidth=1)
-ax0.add_line(parabola1)
+y_parabola = np.arange(x_min, x_max, 0.01)
+z_parabola = y_parabola * 0. + 1.
+x_parabola = y_parabola ** 2.
+parabola = art3d.Line3D(x_parabola, y_parabola, z_parabola, color='magenta', ls='--', linewidth=1)
+ax0.add_line(parabola)
 
+# Projection to axis x
+c_upper0_guide = Circle((0., 0.), 0, ec='green', fill=False, linewidth=0.5, linestyle='--')
+ax0.add_patch(c_upper0_guide)
+art3d.pathpatch_2d_to_3d(c_upper0_guide, z=1, zdir='z')
+line_upper0_radius = art3d.Line3D([0., 0.], [0., 0.], [0., 0.], linewidth=0.5, color='green', ls='-.')
+ax0.add_line(line_upper0_radius)
+line_light_arrow_projection = art3d.Line3D([x_min * 10., x_max * 10.], [0., 0.], [1., 1.], linewidth=0.5,
+                                           color='green', ls='--')
+ax0.add_line(line_light_arrow_projection)
+line_spin_axis_projection = art3d.Line3D([0., 0.], [0., 0.], [1., 1.], linewidth=0.5, color='blue', ls='--')
+ax0.add_line(line_spin_axis_projection)
+line_spin_axis_projection_guide = art3d.Line3D([0., 0.], [0., 0.], [1., 1.], linewidth=1, color='magenta', ls='--')
+ax0.add_line(line_spin_axis_projection_guide)
+
+# Legend
 ax0.legend(loc='lower right')
 
 # Embed in Tkinter
