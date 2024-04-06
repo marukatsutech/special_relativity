@@ -11,21 +11,22 @@ from matplotlib.patches import Circle
 
 
 def update_diagram():
-    global theta0, qvr_phase0, theta1, qvr_phase1, qvr_phase_composite
+    global theta0, qvr_phase0, theta1, qvr_phase1
     global c_upper0_guide, line_phase0_guide, line_phase1_guide
     global line_phase1_projection, line_phase1_projection_guide, projection_point
     global x0, y0, z0, u0, v0, w0
     global x1, y1, z1, u1, v1, w1
-    global x2, y2, z2, u2, v2, w2
-    global x_phase_composite, y_phase_composite, z_phase_composite
-    global plt_composite_normalized, plt_composite_not_normalized, norm_phase_composite
+    # global x2, y2, z2, u2, v2, w2
+    # global qvr_phase_composite
+    # global x_phase_composite, y_phase_composite, z_phase_composite
+    # global plt_composite_normalized, plt_composite_not_normalized, norm_phase_composite
     # Phase 0 (vertical)
     theta0_rad = theta0 * np.pi / 180.
     theta0_rad_offset = np.pi / 2 - theta0 * np.pi / 180.
     qvr_phase0.remove()
     x0, y0, z0 = 0., 0., 0.
     u0, v0, w0 = np.cos(theta0_rad_offset), 0., np.sin(theta0_rad_offset)
-    qvr_phase0 = ax0.quiver(x0, y0, z0, u0, v0, w0, length=1, color='green')
+    qvr_phase0 = ax0.quiver(x0, y0, z0, u0, v0, w0, length=1, color='darkorange')
     line_phase0_guide.set_data_3d([np.cos(theta0_rad_offset), np.tan(theta0_rad)], [0., 0.],
                                   [np.sin(theta0_rad_offset), 1.])
     c_upper0_guide.remove()
@@ -48,6 +49,7 @@ def update_diagram():
     line_phase1_projection.set_data_3d([x_min, x_max], [r, r], [1., 1.])
     line_phase1_projection_guide.set_data_3d([projection_point, projection_point], [r, 0.], [1., 1.])
     # Phase composite
+    '''
     qvr_phase_composite.remove()
     x2, y2, z2 = 0., 0., 0.
     if var_composite.get():
@@ -58,6 +60,7 @@ def update_diagram():
         z_phase_composite = np.sin(np.pi / 2 - angle_phase_composite * np.pi / 180.)
         norm_phase_composite = np.sqrt(x_phase_composite ** 2. + y_phase_composite ** 2. + y_phase_composite ** 2.)
     else:
+        pass
         u2, v2, w2 = 0., 0., 0.
         x_phase_composite = angle_phase_composite * 0.
         y_phase_composite = angle_phase_composite * 0.
@@ -70,6 +73,7 @@ def update_diagram():
     plt_composite_not_normalized.set_xdata(x_phase_composite / norm_phase_composite)
     plt_composite_not_normalized.set_ydata(y_phase_composite / norm_phase_composite)
     plt_composite_not_normalized.set_3d_properties(z_phase_composite / norm_phase_composite)
+    '''
 
 
 def set_angle(value):
@@ -138,7 +142,7 @@ l_center_v = art3d.Line3D([x_min, x_max], [0., 0.], [0., 0.], color='gray', ls='
 ax0.add_line(l_center_v)
 l_center_h = art3d.Line3D([0., 0.], [0., 0.], [z_min, z_max], color='gray', ls='-.', linewidth=0.5)
 ax0.add_line(l_center_h)
-c_center = Circle((0., 0.), 1, ec='green', fill=False)
+c_center = Circle((0., 0.), 1, ec='darkorange', fill=False)
 ax0.add_patch(c_center)
 art3d.pathpatch_2d_to_3d(c_center, z=0, zdir='y')
 
@@ -153,8 +157,8 @@ art3d.pathpatch_2d_to_3d(c_upper, z=1, zdir='z')
 # Phase 0 (vertical)
 x0, y0, z0 = 0., 0., 0.
 u0, v0, w0 = 0., 0., 1.
-qvr_phase0 = ax0.quiver(x0, y0, z0, u0, v0, w0, length=1, color='green')
-line_phase0_guide = art3d.Line3D([0., 0.], [0., 0.], [1., 1.], linewidth=0.5, color='green', ls='--')
+qvr_phase0 = ax0.quiver(x0, y0, z0, u0, v0, w0, length=1, color='darkorange')
+line_phase0_guide = art3d.Line3D([0., 0.], [0., 0.], [1., 1.], linewidth=0.5, color='darkorange', ls='--')
 ax0.add_line(line_phase0_guide)
 c_upper0_guide = Circle((0., 0.), 0, ec='blue', fill=False, linewidth=0.5, linestyle='--')
 ax0.add_patch(c_upper0_guide)
@@ -168,7 +172,7 @@ u1, v1, w1 = 0., 1., 0.
 qvr_phase1 = ax0.quiver(x1, y1, z1, u1, v1, w1, length=1, color='blue')
 line_phase1_guide = art3d.Line3D([0., 0.], [0., 0.], [0., 0.], linewidth=0.5, color='blue', ls='--')
 ax0.add_line(line_phase1_guide)
-line_phase1_projection = art3d.Line3D([x_min, x_max], [0., 0.], [1., 1.], linewidth=0.5, color='blue', ls='--')
+line_phase1_projection = art3d.Line3D([x_min, x_max], [0., 0.], [1., 1.], linewidth=0.5, color='green', ls='--')
 ax0.add_line(line_phase1_projection)
 
 # Projection
@@ -183,6 +187,7 @@ parabola = art3d.Line3D(x_parabola, y_parabola, z_parabola, color='magenta', ls=
 ax0.add_line(parabola)
 
 # Phase composite
+'''
 x2, y2, z2 = 0., 0., 0.
 u2, v2, w2 = u0 + u1, v0 + v1, w0 + w1
 qvr_phase_composite = ax0.quiver(x2, y2, z2, u2, v2, w2, length=1, color='darkorange', linewidths=1, normalize=True,
@@ -201,7 +206,7 @@ plt_composite_not_normalized, = ax0.plot(x_phase_composite / norm_phase_composit
                                          c='darkorange', label='Not normalized')
 
 ax0.legend(loc='lower right')
-
+'''
 # Embed in Tkinter
 root = tk.Tk()
 root.title(title_tk)
@@ -225,13 +230,14 @@ spn_angle = tk.Spinbox(
 spn_angle.pack()
 
 # Composite vector on/off
+'''
 frm_composite = ttk.Labelframe(root, relief='ridge', text='Composite vector', labelanchor='n')
 frm_composite.pack(side='left', fill=tk.Y)
 var_composite = tk.BooleanVar(root)    # Variable for checkbutton
 var_composite.set(True)
 chk_composite = tk.Checkbutton(frm_composite, text='Show', variable=var_composite, command=update_diagram)
 chk_composite.pack()
-
+'''
 # main loop
 anim = animation.FuncAnimation(fig, update, interval=100)
 root.mainloop()
