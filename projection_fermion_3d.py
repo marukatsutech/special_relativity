@@ -44,8 +44,7 @@ def update_diagram():
     u1, v1, w1 = np.cos(theta1_rad_offset), np.sin(theta1_rad_offset), 0.
     qvr_phase1 = ax0.quiver(x1, y1, z1, u1, v1, w1, length=1, color='blue')
     projection_point = r * np.tan(theta1_rad)
-    line_phase1_guide.set_data_3d([projection_point, 0.], [r, 0.],
-                                  [1., 1.])
+    line_phase1_guide.set_data_3d([projection_point, 0.], [r, 0.], [1., 1.])
     line_phase1_projection.set_data_3d([x_min, x_max], [r, r], [1., 1.])
     line_phase1_projection_guide.set_data_3d([projection_point, projection_point], [r, 0.], [1., 1.])
     # Phase composite
