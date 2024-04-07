@@ -67,9 +67,13 @@ def update_diagram():
 
 def reset():
     global is_play, cnt, txt_step
+    global theta_rad_spin_axis, theta_rad_light_arrow
     is_play = False
     cnt = 0
     txt_step.set_text("Step=" + str(cnt))
+    theta_rad_spin_axis = 0.
+    theta_rad_light_arrow = 0.
+    update_diagram()
 
 
 def switch():
