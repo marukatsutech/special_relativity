@@ -1,10 +1,9 @@
-# Spin of fermion (spin 1/2)
+# Projection of double rotation in 3D (Spin)
 import numpy as np
 from matplotlib.figure import Figure
 import matplotlib.animation as animation
 from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg, NavigationToolbar2Tk)
 import tkinter as tk
-from tkinter import ttk
 from matplotlib.patches import Circle
 from scipy.spatial.transform import Rotation
 import mpl_toolkits.mplot3d.art3d as art3d
@@ -112,7 +111,7 @@ theta_rad_light_arrow = 0.
 step_rotation = 0.1
 
 # Generate figure and axes
-title_ax0 = "Spin 1/2"
+title_ax0 = "Projection of double rotation in 3D (Spin)"
 title_tk = title_ax0
 x_min = range_x_min
 x_max = range_x_max
