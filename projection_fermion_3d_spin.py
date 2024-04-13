@@ -62,7 +62,7 @@ def update_diagram():
         line_spin_axis_projection_guide.set_data_3d([projection_point, projection_point], [r, 0.], [1., 1.])
     # Change theta
     theta_rad_spin_axis = (theta_rad_spin_axis - step_rotation) % (2. * np.pi)
-    theta_rad_light_arrow = (theta_rad_light_arrow - step_rotation)
+    theta_rad_light_arrow = (theta_rad_light_arrow + step_rotation)
 
 
 def reset():
@@ -184,7 +184,7 @@ for i_ in range(len(angle_guide_circle)):
     y_light_arrow_pass.append(v1_)
     z_light_arrow_pass.append(w1_)
     theta_rad_spin_axis_ = theta_rad_spin_axis_ - (2. * np.pi) / len(angle_guide_circle)
-    theta_rad_light_arrow_ = theta_rad_light_arrow_ - (2. * np.pi) / len(angle_guide_circle)
+    theta_rad_light_arrow_ = theta_rad_light_arrow_ + (2. * np.pi) / len(angle_guide_circle)
 plt_light_arrow_pass, = ax0.plot(np.array(x_light_arrow_pass), np.array(y_light_arrow_pass),
                                  np.array(z_light_arrow_pass), color='darkorange')
 
