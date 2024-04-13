@@ -16,7 +16,7 @@ def switch():
 
 
 def update(f):
-    global cnt, line0, arrow1, l0_x, l0_y, l1_x, l1_y
+    global cnt, line0, arrow1, l0_x, l0_y, l1_x, l1_y, circle_d
     if is_running:
         tx_step.set_text(' Step=' + str(cnt))
         th0 = (theta0 + (2. * np.pi) / 360. * cnt) % (2. * np.pi)
@@ -28,6 +28,7 @@ def update(f):
         line0.set_data([0., l0_x], [0., l0_y])
         arrow1.xy = [l1_x, l1_y]
         arrow1.set_position([l0_x, l0_y])
+        circle_d.set_center([l0_x, l0_y])
         cnt += 1
         tx_theta0.set_text(' Theta0=' + str(round(cnt % 360)) + "deg")
         tx_theta1.set_text(' Theta1=' + str(round((cnt * 2) % 720)) + "deg")
@@ -36,10 +37,10 @@ def update(f):
 # Global variables
 is_running = False
 
-x_min = -4.
-x_max = 4.
-y_min = -4.
-y_max = 4.
+x_min = -3.
+x_max = 3.
+y_min = -3.
+y_max = 3.
 
 cnt = 0
 
@@ -50,6 +51,7 @@ r0 = 1.
 theta0 = 0.
 p1 = np.array([0., 2.])
 r1 = 1.
+p0_d = np.array([0., 1.])
 
 # Generate figure and axes
 title_ax0 = "Double rotation"
@@ -70,6 +72,8 @@ tx_theta0 = ax0.text(x_min, y_max * 0.8, " Theta0=" + str(0) + "deg")
 tx_theta1 = ax0.text(x_min, y_max * 0.7, " Theta1=" + str(0) + "deg")
 circle = patches.Circle(xy=p0, radius=r0, fill=False, color='blue')
 ax0.add_patch(circle)
+circle_d = patches.Circle(xy=p0_d, radius=r0, fill=False, color='red')
+ax0.add_patch(circle_d)
 
 x = np.linspace(x_min, x_max, num_of_points)
 
@@ -88,7 +92,7 @@ a0 = r0 * np.cos(- theta + np.pi / 2.)
 b0 = r0 * np.sin(- theta + np.pi / 2.)
 a1 = a0 + r1 * np.cos(- theta * 2. + np.pi / 2.)
 b1 = b0 + r1 * np.sin(- theta * 2. + np.pi / 2.)
-curve, = ax0.plot(a1, b1)
+curve, = ax0.plot(a1, b1, linestyle=':')
 
 # Embed in Tkinter
 root = tk.Tk()
