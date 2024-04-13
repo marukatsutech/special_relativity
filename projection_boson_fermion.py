@@ -104,8 +104,8 @@ ax1.set_xticklabels(x_ticks, fontsize=8)
 ax1.set_yticklabels(y_ticks, fontsize=8)
 
 # Generate text items
-txt_slope0 = ax0.text(x_min, y_max * 0.95, "Slope of arrow=" + str(slope_arrow))
-txt_slope1 = ax1.text(x_min, y_max * 0.95, "Slope of arrow=" + str(slope_arrow))
+txt_slope0 = ax0.text(x_min, y_max * 0.9, "Slope of arrow=" + str(slope_arrow), fontsize=20)
+txt_slope1 = ax1.text(x_min, y_max * 0.9, "Slope of arrow=" + str(slope_arrow), fontsize=20)
 
 # Generate graphic items
 
@@ -152,16 +152,16 @@ for i_ in range(1, 10):
 
 # Light arrow
 arrow_light0 = ax0.annotate('', xy=[0., 1.], xytext=[0., 0.],
-                            arrowprops=dict(width=1, headwidth=6, headlength=6,
+                            arrowprops=dict(width=2, headwidth=6, headlength=6,
                                             facecolor='darkorange', edgecolor='darkorange'))
 
 arrow_light1 = ax1.annotate('', xy=[0., 1.], xytext=[0., 0.],
-                            arrowprops=dict(width=1, headwidth=6, headlength=6,
+                            arrowprops=dict(width=2, headwidth=6, headlength=6,
                                             facecolor='darkorange', edgecolor='darkorange'))
 
 # Light guide
-line_slope0, = ax0.plot([0., 0.], [1., 0.], c='darkorange', linewidth=1)
-line_slope1, = ax1.plot([0., 0.], [1., y_min], c='darkorange', linewidth=1)
+line_slope0, = ax0.plot([0., 0.], [1., 0.], c='darkorange', linewidth=2)
+line_slope1, = ax1.plot([0., 0.], [1., y_min], c='darkorange', linewidth=2)
 
 # Tkinter
 root = tk.Tk()
