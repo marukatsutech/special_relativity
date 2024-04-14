@@ -207,7 +207,7 @@ x_light_arrow_pass = []
 y_light_arrow_pass = []
 z_light_arrow_pass = []
 plt_light_arrow_pass, = ax0.plot(np.array(x_light_arrow_pass), np.array(y_light_arrow_pass),
-                                 np.array(z_light_arrow_pass), color='darkorange')
+                                 np.array(z_light_arrow_pass), color='darkorange', linewidth=2)
 
 # Guide circle
 angle_guide_circle = np.arange(0., 360., 1.)
