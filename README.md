@@ -305,7 +305,7 @@ Now, the probability amplitude of fermions is proportional to the square of x as
 In the case of a light circle, it is represented by a normal rotation and is projected onto the observer's spatial axis in proportion to the slope of the light-arrows that make up the light circle. (Fig 4-4a). 
 In the case of fermions, since it is proportional to the square of x, the phase should take a distribution projected onto the x-axis of a parabola, but as shown in Fig. 4-1b, the projection position of the parabola onto the x-axis and the arrow of light If we force the slopes of the arrows to match, the starting points of the arrows will not converge at one point( or a circle), and it seems difficult to represent them with a double rotation like in Fig. 2-3.
 
-![image_ch3_fig4-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-2.png)
+![image_ch3_fig4-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-1.png)
 
 Fig. 4-1a. and 4-1b. Projection of light circle
 
