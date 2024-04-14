@@ -337,3 +337,14 @@ Fig. 4−3. Projection of light circle in 3 dimensions - 2
 Fig. 4-1. Spin of boson and fermion
 
 (Try spin_boson_fermion.py for Fig. 4-1.)
+
+## Python exercise - 43
+Simple exercise of matplotlib-animation of Python.
+
+### Source code
+files: 
+double_rotation.py
+projection_boson_fermion.py
+projection_fermion_3d.py
+projection_fermion_3d_spin.py
+spin_boson_fermion.py
