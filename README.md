@@ -43,7 +43,7 @@ Fig. 1-1. Light spreading spherically in Minkowski space
 Fig. 1-2. Minkowski space and moiré pattern
 
 Watch my video for overview!  
-[https://youtu.be/AwRgGn6AzzU ](https://youtu.be/aw-4OaHOQQU) 
+[https://youtu.be/aw-4OaHOQQU](https://youtu.be/aw-4OaHOQQU) 
 
 
 ## 2. Huygens-Fresnel principle in Minkowski space
@@ -245,32 +245,47 @@ My argument from last time was that light-arrows spreads out in a circular (sphe
 That's what it meant. Light is one type of quantum called photon, and quantum and photon can be converted into each other through reactions such as pair annihilation and pair creation. If light can be represented as a circle (spherical) in Minkowski space, wouldn't it be possible to represent a quantum with mass like an electron as a light-arrow in light-speed-space?
 This time, we will consider quanta that have mass.
 
+Watch my video for overview!  
+[https://youtu.be/agLXqUW5kyg](https://youtu.be/agLXqUW5kyg)
+
 ## 2. Bosons, fermions and spin
 Quantums are classified into bosons, which transmit forces between quanta, and fermions, which make up matter. Photons are bosons that interact with electrons and transmit force; electrons are bosons. In addition, a quantum has a property called spin angular momentum (also simply called spin). The boson's spin is 1, and the fermion's spin is 1/2.
 
 The current explanation of quantum spin is that although it is called spin, it does not mean that the quantum is actually spinning like a ball. However, doesn't the fact that the quantum spin has an angular momentum value lead to some kind of rotation?
 
-Fig. 2-1. Spin of a photon (circle spreading in space at the speed of light)
+![image_ch3_fig2-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig2-1.png)
+
+Fig. 2-1. Spin of a photon
 
 Then, what does the spin 1/2 of fermions such as electrons mean? Spin is related to rotational symmetry; a quantum with spin 1 has one-fold rotational symmetry, and a quantum with spin 1/2 has 1/2-fold rotational symmetry. Rotational symmetry refers to how many times a figure becomes indistinguishable during one rotation (360° rotation). 
 If it is an equilateral triangle, if it is rotated 120 degrees, it will be in the same state as before the rotation, and it will be in the same state three times within one rotation (rotation 360 degrees), so it has three-fold rotational symmetry.
+
+![image_ch3_fig2-2](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig2-2.png)
 
 Fig. 2-2. Rotational symmetry of figures
 
 Spin 1 means that the object will not be in the same state as before the rotation unless it is rotated once (360 degrees), so if it is spin 1/2, it will not return to its original shape unless it is rotated twice (720 degrees). It cannot be expressed in normal diagrams. 
 If it returns to its original state after two revolutions, does spin 1/2 mean a rotation plus a rotation, such as a double rotation(Fig. 2-3), in which rotation is added to the circumference?
 
+![image_ch3_fig2-3](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig2-3.png)
+
 Fig. 2-3. Double rotation (circumferential rotation)
+
+(Try double_rotation.py for Fig. 2-1.)
 
 ## 3. Path integral formulation and spin
 Let's now change our perspective and consider the relationship with path integrals. 
 The path integral formulation was devised by Richard P. Feynman, and is based on the idea that a quantum takes every possible path between its destination and the point it reaches, and integrates the probability amplitude of the quantum when it takes each path. 
 It is said to be equivalent to the Schrödinger equation, which expresses the behavior of a quantum by calculating the probability of existence of a quantum at a point.
 
+![image_ch3_fig3-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig3-1.png)
+
 Fig. 3-1. Path integral formulation
 
 I will not explain the formula for the path integral, but what it means is explained in the book THE QUANTUM UNIVERSE (and why anything that can happen, does)　by Brian Cox and Jeff Forshaw. 
 According to that work, the change in the phase of the probability amplitude when passing through each path is expressed by the following equation (Equation 3-1), and the sum of the phases is the quantum at the observed position. Indicates the probability of existence.
+
+![image_ch3_eq3-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_eq3-1.png)
 
 Equation 3-1.
 
@@ -280,6 +295,7 @@ Note: The simulation is shown in the video below, so please refer to that as wel
 
 Python exercise - 25: Quantum mechanics, path integral
 https://youtu.be/TTjJU2vyrW4
+
 Python exercise - 30: Quantum mechanics, path integral 2nd
 https://youtu.be/U_rPEAHMZpI
 
@@ -289,19 +305,35 @@ Now, the probability amplitude of fermions is proportional to the square of x as
 In the case of a light circle, it is represented by a normal rotation and is projected onto the observer's spatial axis in proportion to the slope of the light-arrows that make up the light circle. (Fig 3-2a). 
 In the case of fermions, since it is proportional to the square of x, the phase should take a distribution projected onto the x-axis of a parabola, but as shown in Fig. 3-2b, the projection position of the parabola onto the x-axis and the arrow of light If we force the slopes of the arrows to match, the starting points of the arrows will not converge at one point( or a circle), and it seems difficult to represent them with a double rotation like in Fig. 2-3.
 
-Fig. 3-2. Projection of light circle
+![image_ch3_fig3-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig3-2.png)
+
+Fig. 3-2a. and 3-2b. Projection of light circle
+
+(Try projection_boson_fermion.py for Fig. 3-2.)
 
 So far, we have only dealt with two dimensions (spatial axis x and time axis t for the observer) in order to simplify the discussion and make it possible to represent it in a plan view. Let's think about adding it.
 When the inclination of the arrow of light is expressed as an angle θ from the time axis, the relationship between x and θ is x = tanθ (assuming that the length of the arrow of light = the radius of the light circle is 1). Furthermore, let's assume that the angle θ is from the added spatial axis (referred to as the y-axis) and that the arrow of light rotates like the precession of a top, as shown in Fig. 3-3. At that time, the projection of the arrow of light onto the x-axis is tanθ✕tanθ = x squared.
 
+![image_ch3_fig3-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig3-1.png)
+
 Fig. 3−3. Projection of light circle in 3 dimensions - 1
+
+(Try projection_fermion_3d.py for Fig. 3-3.)
 
 In addition, Fig. 3-3 is the same as the arrow of light rotating, just as the spinning top rotates sideways, and its axis of rotation also rotating, which can also be expressed as in Fig. 3-4. be able to. In Fig. 3-4, the tip of the arrow of light traces a twisted trajectory like a figure eight. This is thought to indicate the spin of the fermions.
 
+![image_ch3_fig3-4](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig3-1.png)
+
 Fig. 3−4. Projection of light circle in 3 dimensions - 2
+
+(Try projection_fermion_3d_spin.py for Fig. 3-4.)
 
 ## 4. Conclusion
 * Both bosons and fermions can be represented by light-arrows that spread out spherically in Minkowski space in this theory.
 * The difference between bosons and fermions is that bosons have a rotational property on the time and space axes, and fermions also have another rotational property in the spatial direction.
 
+![image_ch3_fig4-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-1.png)
+
 Fig. 4-1. Spin of boson and fermion
+
+(Try spin_boson_fermion.py for Fig. 4-1.)
