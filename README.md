@@ -302,31 +302,31 @@ https://youtu.be/U_rPEAHMZpI
 ## 4. What is spin 1/2?
 Now, the probability amplitude of fermions is proportional to the square of x as shown in equation 3-1. Then, can this be expressed by the double rotation (Fig. 2-3) considered in the previous section?
 
-In the case of a light circle, it is represented by a normal rotation and is projected onto the observer's spatial axis in proportion to the slope of the light-arrows that make up the light circle. (Fig 3-2a). 
-In the case of fermions, since it is proportional to the square of x, the phase should take a distribution projected onto the x-axis of a parabola, but as shown in Fig. 3-2b, the projection position of the parabola onto the x-axis and the arrow of light If we force the slopes of the arrows to match, the starting points of the arrows will not converge at one point( or a circle), and it seems difficult to represent them with a double rotation like in Fig. 2-3.
+In the case of a light circle, it is represented by a normal rotation and is projected onto the observer's spatial axis in proportion to the slope of the light-arrows that make up the light circle. (Fig 4-4a). 
+In the case of fermions, since it is proportional to the square of x, the phase should take a distribution projected onto the x-axis of a parabola, but as shown in Fig. 4-1b, the projection position of the parabola onto the x-axis and the arrow of light If we force the slopes of the arrows to match, the starting points of the arrows will not converge at one point( or a circle), and it seems difficult to represent them with a double rotation like in Fig. 2-3.
 
 ![image_ch3_fig4-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-2.png)
 
-Fig. 4-2a. and 4-2b. Projection of light circle
+Fig. 4-1a. and 4-1b. Projection of light circle
 
-(Try projection_boson_fermion.py for Fig. 4-2.)
+(Try projection_boson_fermion.py for Fig. 4-1.)
 
 So far, we have only dealt with two dimensions (spatial axis x and time axis t for the observer) in order to simplify the discussion and make it possible to represent it in a plan view. Let's think about adding it.
-When the inclination of the arrow of light is expressed as an angle θ from the time axis, the relationship between x and θ is x = tanθ (assuming that the length of the arrow of light = the radius of the light circle is 1). Furthermore, let's assume that the angle θ is from the added spatial axis (referred to as the y-axis) and that the arrow of light rotates like the precession of a top, as shown in Fig. 3-3. At that time, the projection of the arrow of light onto the x-axis is tanθ✕tanθ = x squared.
+When the inclination of the arrow of light is expressed as an angle θ from the time axis, the relationship between x and θ is x = tanθ (assuming that the length of the arrow of light = the radius of the light circle is 1). Furthermore, let's assume that the angle θ is from the added spatial axis (referred to as the y-axis) and that the arrow of light rotates like the precession of a top, as shown in Fig. 4-2. At that time, the projection of the arrow of light onto the x-axis is tanθ✕tanθ = x squared.
 
-![image_ch3_fig4-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-1.png)
+![image_ch3_fig4-2](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-2.png)
 
-Fig. 4−3. Projection of light circle in 3 dimensions - 1
+Fig. 4−2. Projection of light circle in 3 dimensions - 1
 
-(Try projection_fermion_3d.py for Fig. 3-3.)
+(Try projection_fermion_3d.py for Fig. 4-2.)
 
-In addition, Fig. 3-3 is the same as the arrow of light rotating, just as the spinning top rotates sideways, and its axis of rotation also rotating, which can also be expressed as in Fig. 3-4. be able to. In Fig. 3-4, the tip of the arrow of light traces a twisted trajectory like a figure eight. This is thought to indicate the spin of the fermions.
+In addition, Fig. 4-2 is the same as the arrow of light rotating, just as the spinning top rotates sideways, and its axis of rotation also rotating, which can also be expressed as in Fig. 4-3. In Fig. 4-3, the tip of the arrow of light traces a twisted trajectory like a figure eight. This is thought to indicate the spin of the fermions.
 
-![image_ch3_fig4-4](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-1.png)
+![image_ch3_fig4-3](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-3.png)
 
-Fig. 4−4. Projection of light circle in 3 dimensions - 2
+Fig. 4−3. Projection of light circle in 3 dimensions - 2
 
-(Try projection_fermion_3d_spin.py for Fig. 4-4.)
+(Try projection_fermion_3d_spin.py for Fig. 4-3.)
 
 ## 5. Conclusion
 * Both bosons and fermions can be represented by light-arrows that spread out spherically in Minkowski space in this theory.
