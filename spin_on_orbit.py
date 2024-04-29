@@ -11,19 +11,49 @@ import mpl_toolkits.mplot3d.art3d as art3d
 from mpl_toolkits.mplot3d import proj3d
 
 
+def set_rot_light_dir(value):
+    global is_play
+    global theta_light_stp
+    is_play = False
+    if value == 1:
+        theta_light_stp = np.pi / 180.
+    else:
+        theta_light_stp = - np.pi / 180.
+    reset()
+    update_center_axis_arrow()
+    update_light_arrow()
+    update_light_circle()
+    update_light_arrow_pass()
+
+
+def rot_light_plus():
+    global dir_light_arrow, dir_light_arrow_init
+    rot_matrix_plus = Rotation.from_rotvec(np.pi / 180. * 5. * dir_center_axis)
+    dir_light_arrow_init = rot_matrix_plus.apply(dir_light_arrow_init)
+    dir_light_arrow = dir_light_arrow_init
+    update_light_arrow()
+    update_light_arrow_pass()
+
+
+def rot_light_minus():
+    global dir_light_arrow, dir_light_arrow_init
+    rot_matrix_minus = Rotation.from_rotvec(- np.pi / 180. * 5. * dir_center_axis)
+    dir_light_arrow_init = rot_matrix_minus.apply(dir_light_arrow_init)
+    dir_light_arrow = dir_light_arrow_init
+    update_light_arrow()
+    update_light_arrow_pass()
+
+
 def set_spin(value):
     global is_play
     global rot_matrix_center
     is_play = False
     if value == 1:
         rot_matrix_center = rot_matrix_x_center
-        print(value)
     elif value == 2:
         rot_matrix_center = rot_matrix_y_center
-        print(value)
     else:
         rot_matrix_center = rot_matrix_z_center
-        print(value)
     reset()
     update_center_axis_arrow()
     update_light_arrow()
@@ -33,17 +63,24 @@ def set_spin(value):
 
 def set_orbital(value):
     global is_play
-    global rot_matrix_orbit
+    global rot_matrix_orbit, crc_orbit_markup
     is_play = False
+    crc_orbit_markup.remove()
     if value == 1:
         rot_matrix_orbit = rot_matrix_x_orbit
-        print(value)
+        crc_orbit_markup = Circle((0., 0.), 1., ec='green', fill=False, linewidth=0.5, linestyle='--')
+        ax0.add_patch(crc_orbit_markup)
+        art3d.pathpatch_2d_to_3d(crc_orbit_markup, z=0., zdir='x')
     elif value == 2:
         rot_matrix_orbit = rot_matrix_y_orbit
-        print(value)
+        crc_orbit_markup = Circle((0., 0.), 1., ec='green', fill=False, linewidth=0.5, linestyle='--')
+        ax0.add_patch(crc_orbit_markup)
+        art3d.pathpatch_2d_to_3d(crc_orbit_markup, z=0., zdir='y')
     else:
         rot_matrix_orbit = rot_matrix_z_orbit
-        print(value)
+        crc_orbit_markup = Circle((0., 0.), 1., ec='green', fill=False, linewidth=0.5, linestyle='--')
+        ax0.add_patch(crc_orbit_markup)
+        art3d.pathpatch_2d_to_3d(crc_orbit_markup, z=0., zdir='z')
     reset()
     update_center_axis_arrow()
     update_light_arrow()
@@ -332,6 +369,9 @@ art3d.pathpatch_2d_to_3d(crc_orbit_yz, z=0., zdir='y')
 crc_orbit_zx = Circle((0., 0.), 1., ec='gray', fill=False, linewidth=0.5, linestyle='--')
 ax0.add_patch(crc_orbit_zx)
 art3d.pathpatch_2d_to_3d(crc_orbit_zx, z=0., zdir='x')
+crc_orbit_markup = Circle((0., 0.), 1., ec='green', fill=False, linewidth=0.5, linestyle='--')
+ax0.add_patch(crc_orbit_markup)
+art3d.pathpatch_2d_to_3d(crc_orbit_markup, z=0., zdir='x')
 
 # Light circle
 theta_light_circle_deg = np.arange(0., 360., 6.)
@@ -373,6 +413,7 @@ btn_play = tk.Button(frm_anim, text="Play/Pause", command=switch)
 btn_play.pack(side='left')
 btn_reset = tk.Button(frm_anim, text="Reset", command=reset)
 btn_reset.pack(side='left')
+
 # Parameters
 # position_center_init = np.array([1., 0., 0.])
 frm_center = ttk.Labelframe(root, relief='ridge', text='Center axis position', labelanchor='n')
@@ -457,6 +498,26 @@ rd2_spin.pack()
 rd3_spin = tk.Radiobutton(frm_spin, text="z axis", value=3, var=var_spin, command=lambda: set_spin(var_spin.get()))
 rd3_spin.pack()
 var_spin.set(1)
+
+# Rotate light arrow
+frm_rot_light = ttk.Labelframe(root, relief='ridge', text='Rotate light arrow', labelanchor='n')
+frm_rot_light.pack(side='left', fill=tk.Y)
+btn_rot_plus = tk.Button(frm_rot_light, text="+ 5 deg", command=rot_light_plus)
+btn_rot_plus.pack(side='left')
+btn_rot_minus = tk.Button(frm_rot_light, text="- 5 deg", command=rot_light_minus)
+btn_rot_minus.pack(side='left')
+
+# Rotation direction of light arrow ; theta_light_stp = np.pi / 180.
+frm_rot_light_dir = ttk.Labelframe(root, relief='ridge', text='Light rot direction', labelanchor='n')
+frm_rot_light_dir.pack(side='left', fill=tk.Y)
+var_rot_light_dir = tk.IntVar(root)
+rd1_rl_dir_plus = tk.Radiobutton(frm_rot_light_dir, text="Plus", value=1, var=var_rot_light_dir,
+                                 command=lambda: set_rot_light_dir(var_rot_light_dir.get()))
+rd1_rl_dir_plus.pack()
+rd2_rl_dir_minus = tk.Radiobutton(frm_rot_light_dir, text="Minus", value=2, var=var_rot_light_dir,
+                                  command=lambda: set_rot_light_dir(var_rot_light_dir.get()))
+rd2_rl_dir_minus.pack()
+var_rot_light_dir.set(1)
 
 # Draw initial diagram
 update_center_axis_arrow()
