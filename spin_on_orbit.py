@@ -11,6 +11,31 @@ import mpl_toolkits.mplot3d.art3d as art3d
 from mpl_toolkits.mplot3d import proj3d
 
 
+def set_guide_circle_center_ax_rot(value):
+    global center_axis_rot_dir
+    center_axis_rot_dir = value
+
+
+def update_guide_circle_center_ax_rot():
+    global crc_center_ax_rot
+    crc_center_ax_rot.remove()
+    x = position_center[0]
+    y = position_center[1]
+    z = position_center[2]
+    if center_axis_rot_dir == 1:
+        crc_center_ax_rot = Circle((y, z), 1., ec='blue', fill=False, linewidth=0.5, linestyle='--')
+        ax0.add_patch(crc_center_ax_rot)
+        art3d.pathpatch_2d_to_3d(crc_center_ax_rot, z=x, zdir='x')
+    elif center_axis_rot_dir == 2:
+        crc_center_ax_rot = Circle((x, z), 1., ec='blue', fill=False, linewidth=0.5, linestyle='--')
+        ax0.add_patch(crc_center_ax_rot)
+        art3d.pathpatch_2d_to_3d(crc_center_ax_rot, z=y, zdir='y')
+    else:
+        crc_center_ax_rot = Circle((x, y), 1., ec='blue', fill=False, linewidth=0.5, linestyle='--')
+        ax0.add_patch(crc_center_ax_rot)
+        art3d.pathpatch_2d_to_3d(crc_center_ax_rot, z=z, zdir='z')
+
+
 def set_rot_light_dir(value):
     global is_play
     global theta_light_stp
@@ -59,6 +84,8 @@ def set_spin(value):
     update_light_arrow()
     update_light_circle()
     update_light_arrow_pass()
+    set_guide_circle_center_ax_rot(value)
+    update_guide_circle_center_ax_rot()
 
 
 def set_orbital(value):
@@ -86,6 +113,7 @@ def set_orbital(value):
     update_light_arrow()
     update_light_circle()
     update_light_arrow_pass()
+    update_guide_circle_center_ax_rot()
 
 
 def set_dir_x(value):
@@ -137,6 +165,7 @@ def set_center_x(value):
     update_light_arrow()
     update_light_circle()
     update_light_arrow_pass()
+    update_guide_circle_center_ax_rot()
 
 
 def set_center_y(value):
@@ -149,6 +178,7 @@ def set_center_y(value):
     update_light_arrow()
     update_light_circle()
     update_light_arrow_pass()
+    update_guide_circle_center_ax_rot()
 
 
 def set_center_z(value):
@@ -161,6 +191,7 @@ def set_center_z(value):
     update_light_arrow()
     update_light_circle()
     update_light_arrow_pass()
+    update_guide_circle_center_ax_rot()
 
 
 def update_light_arrow_pass():
@@ -251,6 +282,7 @@ def reset():
     update_center_axis_arrow()
     update_light_arrow()
     update_light_arrow_pass()
+    update_guide_circle_center_ax_rot()
 
 
 def switch():
@@ -271,6 +303,7 @@ def update(f):
         update_center_axis_arrow()
         update_light_arrow()
         update_light_circle()
+        update_guide_circle_center_ax_rot()
         cnt += 1
         position_center = rot_matrix_orbit.apply(position_center)
         dir_center_axis = rot_matrix_center.apply(dir_center_axis)
@@ -303,6 +336,7 @@ dir_light_arrow_init = np.array([0., 0., 1.])
 position_center = position_center_init
 dir_center_axis = dir_center_axis_init
 dir_light_arrow = dir_light_arrow_init
+center_axis_rot_dir = 1
 
 theta_orbit_stp = np.pi / 180.
 rot_matrix_x_orbit = Rotation.from_rotvec(theta_orbit_stp * vector_x_axis)
@@ -396,6 +430,11 @@ y_light_arrow_pass = []
 z_light_arrow_pass = []
 plt_light_arrow_pass, = ax0.plot(np.array(x_light_arrow_pass), np.array(y_light_arrow_pass),
                                  np.array(z_light_arrow_pass), color='gold', linewidth=2, linestyle='-')
+
+# Guide circle center axis rotation
+crc_center_ax_rot = Circle((0., 0.), 1., ec='blue', fill=False, linewidth=0.5, linestyle='--')
+ax0.add_patch(crc_center_ax_rot)
+art3d.pathpatch_2d_to_3d(crc_center_ax_rot, z=0., zdir='x')
 
 # Embed in Tkinter
 root = tk.Tk()
