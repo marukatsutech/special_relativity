@@ -272,5 +272,5 @@ chk_axis_ss = tk.Checkbutton(frm_spin, text="Spatial(x)-spatial(y) (blue arrow)"
 chk_axis_ss.pack()
 
 # main loop
-anim = animation.FuncAnimation(fig, update, interval=100)
+anim = animation.FuncAnimation(fig, update, interval=100, save_count=100)
 root.mainloop()
