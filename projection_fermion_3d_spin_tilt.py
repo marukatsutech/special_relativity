@@ -456,5 +456,5 @@ update_diagram()
 draw_pass_spin()
 
 # main loop
-anim = animation.FuncAnimation(fig, update, interval=100)
+anim = animation.FuncAnimation(fig, update, interval=100, save_count=100)
 root.mainloop()
