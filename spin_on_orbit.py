@@ -565,5 +565,5 @@ update_light_circle()
 update_light_arrow_pass()
 
 # main loop
-anim = animation.FuncAnimation(fig, update, interval=100)
+anim = animation.FuncAnimation(fig, update, interval=100, save_count=100)
 root.mainloop()
