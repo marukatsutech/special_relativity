@@ -199,7 +199,6 @@ def update_light_arrow_pass():
     position_center_pass = position_center_init
     dir_center_axis_pass = dir_center_axis_init
     dir_light_arrow_pass = dir_light_arrow_init
-    pass
     x = []
     y = []
     z = []
