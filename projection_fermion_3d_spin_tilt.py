@@ -422,7 +422,7 @@ frm_spin.pack(side='left', fill=tk.Y)
 lbl_spin_s = tk.Label(frm_spin, text='Spin axis (blue arrow):')
 lbl_spin_s.pack(side='left')
 var_spin_s = tk.StringVar(root)  # variable for spinbox-value
-var_spin_s.set(rot_spin_axis_arrow)  # Initial value
+var_spin_s.set(str(rot_spin_axis_arrow))  # Initial value
 spn_spin_s = tk.Spinbox(
     frm_spin, textvariable=var_spin_s, from_=-8, to=8, increment=1,
     command=lambda: set_spin_s(var_spin_s.get()), width=6
@@ -431,7 +431,7 @@ spn_spin_s.pack(side='left')
 lbl_spin_l = tk.Label(frm_spin, text='Light arrow (Orange arrow):')
 lbl_spin_l.pack(side='left')
 var_spin_l = tk.StringVar(root)  # variable for spinbox-value
-var_spin_l.set(rot_light_arrow)  # Initial value
+var_spin_l.set(str(rot_light_arrow))  # Initial value
 spn_spin_l = tk.Spinbox(
     frm_spin, textvariable=var_spin_l, from_=-8, to=8, increment=1,
     command=lambda: set_spin_l(var_spin_l.get()), width=6
