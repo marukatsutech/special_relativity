@@ -444,7 +444,7 @@ frm_tilt.pack(side='left', fill=tk.Y)
 lbl_tilt = tk.Label(frm_tilt, text='Angle(degree):')
 lbl_tilt.pack(side='left')
 var_tilt = tk.StringVar(root)  # variable for spinbox-value
-var_tilt.set(tilt_angle_deg)  # Initial value
+var_tilt.set(str(tilt_angle_deg))  # Initial value
 spn_tilt = tk.Spinbox(
     frm_tilt, textvariable=var_tilt, from_=-180., to=180., increment=1,
     command=lambda: set_tilt(var_tilt.get()), width=6
