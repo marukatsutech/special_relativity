@@ -39,7 +39,7 @@ def set_tilt(value):
 
 def set_spin_s(value):
     global rot_spin_axis_arrow
-    rot_spin_axis_arrow = int(value)
+    rot_spin_axis_arrow = float(value)
     reset()
     update_diagram()
     draw_pass_spin()
@@ -47,7 +47,7 @@ def set_spin_s(value):
 
 def set_spin_l(value):
     global rot_light_arrow
-    rot_light_arrow = int(value)
+    rot_light_arrow = float(value)
     reset()
     update_diagram()
     draw_pass_spin()
@@ -446,7 +446,7 @@ lbl_tilt.pack(side='left')
 var_tilt = tk.StringVar(root)  # variable for spinbox-value
 var_tilt.set(tilt_angle_deg)  # Initial value
 spn_tilt = tk.Spinbox(
-    frm_tilt, textvariable=var_tilt, from_=0., to=180., increment=1,
+    frm_tilt, textvariable=var_tilt, from_=-180., to=180., increment=1,
     command=lambda: set_tilt(var_tilt.get()), width=6
 )
 spn_tilt.pack(side='left')
