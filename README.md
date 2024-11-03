@@ -1,3 +1,4 @@
+# Note; refer main branch for latest version.
 # Special relativity: Why is the speed of light constant?
 # Chapter - 1. Light sphere
 
