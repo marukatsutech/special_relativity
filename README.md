@@ -209,7 +209,7 @@ The reason for setting ωn = slope(n) is that we want the slope (=velocity) of t
 Regarding this,in Minkowski space, x (distance) / t (time) = c (speed of light). If the speed of light increases by n times (ωn=slope(n)), the distance traveled (x) needs to increase by n times. This is thought to be because, assuming that the wavelength λ is constant, the distance traveled (x) cannot be multiplied by n unless the wave number is multiplied by n.
 The above is the mechanism by which light waves spreading circularly in light-speed-space converge to a single point in Minkowski space.
 
-#4. Conclusion
+## 4. Conclusion
 In this theory, light spreads in a circular (spherical) manner in light-speed-space, and converges to a single point from the observer's viewpoint (Minkowski space coordinate system) (the trajectory of the convergence point of light is represented on a line in the coordinate system).
 Therefore, if the trajectory of the convergence point of light is redrawn so that it looks the same from different observers (different coordinate systems), the result will be the same as Lorentz transformation on Minkowski space.
 So why go to the trouble of insisting on this theory?
