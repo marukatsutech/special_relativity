@@ -349,7 +349,7 @@ projection_fermion_3d.py
 projection_fermion_3d_spin.py
 spin_boson_fermion.py
 
-# Chapter - 4. Relation between special relativity and quantum dyanamics
+# Chapter - 4. Relation between special relativity and quantum mechanics
 # - wave function collapse and reconsidering of the quantum model -
 
 ## 1. Introduction
