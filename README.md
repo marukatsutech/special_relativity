@@ -351,11 +351,24 @@ spin_boson_fermion.py
 
 # Chapter - 4. Relation between special relativity and quantum dyanamics
 # - wave function collapse and reconsidering of the quantum model -
+
 ## 1. Introduction
 In Chapter 2, I explained that light, as a light-arrow, spreads out spherically in light-speed space as a light-sphere, and is projected as a plane wave from the observer's viewpoint (Minkowski space coordinate system), and converges to a single point due to the superposition of waves, which appears the same from any observer. (This is because a sphere appears as a sphere from any direction.)
 In addition, in Chapter 3, both bosons and fermions can be represented as a light-arrow that spreads spherically in Minkowski space. The difference between bosons and fermions is that bosons have a rotational property on the time and space axes, while fermions have another rotational property (corresponding to quantum spin), which results in the difference in the properties of bosons and fermions (whether the light-arrow is proportional to x or the square of x when projected onto the space coordinate).
-On the other hand, the quantum wave represented by the Schrodinger wave function represents the probability of the existence of a quantum, and it is thought that the wave contracts to a single point the moment the quantum is observed(wave function collapse), but the mechanism by which this contraction occurs is unknown. And if the light-arrow spreads like a wave, similar issues will exist. Therefore, in this chapter, we will reconsider the previous theory from the perspective of the probability of the existence of a quantum.
+On the other hand, the probability wave shown in Schrodinger's wave equation represents the probability of the existence of a quantum, and it is thought that the wave contracts to a single pointthe moment the quantum is observed (wave function collapse) , but the mechanism by which this contraction occurs is unknown. And if the light-arrow spreads like a wave, similar issues will exist. Therefore, in this chapter, we will reconsider the previous theory from the perspective of the probability of the existence of a quantum.
+
 ## 2. Probability of quantum existence
+A probability wave does not represent a quantum itself, but the square of the absolute value of the magnitude of the probability wave at a certain position represents the probability (expected value) of finding a quantum at that position (Fig. 2-1). This is called the Born rule, which means that a quantum can only be expressed as a probability, but there are different interpretations of the world represented by the wave function, such as the Copenhagen interpretation and the many-worlds interpretation.
+
+Fig. 2-1
+
+So, let's think again about what probability is. When we think of probability in our daily lives, we think of the outcome of a coin landing on heads, the number on a dice, or winning a lottery. However, in the world of quantum mechanics, probability is something very mysterious, and that is the interference of probability waves.
+The interference of quanta as probability waves can be seen in the double slit experiment. Wave interference at the double slit also occurs in waves on the surface of water, but what is even more mysterious about the interference of quanta as probability waves is that when there is a single quantum, it behaves as if it is interfering with itself. When quanta such as photons or electrons are emitted toward the double slit one by one with a time interval, they are naturally observed as a single point on the observation screen beyond the double slit. When this is repeated, the collection of observed points is distributed across the screen as if waves on the surface of water were interfering with each other at the double slit (Fig. 2-2).
+
+Fig. 2-2
+
+How does the emitted quantum interfere with the quantum emitted before and after it? Does the quantum know the destination of the quantum emitted before and after it and interfere with it by going back and forth in time, or does one particle pass through both slits at the same time? Both are difficult to imagine, but Schrödinger's equation explains (calculates) that a probability wave of one quantum spreads in space and passes through both slits at the same time, and these probability waves interfere with each other. Next, let's reconsider the bosons and fermions represented by the Light-arrow from the perspective of probability.
+
 ## 3. Reconsidering the photon (boson) model from the perspective of probability
 ## 4. Reconsidering the fermion model from the perspective of probability
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
