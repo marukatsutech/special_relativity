@@ -348,3 +348,15 @@ projection_boson_fermion.py
 projection_fermion_3d.py
 projection_fermion_3d_spin.py
 spin_boson_fermion.py
+
+# Chapter - 4. Relation between special relativity and quantum dyanamics
+# - wave function collapse and reconsidering of the quantum model -
+## 1. Introduction
+In Chapter 2, I explained that light, as a light-arrow, spreads out spherically in light-speed space as a light-sphere, and is projected as a plane wave from the observer's viewpoint (Minkowski space coordinate system), and converges to a single point due to the superposition of waves, which appears the same from any observer. (This is because a sphere appears as a sphere from any direction.)
+In addition, in Chapter 3, both bosons and fermions can be represented as a light-arrow that spreads spherically in Minkowski space. The difference between bosons and fermions is that bosons have a rotational property on the time and space axes, while fermions have another rotational property (corresponding to quantum spin), which results in the difference in the properties of bosons and fermions (whether the light-arrow is proportional to x or the square of x when projected onto the space coordinate).
+On the other hand, the quantum wave represented by the Schrodinger wave function represents the probability of the existence of a quantum, and it is thought that the wave contracts to a single point the moment the quantum is observed(wave function collapse), but the mechanism by which this contraction occurs is unknown. And if the light-arrow spreads like a wave, similar issues will exist. Therefore, in this chapter, we will reconsider the previous theory from the perspective of the probability of the existence of a quantum.
+## 2. Probability of quantum existence
+## 3. Reconsidering the photon (boson) model from the perspective of probability
+## 4. Reconsidering the fermion model from the perspective of probability
+## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
+
