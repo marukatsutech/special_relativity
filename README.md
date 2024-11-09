@@ -359,4 +359,4 @@ On the other hand, the quantum wave represented by the Schrodinger wave function
 ## 3. Reconsidering the photon (boson) model from the perspective of probability
 ## 4. Reconsidering the fermion model from the perspective of probability
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
-
+## 6. Conclusion
