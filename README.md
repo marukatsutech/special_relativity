@@ -384,13 +384,22 @@ Furthermore, in the above description, the phase rotation axis is described in a
 A photon means that the phase (Light-arrow-phase) changes randomly so that the rotation vector draws a Light-sphere.
 
 By the way, so far I have not explained how the lower hemisphere of the Light-sphere is projected into space. Regarding the Light-arrow oriented in the lower hemisphere, you may feel that there is no projection destination in the direction of the arrow (it is projected in the direction of negative time). This can be explained from the observer's position (coordinates) with respect to the light-sphere.
-When viewed from the observer's coordinates, the slope of the light-arrow (= position / time) indicates the speed. The slope of the Light-arrow in the third quadrant is space (minus) / time (minus) = velocity plus, and the Light-arrow is projected to the first quadrant side. The slope of the light arrow in the fourth quadrant is space (plus) / time (minus) = velocity minus, and the light arrow will be projected toward the second quadrant.
+When viewed from the observer's coordinates, the slope of the light-arrow (= position / time) indicates the speed. The slope of the Light-arrow in the third quadrant is space (minus) / time (minus) = velocity plus, and the Light-arrow is projected to the first quadrant side. The slope of the light arrow in the fourth quadrant is space (plus) / time (minus) = velocity minus, and the light arrow will be projected toward the second quadrant(Fig. 3-2).
+
+Fig. 3-2
 
 Next, consider the interference of probability waves. If we assume that one photon is composed of multiple light-arrows and that the light-arrows interfere with each other, we can easily explain interference. However, the randomly scattered light-arrows need to come together at the moment they are observed, and the same problem as wave function collapse remains. Considering the  of wave function　collapse, it is easier to explain Light-arrow in one form.
 
 A case in which one object is observed to interfere is a case in which the objects move around at high speed.
 For example, let's put an ant in a box with grids and observe in which grid it can be found (assuming that this ant can move around at high speed). If ants do not have a preference for squares, such as preferring the corners of a box, the probability of finding an ant in any square is equal. Then, place food (sugar, etc.) and obstacles in some squares. This results in a bias in the frequency of the directions in which ants pass depending on the grid.
 
+Next, I randomly select a square and use tweezers to catch an ant. At this time, keep the direction of the opening of the tweezers constant. Then, the ant can only be caught if the direction of the tweezers' opening matches the direction in which the ant passes. The more frequently the direction in which an ant passes matches the direction of the tweezers' opening, the higher the probability of catching an ant (Fig. 3-2).
+In this case, one object causes interference and probabilistic observation results can be obtained(an ant is a photon, a tweezers is a fermion).
+
+If we consider that a photon is something whose phase (Light-arrow-phase) changes randomly and rapidly, as if one Light-arrow draws a Light-sphere, then one photon interferes like a wave. , it can also be explained that when observed, it converges to one (wave function collapse).
+What is meant by "keep the direction of the tweezers in a constant direction" will be explained in Section 5.
+
+Note that if you take a long-exposure photo of this one ant, you will see afterimages of multiple ants in each square. Some of the squares show the ants passing in the same direction, while others show them in different directions. The image taken with this long exposure corresponds to the probability wave of the wave function.
 
 ## 4. Reconsidering the fermion model from the perspective of probability
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
