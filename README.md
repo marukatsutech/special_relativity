@@ -349,14 +349,56 @@ projection_fermion_3d.py
 projection_fermion_3d_spin.py
 spin_boson_fermion.py
 
-# Chapter - 4. Relation between special relativity and quantum dyanamics
+# Chapter - 4. Relation between special relativity and quantum mechanics
 # - wave function collapse and reconsidering of the quantum model -
+
 ## 1. Introduction
 In Chapter 2, I explained that light, as a light-arrow, spreads out spherically in light-speed space as a light-sphere, and is projected as a plane wave from the observer's viewpoint (Minkowski space coordinate system), and converges to a single point due to the superposition of waves, which appears the same from any observer. (This is because a sphere appears as a sphere from any direction.)
 In addition, in Chapter 3, both bosons and fermions can be represented as a light-arrow that spreads spherically in Minkowski space. The difference between bosons and fermions is that bosons have a rotational property on the time and space axes, while fermions have another rotational property (corresponding to quantum spin), which results in the difference in the properties of bosons and fermions (whether the light-arrow is proportional to x or the square of x when projected onto the space coordinate).
-On the other hand, the quantum wave represented by the Schrodinger wave function represents the probability of the existence of a quantum, and it is thought that the wave contracts to a single point the moment the quantum is observed(wave function collapse), but the mechanism by which this contraction occurs is unknown. And if the light-arrow spreads like a wave, similar issues will exist. Therefore, in this chapter, we will reconsider the previous theory from the perspective of the probability of the existence of a quantum.
+On the other hand, the probability wave shown in Schrodinger's wave equation represents the probability of the existence of a quantum, and it is thought that the wave contracts to a single pointthe moment the quantum is observed (wave function collapse) , but the mechanism by which this contraction occurs is unknown. And if the light-arrow spreads like a wave, similar issues will exist. Therefore, in this chapter, we will reconsider the previous theory from the perspective of the probability of the existence of a quantum.
+
 ## 2. Probability of quantum existence
+A probability wave does not represent a quantum itself, but the square of the absolute value of the magnitude of the probability wave at a certain position represents the probability (expected value) of finding a quantum at that position (Fig. 2-1). This is called the Born rule, which means that a quantum can only be expressed as a probability, but there are different interpretations of the world represented by the wave function, such as the Copenhagen interpretation and the many-worlds interpretation.
+
+Fig. 2-1 Probability wave
+
+So, let's think again about what probability is. When we think of probability in our daily lives, we think of the outcome of a coin landing on heads, the number on a dice, or winning a lottery. However, in the world of quantum mechanics, probability is something very mysterious, and that is the interference of probability waves.
+
+The interference of quanta as probability waves can be seen in the double slit experiment. Wave interference at the double slit also occurs in waves on the surface of water, but what is even more mysterious about the interference of quanta as probability waves is that when there is a single quantum, it behaves as if it is interfering with itself. When quanta such as photons or electrons are emitted toward the double slit one by one with a time interval, they are naturally observed as a single point on the observation screen beyond the double slit. When this is repeated, the collection of observed points is distributed across the screen as if waves on the surface of water were interfering with each other at the double slit (Fig. 2-2).
+
+Fig. 2-2 Double slit experiment
+
+How does the emitted quantum interfere with the quantum emitted before and after it? Does the quantum know the destination of the quantum emitted before and after it and interfere with it by going back and forth in time, or does one particle pass through both slits at the same time? Both are difficult to imagine, but Schrödinger's equation explains (calculates) that a probability wave of one quantum spreads in space and passes through both slits at the same time, and these probability waves interfere with each other. Next, let's reconsider the bosons and fermions represented by the Light-arrow from the perspective of probability.
+
 ## 3. Reconsidering the photon (boson) model from the perspective of probability
+Let's consider photons here. This is because bosons other than photons (Z bosons, W bosons) have mass, so they are thought to work in a different mechanism than photons and gluons, which have no mass. In Chapter 3, I explained that the light-arrow of photons rotates as shown in Chapter 3 Fig. 4-1 and spreads out in a spherical shape as a light-sphere. However, rotation is a continuous movement, which is inconsistent with the perspective of probability, which is basically random.
+
+In that case, it is sufficient to assume that the Light-arrow does not rotate, but changes its direction (phase) randomly (Fig. 3-1). However, photons have vibrational energy (in visible light, they are observed as the color of light; the shorter the wavelength = the higher the frequency, the higher the energy), and the phase of the vibration changes continuously in space. When the direction of the Light-arrow changes randomly, if the phase of the vibrational energy of the light changes accordingly, it can be considered to be the same as rotating.
+
+Fig. 3-1
+
+Since there are two phases here, in order to distinguish them from here on, the phase of the frequency energy of light will be referred to as Light-phase, and the direction of Light-arrow will be referred to as Light-arrow-phase.
+Furthermore, in the above description, the phase rotation axis is described in a direction orthogonal to the Light-arrow to make it easier to explain the vibration (rotation) of photons using a plan view. However, the vibration of a photon is a transverse wave that changes orthogonally to the traveling direction of the photon, and vibrates (rotates) orthogonally to the light-arrow. Therefore, Light-arrow can be expressed as a rotation vector with the frequency (rotation speed) of light.
+A photon means that the phase (Light-arrow-phase) changes randomly so that the rotation vector draws a Light-sphere.
+
+By the way, so far I have not explained how the lower hemisphere of the Light-sphere is projected into space. Regarding the Light-arrow oriented in the lower hemisphere, you may feel that there is no projection destination in the direction of the arrow (it is projected in the direction of negative time). This can be explained from the observer's position (coordinates) with respect to the light-sphere.
+When viewed from the observer's coordinates, the slope of the light-arrow (= position / time) indicates the speed. The slope of the Light-arrow in the third quadrant is space (minus) / time (minus) = velocity plus, and the Light-arrow is projected to the first quadrant side. The slope of the light arrow in the fourth quadrant is space (plus) / time (minus) = velocity minus, and the light arrow will be projected toward the second quadrant(Fig. 3-2).
+
+Fig. 3-2
+
+Next, consider the interference of probability waves. If we assume that one photon is composed of multiple light-arrows and that the light-arrows interfere with each other, we can easily explain interference. However, the randomly scattered light-arrows need to come together at the moment they are observed, and the same problem as wave function collapse remains. Considering the  of wave function　collapse, it is easier to explain Light-arrow in one form.
+
+A case in which one object is observed to interfere is a case in which the objects move around at high speed.
+For example, let's put an ant in a box with grids and observe in which grid it can be found (assuming that this ant can move around at high speed). If ants do not have a preference for squares, such as preferring the corners of a box, the probability of finding an ant in any square is equal. Then, place food (sugar, etc.) and obstacles in some squares. This results in a bias in the frequency of the directions in which ants pass depending on the grid.
+
+Next, I randomly select a square and use tweezers to catch an ant. At this time, keep the direction of the opening of the tweezers constant. Then, the ant can only be caught if the direction of the tweezers' opening matches the direction in which the ant passes. The more frequently the direction in which an ant passes matches the direction of the tweezers' opening, the higher the probability of catching an ant (Fig. 3-2).
+In this case, one object causes interference and probabilistic observation results can be obtained(an ant is a photon, a tweezers is a fermion).
+
+If we consider that a photon is something whose phase (Light-arrow-phase) changes randomly and rapidly, as if one Light-arrow draws a Light-sphere, then one photon interferes like a wave. , it can also be explained that when observed, it converges to one (wave function collapse).
+What is meant by "keep the direction of the tweezers in a constant direction" will be explained in Section 5.
+
+Note that if you take a long-exposure photo of this one ant, you will see afterimages of multiple ants in each square. Some of the squares show the ants passing in the same direction, while others show them in different directions. The image taken with this long exposure corresponds to the probability wave of the wave function.
+
 ## 4. Reconsidering the fermion model from the perspective of probability
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
-
+## 6. Conclusion
