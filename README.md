@@ -379,9 +379,18 @@ In that case, the Light-arrow should not rotate as shown in Fig. 3-1, but change
 
 Fig. 3-1
 
-Note that since there are two phases here, in order to distinguish them from here on, the phase of the frequency energy of light will be referred to as Light-phase, and the direction of Light-arrow will be referred to as Light-arrow-phase.
+Since there are two phases here, in order to distinguish them from here on, the phase of the frequency energy of light will be referred to as Light-phase, and the direction of Light-arrow will be referred to as Light-arrow-phase.
 Furthermore, in the above description, the phase rotation axis is described in a direction orthogonal to the Light-arrow to make it easier to explain the vibration (rotation) of photons using a plan view. However, the vibration of a photon is a transverse wave that changes orthogonally to the traveling direction of the photon, and vibrates (rotates) orthogonally to the light-arrow. Therefore, Light-arrow can be expressed as a rotation vector with the frequency (rotation speed) of light.
-A photon means that the phase (Light-arrow-phase) changes randomly so that the rotation vector draws a Light-shere.
+A photon means that the phase (Light-arrow-phase) changes randomly so that the rotation vector draws a Light-sphere.
+
+By the way, so far I have not explained how the lower hemisphere of the Light-sphere is projected into space. Regarding the Light-arrow oriented in the lower hemisphere, you may feel that there is no projection destination in the direction of the arrow (it is projected in the direction of negative time). This can be explained from the observer's position (coordinates) with respect to the light-sphere.
+When viewed from the observer's coordinates, the slope of the light-arrow (= position / time) indicates the speed. The slope of the Light-arrow in the third quadrant is space (minus) / time (minus) = velocity plus, and the Light-arrow is projected to the first quadrant side. The slope of the light arrow in the fourth quadrant is space (plus) / time (minus) = velocity minus, and the light arrow will be projected toward the second quadrant.
+
+Next, consider the interference of probability waves. If we assume that one photon is composed of multiple light-arrows and that the light-arrows interfere with each other, we can easily explain interference. However, the randomly scattered light-arrows need to come together at the moment they are observed, and the same problem as wave function collapse remains. Considering the  of wave function　collapse, it is easier to explain Light-arrow in one form.
+
+A case in which one object is observed to interfere is a case in which the objects move around at high speed.
+For example, let's put an ant in a box with grids and observe in which grid it can be found (assuming that this ant can move around at high speed). If ants do not have a preference for squares, such as preferring the corners of a box, the probability of finding an ant in any square is equal. Then, place food (sugar, etc.) and obstacles in some squares. This results in a bias in the frequency of the directions in which ants pass depending on the grid.
+
 
 ## 4. Reconsidering the fermion model from the perspective of probability
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
