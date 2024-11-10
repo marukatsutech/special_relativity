@@ -55,7 +55,7 @@ canvas.get_tk_widget().pack()
 """ Classes and functions """
 
 
-class Counter:
+class Counter3d:
     def __init__(self, ax, x, y, z, label):
         self.ax = ax
         self.x, self.y, self.z = x, y, z
@@ -306,7 +306,7 @@ def update(f):
 
 """ main loop """
 if __name__ == "__main__":
-    cnt = Counter(ax0, x_min, y_max, z_max, "Step=")
+    cnt = Counter3d(ax0, x_min, y_max, z_max, "Step=")
     create_center_lines()
     create_circle(ax0, 0., 0., 0., "z", "blue", False, 0.5, "--")
     light_arrow = Arrow(ax0, 0., 0., 0., 0., 0., "darkorange", "Light arrow")
