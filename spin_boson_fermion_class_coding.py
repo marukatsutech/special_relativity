@@ -55,16 +55,21 @@ canvas.get_tk_widget().pack()
 """ Classes and functions """
 
 
-class Counter3d:
-    def __init__(self, ax, x, y, z, label):
+class Counter:
+    def __init__(self, is3d, ax, x, y, z, label):
+        self.is3d = is3d
         self.ax = ax
         self.x, self.y, self.z = x, y, z
         self.label = label
 
         self.count = 0
-        self.txt_step = self.ax.text2D(self.x, self.y, self.label + str(self.count))
-        self.xz, self.yz, self._ = proj3d.proj_transform(self.x, self.y, self.z, self.ax.get_proj())
-        self.txt_step.set_position((self.xz, self.yz))
+
+        if not is3d:
+            self.txt_step = self.ax.text(x_min, y_max, self.label + str(self.count))
+        else:
+            self.txt_step = self.ax.text2D(self.x, self.y, self.label + str(self.count))
+            self.xz, self.yz, self._ = proj3d.proj_transform(self.x, self.y, self.z, self.ax.get_proj())
+            self.txt_step.set_position((self.xz, self.yz))
 
     def count_up(self):
         self.count += 1
@@ -306,7 +311,7 @@ def update(f):
 
 """ main loop """
 if __name__ == "__main__":
-    cnt = Counter3d(ax0, x_min, y_max, z_max, "Step=")
+    cnt = Counter(True, ax0, x_min, y_max, z_max, "Step=")
     create_center_lines()
     create_circle(ax0, 0., 0., 0., "z", "blue", False, 0.5, "--")
     light_arrow = Arrow(ax0, 0., 0., 0., 0., 0., "darkorange", "Light arrow")
