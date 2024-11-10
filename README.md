@@ -360,16 +360,29 @@ On the other hand, the probability wave shown in Schrodinger's wave equation rep
 ## 2. Probability of quantum existence
 A probability wave does not represent a quantum itself, but the square of the absolute value of the magnitude of the probability wave at a certain position represents the probability (expected value) of finding a quantum at that position (Fig. 2-1). This is called the Born rule, which means that a quantum can only be expressed as a probability, but there are different interpretations of the world represented by the wave function, such as the Copenhagen interpretation and the many-worlds interpretation.
 
-Fig. 2-1
+Fig. 2-1 Probability wave
 
 So, let's think again about what probability is. When we think of probability in our daily lives, we think of the outcome of a coin landing on heads, the number on a dice, or winning a lottery. However, in the world of quantum mechanics, probability is something very mysterious, and that is the interference of probability waves.
+
 The interference of quanta as probability waves can be seen in the double slit experiment. Wave interference at the double slit also occurs in waves on the surface of water, but what is even more mysterious about the interference of quanta as probability waves is that when there is a single quantum, it behaves as if it is interfering with itself. When quanta such as photons or electrons are emitted toward the double slit one by one with a time interval, they are naturally observed as a single point on the observation screen beyond the double slit. When this is repeated, the collection of observed points is distributed across the screen as if waves on the surface of water were interfering with each other at the double slit (Fig. 2-2).
 
-Fig. 2-2
+Fig. 2-2 Double slit experiment
 
 How does the emitted quantum interfere with the quantum emitted before and after it? Does the quantum know the destination of the quantum emitted before and after it and interfere with it by going back and forth in time, or does one particle pass through both slits at the same time? Both are difficult to imagine, but Schrödinger's equation explains (calculates) that a probability wave of one quantum spreads in space and passes through both slits at the same time, and these probability waves interfere with each other. Next, let's reconsider the bosons and fermions represented by the Light-arrow from the perspective of probability.
 
+Let's consider photons here. This is because bosons other than photons (Z bosons, W bosons) have mass, so they are thought to work in a different mechanism than photons and gluons, which have no mass. In Chapter 3, we explained that the light-arrow of photons rotates as shown in Chapter 3 Fig. 4-1 and spreads out in a spherical shape as a light-sphere. However, rotation is a continuous movement, which is inconsistent with the perspective of probability, which is basically random.
+
 ## 3. Reconsidering the photon (boson) model from the perspective of probability
+Bosons other than photons (Z boson, W boson) are thought to be formed in a different mechanism from photons and gluons, which have mass but have no mass, so we will consider photons here. In Chapter 3, I explained that the light-arrow of photons rotates as shown in Fig. 3-1 and spreads out in a spherical shape as a light-sphere. However, rotation is a continuous movement, which is inconsistent with the perspective of probability, which is basically random.
+
+In that case, the Light-arrow should not rotate as shown in Fig. 3-1, but change its direction (phase) randomly. However, photons have vibrational energy (in visible light, they are observed as the color of light; the shorter the wavelength = the higher the frequency, the higher the energy), and the phase of the vibration changes continuously in space. When the direction of the Light-arrow changes randomly, if the phase of the vibrational energy of the light changes accordingly, it can be considered to be the same as rotating.
+
+Fig. 3-1
+
+Note that since there are two phases here, in order to distinguish them from here on, the phase of the frequency energy of light will be referred to as Light-phase, and the direction of Light-arrow will be referred to as Light-arrow-phase.
+Furthermore, in the above description, the phase rotation axis is described in a direction orthogonal to the Light-arrow to make it easier to explain the vibration (rotation) of photons using a plan view. However, the vibration of a photon is a transverse wave that changes orthogonally to the traveling direction of the photon, and vibrates (rotates) orthogonally to the light-arrow. Therefore, Light-arrow can be expressed as a rotation vector with the frequency (rotation speed) of light.
+A photon means that the phase (Light-arrow-phase) changes randomly so that the rotation vector draws a Light-shere.
+
 ## 4. Reconsidering the fermion model from the perspective of probability
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
 ## 6. Conclusion
