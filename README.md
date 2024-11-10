@@ -370,12 +370,10 @@ Fig. 2-2 Double slit experiment
 
 How does the emitted quantum interfere with the quantum emitted before and after it? Does the quantum know the destination of the quantum emitted before and after it and interfere with it by going back and forth in time, or does one particle pass through both slits at the same time? Both are difficult to imagine, but Schrödinger's equation explains (calculates) that a probability wave of one quantum spreads in space and passes through both slits at the same time, and these probability waves interfere with each other. Next, let's reconsider the bosons and fermions represented by the Light-arrow from the perspective of probability.
 
+## 3. Reconsidering the photon (boson) model from the perspective of probability
 Let's consider photons here. This is because bosons other than photons (Z bosons, W bosons) have mass, so they are thought to work in a different mechanism than photons and gluons, which have no mass. In Chapter 3, we explained that the light-arrow of photons rotates as shown in Chapter 3 Fig. 4-1 and spreads out in a spherical shape as a light-sphere. However, rotation is a continuous movement, which is inconsistent with the perspective of probability, which is basically random.
 
-## 3. Reconsidering the photon (boson) model from the perspective of probability
-Bosons other than photons (Z boson, W boson) are thought to be formed in a different mechanism from photons and gluons, which have mass but have no mass, so we will consider photons here. In Chapter 3, I explained that the light-arrow of photons rotates as shown in Fig. 3-1 (in Chapter 3) and spreads out in a spherical shape as a light-sphere. However, rotation is a continuous movement, which is inconsistent with the perspective of probability, which is basically random.
-
-In that case, the Light-arrow should not rotate as shown in Fig. 3-1, but change its direction (phase) randomly. However, photons have vibrational energy (in visible light, they are observed as the color of light; the shorter the wavelength = the higher the frequency, the higher the energy), and the phase of the vibration changes continuously in space. When the direction of the Light-arrow changes randomly, if the phase of the vibrational energy of the light changes accordingly, it can be considered to be the same as rotating.
+In that case, it is sufficient to assume that the Light-arrow does not rotate, but changes its direction (phase) randomly (Fig. 3-1). However, photons have vibrational energy (in visible light, they are observed as the color of light; the shorter the wavelength = the higher the frequency, the higher the energy), and the phase of the vibration changes continuously in space. When the direction of the Light-arrow changes randomly, if the phase of the vibrational energy of the light changes accordingly, it can be considered to be the same as rotating.
 
 Fig. 3-1
 
