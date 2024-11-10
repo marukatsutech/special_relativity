@@ -90,7 +90,7 @@ def spherical_to_cartesian(r, theta, phi):
     return x, y, z
 
 
-class Arrow:
+class Arrow3d:
     def __init__(self, ax, x, y, z, theta, phi, col, label):
         self.ax = ax
         self.x, self.y, self.z = x, y, z
@@ -314,8 +314,8 @@ if __name__ == "__main__":
     cnt = Counter(True, ax0, x_min, y_max, z_max, "Step=")
     create_center_lines()
     create_circle(ax0, 0., 0., 0., "z", "blue", False, 0.5, "--")
-    light_arrow = Arrow(ax0, 0., 0., 0., 0., 0., "darkorange", "Light arrow")
-    rot_axis_arrow = Arrow(ax0, 0., 0., 0., np.pi / 2., 0., "blue", "Rotation axis")
+    light_arrow = Arrow3d(ax0, 0., 0., 0., 0., 0., "darkorange", "Light arrow")
+    rot_axis_arrow = Arrow3d(ax0, 0., 0., 0., np.pi / 2., 0., "blue", "Rotation axis")
     light_circle = Circle3d(ax0, 0., 0., 0., 2, 2, ":", "darkorange", 0.8)
     light_circle.rotate(np.pi / 2., vector_z_axis)
     light_arrow_path = LightArrowPath(ax0, np.pi / 2., 0., 0., 0.)
