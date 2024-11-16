@@ -9,7 +9,7 @@ Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime.
 Watch my video for more detail!  
 [https://youtu.be/AwRgGn6AzzU  ](https://youtu.be/AwRgGn6AzzU)
 
-![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
+![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/main/image_special-relativity.png)
 
 ## Python exercise - 34  
 Simple exercise of matplotlib-animation of Python.
@@ -34,7 +34,7 @@ https://en.wikipedia.org/wiki/Moir%C3%A9_pattern
 ## 1. Introduction
 My argument in the last video (chapter - 1)was that light is a sphere spread out in Minkowski space(Fig 1-1). However, in reality, light is observed not as a surface but as a point. Regarding this, in the previous video, I only suggested that we could see what appeared to be light trajectories through the moiré patterns (interference fringes) created by concentric circles and stripes(Fig 1-2). This time, we will consider the mechanism by which light spreading out as a sphere is observed at a single point.
 
-![image_fig1-1](https://github.com/marukatsutech/special_relativity/blob/master/image_fig1-1.png)
+![image_fig1-1](https://github.com/marukatsutech/special_relativity/blob/main/image_fig1-1.png)
 
 Fig. 1-1. Light spreading spherically in Minkowski space
 
@@ -51,14 +51,14 @@ Let's apply the Huygens-Fresnel principle to how waves propagate in Minkowski sp
 Here, for simplicity, we will reduce the dimensions and consider a plane (two dimensions). First, when light is generated, it spreads out as a circle in a certain space (hereinafter referred to as light-speed-space). Here, for light, neither time nor space is fixed.
 If this is observed from the standpoint of observer A,  the light seen from the observer will be as shown in the figure(Fig 2-1). (Although the space-time coordinates of observer B, who has a different relative speed than observer A, are tilted with respect to the space-time coordinates of A, the light spreads in a circle, so the light appears the same to both observers A and B.).
 
-![image_fig2-1](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-1.png)
+![image_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-1.png)
 
 Fig. 2-1. Light circle seen from observers A and B
 
 Next, we will look at how light spreads when viewed from observer A. Assuming that the length of each arrow is 1(Fig 2-2a), each arrow indicates the direction (velocity) in which light spreads. In Minkowski space, the slope of a straight line indicating the movement of an object indicates its speed, and a slope of 1 indicates the speed of light, so the speed of a light arrow that spreads out in a circular shape (hereinafter referred to as light-arrow) is equal to the slope of light-arrow from the standpoint of observer A. From then on, it should appear to progress from 0 to ± infinity.
 In Minkowski space, the region exceeding the speed of light (slope = 1) is called a spacelike region, and is ignored because the law of causality does not hold, but here we will proceed with the idea without ignoring it and assuming that superluminal speed exists.
 
-![image_fig2-2a](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-2a.png)
+![image_fig2-2a](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-2a.png)
 
 Fig. 2-2a. The light circle (light-arrow) seen by the observer
 
@@ -66,7 +66,7 @@ Fig. 2-2a. The light circle (light-arrow) seen by the observer
 
 The arrival point of each light-arrow for observer A at time t=1 is plotted on the straight line at time t=1 as shown in Fig 2-2.b This is like a Mercator projection map that represents the spherical Earth on a flat surface.
 
-![image_fig2-2b](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-2b.png)
+![image_fig2-2b](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-2b.png)
 
 Fig. 2-2b. How the light circle spreads as seen by the observer 
 
@@ -75,7 +75,7 @@ Fig. 2-2b. How the light circle spreads as seen by the observer
 
 According to the Huygens-Fresnel principle, the wavefront at the next moment is formed by the overlap of circular secondary waves (elementary waves) from each point on the wavefront(Fig 2-3). 
 
-![image_fig2-3](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-3.png)
+![image_fig2-3](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-3.png)
 
 Fig. 2-3. How secondary waves of light (elementary waves) spread in the speed-of-light space 
 
@@ -83,12 +83,12 @@ Fig. 2-3. How secondary waves of light (elementary waves) spread in the speed-of
 
 Therefore, a wave spreads out in a circle from each point at time t = 1, and the circular wave is plotted in a straight line at time t = 2 in Minkowski space(Fig 2-4, 2-5). In this way, a wave that spreads circularly in light-speed-space will spread flatly in Minkowski space.
 
-![image_fig2-4](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-4.png)
+![image_fig2-4](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-4.png)
 
 Fig. 2-4. How secondary waves (elementary waves) of light spread as seen from the observer in Minkowski space 
 (Try light_arrows.py for Fig 2-4.)
 
-![image_fig2-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-5.png)
+![image_fig2-5](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-5.png)
 
 Fig. 2-5. Waves spreading in a plane in Minkowski space 
 
@@ -97,7 +97,7 @@ Fig. 2-5. Waves spreading in a plane in Minkowski space
 ## 3. Wave superposition and delta function
 It turns out that a wave of light that spreads out in a circle spreads out in a plane in Minkowski space. Next, we need to converge the waves on this plane to a single point. The delta function(Fig 3-1, 3-2.) is a superposition of waves with an infinite frequency band.
 
-![image_fig3-1_3-2](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-1_3-2.png)
+![image_fig3-1_3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-1_3-2.png)
 
 Fig. 3-1, 3-2. Superposition of waves
 
@@ -132,7 +132,7 @@ y(n) = cos(2π(k(n)x - ω(n)t))…Equation 3-5
  
 Unfortunately, since the phase velocities are different, as time progresses, the phases shift and the peak collapses.
 
-![image_fig3-3](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-3.png)
+![image_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-3.png)
 
 Fig. 3-3. Superposition of waves with k(n) =1 /slope(n),　ωn= 1 
 
@@ -149,7 +149,7 @@ y(n) = cos(2π(k(n)x - ω(n)t)) …Equation 3-7
 
 In this case, k(n) = 1 / slope(n), ω(n) = slope(n), so the phase velocity vp(n) = ω(n) / k(n) = slope(n) ** 2, which is the square of the slope of the light-arrow, and in this case However, as time progresses, the phase shifts and the peak collapses.
 
-![image_fig3-4](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-4.png)
+![image_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-4.png)
 
 Fig. 3-4. Superposition of waves with k(n) =1 /slope(n),　ω(n)= slope(n)
 
@@ -170,7 +170,7 @@ y(n) = cos(2π(k(n)x - ω(n)t)) ... Equation 3-10,
 
 So, the equation of the superposed wave of Equation 3-10 is as following.
 
-![image_equation3-11](https://github.com/marukatsutech/special_relativity/blob/master/image_equation3-11.png)
+![image_equation3-11](https://github.com/marukatsutech/special_relativity/blob/main/image_equation3-11.png)
 
 ... Equation 3-11
  
@@ -180,7 +180,7 @@ Furthermore, since the phase velocity in this case is
   
 You can see a wave packet traveling at a phase velocity of 1 while maintaining the peak due to the superposition of waves.
 
-![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-5.png)
+![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-5.png)
 
 Fig. 3-5. Superposition of waves with kn = slope(n),　ωn= slope(n)
 
@@ -196,7 +196,7 @@ It is a collection of waves with wave number slope(n) times y = cos(2π * (x - t
 Now, in the previous video, three waves were superposed, but let's increase the number of superpositions. 
 The following video is a superposition of 100 waves with k(n) = ω(n) = slope(n) (n= 0.1, 0.2, 0.3…~10).
 
-![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-6.png)
+![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-6.png)
 
 Fig. 3-6. Superposition of 100 waves with kn = slope(n),　ωn= slope(n)
 
@@ -253,21 +253,21 @@ Quantums are classified into bosons, which transmit forces between quanta, and f
 
 The current explanation of quantum spin is that although it is called spin, it does not mean that the quantum is actually spinning like a ball. However, doesn't the fact that the quantum spin has an angular momentum value lead to some kind of rotation?
 
-![image_ch3_fig2-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig2-1.png)
+![image_ch3_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig2-1.png)
 
 Fig. 2-1. Spin of a photon
 
 Then, what does the spin 1/2 of fermions such as electrons mean? Spin is related to rotational symmetry; a quantum with spin 1 has one-fold rotational symmetry, and a quantum with spin 1/2 has 1/2-fold rotational symmetry. Rotational symmetry refers to how many times a figure becomes indistinguishable during one rotation (360° rotation). 
 If it is an equilateral triangle, if it is rotated 120 degrees, it will be in the same state as before the rotation, and it will be in the same state three times within one rotation (rotation 360 degrees), so it has three-fold rotational symmetry.
 
-![image_ch3_fig2-2](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig2-2.png)
+![image_ch3_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig2-2.png)
 
 Fig. 2-2. Rotational symmetry of figures
 
 Spin 1 means that the object will not be in the same state as before the rotation unless it is rotated once (360 degrees), so if it is spin 1/2, it will not return to its original shape unless it is rotated twice (720 degrees). It cannot be expressed in normal diagrams. 
 If it returns to its original state after two revolutions, does spin 1/2 mean a rotation plus a rotation, such as a double rotation(Fig. 2-3), in which rotation is added to the circumference?
 
-![image_ch3_fig2-3](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig2-3.png)
+![image_ch3_fig2-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig2-3.png)
 
 Fig. 2-3. Double rotation (circumferential rotation)
 
@@ -278,14 +278,14 @@ Let's now change our perspective and consider the relationship with path integra
 The path integral formulation was devised by Richard P. Feynman, and is based on the idea that a quantum takes every possible path between its destination and the point it reaches, and integrates the probability amplitude of the quantum when it takes each path. 
 It is said to be equivalent to the Schrödinger equation, which expresses the behavior of a quantum by calculating the probability of existence of a quantum at a point.
 
-![image_ch3_fig3-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig3-1.png)
+![image_ch3_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig3-1.png)
 
 Fig. 3-1. Path integral formulation
 
 I will not explain the formula for the path integral, but what it means is explained in the book THE QUANTUM UNIVERSE (and why anything that can happen, does)　by Brian Cox and Jeff Forshaw. 
 According to that work, the change in the phase of the probability amplitude when passing through each path is expressed by the following equation (Equation 3-1), and the sum of the phases is the quantum at the observed position. Indicates the probability of existence.
 
-![image_ch3_eq3-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_eq3-1.png)
+![image_ch3_eq3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_eq3-1.png)
 
 Equation 3-1.
 
@@ -305,7 +305,7 @@ Now, the probability amplitude of fermions is proportional to the square of x as
 In the case of a light circle, it is represented by a normal rotation and is projected onto the observer's spatial axis in proportion to the slope of the light-arrows that make up the light circle. (Fig 4-4a). 
 In the case of fermions, since it is proportional to the square of x, the phase should take a distribution projected onto the x-axis of a parabola, but as shown in Fig. 4-1b, the projection position of the parabola onto the x-axis and the arrow of light If we force the slopes of the arrows to match, the starting points of the arrows will not converge at one point( or a circle), and it seems difficult to represent them with a double rotation like in Fig. 2-3.
 
-![image_ch3_fig4-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-1.png)
+![image_ch3_fig4-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig4-1.png)
 
 Fig. 4-1a. and 4-1b. Projection of light circle
 
@@ -314,7 +314,7 @@ Fig. 4-1a. and 4-1b. Projection of light circle
 So far, we have only dealt with two dimensions (spatial axis x and time axis t for the observer) in order to simplify the discussion and make it possible to represent it in a plan view. Let's think about adding it.
 When the inclination of the arrow of light is expressed as an angle θ from the time axis, the relationship between x and θ is x = tanθ (assuming that the length of the arrow of light = the radius of the light circle is 1). Furthermore, let's assume that the angle θ is from the added spatial axis (referred to as the y-axis) and that the arrow of light rotates like the precession of a top, as shown in Fig. 4-2. At that time, the projection of the arrow of light onto the x-axis is tanθ✕tanθ = x squared.
 
-![image_ch3_fig4-2](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-2.png)
+![image_ch3_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig4-2.png)
 
 Fig. 4−2. Projection of light circle in 3 dimensions - 1
 
@@ -322,7 +322,7 @@ Fig. 4−2. Projection of light circle in 3 dimensions - 1
 
 In addition, Fig. 4-2 is the same as the arrow of light rotating, just as the spinning top rotates sideways, and its axis of rotation also rotating, which can also be expressed as in Fig. 4-3. In Fig. 4-3, the tip of the arrow of light traces a twisted trajectory like a figure eight. This is thought to indicate the spin of the fermions.
 
-![image_ch3_fig4-3](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-3.png)
+![image_ch3_fig4-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig4-3.png)
 
 Fig. 4−3. Projection of light circle in 3 dimensions - 2
 
@@ -332,7 +332,7 @@ Fig. 4−3. Projection of light circle in 3 dimensions - 2
 * Both bosons and fermions can be represented by light-arrows that spread out spherically in Minkowski space in this theory.
 * The difference between bosons and fermions is that bosons have a rotational property on the time and space axes, and fermions also have another rotational property in the spatial direction.
 
-![image_ch3_fig5-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig5-1.png)
+![image_ch3_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig5-1.png)
 
 Fig. 4-1. Spin of boson and fermion
 
@@ -360,11 +360,15 @@ On the other hand, the probability wave shown in Schrodinger's wave equation rep
 ## 2. Probability of quantum existence
 A probability wave does not represent a quantum itself, but the square of the absolute value of the magnitude of the probability wave at a certain position represents the probability (expected value) of finding a quantum at that position (Fig. 2-1). This is called the Born rule, which means that a quantum can only be expressed as a probability, but there are different interpretations of the world represented by the wave function, such as the Copenhagen interpretation and the many-worlds interpretation.
 
+![image_ch4_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig2-1.png)
+
 Fig. 2-1 Probability wave
 
 So, let's think again about what probability is. When we think of probability in our daily lives, we think of the outcome of a coin landing on heads, the number on a dice, or winning a lottery. However, in the world of quantum mechanics, probability is something very mysterious, and that is the interference of probability waves.
 
 The interference of quanta as probability waves can be seen in the double slit experiment. Wave interference at the double slit also occurs in waves on the surface of water, but what is even more mysterious about the interference of quanta as probability waves is that when there is a single quantum, it behaves as if it is interfering with itself. When quanta such as photons or electrons are emitted toward the double slit one by one with a time interval, they are naturally observed as a single point on the observation screen beyond the double slit. When this is repeated, the collection of observed points is distributed across the screen as if waves on the surface of water were interfering with each other at the double slit (Fig. 2-2).
+
+![image_ch4_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig2-2.png)
 
 Fig. 2-2 Double slit experiment
 
@@ -375,25 +379,43 @@ Let's consider photons here. This is because bosons other than photons (Z bosons
 
 In that case, it is sufficient to assume that the Light-arrow does not rotate, but changes its direction (phase) randomly (Fig. 3-1). However, photons have vibrational energy (in visible light, they are observed as the color of light; the shorter the wavelength = the higher the frequency, the higher the energy), and the phase of the vibration changes continuously in space. When the direction of the Light-arrow changes randomly, if the phase of the vibrational energy of the light changes synchronized with Light-arrow-phase, it can be considered to be the same as rotating.
 
-Fig. 3-1
+![image_ch4_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-1.png)
+
+Fig. 3-1 Random motion of Light-arrow
+
+(Try photon_probability.py for Fig. 3-1.)
 
 Since there are two phases here, in order to distinguish between them, we will call the phase of the light frequency energy the Light-phase, and the direction of the Light-arrow the Light-arrow-phase. The Light-arrow can be expressed as a rotating vector with the frequency (rotation speed) of light. And a photon is a rotating vector whose phase (Light-arrow-phase) changes randomly as it draws a Light-sphere.
 
 By the way, so far I have not explained how the lower hemisphere of the Light-sphere is projected into space. Regarding the Light-arrow oriented in the lower hemisphere, you may feel that there is no projection destination in the direction of the arrow (it is projected in the direction of negative time). This can be explained from the observer's position (coordinates) with respect to the light-sphere.
 When viewed from the observer's coordinates, the slope of the light-arrow (= position / time) indicates the speed. The slope of the Light-arrow in the third quadrant is space (minus) / time (minus) = velocity plus, and the Light-arrow is projected to the first quadrant side. The slope of the light arrow in the fourth quadrant is space (plus) / time (minus) = velocity minus, and the light arrow will be projected toward the second quadrant.
 
-Next, consider the interference of probability waves. If we assume that one photon is composed of multiple light-arrows and that the light-arrows interfere with each other, we can easily explain interference. However, the randomly scattered light-arrows need to come together at the moment they are observed, and the same problem as wave function collapse remains. Considering the  of wave function　collapse, it is easier to explain Light-arrow in one form.
+Next, consider the interference of probability waves. If we assume that one photon is composed of multiple light-arrows and that the light-arrows interfere with each other, we can easily explain interference. However, the randomly scattered light-arrows need to come together at the moment they are observed, and the same problem as wave function collapse remains. Considering the of wave function collapse, it is easier to explain Light-arrow in one form.
 
 A case in which one object is observed to interfere is a case in which the objects move around at high speed.
-For example, let's put an ant in a box with grids and observe in which grid it can be found (assuming that this ant can move around at high speed). If ants do not have a preference for squares, such as preferring the corners of a box, the probability of finding an ant in any square is equal. Then, place food (sugar, etc.) and obstacles in some squares. This results in a bias in the frequency of the directions in which ants pass depending on the grid.
+For example, let's put an ant in a box with grids and observe in which cell it can be found (assuming that this ant can move around at high speed). If ants do not have a preference for cells, such as preferring the corners of a box, the probability of the direction at which the ant passes through any cell is equal. Then, place food (sugar, etc.) and obstacles in some cells. Depending on the cell, there is a bias in the frequency of the direction (angle) at which the ant passes by (Fig. 3-2).
 
-Next, randomly select a square and catch an ant with tweezers. The direction of the opening of the tweezers must be kept constant. Also, if the opening of the tweezers do not open wider than the width of the ant, the ant can be caught only if the direction of the opening of the tweezers matches the direction in which the ant passes by. The more frequently the direction in which an ant passes matches the direction of the tweezers' opening, the higher the probability of catching an ant (Fig. 3-2).
+![image_ch4_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-2.png)
+
+Fig. 3-2 Random walk ant
+
+Next, randomly select a square and catch the ant with tweezers. The direction of the opening of the tweezers must be kept constant. Also, if the opening of the tweezers do not open wider than the width of the ant, the ant can be caught only if the direction of the opening of the tweezers matches the direction in which the ant passes by(Fig. 3-3). 
+
+![image_ch4_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-3.png)
+
+Fig. 3-3 Catch the random walk ant with tweezers
+
+The more frequently the direction in which the ant passes matches the direction of the tweezers' opening, the higher the probability of catching the ant (Fig. 3-4).
 In this case, one object causes interference and probabilistic observation results can be obtained(an ant is a photon, a tweezers is a fermion).
 
-If we consider that a photon is something whose phase (Light-arrow-phase) changes randomly and rapidly, as if one Light-arrow draws a Light-sphere, then one photon interferes like a wave. , it can also be explained that when observed, it converges to one (wave function collapse).
-What is meant by "keep the direction of the tweezers in a constant direction" will be explained in Section 5.
+![image_ch4_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-4.png)
 
-Note that if you take a long-exposure photo of this one ant, you will see afterimages of multiple ants in each square. Some of the squares show the ants passing in the same direction, while others show them in different directions. The image taken with this long exposure corresponds to the probability wave of the wave function.
+Fig. 3-4 Interference of the random walk ant
+
+If we consider that a photon is something whose phase (Light-arrow-phase) changes randomly and rapidly, as if one Light-arrow draws a Light-sphere, then one photon interferes like a wave.  It can also be explained that when observed, it converges to one (wave function collapse).
+What is meant by "keep the direction of the tweezers' opening in a constant direction" will be explained in Section 5.
+
+Note that if you take a long-exposure photo of this one ant, you will see afterimages of multiple ants in each cell. Some of the cells show the ant passing in the same direction, while others show them in different directions. The image taken with this long exposure corresponds to the probability wave of the wave function.
 
 ## 4. Reconsidering the fermion model from the perspective of probability
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
