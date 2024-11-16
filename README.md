@@ -430,28 +430,30 @@ In addition, time and space in the Light-sphere are exactly the same thing, and 
 Therefore, we reconsider the axis of rotation of quantum spin and consider that the light-arrow rotates minutely like the precession of a top, and that the axis of rotation is the axis of rotation of quantum spin.
 (In the previous section, the Light-arrow does not rotate but changes randomly, but can be considered to rotate because the Light-arrow-phase changes. In the same way, this precession is also thought to change randomly, not rotate.)
 
+
 ![image_ch4_fig4-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig4-1.png)
 
 Fig. 4-1 Precession of Light-Arrow
 
-Considering the isotropy of the sphere, you can think of the Light-arrow as having a rotation component at each phase as shown in the figure. Then, you can think of the rotation components at each phase as being combined, and as being the same as the whole rotating in a circle. The rotation components at each phase are then combined, and the whole can be regarded as rotating in a circular motion. Furthermore, as explained in the previous section, the Light-arrow-phase changes randomly and rapidly, so one tiny rotation appears to spread across the entire Light-sphere, resulting in a collection of rotations as shown in Fig. 4-2.
+The tiny rotations caused by the Light-arrow accompanied by precession appear to spread throughout the Light-sphere, and can be seen as a collection of rotations because the Light-arrow-phase changes randomly and rapidly as explained in the previous section.
+Then,if you focus on a point on the Light-Sphere (the point indicated by the direction of the Light-Arrow), as that point moves a small distance it will make a small rotation, causing it to curve slightly as it moves, appearing to draw a large circle. (To repeat, the Light-arrow-phase changes randomly, so it does not actually rotate, but rather appears to rotate because the Light-phase changes synchronized with the changes in the Light-arrow-phase.) Then, when that point reaches the center of the Light-sphere (the equator), it will draw a large circle in the opposite direction. This is because, as explained in the previous section, in the third and fourth quadrants of the coordinate system, the direction of time from the observer's perspective is negative, and the direction of rotation is also reversed (Fig. 4-2). 
 
 ![image_ch4_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig4-2.png)
 
-Fig. 4-2 Light-sphere of fermions
+Fig. 4-2 Assemble of rotations
 
-If you focus on a point on the Light-Sphere (the point indicated by the direction of the Light-Arrow), as that point moves a small distance it will make a small rotation, causing it to curve slightly as it moves, appearing to draw a large circle. (To repeat, the Light-arrow-phase changes randomly, so it does not actually rotate, but rather appears to rotate because the Light-phase changes synchronized with the changes in the Light-arrow-phase.) Then, when that point reaches the center of the Light-sphere (the equator), it will draw a large circle in the opposite direction. This is because, as explained in the previous section, in the third and fourth quadrants of the coordinate system, the direction of time from the observer's perspective is negative, and the direction of rotation is also reversed. As a result, the light arrow will form a figure eight, similar to what was explained in Chapter 3. In addition, since the minute rotation due to the precession of the Light-arrow spreads over the entire Light-sphere, no matter where the starting point is, it will always trace a figure eight, and therefore it will always trace the same figure eight from any observer, which is consistent with the relative way of thinking.(Fig. 4-3). 
+As a result, the light arrow will form a figure eight, similar to what was explained in Chapter 3. In addition, since the minute rotation due to the precession of the Light-arrow spreads over the entire Light-sphere, no matter where the starting point is, it will always trace a figure eight, and therefore it will always trace the same figure eight from any observer, which is consistent with the relative way of thinking (Fig. 4-3). 
 
 ![image_ch4_fig4-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig4-3.png)
 
-Fig. 4-3 Motion of Light-arrow of fermions
+Fig. 4-2 Motion of Light-arrow of fermions
 
 By the way, the shape of the figure eight explained in Chapter 3 is slightly different from the figure eight this time (the circular part of the figure eight this time is a perfect circle). In Chapter 3, I explained that in order for the projection of the light-arrow onto the spatial coordinate to be proportional to the square of the spatial coordinate (x), it is necessary to rotate in a figure-8 pattern. This is because the change in phase w of the probability wave representing the fermion in the path integral is proportional to the square of the spatial coordinate x, as shown by the equation w=mx**2/2ht.
-In the case of the figure eight this time, this can be easily explained by the intersection of a cone. Depending on the cut (the angle at which it intersects with the plane), the shape of the cone and its intersectiopn can be a circle, an ellipse, a parabola, or a hyperbola (Fig. 4-4).
+In the case of the figure eight this time, this can be easily explained by the intersection of a cone. Depending on the cut (the angle at which it intersects with the plane), the shape of the cone and its intersectiopn can be a circle, an ellipse, a parabola, or a hyperbola.
 
 ![image_ch4_fig4-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig4-4.png)
 
-Fig. 4-4 Intersection of cone
+Video. Intersection of Cone and Plane (circle, ellipse, parabola and hyperbola)
 
 [https://youtu.be/beXKDRCCzY0](https://youtu.be/beXKDRCCzY0)
 
