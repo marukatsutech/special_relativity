@@ -379,7 +379,7 @@ Let's consider photons here. This is because bosons other than photons (Z bosons
 
 In that case, it is sufficient to assume that the Light-arrow does not rotate, but changes its direction (phase) randomly (Fig. 3-1). However, photons have vibrational energy (in visible light, they are observed as the color of light; the shorter the wavelength = the higher the frequency, the higher the energy), and the phase of the vibration changes continuously in space. When the direction of the Light-arrow changes randomly, if the phase of the vibrational energy of the light changes synchronized with Light-arrow-phase, it can be considered to be the same as rotating.
 
-![image_ch4_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-1.png)
+![image_ch4_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-1.png)
 
 Fig. 3-1 Random motion of Light-arrow
 
@@ -390,13 +390,27 @@ Since there are two phases here, in order to distinguish between them, we will c
 By the way, so far I have not explained how the lower hemisphere of the Light-sphere is projected into space. Regarding the Light-arrow oriented in the lower hemisphere, you may feel that there is no projection destination in the direction of the arrow (it is projected in the direction of negative time). This can be explained from the observer's position (coordinates) with respect to the light-sphere.
 When viewed from the observer's coordinates, the slope of the light-arrow (= position / time) indicates the speed. The slope of the Light-arrow in the third quadrant is space (minus) / time (minus) = velocity plus, and the Light-arrow is projected to the first quadrant side. The slope of the light arrow in the fourth quadrant is space (plus) / time (minus) = velocity minus, and the light arrow will be projected toward the second quadrant.
 
-Next, consider the interference of probability waves. If we assume that one photon is composed of multiple light-arrows and that the light-arrows interfere with each other, we can easily explain interference. However, the randomly scattered light-arrows need to come together at the moment they are observed, and the same problem as wave function collapse remains. Considering the  of wave function　collapse, it is easier to explain Light-arrow in one form.
+Next, consider the interference of probability waves. If we assume that one photon is composed of multiple light-arrows and that the light-arrows interfere with each other, we can easily explain interference. However, the randomly scattered light-arrows need to come together at the moment they are observed, and the same problem as wave function collapse remains. Considering the of wave function collapse, it is easier to explain Light-arrow in one form.
 
 A case in which one object is observed to interfere is a case in which the objects move around at high speed.
-For example, let's put an ant in a box with grids and observe in which cell it can be found (assuming that this ant can move around at high speed). If ants do not have a preference for cells, such as preferring the corners of a box, the probability of the direction at which the ant passes through any cell is equal. Then, place food (sugar, etc.) and obstacles in some cells. Depending on the cell, there is a bias in the frequency of the direction (angle) at which the ant passes by.
+For example, let's put an ant in a box with grids and observe in which cell it can be found (assuming that this ant can move around at high speed). If ants do not have a preference for cells, such as preferring the corners of a box, the probability of the direction at which the ant passes through any cell is equal. Then, place food (sugar, etc.) and obstacles in some cells. Depending on the cell, there is a bias in the frequency of the direction (angle) at which the ant passes by (Fig. 3-2).
 
-Next, randomly select a square and catch the ant with tweezers. The direction of the opening of the tweezers must be kept constant. Also, if the opening of the tweezers do not open wider than the width of the ant, the ant can be caught only if the direction of the opening of the tweezers matches the direction in which the ant passes by. The more frequently the direction in which the ant passes matches the direction of the tweezers' opening, the higher the probability of catching the ant (Fig. 3-2).
+![image_ch4_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-2.png)
+
+Fig. 3-2 Random walk ant
+
+Next, randomly select a square and catch the ant with tweezers. The direction of the opening of the tweezers must be kept constant. Also, if the opening of the tweezers do not open wider than the width of the ant, the ant can be caught only if the direction of the opening of the tweezers matches the direction in which the ant passes by(Fig. 3-3). 
+
+![image_ch4_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-41.png)
+
+Fig. 3-3 Catch the random walk ant with tweezers
+
+The more frequently the direction in which the ant passes matches the direction of the tweezers' opening, the higher the probability of catching the ant (Fig. 3-4).
 In this case, one object causes interference and probabilistic observation results can be obtained(an ant is a photon, a tweezers is a fermion).
+
+![image_ch4_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-4.png)
+
+Fig. 3-4 Interference of the random walk ant
 
 If we consider that a photon is something whose phase (Light-arrow-phase) changes randomly and rapidly, as if one Light-arrow draws a Light-sphere, then one photon interferes like a wave.  It can also be explained that when observed, it converges to one (wave function collapse).
 What is meant by "keep the direction of the tweezers in a constant direction" will be explained in Section 5.
