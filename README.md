@@ -401,7 +401,7 @@ Fig. 3-2 Random walk ant
 
 Next, randomly select a square and catch the ant with tweezers. The direction of the opening of the tweezers must be kept constant. Also, if the opening of the tweezers do not open wider than the width of the ant, the ant can be caught only if the direction of the opening of the tweezers matches the direction in which the ant passes by(Fig. 3-3). 
 
-![image_ch4_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-41.png)
+![image_ch4_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-3.png)
 
 Fig. 3-3 Catch the random walk ant with tweezers
 
