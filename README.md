@@ -451,15 +451,13 @@ Fig. 4-2 Motion of Light-arrow of fermions
 By the way, the shape of the figure eight explained in Chapter 3 is slightly different from the figure eight this time (the circular part of the figure eight this time is a perfect circle). In Chapter 3, I explained that in order for the projection of the light-arrow onto the spatial coordinate to be proportional to the square of the spatial coordinate (x), it is necessary to rotate in a figure-8 pattern. This is because the change in phase w of the probability wave representing the fermion in the path integral is proportional to the square of the spatial coordinate x, as shown by the equation w=mx**2/2ht.
 In the case of the figure eight this time, this can be easily explained by the intersection of a cone. Depending on the cut (the angle at which it intersects with the plane), the shape of the cone and its intersectiopn can be a circle, an ellipse, a parabola, or a hyperbola.
 
-![image_ch4_fig4-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig4-4.png)
-
 Video. Intersection of Cone and Plane (circle, ellipse, parabola and hyperbola)
 
 [https://youtu.be/beXKDRCCzY0](https://youtu.be/beXKDRCCzY0)
 
 And, as explained in the previous section, the Light-arrow can be expressed as a rotating vector, so the infinitesimal rotating vector that rotates (appears to rotate) like a cone due to precession can be considered as a rotating vector centered on the central axis of a figure-8 cone as a whole. This rotating vector is inclined at 45 degrees from the observer's time axis or space axis (Fig. 4-5), which will be important in the next explanation.
 
-![image_ch4_fig4-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig4-5.png)
+![image_ch4_fig4-45](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig4-4.png)
 
 Fig. 4-5 Rotating vector of fermions
 
