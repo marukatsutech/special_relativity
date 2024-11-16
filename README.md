@@ -412,10 +412,16 @@ In this case, one object causes interference and probabilistic observation resul
 
 Fig. 3-4 Interference of the random walk ant
 
-If we consider that a photon is something whose phase (Light-arrow-phase) changes randomly and rapidly, as if one Light-arrow draws a Light-sphere, then one photon interferes like a wave.  It can also be explained that when observed, it converges to one (wave function collapse).
+If we consider that a photon is something whose phase (Light-arrow-phase) changes randomly and rapidly, as if one Light-arrow draws a Light-sphere(Fig. 3-5), then one photon interferes like a wave.  It can also be explained that when observed, it converges to one (wave function collapse).
 What is meant by "keep the direction of the tweezers' opening in a constant direction" will be explained in Section 5.
 
 Note that if you take a long-exposure photo of this one ant, you will see afterimages of multiple ants in each cell. Some of the cells show the ant passing in the same direction, while others show them in different directions. The image taken with this long exposure corresponds to the probability wave of the wave function.
+
+![image_ch4_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-5.png)
+
+Fig. 3-5 Photon model
+
+(Try photon_model.py for Fig. 3-5.)
 
 ## 4. Reconsidering the fermion model from the perspective of probability
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
