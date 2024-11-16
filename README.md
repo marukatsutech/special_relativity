@@ -34,7 +34,7 @@ https://en.wikipedia.org/wiki/Moir%C3%A9_pattern
 ## 1. Introduction
 My argument in the last video (chapter - 1)was that light is a sphere spread out in Minkowski space(Fig 1-1). However, in reality, light is observed not as a surface but as a point. Regarding this, in the previous video, I only suggested that we could see what appeared to be light trajectories through the moiré patterns (interference fringes) created by concentric circles and stripes(Fig 1-2). This time, we will consider the mechanism by which light spreading out as a sphere is observed at a single point.
 
-![image_fig1-1](https://github.com/marukatsutech/special_relativity/blob/master/image_fig1-1.png)
+![image_fig1-1](https://github.com/marukatsutech/special_relativity/blob/main/image_fig1-1.png)
 
 Fig. 1-1. Light spreading spherically in Minkowski space
 
@@ -51,14 +51,14 @@ Let's apply the Huygens-Fresnel principle to how waves propagate in Minkowski sp
 Here, for simplicity, we will reduce the dimensions and consider a plane (two dimensions). First, when light is generated, it spreads out as a circle in a certain space (hereinafter referred to as light-speed-space). Here, for light, neither time nor space is fixed.
 If this is observed from the standpoint of observer A,  the light seen from the observer will be as shown in the figure(Fig 2-1). (Although the space-time coordinates of observer B, who has a different relative speed than observer A, are tilted with respect to the space-time coordinates of A, the light spreads in a circle, so the light appears the same to both observers A and B.).
 
-![image_fig2-1](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-1.png)
+![image_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-1.png)
 
 Fig. 2-1. Light circle seen from observers A and B
 
 Next, we will look at how light spreads when viewed from observer A. Assuming that the length of each arrow is 1(Fig 2-2a), each arrow indicates the direction (velocity) in which light spreads. In Minkowski space, the slope of a straight line indicating the movement of an object indicates its speed, and a slope of 1 indicates the speed of light, so the speed of a light arrow that spreads out in a circular shape (hereinafter referred to as light-arrow) is equal to the slope of light-arrow from the standpoint of observer A. From then on, it should appear to progress from 0 to ± infinity.
 In Minkowski space, the region exceeding the speed of light (slope = 1) is called a spacelike region, and is ignored because the law of causality does not hold, but here we will proceed with the idea without ignoring it and assuming that superluminal speed exists.
 
-![image_fig2-2a](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-2a.png)
+![image_fig2-2a](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-2a.png)
 
 Fig. 2-2a. The light circle (light-arrow) seen by the observer
 
@@ -66,7 +66,7 @@ Fig. 2-2a. The light circle (light-arrow) seen by the observer
 
 The arrival point of each light-arrow for observer A at time t=1 is plotted on the straight line at time t=1 as shown in Fig 2-2.b This is like a Mercator projection map that represents the spherical Earth on a flat surface.
 
-![image_fig2-2b](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-2b.png)
+![image_fig2-2b](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-2b.png)
 
 Fig. 2-2b. How the light circle spreads as seen by the observer 
 
@@ -75,7 +75,7 @@ Fig. 2-2b. How the light circle spreads as seen by the observer
 
 According to the Huygens-Fresnel principle, the wavefront at the next moment is formed by the overlap of circular secondary waves (elementary waves) from each point on the wavefront(Fig 2-3). 
 
-![image_fig2-3](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-3.png)
+![image_fig2-3](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-3.png)
 
 Fig. 2-3. How secondary waves of light (elementary waves) spread in the speed-of-light space 
 
@@ -83,12 +83,12 @@ Fig. 2-3. How secondary waves of light (elementary waves) spread in the speed-of
 
 Therefore, a wave spreads out in a circle from each point at time t = 1, and the circular wave is plotted in a straight line at time t = 2 in Minkowski space(Fig 2-4, 2-5). In this way, a wave that spreads circularly in light-speed-space will spread flatly in Minkowski space.
 
-![image_fig2-4](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-4.png)
+![image_fig2-4](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-4.png)
 
 Fig. 2-4. How secondary waves (elementary waves) of light spread as seen from the observer in Minkowski space 
 (Try light_arrows.py for Fig 2-4.)
 
-![image_fig2-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig2-5.png)
+![image_fig2-5](https://github.com/marukatsutech/special_relativity/blob/main/image_fig2-5.png)
 
 Fig. 2-5. Waves spreading in a plane in Minkowski space 
 
@@ -97,7 +97,7 @@ Fig. 2-5. Waves spreading in a plane in Minkowski space
 ## 3. Wave superposition and delta function
 It turns out that a wave of light that spreads out in a circle spreads out in a plane in Minkowski space. Next, we need to converge the waves on this plane to a single point. The delta function(Fig 3-1, 3-2.) is a superposition of waves with an infinite frequency band.
 
-![image_fig3-1_3-2](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-1_3-2.png)
+![image_fig3-1_3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-1_3-2.png)
 
 Fig. 3-1, 3-2. Superposition of waves
 
@@ -132,7 +132,7 @@ y(n) = cos(2π(k(n)x - ω(n)t))…Equation 3-5
  
 Unfortunately, since the phase velocities are different, as time progresses, the phases shift and the peak collapses.
 
-![image_fig3-3](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-3.png)
+![image_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-3.png)
 
 Fig. 3-3. Superposition of waves with k(n) =1 /slope(n),　ωn= 1 
 
@@ -149,7 +149,7 @@ y(n) = cos(2π(k(n)x - ω(n)t)) …Equation 3-7
 
 In this case, k(n) = 1 / slope(n), ω(n) = slope(n), so the phase velocity vp(n) = ω(n) / k(n) = slope(n) ** 2, which is the square of the slope of the light-arrow, and in this case However, as time progresses, the phase shifts and the peak collapses.
 
-![image_fig3-4](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-4.png)
+![image_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-4.png)
 
 Fig. 3-4. Superposition of waves with k(n) =1 /slope(n),　ω(n)= slope(n)
 
@@ -170,7 +170,7 @@ y(n) = cos(2π(k(n)x - ω(n)t)) ... Equation 3-10,
 
 So, the equation of the superposed wave of Equation 3-10 is as following.
 
-![image_equation3-11](https://github.com/marukatsutech/special_relativity/blob/master/image_equation3-11.png)
+![image_equation3-11](https://github.com/marukatsutech/special_relativity/blob/main/image_equation3-11.png)
 
 ... Equation 3-11
  
@@ -180,7 +180,7 @@ Furthermore, since the phase velocity in this case is
   
 You can see a wave packet traveling at a phase velocity of 1 while maintaining the peak due to the superposition of waves.
 
-![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-5.png)
+![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-5.png)
 
 Fig. 3-5. Superposition of waves with kn = slope(n),　ωn= slope(n)
 
@@ -196,7 +196,7 @@ It is a collection of waves with wave number slope(n) times y = cos(2π * (x - t
 Now, in the previous video, three waves were superposed, but let's increase the number of superpositions. 
 The following video is a superposition of 100 waves with k(n) = ω(n) = slope(n) (n= 0.1, 0.2, 0.3…~10).
 
-![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/master/image_fig3-6.png)
+![image_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_fig3-6.png)
 
 Fig. 3-6. Superposition of 100 waves with kn = slope(n),　ωn= slope(n)
 
@@ -253,21 +253,21 @@ Quantums are classified into bosons, which transmit forces between quanta, and f
 
 The current explanation of quantum spin is that although it is called spin, it does not mean that the quantum is actually spinning like a ball. However, doesn't the fact that the quantum spin has an angular momentum value lead to some kind of rotation?
 
-![image_ch3_fig2-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig2-1.png)
+![image_ch3_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig2-1.png)
 
 Fig. 2-1. Spin of a photon
 
 Then, what does the spin 1/2 of fermions such as electrons mean? Spin is related to rotational symmetry; a quantum with spin 1 has one-fold rotational symmetry, and a quantum with spin 1/2 has 1/2-fold rotational symmetry. Rotational symmetry refers to how many times a figure becomes indistinguishable during one rotation (360° rotation). 
 If it is an equilateral triangle, if it is rotated 120 degrees, it will be in the same state as before the rotation, and it will be in the same state three times within one rotation (rotation 360 degrees), so it has three-fold rotational symmetry.
 
-![image_ch3_fig2-2](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig2-2.png)
+![image_ch3_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig2-2.png)
 
 Fig. 2-2. Rotational symmetry of figures
 
 Spin 1 means that the object will not be in the same state as before the rotation unless it is rotated once (360 degrees), so if it is spin 1/2, it will not return to its original shape unless it is rotated twice (720 degrees). It cannot be expressed in normal diagrams. 
 If it returns to its original state after two revolutions, does spin 1/2 mean a rotation plus a rotation, such as a double rotation(Fig. 2-3), in which rotation is added to the circumference?
 
-![image_ch3_fig2-3](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig2-3.png)
+![image_ch3_fig2-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig2-3.png)
 
 Fig. 2-3. Double rotation (circumferential rotation)
 
@@ -278,14 +278,14 @@ Let's now change our perspective and consider the relationship with path integra
 The path integral formulation was devised by Richard P. Feynman, and is based on the idea that a quantum takes every possible path between its destination and the point it reaches, and integrates the probability amplitude of the quantum when it takes each path. 
 It is said to be equivalent to the Schrödinger equation, which expresses the behavior of a quantum by calculating the probability of existence of a quantum at a point.
 
-![image_ch3_fig3-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig3-1.png)
+![image_ch3_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig3-1.png)
 
 Fig. 3-1. Path integral formulation
 
 I will not explain the formula for the path integral, but what it means is explained in the book THE QUANTUM UNIVERSE (and why anything that can happen, does)　by Brian Cox and Jeff Forshaw. 
 According to that work, the change in the phase of the probability amplitude when passing through each path is expressed by the following equation (Equation 3-1), and the sum of the phases is the quantum at the observed position. Indicates the probability of existence.
 
-![image_ch3_eq3-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_eq3-1.png)
+![image_ch3_eq3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_eq3-1.png)
 
 Equation 3-1.
 
@@ -305,7 +305,7 @@ Now, the probability amplitude of fermions is proportional to the square of x as
 In the case of a light circle, it is represented by a normal rotation and is projected onto the observer's spatial axis in proportion to the slope of the light-arrows that make up the light circle. (Fig 4-4a). 
 In the case of fermions, since it is proportional to the square of x, the phase should take a distribution projected onto the x-axis of a parabola, but as shown in Fig. 4-1b, the projection position of the parabola onto the x-axis and the arrow of light If we force the slopes of the arrows to match, the starting points of the arrows will not converge at one point( or a circle), and it seems difficult to represent them with a double rotation like in Fig. 2-3.
 
-![image_ch3_fig4-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-1.png)
+![image_ch3_fig4-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig4-1.png)
 
 Fig. 4-1a. and 4-1b. Projection of light circle
 
@@ -314,7 +314,7 @@ Fig. 4-1a. and 4-1b. Projection of light circle
 So far, we have only dealt with two dimensions (spatial axis x and time axis t for the observer) in order to simplify the discussion and make it possible to represent it in a plan view. Let's think about adding it.
 When the inclination of the arrow of light is expressed as an angle θ from the time axis, the relationship between x and θ is x = tanθ (assuming that the length of the arrow of light = the radius of the light circle is 1). Furthermore, let's assume that the angle θ is from the added spatial axis (referred to as the y-axis) and that the arrow of light rotates like the precession of a top, as shown in Fig. 4-2. At that time, the projection of the arrow of light onto the x-axis is tanθ✕tanθ = x squared.
 
-![image_ch3_fig4-2](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-2.png)
+![image_ch3_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig4-2.png)
 
 Fig. 4−2. Projection of light circle in 3 dimensions - 1
 
@@ -322,7 +322,7 @@ Fig. 4−2. Projection of light circle in 3 dimensions - 1
 
 In addition, Fig. 4-2 is the same as the arrow of light rotating, just as the spinning top rotates sideways, and its axis of rotation also rotating, which can also be expressed as in Fig. 4-3. In Fig. 4-3, the tip of the arrow of light traces a twisted trajectory like a figure eight. This is thought to indicate the spin of the fermions.
 
-![image_ch3_fig4-3](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig4-3.png)
+![image_ch3_fig4-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig4-3.png)
 
 Fig. 4−3. Projection of light circle in 3 dimensions - 2
 
@@ -332,7 +332,7 @@ Fig. 4−3. Projection of light circle in 3 dimensions - 2
 * Both bosons and fermions can be represented by light-arrows that spread out spherically in Minkowski space in this theory.
 * The difference between bosons and fermions is that bosons have a rotational property on the time and space axes, and fermions also have another rotational property in the spatial direction.
 
-![image_ch3_fig5-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch3_fig5-1.png)
+![image_ch3_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig5-1.png)
 
 Fig. 4-1. Spin of boson and fermion
 
