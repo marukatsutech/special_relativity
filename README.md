@@ -9,7 +9,7 @@ Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime.
 Watch my video for more detail!  
 [https://youtu.be/AwRgGn6AzzU  ](https://youtu.be/AwRgGn6AzzU)
 
-![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
+![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/main/image_special-relativity.png)
 
 ## Python exercise - 34  
 Simple exercise of matplotlib-animation of Python.
@@ -360,7 +360,7 @@ On the other hand, the probability wave shown in Schrodinger's wave equation rep
 ## 2. Probability of quantum existence
 A probability wave does not represent a quantum itself, but the square of the absolute value of the magnitude of the probability wave at a certain position represents the probability (expected value) of finding a quantum at that position (Fig. 2-1). This is called the Born rule, which means that a quantum can only be expressed as a probability, but there are different interpretations of the world represented by the wave function, such as the Copenhagen interpretation and the many-worlds interpretation.
 
-![image_ch4_fig2-1](https://github.com/marukatsutech/special_relativity/blob/master/image_ch4_fig2-1.png)
+![image_ch4_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig2-1.png)
 
 Fig. 2-1 Probability wave
 
@@ -368,7 +368,7 @@ So, let's think again about what probability is. When we think of probability in
 
 The interference of quanta as probability waves can be seen in the double slit experiment. Wave interference at the double slit also occurs in waves on the surface of water, but what is even more mysterious about the interference of quanta as probability waves is that when there is a single quantum, it behaves as if it is interfering with itself. When quanta such as photons or electrons are emitted toward the double slit one by one with a time interval, they are naturally observed as a single point on the observation screen beyond the double slit. When this is repeated, the collection of observed points is distributed across the screen as if waves on the surface of water were interfering with each other at the double slit (Fig. 2-2).
 
-![image_ch4_fig2-2](https://github.com/marukatsutech/special_relativity/blob/master/image_ch4_fig2-2.png)
+![image_ch4_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig2-2.png)
 
 Fig. 2-2 Double slit experiment
 
@@ -379,7 +379,7 @@ Let's consider photons here. This is because bosons other than photons (Z bosons
 
 In that case, it is sufficient to assume that the Light-arrow does not rotate, but changes its direction (phase) randomly (Fig. 3-1). However, photons have vibrational energy (in visible light, they are observed as the color of light; the shorter the wavelength = the higher the frequency, the higher the energy), and the phase of the vibration changes continuously in space. When the direction of the Light-arrow changes randomly, if the phase of the vibrational energy of the light changes synchronized with Light-arrow-phase, it can be considered to be the same as rotating.
 
-![image_ch4_fig3-3](https://github.com/marukatsutech/special_relativity/blob/master/image_ch4_fig3-1.png)
+![image_ch4_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig3-1.png)
 
 Fig. 3-1 Random motion of Light-arrow
 
