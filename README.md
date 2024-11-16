@@ -465,5 +465,7 @@ Reference; Stokes' theorem (Wikipedia)
 The surface integral of the curl of a vector field on a surface is equal to the line integral of the original vector field on the boundary of the surface.
 https://en.wikipedia.org/wiki/Stokes%27_theorem
 
+Furthermore, when the Light-arrow as a whole draws a figure eight by connecting two circles, it rotates 720 degrees and returns to its original state, which easily explains the 1/2-fold rotational symmetry of fermions.
+
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
 ## 6. Conclusion
