@@ -499,6 +499,9 @@ Fig. 5-3
 
 This is how the principle of light speed constancy works.
 
-By the way, "keeping the orientation of the tweezers opening constant" as explained in Section 3 refers to the orientation of the rotation vector of the fermions as a whole, and also refers to the stripes in the "interference fringes of concentric circles and stripes" suggested in Chapter 1.
+By the way, "keep the direction of the tweezers' opening in a constant direction" as explained in Section 3 refers to "the direction of the rotation vector of the fermions as a whole", and also refers to "the stripes" in the "interference fringes of concentric circles and stripes" suggested in Chapter 1.
 
 ## 6. Conclusion
+
+Why is the speed of light constant?
+The answer is that our world is quantized!
