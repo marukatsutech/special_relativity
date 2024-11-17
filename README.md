@@ -470,4 +470,35 @@ https://en.wikipedia.org/wiki/Stokes%27_theorem
 Furthermore, when the Light-arrow as a whole draws a figure eight by connecting two circles, it rotates 720 degrees and returns to its original state, which easily explains the 1/2-fold rotational symmetry of fermions.
 
 ## 5. Relation between quantum interactions and the principle of the constancy of the speed of light
+Observing the speed of light is the interaction between light and the observer or the detector, and between photons and quanta (mainly electrons) such as cells in the retina or atoms inside the detector's sensor. Therefore, in order to consider the principle of light speed constancy, it is necessary to understand not only the photon but also the mechanism of the observer (quantum) that interacts with the photon. Therefore, in this paper, although it is titled "Special Relativity," I have discussed the nature of the quantum.
+
+In quantum mechanics, the interaction between photons and electrons results in a change in the speed and energy of the quantum before and after the interaction, as explained by the Compton effect, when a photon collides with an electron, and the exchange of momentum in virtual photons exchanged between electrons. (Interactions can also change the type of quantum, such as reactions mediated by the W boson, but we will not discuss these here.)
+
+The probability wave of a quantum (fermion) such as an electron, expressed by the Schrödinger wave function, when simplified to one dimension, is represented by a spiral as shown in Fig. 5-1. The wave is represented by a complex number (real and imaginary parts), and the square of the total absolute value of the complex number indicates the probability that the quantum is observed at that location. The square of the absolute value of a complex number may seem difficult to understand, but the absolute value of that complex number simply refers to the radius of the spiral, as shown in Fig. 5-1. And if a quantum has speed (relative speed) in the spatial direction, the tighter the spiral is (the more turns within the range), the faster it moves.
+
+Fig. 5-1
+
+A change in the speed of a quantum means that the spiral winding of the probability wave representing the quantum changes, and when a photon interacts with an electron and changes the electron's speed, it means that the photon has the effect of changing (twisting) the spiral winding of the electron's wave function. The video below is a simulation of the behavior of a quantum when a potential is applied to the waveform representing the quantum to change its phase (twist it to change its winding), and in the calculations, the quantum waveform on the left is rotated proportionally to the waveform on the right.
+
+Video. Quantum path integral  in potential
+
+[https://youtu.be/r7ozb2d25hQ](https://youtu.be/r7ozb2d25hQ)
+
+What causes the photon to twist the waveform of the electron is the frequency of the photon. The energy of a photon is expressed as E = hν, and photons with higher frequencies (such as gamma rays) impart more energy when they collide with an electron (they cause a larger change in the electron's speed). The photon vibration (rotation in the direction of the light-phase) also gives a twist to the interaction between photons and electrons (fermions) that make up the light-arrow explained in sections 3 and 4. As explained in section 3, the light-arrow of the photon travels through all space-time in an instant, but this violates the principle of light speed constancy.
+
+However, the fermion light-arrow described in the previous section can be regarded as a rotating vector as a whole that makes a 45 degree angle with the time or space axis. In order to add a twist to the rotation vector, the rotation vector needs to have the same direction as the vector. Therefore, the only thing an electron (fermion) can interact with is the Light-arrow of a photon coming from a 45-degree angle to the time or space axis of the electron (fermion). And moving at a 45-degree angle in Minkowski space means moving at the speed of light (Fig. 5-2).
+
+The same is true for electrons (fermions) that have relative velocity. The world line (time axis) of an electron with a relative velocity appears tilted to a stationary observer. And the rotation vector of the light-arrow of the electron as a whole is tilted at 45 degrees to the world line (time axis) as seen by the electron itself. Therefore, as shown in the figure, it interacts with photons of the light-arrow oriented at that angle. Therefore, the speed of light is observed to be constant from any observer (an electron at rest and an electron with a relative velocity). Furthermore, which electron will interact with which depends on the probability, and the probability is equal. (Fig. 5-2)
+
+
+Fig. 5-2
+
+Furthermore, a electron (fermion), which is represented as probability wave, are spread out until it is observed. The same is true for the electron (fermion), which is represented by a Light-arrow. A rotation vector with a small rotation (spin component) changes the Light-arrow-phase randomly and quickly, and since it is projected onto the spatial coordinate system, it travels through all spaces in an instant. Then, at some point, it interacts with the Light-arrow of a photon that is also traveling through all space. Basically, the probability of interaction at any position of the Light-arrow is equal. However, depending on the respective paths taken before the interaction, there are positions where the frequency of the Light-arrows passing back and forth and the frequency of the rotation vectors aligning are higher, and the probability of interaction (being observed) at those positions is higher(Fig 5-3).
+
+Fig. 5-3
+
+This is how the principle of light speed constancy works.
+
+By the way, "keeping the orientation of the tweezers opening constant" as explained in Section 3 refers to the orientation of the rotation vector of the fermions as a whole, and also refers to the stripes in the "interference fringes of concentric circles and stripes" suggested in Chapter 1.
+
 ## 6. Conclusion
