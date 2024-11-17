@@ -455,11 +455,7 @@ Video. Intersection of Cone and Plane (circle, ellipse, parabola and hyperbola)
 
 [https://youtu.be/beXKDRCCzY0](https://youtu.be/beXKDRCCzY0)
 
-And, as explained in the previous section, the Light-arrow can be expressed as a rotating vector, so the infinitesimal rotating vector that rotates (appears to rotate) like a cone due to precession can be considered as a rotating vector centered on the central axis of a figure-8 cone as a whole. This rotating vector is inclined at 45 degrees from the observer's time axis or space axis (Fig. 4-5), which will be important in the next explanation.
-
-![image_ch4_fig4-45](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig4-4.png)
-
-Fig. 4-5 Rotating vector of fermions
+And, as explained in the previous section, the Light-arrow can be expressed as a rotating vector, so the infinitesimal rotating vector that rotates (appears to rotate) like a cone due to precession can be considered as a rotating vector centered on the central axis of a figure-8 cone as a whole. This rotating vector is inclined at 45 degrees from the observer's time axis or space axis (Fig. 4-2), which will be important in the next explanation.
 
 Reference; Stokes' theorem (Wikipedia)
 The surface integral of the curl of a vector field on a surface is equal to the line integral of the original vector field on the boundary of the surface.
