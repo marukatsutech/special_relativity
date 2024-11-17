@@ -503,5 +503,11 @@ By the way, "keep the direction of the tweezers' opening in a constant direction
 
 ## 6. Conclusion
 
+* A photon is a rotating vector with the frequency of light, and it changes direction randomly and rapidly.
+* Fermions have spin properties, such as precession, and their overall rotation vector is inclined at 45 degrees to the time or space axis.
+* Photons and fermions randomly and rapidly change the direction of their rotating vectors, and the slope of the rotating vectors, which represent their speed in Minkowski space, has a speed from 0 to infinity and is projected across the entire space in an instant.
+* Photons and fermions projected across the entire space in an instant interact probabilistically when their rotation vectors align.
+
+
 Why is the speed of light constant?
 The answer is that our world is quantized!
