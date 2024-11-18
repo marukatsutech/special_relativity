@@ -407,7 +407,7 @@ root = tk.Tk()
 root.title("Special relativity (Lorentz transformation and rotation)")
 
 # Generate figure and axes
-fig = Figure(figsize=(8, 6))
+fig = Figure()
 ax1 = fig.add_subplot(1, 1, 1)
 
 # Embed Figure in canvas

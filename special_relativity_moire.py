@@ -543,7 +543,7 @@ root = tk.Tk()
 root.title("Special relativity (Lorentz transformation and moire pattern)")
 
 # Generate figure and axes
-fig = Figure(figsize=(8, 6))
+fig = Figure()
 ax1 = fig.add_subplot(121)
 ax2 = fig.add_subplot(122)
 
