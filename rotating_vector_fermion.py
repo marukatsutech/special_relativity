@@ -390,9 +390,9 @@ if __name__ == "__main__":
 
     light_arrow = Arrow3d(ax0, 0., 0., 0., True, 1., 0., 0., "darkorange",
                           2, "-", "Light arrow as whole")
-    rot_vector_arrow_upper = Arrow3d(ax0, 0., 0., 0., False, 1.4, np.pi / 4., 0., "blue",
+    rot_vector_arrow_upper = Arrow3d(ax0, 0., 0., 0., False, 1.4, np.pi / 4., 0., "red",
                                      2, "-", "Rotating vector as whole")
-    rot_vector_arrow_lower = Arrow3d(ax0, 0., 0., 0., False, 1.4, np.pi * 3. / 4., 0., "blue",
+    rot_vector_arrow_lower = Arrow3d(ax0, 0., 0., 0., False, 1.4, np.pi * 3. / 4., 0., "red",
                                      2, "-", "")
 
     projection_line = ProjectionLine3d(ax0, 0., 0., 0., vector_z_axis,
