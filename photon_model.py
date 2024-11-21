@@ -394,7 +394,7 @@ if __name__ == "__main__":
                                          0.5, "--", "")
         light_arrow_afterimages.append(light_arrow_afterimage)
 
-    Dummy, = ax0.plot([0, 0], [0, 0], [0, 0], linewidth=0.5, linestyle="--", label="Afterimages of Light_arrow")
+    dummy, = ax0.plot([0, 0], [0, 0], [0, 0], linewidth=0.5, linestyle="--", color="gray", label="Afterimages of Light_arrow")
 
     ax0.legend(loc='lower right', fontsize=8)
 
