@@ -498,7 +498,9 @@ Furthermore, a electron (fermion), which is represented as probability wave, are
 
 ![image_ch4_fig5-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig5-3.png)
 
-Fig. 5-3 Reaction of a photon and a fermion
+Fig. 5-3 Light_speed_constancy
+
+(Try special_relativity_rot.py and light_speed_constancy.py for Fig 5-3.)
 
 This is how the principle of light speed constancy works.
 
