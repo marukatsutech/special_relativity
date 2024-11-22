@@ -315,6 +315,22 @@ def create_parameter_setter():
     pass
 
 
+def draw_afterimage():
+    for i in range(1, 8):
+        light_arrow_path_circle_upper_a = Circle3d(ax0, 0., 0., np.cos(np.pi / 4.), np.sqrt(2.) / 2., "z",
+                                                   0.5, "-", "silver", 1)
+        light_arrow_path_circle_upper_a.set_direction(np.pi / 4., i * np.pi / 4.)
+        light_arrow_path_circle_lower_a = Circle3d(ax0, 0., 0., np.cos(np.pi / 4.), np.sqrt(2.) / 2., "z",
+                                                   0.5, "-", "silver", 1)
+        light_arrow_path_circle_lower_a.set_direction(np.pi * 3. / 4., i * np.pi / 4.)
+
+        rot_vector_arrow_upper_a = Arrow3d(ax0, 0., 0., 0., False, 1.4, np.pi / 4., i * np.pi / 4., "silver",
+                                           0.5, "-", "")
+        rot_vector_arrow_lower_a = Arrow3d(ax0, 0., 0., 0., False, 1.4, np.pi * 3. / 4., i * np.pi / 4., "silver",
+                                           0.5, "-", "")
+    dummy, = ax0.plot([0, 0], [0, 0], linewidth=0.5, linestyle="-", color="silver", label="Afterimages")
+
+
 def draw_static_diagrams():
     create_circle(ax0, 0., 0., 0., "x", "darkorange", False, 0.5,
                   "--", "Light-sphere")
@@ -325,11 +341,13 @@ def draw_static_diagrams():
     create_center_lines()
 
     light_arrow_path_circle_upper = Circle3d(ax0, 0., 0., np.cos(np.pi / 4.), np.sqrt(2.) / 2., "z",
-                                             2, "-", "gold", 1)
+                                             3, "-", "gold", 1)
     light_arrow_path_circle_upper.set_direction(np.pi / 4., 0.)
     light_arrow_path_circle_lower = Circle3d(ax0, 0., 0., np.cos(np.pi / 4.), np.sqrt(2.) / 2., "z",
-                                             2, "-", "gold", 1)
+                                             3, "-", "gold", 1)
     light_arrow_path_circle_lower.set_direction(np.pi * 3. / 4., 0.)
+
+    draw_afterimage()
 
     y_parabola = np.arange(x_min, x_max, 0.01)
     z_parabola = y_parabola * 0. + 1.
