@@ -365,7 +365,7 @@ def draw_graph():
     elif transformation_number == 1:
         draw_rotation()
     draw_hyperbolic()
-    ax1.legend(loc='lower right')
+    ax1.legend(loc='lower right', fontsize=8)
     canvas.draw()
     ax1.grid()
 
