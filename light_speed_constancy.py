@@ -508,7 +508,7 @@ if __name__ == "__main__":
 
     ax0.legend(loc='upper left', fontsize=6)
 
-    create_animation_control()
+    # create_animation_control()
     create_parameter_setter()
 
     anim = animation.FuncAnimation(fig, update, interval=100, save_count=100)
