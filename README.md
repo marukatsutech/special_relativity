@@ -496,9 +496,11 @@ Fig. 5-2 Rotating vector and interaction
 
 Furthermore, a electron (fermion), which is represented as probability wave, are spread out until it is observed. The same is true for the electron (fermion), which is represented by a Light-arrow. A rotation vector with a small rotation (spin component) changes the Light-arrow-phase randomly and quickly, and since it is projected onto the spatial coordinate system, it travels through all spaces in an instant. Then, at some point, it interacts with the Light-arrow of a photon that is also traveling through all space. Basically, the probability of interaction at any position of the Light-arrow is equal. However, depending on the respective paths taken before the interaction, there are positions where the frequency of the Light-arrows passing back and forth and the frequency of the rotation vectors aligning are higher, and the probability of interaction (being observed) at those positions is higher(Fig 5-3).
 
-![image_ch4_fig5-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig5-3.png)
+![image_ch4_fig5-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig5-3.png)
 
-Fig. 5-3 Reaction of a photon and a fermion
+Fig. 5-3 Light_speed_constancy
+
+(Try special_relativity_rot.py and light_speed_constancy.py for Fig 5-3.)
 
 This is how the principle of light speed constancy works.
 
