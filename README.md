@@ -7,9 +7,7 @@ Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime.
 * That is why light speed does not change depending on the viewpoint of every observers.
 
 Watch my video for more detail!
-[![Youtube](https://i9.ytimg.com/vi_webp/AwRgGn6AzzU/mqdefault.webp?v=6742900e&sqp=CJCLi7oG&rs=AOn4CLCJflbcsYc3Z57eBjaHSvE6ghDvGw)]
-https://youtu.be/AwRgGn6AzzU
-
+[(https://youtu.be/AwRgGn6AzzU)](https://youtu.be/AwRgGn6AzzU)
 Light-sphere - Special relativity-1: Why is the speed of light constant?
 
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/main/image_special-relativity.png)
