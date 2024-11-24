@@ -7,7 +7,9 @@ Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime.
 * That is why light speed does not change depending on the viewpoint of every observers.
 
 Watch my video for more detail!
+
 [(https://youtu.be/AwRgGn6AzzU)](https://youtu.be/AwRgGn6AzzU)
+
 Light-sphere - Special relativity-1: Why is the speed of light constant?
 
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/main/image_special-relativity.png)
@@ -33,7 +35,10 @@ https://en.wikipedia.org/wiki/Moir%C3%A9_pattern
 
 # Chapter - 2. Light arrow - The mechanism by which light spreading out as a sphere is observed at a single point.
 
-[![Watch my video for overview! ]((https://youtu.be/aw-4OaHOQQU)](https://youtu.be/aw-4OaHOQQU)
+Watch my video for overview!
+
+[(https://youtu.be/aw-4OaHOQQU)](https://youtu.be/aw-4OaHOQQU)
+
 Light arrow - Special relativity - 2:  The mechanism of light speed
 
 ## 1. Introduction
@@ -242,7 +247,10 @@ files:
 
 # Chapter - 3. Light arrow and Quantum spin - What are quantum and spin? Bosons and fermions
 
-[![Watch my video for overview!](https://youtu.be/agLXqUW5kyg)](https://youtu.be/agLXqUW5kyg)
+Watch my video for overview!
+
+[(https://youtu.be/agLXqUW5kyg)](https://youtu.be/agLXqUW5kyg)
+
 Light arrow and Quantum spin - Special relativity-3:
 What are quantum and spin? Bosons and fermions in Minkowski space
 
@@ -358,7 +366,10 @@ spin_boson_fermion.py
 # Chapter - 4. Relation between special relativity and quantum mechanics
 # - wave function collapse and reconsidering of the quantum model -
 
-[![Watch my video for overview!](https://youtu.be/S0RiAzW5u0M)](https://youtu.be/S0RiAzW5u0M)
+Watch my video for overview!
+
+[(https://youtu.be/S0RiAzW5u0M)](https://youtu.be/S0RiAzW5u0M)
+
 Relation between Special relativity and Quantum mechanics - Special relativity-4:
 Probability, Wave function collapse, Spin and The principle of light speed constancy
 
