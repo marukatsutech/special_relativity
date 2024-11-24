@@ -6,8 +6,8 @@ Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime.
 * We can only observe our world with discretization (quantization)  just like moire pattern.
 * That is why light speed does not change depending on the viewpoint of every observers.
 
-Watch my video for more detail!  
-[https://youtu.be/AwRgGn6AzzU  ](https://youtu.be/AwRgGn6AzzU)
+[![Watch my video for more detail!](https://youtu.be/AwRgGn6AzzU)](https://youtu.be/AwRgGn6AzzU)
+Light-sphere - Special relativity-1: Why is the speed of light constant?
 
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/main/image_special-relativity.png)
 
@@ -30,7 +30,11 @@ https://en.wikipedia.org/wiki/Minkowski_space
 * Wikipedia: Moiré pattern
 https://en.wikipedia.org/wiki/Moir%C3%A9_pattern
 
-# Chapter - 2. The mechanism by which light spreading out as a sphere is observed at a single point.
+# Chapter - 2. Light arrow - The mechanism by which light spreading out as a sphere is observed at a single point.
+
+[![Watch my video for overview! ]((https://youtu.be/aw-4OaHOQQU)](https://youtu.be/aw-4OaHOQQU)
+Light arrow - Special relativity - 2:  The mechanism of light speed
+
 ## 1. Introduction
 My argument in the last video (chapter - 1)was that light is a sphere spread out in Minkowski space(Fig 1-1). However, in reality, light is observed not as a surface but as a point. Regarding this, in the previous video, I only suggested that we could see what appeared to be light trajectories through the moiré patterns (interference fringes) created by concentric circles and stripes(Fig 1-2). This time, we will consider the mechanism by which light spreading out as a sphere is observed at a single point.
 
@@ -41,10 +45,6 @@ Fig. 1-1. Light spreading spherically in Minkowski space
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
 
 Fig. 1-2. Minkowski space and moiré pattern
-
-Watch my video for overview!  
-[https://youtu.be/aw-4OaHOQQU](https://youtu.be/aw-4OaHOQQU) 
-
 
 ## 2. Huygens-Fresnel principle in Minkowski space
 Let's apply the Huygens-Fresnel principle to how waves propagate in Minkowski space.
@@ -239,7 +239,12 @@ files:
 * Huygens–Fresnel_Minkowski_space.py
 * superposed_wave.py
 
-# Chapter - 3. What are quantum and spin? Bosons and fermions
+# Chapter - 3. Light arrow and Quantum spin - What are quantum and spin? Bosons and fermions
+
+[![Watch my video for overview!](https://youtu.be/agLXqUW5kyg)](https://youtu.be/agLXqUW5kyg)
+Light arrow and Quantum spin - Special relativity-3:
+What are quantum and spin? Bosons and fermions in Minkowski space
+
 ## 1. Introduction
 My argument from last time was that light-arrows spreads out in a circular (spherical) manner in light-speed-space, and from the observer's point of view (Minkowski spatial coordinate system) it spreads out (is projected) as a plane wave, and through superposition, it converges to a single point. 
 That's what it meant. Light is one type of quantum called photon, and quantum and photon can be converted into each other through reactions such as pair annihilation and pair creation. If light can be represented as a circle (spherical) in Minkowski space, wouldn't it be possible to represent a quantum with mass like an electron as a light-arrow in light-speed-space?
@@ -351,6 +356,10 @@ spin_boson_fermion.py
 
 # Chapter - 4. Relation between special relativity and quantum mechanics
 # - wave function collapse and reconsidering of the quantum model -
+
+[![Watch my video for overview!](https://youtu.be/S0RiAzW5u0M)](https://youtu.be/S0RiAzW5u0M)
+Relation between Special relativity and Quantum mechanics - Special relativity-4:
+Probability, Wave function collapse, Spin and The principle of light speed constancy
 
 ## 1. Introduction
 In Chapter 2, I explained that light, as a light-arrow, spreads out spherically in light-speed space as a light-sphere, and is projected as a plane wave from the observer's viewpoint (Minkowski space coordinate system), and converges to a single point due to the superposition of waves, which appears the same from any observer. (This is because a sphere appears as a sphere from any direction.)
