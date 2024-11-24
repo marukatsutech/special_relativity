@@ -469,7 +469,7 @@ def draw_graph():
     # Draw hyperbolic curves B in moire
     if var_hyperbolic_b.get():
         draw_hyperbolic_m_b()
-    ax1.legend(loc='lower right')
+    ax1.legend(loc='lower right', fontsize=8)
     canvas.draw()
     ax1.grid()
 
