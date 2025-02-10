@@ -1,6 +1,32 @@
 # Special relativity: Why is the speed of light constant?
 # Chapter - 1. Light sphere
 
+## 1. Introduction
+Einstein's principle of the constancy of the speed of light is a principle, 
+but it does not explain why the speed of light is constant. 
+Here, I would like to consider why the speed of light is constant.
+
+## 2. Overview of the principle of light speed constancy
+Why is the speed of light constant? The answer is simple.
+That is observable fact in our world.
+Based on Einstein’s principle of constancy of light velocity,
+time dilation and length contraction will happen when we travel nearly lightspeed.
+
+![image_ch1_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch1_fig2-1.png)
+
+Fig. 2-1. Lorentz transformation and  Minkowski spacetime
+
+## 3. Light-Sphere
+Why is the speed of light same to observers moving at different speed (one in a rocket and the other on the earth)?
+What does not change depending on the viewpoint……
+They are circles (spheres)!!
+
+![image_ch1_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch1_fig2-2.png)
+
+Fig. 2-1. Light-sphere
+
+## 4. Conclusion
+My idea is as following.
 Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime. 
 * Light(Photon) is not a dot but a sphere.
 * We can only observe our world with discretization (quantization)  just like moire pattern.
@@ -39,7 +65,7 @@ Watch my video for overview!
 
 [(https://youtu.be/aw-4OaHOQQU)](https://youtu.be/aw-4OaHOQQU)
 
-Light arrow - Special relativity - 2:  The mechanism of light speed
+Light arrow - Special relativity - 2: The mechanism of light speed
 
 ## 1. Introduction
 My argument in the last video (chapter - 1)was that light is a sphere spread out in Minkowski space(Fig 1-1). However, in reality, light is observed not as a surface but as a point. Regarding this, in the previous video, I only suggested that we could see what appeared to be light trajectories through the moiré patterns (interference fringes) created by concentric circles and stripes(Fig 1-2). This time, we will consider the mechanism by which light spreading out as a sphere is observed at a single point.
