@@ -31,7 +31,7 @@ Fig. 2-3. Light-sphere (Light spreading spherically in Minkowski space)
 
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/main/image_special-relativity.png)
 
-Fig. 2-4. Light-sphere transformation and moire pattern
+Fig. 2-4. Light-sphere transformation in Minkowski space and moiré pattern
 
 ## 4. Conclusion
 My idea is as following.
@@ -82,7 +82,7 @@ Fig. 1-1. Light-sphere (Light spreading spherically in Minkowski space)
 
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
 
-Fig. 1-2. Minkowski space and moiré pattern
+Fig. 1-2. Light-sphere transformation in Minkowski space and moiré pattern
 
 ## 2. Huygens-Fresnel principle in Minkowski space
 Let's apply the Huygens-Fresnel principle to how waves propagate in Minkowski space.
