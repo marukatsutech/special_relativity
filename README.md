@@ -25,6 +25,10 @@ They are circles (spheres)!!
 
 Fig. 2-1. Light-sphere
 
+![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/main/image_special-relativity.png)
+
+Fig. 2-3. Light-sphere transformation
+
 ## 4. Conclusion
 My idea is as following.
 Light(Photon) is not a dot but a sphere that expands in Minkowski spacetime. 
@@ -37,8 +41,6 @@ Watch my video for more detail!
 [(https://youtu.be/AwRgGn6AzzU)](https://youtu.be/AwRgGn6AzzU)
 
 Light-sphere - Special relativity-1: Why is the speed of light constant?
-
-![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/main/image_special-relativity.png)
 
 ## Python exercise - 34  
 Simple exercise of matplotlib-animation of Python.
