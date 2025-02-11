@@ -23,11 +23,15 @@ They are circles (spheres)!!
 
 ![image_ch1_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch1_fig2-2.png)
 
-Fig. 2-1. Light-sphere
+Fig. 2-2. Lorentz transformation and Light-sphere transformation
+
+![image_fig1-1](https://github.com/marukatsutech/special_relativity/blob/main/image_fig1-1.png)
+
+Fig. 2-3. Light-sphere (Light spreading spherically in Minkowski space)
 
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/main/image_special-relativity.png)
 
-Fig. 2-3. Light-sphere transformation
+Fig. 2-4. Light-sphere transformation and moire pattern
 
 ## 4. Conclusion
 My idea is as following.
@@ -74,7 +78,7 @@ My argument in the last video (chapter - 1)was that light is a sphere spread out
 
 ![image_fig1-1](https://github.com/marukatsutech/special_relativity/blob/main/image_fig1-1.png)
 
-Fig. 1-1. Light spreading spherically in Minkowski space
+Fig. 1-1. Light-sphere (Light spreading spherically in Minkowski space)
 
 ![image_special_relativity](https://github.com/marukatsutech/special_relativity/blob/master/image_special-relativity.png)
 
