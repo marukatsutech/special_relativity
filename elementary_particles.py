@@ -151,11 +151,11 @@ class ThreeArrow:
 
         self.qvr_axis_b = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
                                          self.axis_b[0], self.axis_b[1], self.axis_b[2],
-                                         length=1, color="blue", normalize=True, linewidth=2, alpha=0.5)
+                                         length=1, color="green", normalize=True, linewidth=2, alpha=0.5)
 
         self.qvr_axis_c = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
                                          self.axis_c[0], self.axis_c[1], self.axis_c[2],
-                                         length=1, color="green", normalize=True, linewidth=2, alpha=0.5)
+                                         length=1, color="blue", normalize=True, linewidth=2, alpha=0.5)
 
         self.rotation_velocity_a = 1.
         self.rotation_velocity_b = 1.
@@ -176,11 +176,11 @@ class ThreeArrow:
 
         self.qvr_vector_b = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
                                            self.vector_b[0], self.vector_b[1], self.vector_b[2],
-                                           length=1, color="blue", linestyle="-.", linewidth=1, normalize=False)
+                                           length=1, color="green", linestyle="-.", linewidth=1, normalize=False)
 
         self.qvr_vector_c = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
                                            self.vector_c[0], self.vector_c[1], self.vector_c[2],
-                                           length=1, color="green", linestyle="-.", linewidth=1, normalize=False)
+                                           length=1, color="blue", linestyle="-.", linewidth=1, normalize=False)
 
         self.vector_resultant = self.vector_a + self.vector_b + self.vector_c
 
@@ -204,13 +204,13 @@ class ThreeArrow:
         self.y_axis_b = []
         self.z_axis_b = []
         self.path_axis_b, = self.ax.plot(np.array(self.x_axis_b), np.array(self.y_axis_b), np.array(self.z_axis_b),
-                                         color="blue", linewidth=0.5, alpha=1)
+                                         color="green", linewidth=0.5, alpha=1)
 
         self.x_axis_c = []
         self.y_axis_c = []
         self.z_axis_c = []
         self.path_axis_c, = self.ax.plot(np.array(self.x_axis_c), np.array(self.y_axis_c), np.array(self.z_axis_c),
-                                         color="green", linewidth=0.5, alpha=1)
+                                         color="blue", linewidth=0.5, alpha=1)
 
         self.x_resultant = []
         self.y_resultant = []
@@ -227,12 +227,12 @@ class ThreeArrow:
         self.qvr_axis_b.remove()
         self.qvr_axis_b = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
                                          self.axis_b[0], self.axis_b[1], self.axis_b[2],
-                                         length=1, color="blue", normalize=True, linewidth=2, alpha=0.5)
+                                         length=1, color="green", normalize=True, linewidth=2, alpha=0.5)
 
         self.qvr_axis_c.remove()
         self.qvr_axis_c = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
                                          self.axis_c[0], self.axis_c[1], self.axis_c[2],
-                                         length=1, color="green", normalize=True, linewidth=2, alpha=0.5)
+                                         length=1, color="blue", normalize=True, linewidth=2, alpha=0.5)
 
         if self.is_rotate_xyz:
             self.vector_a = vector_x_axis * self.rotation_velocity_a
@@ -251,12 +251,12 @@ class ThreeArrow:
         self.qvr_vector_b.remove()
         self.qvr_vector_b = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
                                            self.vector_b[0], self.vector_b[1], self.vector_b[2],
-                                           length=1, color="blue", linestyle="-.", linewidth=1, normalize=False)
+                                           length=1, color="green", linestyle="-.", linewidth=1, normalize=False)
 
         self.qvr_vector_c.remove()
         self.qvr_vector_c = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
                                            self.vector_c[0], self.vector_c[1], self.vector_c[2],
-                                           length=1, color="green", linestyle="-.", linewidth=1, normalize=False)
+                                           length=1, color="blue", linestyle="-.", linewidth=1, normalize=False)
 
         self.vector_resultant = self.vector_a + self.vector_b + self.vector_c
 
@@ -481,9 +481,9 @@ class RotationVelocityController:
 
         self.plt_wave_a, = self.ax.plot(self.x_wave, self.y_wave_a, color="red", linestyle="-.", linewidth=1,
                                         label="Rotation vector A")
-        self.plt_wave_b, = self.ax.plot(self.x_wave, self.y_wave_b, color="blue", linestyle="-.", linewidth=1,
+        self.plt_wave_b, = self.ax.plot(self.x_wave, self.y_wave_b, color="green", linestyle="-.", linewidth=1,
                                         label="Rotation vector B")
-        self.plt_wave_c, = self.ax.plot(self.x_wave, self.y_wave_c, color="green", linestyle="-.", linewidth=1,
+        self.plt_wave_c, = self.ax.plot(self.x_wave, self.y_wave_c, color="blue", linestyle="-.", linewidth=1,
                                         label="Rotation vector C")
         self.plt_wave_r, = self.ax.plot(self.x_wave, self.y_wave_r, color="black", linestyle="-.", linewidth=1,
                                         label="Sqrt(A**2+B**2+C**2)")
@@ -783,10 +783,10 @@ def create_parameter_setter():
     frm_axis.pack(side="left", fill=tk.Y)
 
     # var_axis_op = tk.IntVar()
-    rd_op_axis_xyz = tk.Radiobutton(frm_axis, text="x,y,z", value=1, variable=var_axis_op,
+    rd_op_axis_xyz = tk.Radiobutton(frm_axis, text="Along x,y,z", value=1, variable=var_axis_op,
                                     command=lambda: three_arrow.set_is_rotate_xyz(True))
     rd_op_axis_xyz.pack(anchor=tk.W)
-    rd_op_axis_rpy = tk.Radiobutton(frm_axis, text="Arrows(Red,Blue,Green)", value=2, variable=var_axis_op,
+    rd_op_axis_rpy = tk.Radiobutton(frm_axis, text="Along arrows(Red,Green,Blue)", value=2, variable=var_axis_op,
                                     command=lambda: three_arrow.set_is_rotate_xyz(False))
     rd_op_axis_rpy.pack(anchor=tk.W)
     var_axis_op.set(2)
@@ -1070,9 +1070,9 @@ if __name__ == "__main__":
     dummy1, = ax0.plot(np.array([0, 0]), np.array([0, 0]), np.array([0, 0]),
                        color="red", linewidth=1, linestyle="-.", label="Rotation vector A")
     dummy2, = ax0.plot(np.array([0, 0]), np.array([0, 0]), np.array([0, 0]),
-                       color="blue", linewidth=1, linestyle="-.", label="Rotation vector B")
+                       color="green", linewidth=1, linestyle="-.", label="Rotation vector B")
     dummy3, = ax0.plot(np.array([0, 0]), np.array([0, 0]), np.array([0, 0]),
-                       color="green", linewidth=1, linestyle="-.", label="Rotation vector C")
+                       color="blue", linewidth=1, linestyle="-.", label="Rotation vector C")
     dummy0, = ax0.plot(np.array([0, 0]), np.array([0, 0]), np.array([0, 0]),
                        color="black", linewidth=1, linestyle="-.", label="Resultant rotation vector")
 
