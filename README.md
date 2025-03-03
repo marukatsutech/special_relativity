@@ -579,6 +579,35 @@ In the previous chapters, I explained that a photon is a light-arrow that can be
 Let's consider the mechanism of precession of the Light-arrow explained in the previous chapter in terms of three-axis rotation. Three-axis rotation means rotation around the x-axis, y-axis, and z-axis. An airplane can freely change direction by rotating in three directions: Roll (on the aircraft's forward/backward axis), Pitch (on the aircraft's left/right axis), and Yaw (on the aircraft's up/down axis). Here, as shown in fig. 2-1, the orthogonal rotation axes are A-axis, B-axis, and C-axis. The reason why we use the A-axis, B-axis, and C-axis instead of the x-axis, y-axis, and z-axis is that these axes are rotation axes of the elementary particle's own coordinate system (the internal space of the elementary particle), like the roll, pitch, and yaw axes of an airplane, and are to distinguish them from the rotation axes of the external space indicated by the x-axis, y-axis, and z-axis. Furthermore, since Minkowski space is four-dimensional, including the time axis, four orthogonal rotation axes are needed, so a fourth axis (D-axis) is needed. However, since we exist in three-dimensional space, we cannot illustrate four orthogonal axes. Therefore, we can only imagine the D axis, which is perpendicular to the A axis, B axis, and C axis. However, as described in the previous chapters, in this theory, space and time are the same thing, and the spatial and time axes are determined by the observer's position (the direction of movement in Minkowski space-time). Therefore, when three axes are illustrated on a diagram, they represent two spatial axes and a time axis, and it is believed that the same relationship will result regardless of which combination of three of the four rotation axes is illustrated, as in fig. 2-2. Now, we will show these rotations in the A-axis, B-axis, and C-axis directions as rotation vectors with dotted arrows, and from now on we will call them rotation vector A, rotation vector B, and rotation vector C (fig.2-3). The direction of these arrows indicates the direction of rotation (generally the direction of movement when a right-handed screw is turned in physics and mathematics), and the length of the arrows indicates the speed of rotation.　The result of rotation by these three rotation vectors A, B, and C is represented by the resultant rotation vector of rotation vectors A, B, and C, as shown in fig. 2-3.　And this resultant rotation vector can show various orientations in Minkowski space depending on the magnitude (length of the arrow) of each of vectors A, B, and C (fig. 2-4).
 
 ## 3. Oscillation modes of rotating vectors
+The resultant rotation vector of rotation vectors A, B, and C indicates a constant direction if the magnitudes of rotation vectors A, B, and C are constant. Elementary particles (A-axis, B-axis, and C-axis representing the internal coordinate axes of elementary particles) rotate at a constant speed around the resultant rotation vector. 
+
+Fig. 3-1, video
+
+Next, consider the case where the rotation vectors A, B, and C are changed. The magnitude of the three rotation vectors is changed (oscillated) in a wave-like (cosine curve) manner. It is also assumed that the oscillations of the three rotation vectors are in phase with each other. In this case, the resultant rotation vector of rotation vectors A, B, and C shows a constant direction, but the magnitude of the resultant rotation vector (the length of the arrow) changes in accordance with the changes in rotation vectors A, B, and C, and the rotation of the elementary particle (A, B, C axes) oscillates from clockwise to counterclockwise.
+
+Fig. 3-2, video
+
+Next, if the oscillation phase of rotation vectors A, B, and C is shifted, the resultant rotation vector of rotation vectors A, B, and C will exhibit complex behavior according to the phase shift. This case is called vibration mode III.
+
+Fig. 3-3, video
+
+And when the resultant rotating vector precesses, the phases of the oscillations of the rotating vectors A, B, and C are shifted by 120 degrees each. This is called oscillation mode IV. Furthermore, even when there is a 60 degree shift, the resultant rotation vector also precesses, but if the phase is inverted by 60 degrees, the shift becomes 180 degrees, making it 240 degrees, which is the same as a shift of 120 degrees each. 
+
+Fig. 3-4, video
+
+Next, eliminate the oscillation of one of the three rotation vectors and shift the phase of the oscillation of the remaining two rotation vectors by 90 degrees. In this case, the resultant rotation vector also precesses. This is called oscillatio mode V.
+
+Fig. 3-5, video
+
+Let us apply the oscillation modes of rotating vectors described above to elementary particles. 
+
+In oscillation mode I (where the rotation vector does not oscillation), the resultant rotation vector faces a fixed direction and does not precess, so this oscillation mode I is thought to be the state of a photon (the light-arrow itself).
+
+In oscillation mode II (when the oscillation phases of rotation vectors A, B, and C are the same), the direction of the resultant rotation vector remains constant and does not precess. The light-arrow needs to precess due to its spin in order to interact with photons as explained in Chapter 4. Among elementary particles, neutrinos travel at a speed close to the speed of light and have weak interactions with matter (almost no interaction at all), so this oscillation mode II is thought to be the state of a neutrino.
+
+In oscillation mode III (when the oscillation phases of rotation vectors A, B, and C are out of phase), the precession of the rtesultant rotation vector forms a complex pattern. It is thought that this is not a oscillation mode that represents elementary particles since this does not involve a simple (conical) precession motion, and does not match the mechanism of interaction with photons as explained in Chapter 4.
+
+In oscillation modes IV and V are thought to represent charged and interacting electrons or quarks, since both have a conical precession of their resultant rotation vector. However, which of the oscillation modes IV and V are electrons and which are quarks? Also, quarks can be divided into two types (without considering generations): one with a 2/3 charge and one with a -1/3 charge. How should we think about this?
 
 ## 4. Relation between oscillation modes of rotating vectors and electric charges
 
