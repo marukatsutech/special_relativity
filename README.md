@@ -569,3 +569,19 @@ By the way, "keep the direction of the tweezers' opening in a constant direction
 
 Why is the speed of light constant?
 The answer is that our world is quantized!
+
+# Chapter - 5. Elementary particles
+
+## 1. Introduction
+In the previous chapters, I explained that a photon is a light-arrow that can be expressed as a rotating vector, and its direction (light-arrow-phase) changes randomly and rapidly within Minkowski space. I also explained that fermions exhibit fermionic properties because the light-arrow is supplemented with a minute precession (minute rotation component = spin) (fig. 1-1). However, the Standard Model of particle physics states that there are 17 types of elementary particles currently considered, including photons, electrons, neutrinos, and quarks, excluding the as-yet-undiscovered graviton (fig. 1-2). If photons and fermions can be explained by the Light-arrow as explained in this theory, then the properties of each elementary particle should also be explained by the Light-arrow. In this chapter, we consider the picture of elementary particles represented by the light arrow.
+
+## 2. Three-axis rotation
+Let's consider the mechanism of precession of the Light-arrow explained in the previous chapter in terms of three-axis rotation. Three-axis rotation means rotation around the x-axis, y-axis, and z-axis. An airplane can freely change direction by rotating in three directions: Roll (on the aircraft's forward/backward axis), Pitch (on the aircraft's left/right axis), and Yaw (on the aircraft's up/down axis). Here, as shown in fig. 2-1, the orthogonal rotation axes are A-axis, B-axis, and C-axis. The reason why we use the A-axis, B-axis, and C-axis instead of the x-axis, y-axis, and z-axis is that these axes are rotation axes of the elementary particle's own coordinate system (the internal space of the elementary particle), like the roll, pitch, and yaw axes of an airplane, and are to distinguish them from the rotation axes of the external space indicated by the x-axis, y-axis, and z-axis. Furthermore, since Minkowski space is four-dimensional, including the time axis, four orthogonal rotation axes are needed, so a fourth axis (D-axis) is needed. However, since we exist in three-dimensional space, we cannot illustrate four orthogonal axes. Therefore, we can only imagine the D axis, which is perpendicular to the A axis, B axis, and C axis. However, as described in the previous chapters, in this theory, space and time are the same thing, and the spatial and time axes are determined by the observer's position (the direction of movement in Minkowski space-time). Therefore, when three axes are illustrated on a diagram, they represent two spatial axes and a time axis, and it is believed that the same relationship will result regardless of which combination of three of the four rotation axes is illustrated, as in fig. 2-2. Now, we will show these rotations in the A-axis, B-axis, and C-axis directions as rotation vectors with dotted arrows, and from now on we will call them rotation vector A, rotation vector B, and rotation vector C (fig.2-3). The direction of these arrows indicates the direction of rotation (generally the direction of movement when a right-handed screw is turned in physics and mathematics), and the length of the arrows indicates the speed of rotation.　The result of rotation by these three rotation vectors A, B, and C is represented by the resultant rotation vector of rotation vectors A, B, and C, as shown in fig. 2-3.　And this resultant rotation vector can show various orientations in Minkowski space depending on the magnitude (length of the arrow) of each of vectors A, B, and C (fig. 2-4).
+
+## 3. Oscillation modes of rotating vectors
+
+## 4. Relation between oscillation modes of rotating vectors and electric charges
+
+## 5. Relation between oscillation modes of rotating vectors and color charges, and color confinement
+
+## 6. Conclusion
