@@ -610,6 +610,22 @@ In oscillation mode III (when the oscillation phases of rotation vectors A, B, a
 In oscillation modes IV and V are thought to represent charged and interacting electrons or quarks, since both have a conical precession of their resultant rotation vector. However, which of the oscillation modes IV and V are electrons and which are quarks? Also, quarks can be divided into two types (without considering generations): one with a 2/3 charge and one with a -1/3 charge. How should we think about this?
 
 ## 4. Relation between oscillation modes of rotating vectors and electric charges
+Charge is a quantum property that governs electromagnetic interactions. An electron has a positive charge of 1, an up quark has a positive 2/3 charge, and a down quark has a negative 1/3 charge.
+
+In oscillation mode IV, the rotation vectors A, B, and C are out of phase with each other by 120 degrees, which is 1/3 of one rotation (360 degrees), evoking the relationship with the positive 2/3 charge (up quark) and negative 1/3 charge (down quark) of a quark (and also with color charge, which will be explained in the next section).
+
+As explained in Chapter 4, if the electromagnetic interaction of electric charge is the probabilistic action of photons on electrons, then the difference in the magnitude of the electric charge between electrons and quarks can be thought of as resulting in a probability difference in receiving the vibration of the photon, which is a rotating vector.
+
+We will discuss the positive and negative charges later, but the fact that the absolute value of the charge of an electron is greater than that of a quark means that it has a higher probability of receiving photon oscillations (i.e. energy). Taking this into consideration, oscillation mode IV receives photon oscillations in three axial directions, while vibration mode V receives photon oscillations in two axial directions, so it is thought that the probability of receiving photon vibrations is higher in oscillation mode IV. From this, it is thought that oscillation mode IV represents electrons and oscillation mode V represents quarks.
+
+As mentioned above, the number of axes of the rotating vector is proportional to the charge, so the 3/3 axis (vibration mode IV) is an electron with a negative 1 charge, and the 2/3 axis is an up quark with a positive 2/3 charge.As mentioned above, the number of axes of the rotating vector is proportional to the charge, so the 3/3 axis (vibration mode IV) is an electron with a negative 1 charge, and the 2/3 axis is an up quark with a positive 2/3 charge. Then, the down quark with a negative 1/3 charge is considered to be a mode in which only one axis oscillates, and this case is called oscillation mode VI. However, in oscillation mode VI, the resultant rotation vector does not precess, so this does not fit the idea of interaction explained in Chapter 4. This will be explained in the next section.
+
+Regarding the positive and negative charges, it is sufficient to consider the positive and negative oscillations Oscillations can be considered as rotation (oscillation can be expressed as rotation on the complex plane The direction of the imaginary part on the complex plane is the D-axis direction, which is not shown in the figure). The composition of rotations is mathematically expressed as multiplication. Therefore, if the oscillation (rotation) of one axis is a negative charge, the vibration of two axes is negative x negative = positive, and the vibration of three axes is negative x negative x negative = negative.
+
+To summarize the above, the following can be said:
+
+
+The number of oscillation axes is electron > up quark > down quark. It is generally thought that the more oscillations (and the higher the frequency), the greater the mass (energy), but the masses of electrons, up quarks, and down quarks are electron < up quark < down quark. This is because, although the up and down quarks originally have three degrees of freedom (four if the time axis is included), as will be explained in the next section, one axis is confined for the up quark and two axes for the down quark, and the energy during confinement is high, and it is thought that the mass of each quark is proportional to the number of axes confined.
 
 ## 5. Relation between oscillation modes of rotating vectors and color charges, and color confinement
 
