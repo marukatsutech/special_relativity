@@ -632,4 +632,8 @@ Hadrons such as protons and neutrons are thought to be made up of quarks. Proton
 
 However, quarks cannot exist as independent elementary particles; they only exist as building blocks of hadrons. The principle behind this is thought to be color confinement. Quarks have the color charges red, green, blue, anti-red, anti-green, and anti-blue. In hadrons such as protons and neutrons, it is thought that the red, green, and blue color charges of the three quarks that make up them are neutralized to become white, confining the quarks (however, quarks do not actually have colors; they are the three primary colors of light. This is simply an analogy to the fact that red, green, and blue combined make white light). In addition, the interaction between quarks is carried out by gluons, which are called the strong interaction, and gluons are also said to have color charge.
 
+As mentioned in Section 4, if elementary particles can be expressed as oscillation modes of three rotating vectors (four axes including time), how should we think about the structure of hadrons, which are made up of quarks such as protons and neutrons? The answer lies in the electron.
+
+Considering that photons, neutrinos, and electrons exist stably (have no life span and do not decay), we should consider that the three oscillation modes that can exist stably in the space-time that is our universe are oscillation mode I (zero oscillation of the rotation vector on the three axes), oscillation mode II (all three axes oscllate in phase), and oscillation mode IV (the three axes oscllate out of phase shifted by 120 degrees each).
+
 ## 6. Conclusion
