@@ -636,4 +636,8 @@ As mentioned in Section 4, if elementary particles can be expressed as oscillati
 
 Considering that photons, neutrinos, and electrons exist stably (have no life span and do not decay), we should consider that the three oscillation modes that can exist stably in the space-time that is our universe are oscillation mode I (zero oscillation of the rotation vector on the three axes), oscillation mode II (all three axes oscllate in phase), and oscillation mode IV (the three axes oscllate out of phase shifted by 120 degrees each).
 
+In protons and neutrons, oscillation mode IV, which corresponds to the oscillation mode of the electron, is thought to be responsible for color confinement.
+
+First, consider the case of a proton (u,u,d). Both the up quark and the down quark have rotation vectors that oscillation along four axes (three spatial axes + one time axis), but the one axis from the first up quark, the one axis from the second up quark, and the two axes from the down quark are trapped by forming oscillation mode IV like that of an electron, and these axes are in a constrained state. The two up quarks are each constrained on one axis, forming oscillation mode V with two spatial axes plus one time axis. The down quark is constrained on two axes and forms oscillation mode VI with one space axis and one time axis.
+
 ## 6. Conclusion
