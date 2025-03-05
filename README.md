@@ -638,6 +638,16 @@ Considering that photons, neutrinos, and electrons exist stably (have no life sp
 
 In protons and neutrons, oscillation mode IV, which corresponds to the oscillation mode of the electron, is thought to be responsible for color confinement.
 
-First, consider the case of a proton (u,u,d). Both the up quark and the down quark have rotation vectors that oscillation along four axes (three spatial axes + one time axis), but the one axis from the first up quark, the one axis from the second up quark, and the two axes from the down quark are trapped by forming oscillation mode IV like that of an electron, and these axes are in a constrained state. The two up quarks are each constrained on one axis, forming oscillation mode V with two spatial axes plus one time axis. The down quark is constrained on two axes and forms oscillation mode VI with one space axis and one time axis.
+First, consider the case of a proton (u,u,d). Both the up quark and the down quark have rotation vectors that oscillation along four axes (three spatial axes + one time axis), but the one axis from the first up quark, the one axis from the second up quark, and the two axes from the down quark are trapped by forming oscillation mode IV like that of an electron, and these axes are in a constrained state. The two up quarks are each constrained on one axis, forming oscillation mode V with two spatial axes plus one time axis. The down quark is constrained on two axes and forms oscillation mode VI with one space axis and one time axis. And since the two up quarks undergo precession due to the two resultant rotation vectors from the oscillation mode V of the two up quarks, two positive charges are produced from the two up quarks. The resultant rotating vector of the down quark does not precess and therefore does not actually contribute to the charge. And the four axes confined by the three quarks form oscillation mode IV, which is equivalent to an electron and results in one negative charge. The two positive charges brought by the two up quarks and the one negative charge brought by the four axes trapped in vibration mode IV are added together, giving the proton a positive charge of 1.
+
+Next, consider the case of neutrons (u,u,d). A total of five axes are trapped: one axis from the up quark, two axes from the first down quark, and two axes from the second down quark. There are five axes, with one extra axis required to form oscillation mode IV, and this extra axis is thought to be the cause of neutron instability (short lifetime).
+
+To summarize the above, the following can be said:
+
+
+Furthermore, it is believed that gluons are responsible for the interactions between quarks, but in this theory gluons are unnecessary, and it is thought that the oscillation fluctuations that occur when the constraints of oscillation mode IV are disturbed are expressed as quanta. If the constraints are released, it is thought that the quarks will return to their original three-axis (plus the four-axis of the time axis) oscillation mode and change into different elementary particles, which is thought to be the reason why quarks cannot exist on their own.
+
+As for the W and Z bosons, since these elementary particles can only be observed indirectly by decaying into other elementary particles, they can be thought of as quantum representations of the oscillations that occur when oscillation mode IV becomes disordered and breaks up and reconstructs, just like gluons. However, this can also be explained as follows.
+
 
 ## 6. Conclusion
