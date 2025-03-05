@@ -649,5 +649,17 @@ Furthermore, it is believed that gluons are responsible for the interactions bet
 
 As for the W and Z bosons, since these elementary particles can only be observed indirectly by decaying into other elementary particles, they can be thought of as quantum representations of the oscillations that occur when oscillation mode IV becomes disordered and breaks up and reconstructs, just like gluons. However, this can also be explained as follows.
 
+The W boson is thought to be composed of an electron (or positron) and an electron neutrino, as it splits into these. However, considering that the lifetime of the W boson is very short, the oscillation mode of the trapped axis is not constrained as oscillation mode IV, but rather, just as there is an extra axis constrained by the neutron, one axis of the neutrino is captured by the electron (or, conversely, one axis of the electron is captured by the neutrino. Or, they alternate between capturing and sharing each other's axes).
+
+The Z boson decays and splits into a pair of antiparticles. Since the Z boson also has a very short lifetime, it is thought that, like the W boson mentioned above, one of the particles captures one axis or they alternately share axes.
+
+In addition, since both the W boson and the Z boson have zero spin, the constituent particles are thought to have spins pointing up and down, canceling each other out. It is also thought that the particles have a large mass due to their rotation (orbital angular momentum) when bound together.
+
+In addition, the three generations of elementary particles are thought to be related to the frequencies of the oscillation modes and their standing waves, but further consideration is needed.
+
+Further consideration is also needed regarding the Higgs particle, which is related to gravity (and the graviton, whose existence has not been confirmed).　However, if light is expressed as a light-sphere spreading in Minkowski space, acceleration can be expressed as the rotation of coordinates. As the equivalence principle of general relativity shows, gravity and acceleration cannot be distinguished. Therefore, expressing elementary particles as rotating vectors and oscillation modes (oscillation = rotation) may itself indicate gravity.
 
 ## 6. Conclusion
+* Elementary particles can be expressed as a resultant vector of rotation vectors in four axial directions (three spatial axes plus one time axis), and the characteristics of the elementary particles depend on the type of oscillation mode of the rotation vector in each axial direction.
+* Oscillation mode I (no vibration of the rotating vector) is the photon, oscillation mode II (rotating vectors oscillate in phase) is the neutrino, oscillation mode IV (rotating vectors on three axes vibrate with a phase shift of 120 degrees) is the electron, oscillation mode V (one axis is constrained, and the remaining two axes vibrate with a phase shift of 90 degrees) is the up quark, and oscillation mode VI (two axes are constrained, and the remaining axis oscillates) is the down quark.
+* When quarks form hadrons, one or two of the four axes behave like electrons in vibration mode IV and are confined and bound. As a result, the remaining axes behave as up quarks (oscillation mode V) or down quarks (oscillation mode VI). When the confinement (boundary) is released, they return to their original four-axis oscillation mode and immediately change into other elementary particles. Therefore, quarks do not exist alone.
