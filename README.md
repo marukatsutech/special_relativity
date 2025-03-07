@@ -586,7 +586,7 @@ However, as described in the previous chapters, in this theory, space and time a
 
 Fig. 2-2
 
-Now, we will show these rotations in the A-axis, B-axis, and C-axis directions as rotation vectors with dotted arrows, and from now on we will call them rotation vector A, rotation vector B, and rotation vector C. The direction of these arrows indicates the direction of rotation (generally the direction of movement when a right-handed screw is turned in physics and mathematics), and the length of the arrows indicates the speed of rotation.　The result of rotation by these three rotation vectors A, B, and C is represented by the resultant rotation vector of rotation vectors A, B, and C.　And this resultant rotation vector can show various orientations in Minkowski space depending on the magnitude (length of the arrow) of each of vectors A, B, and C (fig. 2-3).
+Now, we will show these rotations in the A-axis, B-axis, and C-axis directions as rotation vectors with dotted arrows, and from now on we will call them rotation vector A, rotation vector B, and rotation vector C. The direction of these arrows indicates the direction of rotation (generally the direction of movement when a right-handed screw is turned in physics and mathematics), and the length of the arrows indicates the speed of rotation.　The result of rotation by these three rotation vectors A, B, and C is represented by the resultant rotation vector of rotation vectors A, B, and C.　And this resultant rotation vector can show various orientations in Minkowski space depending on the magnitude (length of the arrow) of each of rotation vectors A, B, and C (fig. 2-3).
 
 Fig. 2-3
 
