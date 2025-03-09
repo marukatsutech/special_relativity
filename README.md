@@ -572,23 +572,40 @@ The answer is that our world is quantized!
 
 # Chapter - 5. Elementary particles
 
+Watch my video for overview!
+
+[(https://youtu.be/Tnjde_0vegs)](https://youtu.be/Tnjde_0vegs)
+
+Elementary particles - Special relativity-5
+Oscillation modes, charges, color charges, and color confinement
+
 ## 1. Introduction
 In the previous chapters, I explained that a photon is a Light-arrow that can be expressed as a rotating vector, and its direction (Light-arrow-phase) changes randomly and rapidly within Minkowski space. I also explained that fermions exhibit fermionic properties due to the minute precession of the light-arrow (minute rotation component = spin) (fig. 1-1). However, the Standard Model of particle physics states that there are 17 types of elementary particles currently considered, including photons, electrons, neutrinos, and quarks, excluding the as-yet-undiscovered graviton (fig. 1-2). If photons and fermions can be explained by the Light-arrow as explained in this theory, then the properties of each elementary particle should also be explained by the Light-arrow. In this chapter, we consider the picture of elementary particles represented by the Light-arrow.
+
+![image_ch5_fig1-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig1-1.png)
+
+Fig. 1-1 Standard Model of particle physics
 
 ## 2. Three-axis rotation
 Let's consider the mechanism of precession of the Light-arrow explained in the previous chapter in terms of three-axis rotation. Three-axis rotation means rotation around the x-axis, y-axis, and z-axis. An airplane can freely change direction by rotating in three directions: Roll (on the aircraft's forward/backward axis), Pitch (on the aircraft's left/right axis), and Yaw (on the aircraft's up/down axis). 
 
 Here, as shown in fig. 2-1, the orthogonal rotation axes are A-axis, B-axis, and C-axis. The reason why we use the A-axis, B-axis, and C-axis instead of the x-axis, y-axis, and z-axis is that these axes are rotation axes of the elementary particle's own coordinate system (the internal space of the elementary particle), like the roll, pitch, and yaw axes of an airplane, and are to distinguish them from the rotation axes of the external space indicated by the x-axis, y-axis, and z-axis. Furthermore, since Minkowski space is four-dimensional, including the time axis, four orthogonal rotation axes are needed, so a fourth axis (D-axis) is needed. However, since we exist in three-dimensional space, we cannot illustrate four orthogonal axes. Therefore, we can only imagine the D axis, which is perpendicular to the A axis, B axis, and C axis. 
 
-Fig. 2-1 
+![image_ch5_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig2-1.png)
 
-However, as described in the previous chapters, in this theory, space and time are the same thing, and the spatial and time axes are determined by the observer's position (the direction of movement in Minkowski space-time). Therefore, when three axes are illustrated on a diagram, they represent two spatial axes and a time axis, and it is believed that the same relationship will result regardless of which combination of three of the four rotation axes is illustrated, as in fig. 2-2. 
+Fig. 2-1 Roll, pitch, and yaw axes of an airplane
 
-Fig. 2-2
+However, as described in the previous chapters, in this theory, space and time are the same thing in Minkowski space, and the spatial and time axes are determined by the observer's position (the direction of movement in Minkowski space-time). Therefore, when three axes are illustrated on a diagram, they represent two spatial axes and a time axis, and it is believed that the same relationship will result regardless of which combination of three of the four rotation axes is illustrated, as in fig. 2-2. 
+
+![image_ch5_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig2-2.png)
+
+Fig. 2-2 Relation betweeen three spatial axes and time axis
 
 Now, we will show these rotations in the A-axis, B-axis, and C-axis directions as rotation vectors with dotted arrows, and from now on we will call them rotation vector A, rotation vector B, and rotation vector C. The direction of these arrows indicates the direction of rotation (generally the direction of movement when a right-handed screw is turned in physics and mathematics), and the length of the arrows indicates the speed of rotation.　The result of rotation by these three rotation vectors A, B, and C is represented by the resultant rotation vector of rotation vectors A, B, and C.　And this resultant rotation vector can show various orientations in Minkowski space depending on the magnitude (length of the arrow) of each of rotation vectors A, B, and C (fig. 2-3).
 
-Fig. 2-3
+![image_ch5_fig2-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig2-3.png)
+
+Fig. 2-3 Resultant rotation vector of vector A, B, and C
 
 ## 3. Oscillation modes of rotating vectors
 Next, let us oscillate the magnitude of the rotation vectors A, B, and C in a cosine curve shape. Then, the behavior of the resultant rotation vector can be divided into the following patterns (modes).
@@ -597,19 +614,25 @@ Oscillation mode 1: Constant(no oscillation)
 
 When the magnitudes of rotation vectors A, B, and C are constant, the resultant rotation vector of rotation vectors A, B, and C shows a constant direction. And A, B, and C-axis that represent the internal coordinate axes of an elementary particle (A, B, C axes) rotate at a constant speed around the resultant rotation vector.
 
-Fig. 3-1
+![image_ch5_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig3-1.png)
+
+Fig. 3-1 Oscillation mode 1
 
 Oscillation mode 2: Oscillate and the three oscillation phases are the same.
 
 Rotation vectors A, B, and C are changed into cosine curves. The phases of the three cosine curves are the same. The resultant rotation vector then points in a constant direction. However, unlike oscillation mode 1, the magnitude of the resultant rotation vector (the length of the arrow) changes (oscillates). And the elementary particle (A, B, C axes) rotate and vibrate clockwise and counterclockwise.
 
-Fig. 3-2
+![image_ch5_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig3-2.png)
+
+Fig. 3-2 Oscillation mode 2
 
 Oscillation mode 3: Oscillate and the three oscillation phases are shifted by 120 degrees each.
 
 Rotation vectors A, B and C are changed into cosine curves. The phases of the three cosine curves are shifted by 120 degrees each. Then, the resultant rotation vector precesses with a constant magnitude (the length of the arrow). And the elementary particles (A, B, C axes) rotate like precessing tops.
 
-Fig. 3-3
+![image_ch5_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig3-3.png)
+
+Fig. 3-3 Oscillation mode 3
 
 Oscillation mode 4: Oscillate only on two axes and the two oscillation phases are shifted by 90 degrees.
 
@@ -617,14 +640,18 @@ Rotation vectors A and B are changed into cosine curves. The phases of the two c
 In this case, although the magnitude of precession differs from that in oscillation mode 3, the resultant rotation vector precesses with a constant magnitude.
 And the elementary particles (A, B, C axes) rotate like precessing tops.
 
-Fig. 3-4
+![image_ch5_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig3-4.png)
+
+Fig. 3-4 Oscillation mode 4
 
 Oscillation mode 5: Oscillate only on one axis.
 
 Rotation vectors A is changed into cosine curves. And the oscillation and amplitude of the rotation vector B and C are zero. The resultant rotation vector shows a constant direction (the same direction as rotation vector A). Then, as in oscillation mode 2, the magnitude of the resultant rotation vector (length of the arrow) changes (vibrates). And the elementary particle (A, B, C axes) rotate and vibrate clockwise and counterclockwise.
 
 
-Fig. 3-5
+![image_ch5_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig3-5.png)
+
+Fig. 3-5 Oscillation mode 5
 
 Let us apply the oscillation modes of rotating vectors described above to elementary particles. 
 
@@ -648,6 +675,10 @@ Is oscillation mode 5, which oscillates on only one axis, a down quark? Let's co
 
 Hadrons such as protons and neutrons are thought to be made up of quarks. Protons are made up of two up quarks and one down quark (u,u,d), and neutrons are made up of one up quark and two down quarks (u,d,d).
 
+![image_ch5_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig5-1.png)
+
+Fig. 5-1 Protons and neutrons
+
 However, quarks cannot exist as independent elementary particles; they only exist as building blocks of hadrons. The principle behind this is thought to be color confinement. Quarks have the color charges red, green, blue, anti-red, anti-green, and anti-blue. In hadrons such as protons and neutrons, it is thought that the red, green, and blue color charges of the three quarks that make up them are neutralized to become white, confining the quarks (however, quarks do not actually have color. This is an analogy for the fact that the three primary colors of light, red, green, and blue, combine to produce white light.). In addition, the interaction between quarks is carried out by gluons, which are called the strong interaction, and gluons are also said to have color charge.
 
 As mentioned in Section 4, if elementary particles can be expressed as oscillation modes of three rotating vectors (four axes including time), how should we think about the structure of hadrons, which are made up of quarks such as protons and neutrons? The answer lies in electrons.
@@ -657,7 +688,15 @@ In protons and neutrons, oscillation mode 3, which corresponds to the oscillatio
 
 First, consider the case of a proton (u,u,d). It is thought that the proton is formed by confining part of the oscillation axes of quarks in oscillation mode 3. As shown in the figure, two space axes and one space axis and one time axis are shared to form oscillation mode 3. Since the up quark oscillates on the 2 space axis + 1 time axis, it has a positive 2/3 charge. The down quark has a positive charge of 2/3, but oscillation mode 3 has a negative charge of 3/3, totaling a negative charge of 1/3.
 
+![image_ch5_fig5-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig5-2.png)
+
+Fig. 5-2 Protons model
+
 Next, consider the case of neutrons (u,u,d). In the case of neutrons, one up quark shares one space axis and two down quarks share one space axis and one time axis, forming oscillation mode 3. Because of this extra time axis, the charge of oscillation mode 3 is negative 3/3 x two times = negative 6/3. This extra time axis makes oscillation mode 3 unstable, so the neutron lifetime is short.
+
+![image_ch5_fig5-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig5-3.png)
+
+Fig. 5-3 Neutrons model
 
 ## 6. Conclusion
 * Elementary particles can be expressed as a resultant vector of rotation vectors in four axial directions (three spatial axes plus one time axis), and the characteristics of the elementary particles depend on the type of oscillation mode of the rotation vector in each axial direction.
@@ -682,4 +721,8 @@ The Z boson decays into a pair of antiparticles. Since the Z boson has a very sh
 
 In addition, since both the W boson and the Z boson have zero spin, the constituent particles are thought to have spins pointing up and down, canceling each other out. It is also thought that the particles have a large mass due to their rotation (orbital angular momentum) when bound together.
 The three generations of elementary particles are thought to be related to the frequencies of the oscillation modes and their standing waves, but further consideration is needed.
+
+![image_ch5_fig6-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch5_fig6-1.png)
+
+Fig. 5-3 oscillation modes and standard model of elementary particles physics
 
