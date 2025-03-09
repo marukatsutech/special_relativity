@@ -591,35 +591,44 @@ Now, we will show these rotations in the A-axis, B-axis, and C-axis directions a
 Fig. 2-3
 
 ## 3. Oscillation modes of rotating vectors
-If the magnitudes of rotation vectors A, B, and C are constant, the resultant rotation vector of rotation vectors A, B, and C indicates a constant direction. Elementary particles (A-axis, B-axis, and C-axis representing the internal coordinate axes of elementary particles) rotate at a constant speed around the resultant rotation vector. The rotation vectors are not oscillating, but this case is called oscillation mode I.
+Next, let us oscillate the magnitude of the rotation vectors A, B, and C in a cosine curve shape. Then, the behavior of the resultant rotation vector can be divided into the following patterns (modes).
+
+Oscillation mode 1: Constant(no oscillation)
+
+When the magnitudes of rotation vectors A, B, and C are constant, the resultant rotation vector of rotation vectors A, B, and C shows a constant direction. And A, B, and C-axis that represent the internal coordinate axes of an elementary particle (A, B, C axes) rotate at a constant speed around the resultant rotation vector.
 
 Fig. 3-1
 
-Next, consider the case where the rotation vectors A, B, and C are changed. The magnitude of the three rotation vectors is changed (oscillated) in a wave-like (cosine curve) manner. It is also assumed that the oscillations of the three rotation vectors are in phase with each other. In this case, the resultant rotation vector of rotation vectors A, B, and C shows a constant direction, but the magnitude of the resultant rotation vector (the length of the arrow) changes in accordance with the changes in rotation vectors A, B, and C, and the rotation of the elementary particle (A, B, C axes) oscillates from clockwise to counterclockwise. This case is called oscillation mode II.
+Oscillation mode 2: Oscillate and the three oscillation phases are the same.
+
+Rotation vectors A, B, and C are changed into cosine curves. The phases of the three cosine curves are the same. The resultant rotation vector then points in a constant direction. However, unlike oscillation mode 1, the magnitude of the resultant rotation vector (the length of the arrow) changes (oscillates). And the elementary particle (A, B, C axes) rotate and vibrate clockwise and counterclockwise.
 
 Fig. 3-2
 
-Next, if the oscillation phase of rotation vectors A, B, and C is shifted, the resultant rotation vector of rotation vectors A, B, and C will exhibit complex behavior according to the phase shift. This case is called vibration mode III.
+Oscillation mode 3: Oscillate and the three oscillation phases are shifted by 120 degrees each.
+
+Rotation vectors A, B and C are changed into cosine curves. The phases of the three cosine curves are shifted by 120 degrees each. Then, the resultant rotation vector precesses with a constant magnitude (the length of the arrow). And the elementary particles (A, B, C axes) rotate like precessing tops.
 
 Fig. 3-3
 
-And when the resultant rotating vector precesses, the phases of the oscillations of the rotating vectors A, B, and C are shifted by 120 degrees each. This is called oscillation mode IV. Furthermore, even when there is a 60 degree shift, the resultant rotation vector also precesses, but if the phase is inverted by 60 degrees, the shift becomes 180 degrees, making it 240 degrees, which is the same as a shift of 120 degrees each. 
+Oscillation mode 4: Oscillate only on two axes and the two oscillation phases are shifted by 90 degrees.
+
+Rotation vectors A and B are changed into cosine curves. The phases of the two cosine curves are shifted by 90 degrees. And the oscillation and amplitude of the rotation vector C are zero.
+In this case, although the magnitude of precession differs from that in oscillation mode 3, the resultant rotation vector precesses with a constant magnitude.
+And the elementary particles (A, B, C axes) rotate like precessing tops.
 
 Fig. 3-4
 
-Next, eliminate the oscillation of one of the three rotation vectors and shift the phase of the oscillation of the remaining two rotation vectors by 90 degrees. In this case, the resultant rotation vector also precesses. This case is called oscillatio mode V.
+Oscillation mode 5: Oscillate only on one axis.
+
+Rotation vectors A is changed into cosine curves. And the oscillation and amplitude of the rotation vector B and C are zero. The resultant rotation vector shows a constant direction (the same direction as rotation vector A). Then, as in oscillation mode 2, the magnitude of the resultant rotation vector (length of the arrow) changes (vibrates). And the elementary particle (A, B, C axes) rotate and vibrate clockwise and counterclockwise.
+
 
 Fig. 3-5
 
 Let us apply the oscillation modes of rotating vectors described above to elementary particles. 
 
-In oscillation mode I (where the rotation vector does not oscillation), the resultant rotation vector faces a fixed direction and does not precess, so this oscillation mode I is thought to be the state of a photon (Light-arrow itself).
-
-In oscillation mode II (when the oscillation phases of rotation vectors A, B, and C are the same), the direction of the resultant rotation vector remains constant and does not precess. The Light-arrow needs to precess due to its spin in order to interact with photons as explained in Chapter 4. Among elementary particles, neutrinos travel at a speed close to the speed of light and have weak interactions with matter (almost no interaction at all), so this oscillation mode II is thought to be the state of a neutrino.
-
-In oscillation mode III (when the oscillation phases of rotation vectors A, B, and C are out of phase), the precession of the rtesultant rotation vector forms a complex pattern. It is thought that this is not a oscillation mode that represents elementary particles since this does not involve a simple (conical) precession motion, and does not match the mechanism of interaction with photons as explained in Chapter 4.
-
-In oscillation modes IV and V are thought to represent charged and interacting electrons or quarks, since both have a conical precession of their resultant rotation vector. However, which of the oscillation modes IV and V are electrons and which are quarks? Also, quarks can be divided into two types (without considering generations): one with a 2/3 charge and one with a -1/3 charge. How should we think about this?
+In oscillation mode 1, the resultant rotating vector faces a fixed direction and does not precess, so this mode is considered to be the state of photons. In oscillation mode 2, the resultant rotation vector faces a fixed direction and does not precess but vibrate. As explained in Chapter 4, in order to interact with photons, the light-arrow needs to precess due to its spin. So this mode is considered to be the state of neutrinos, since they have a speed close to the speed of light and have a weak interaction with matter. Oscillation modes 3 and 4 appear to be electrons or quarks that undergo electromagnetic interactions due to precession, but which is which? And what is oscillation mode 5?
 
 ## 4. Relation between oscillation modes of rotating vectors and electric charges
 Charge is a quantum property that governs electromagnetic interactions. Electrons have positive charge of 1, up quarks have positive 2/3 charge, and down quarks have negative 1/3 charge.
@@ -628,49 +637,49 @@ In oscillation mode IV, the rotation vectors A, B, and C are out of phase with e
 
 As explained in Chapter 4, if the electromagnetic interaction of electric charge is the probabilistic action of photons on electrons, then the difference in the magnitude of the electric charge between electrons and quarks can be thought of as resulting in a probability difference in receiving the oscillation of the photon, which is a rotating vector.
 
-We will discuss the positive and negative charges later, but the fact that the absolute value of the charge of an electron is greater than that of a quark means that it has a higher probability of receiving photon oscillations (i.e. energy). Taking this into consideration, oscillation mode IV receives photon oscillations in three axial directions, while oscillation mode V receives photon oscillations in two axial directions, so it is thought that the probability of receiving photon vibrations is higher in oscillation mode IV. From this, it is thought that oscillation mode IV represents electrons and oscillation mode V represents quarks.
+We will discuss the positive and negative charges later, but the fact that the absolute value of the charge of an electron is greater than that of a quark means that it has a higher probability of receiving photon oscillations (i.e. energy). Taking this into consideration, oscillation mode 3 receives photon oscillations in three axial directions, while oscillation mode 4 receives photon oscillations in two axial directions, so it is thought that the probability of receiving photon vibrations is higher in oscillation mode 3. From this, it is thought that oscillation mode 3 represents electrons and oscillation mode 4 represents quarks.
 
-As mentioned above, the number of axes of the rotating vector is proportional to the charge, so the 3/3 axis (oscillation mode IV) represents electrons with negative 1 charge, and the 2/3 axis represents up quarks with positive 2/3 charge. Then, the down quark with negative 1/3 charge is considered to be a mode in which only one axis oscillates, and this case is called oscillation mode VI. However, in oscillation mode VI, the resultant rotation vector does not precess, so this does not fit the idea of interaction explained in Chapter 4. This will be explained in the next section.
+As mentioned above, the number of axes of the rotating vector is proportional to the charge, so the 3/3 axis (oscillation mode 3) represents electrons with negative 1 charge, and the 2/3 axis represents up quarks with positive 2/3 charge. Then, the down quark with negative 1/3 charge is considered to be a mode in which only one axis oscillates, and this case is called oscillation mode 5. However, in oscillation mode 5, the resultant rotation vector does not precess, so this does not fit the idea of interaction explained in Chapter 4. This will be explained in the next section.
 
 Regarding the positive and negative charges, it is sufficient to consider the positive and negative rotations. Oscillations can be considered as rotation (oscillations can be expressed as rotation on the complex plane. The direction of the imaginary part on the complex plane should be the D-axis direction, which is not shown in the figure). The composition of rotations is mathematically expressed as multiplication. Therefore, if the oscillation (rotation) of one axis is a negative charge, the oscillation of two axes is negative x negative = positive, and the oscillation of three axes is negative x negative x negative = negative.
 
-To summarize the above, the following can be said:
-
-
-The number of oscillation axes is electron > up quark > down quark. It is generally thought that the more oscillations (and the higher the frequency), the greater the mass (energy), but the masses of electrons, up quarks, and down quarks are electron < up quark < down quark. This is because, although the up and down quarks originally have three degrees of freedom (four if the time axis is included), as will be explained in the next section, one axis is confined for the up quark and two axes for the down quark, and the energy during confinement is high, and it is thought that the mass of each quark is proportional to the number of axes confined.
-
 ## 5. Relation between oscillation modes of rotating vectors and color charges, and color confinement
+Is oscillation mode 5, which oscillates on only one axis, a down quark? Let's consider this from the perspective of color charge and color confinement.
+
 Hadrons such as protons and neutrons are thought to be made up of quarks. Protons are made up of two up quarks and one down quark (u,u,d), and neutrons are made up of one up quark and two down quarks (u,d,d).
 
 However, quarks cannot exist as independent elementary particles; they only exist as building blocks of hadrons. The principle behind this is thought to be color confinement. Quarks have the color charges red, green, blue, anti-red, anti-green, and anti-blue. In hadrons such as protons and neutrons, it is thought that the red, green, and blue color charges of the three quarks that make up them are neutralized to become white, confining the quarks (however, quarks do not actually have color. This is an analogy for the fact that the three primary colors of light, red, green, and blue, combine to produce white light.). In addition, the interaction between quarks is carried out by gluons, which are called the strong interaction, and gluons are also said to have color charge.
 
 As mentioned in Section 4, if elementary particles can be expressed as oscillation modes of three rotating vectors (four axes including time), how should we think about the structure of hadrons, which are made up of quarks such as protons and neutrons? The answer lies in electrons.
 
-Considering that photons, neutrinos, and electrons exist stably (have no life span and do not decay), we should consider that the three oscillation modes that can exist stably in the space-time that is our universe are oscillation mode I (zero oscillation of the rotation vector on the three axes), oscillation mode II (all three axes oscllate in phase), and oscillation mode IV (the three axes oscllate out of phase shifted by 120 degrees each).
-In protons and neutrons, oscillation mode IV, which corresponds to the oscillation mode of the electron, is thought to be responsible for color confinement.
+Considering that photons, neutrinos, and electrons exist stably (have no life span and do not decay), we should consider that the three oscillation modes that can exist stably in the space-time that is our universe are oscillation mode 1 (zero oscillation of the rotation vector on the three axes), oscillation mode 2 (all three axes oscllate in phase), and oscillation mode 3 (the three axes oscllate out of phase shifted by 120 degrees each).
+In protons and neutrons, oscillation mode 3, which corresponds to the oscillation mode of the electron, is thought to be responsible for color confinement.
 
-First, consider the case of a proton (u,u,d). Both the up quark and the down quark have rotation vectors that oscillation along four axes (three spatial axes + one time axis), but the one axis from the first up quark, the one axis from the second up quark, and the two axes from the down quark are trapped by forming oscillation mode IV like that of an electron, and these axes are in a constrained state. The two up quarks are each constrained on one axis, forming oscillation mode V with two spatial axes plus one time axis. The down quark is constrained on two axes and forms oscillation mode VI with one space axis and one time axis. And since the two up quarks undergo precession due to the two resultant rotation vectors from the oscillation mode V of the two up quarks, two positive charges are produced from the two up quarks. The resultant rotating vector of the down quark does not precess and therefore does not actually contribute to the charge. And the four axes confined by the three quarks form oscillation mode IV, which is equivalent to an electron and results in one negative charge. The two positive charges brought by the two up quarks and the one negative charge brought by the four axes trapped in oscillation mode IV are added together, giving the proton a positive charge of 1.
+First, consider the case of a proton (u,u,d). It is thought that the proton is formed by confining part of the oscillation axes of quarks in oscillation mode 3. As shown in the figure, two space axes and one space axis and one time axis are shared to form oscillation mode 3. Since the up quark oscillates on the 2 space axis + 1 time axis, it has a positive 2/3 charge. The down quark has a positive charge of 2/3, but oscillation mode 3 has a negative charge of 3/3, totaling a negative charge of 1/3.
 
-Next, consider the case of neutrons (u,u,d). A total of five axes are trapped: one axis from the up quark, two axes from the first down quark, and two axes from the second down quark. There are five axes, with one extra axis required to form oscillation mode IV, and this extra axis is thought to be the cause of neutron instability (short lifetime).
-
-To summarize the above, the following can be said:
-
-
-Furthermore, it is believed that gluons are responsible for the interactions between quarks, but in this theory gluons are unnecessary, and it is thought that the oscillation fluctuations that occur when the constraints of oscillation mode IV are disturbed are expressed as quanta. If the constraints are released, it is thought that the quarks will return to their original three-axis (plus the four-axis of the time axis) oscillation mode and change into different elementary particles, which is thought to be the reason why quarks cannot exist on their own.
-
-As for the W and Z bosons, since these elementary particles can only be observed indirectly by decaying into other elementary particles, they can be thought of as quantum representations of the oscillations that occur when oscillation mode IV becomes disordered and breaks up and reconstructs, just like gluons. However, this can also be explained as follows.
-
-The W boson is thought to be composed of an electron (or positron) and an electron neutrino, as it splits into these. However, considering that the lifetime of the W boson is very short, the oscillation mode of the trapped axis is not constrained as oscillation mode IV, but rather, just as there is an extra axis constrained by the neutron, one axis of the neutrino is captured by the electron (or, conversely, one axis of the electron is captured by the neutrino. Or, they alternate between capturing and sharing each other's axes).
-
-The Z boson decays and splits into a pair of antiparticles. Since the Z boson also has a very short lifetime, it is thought that, like the W boson mentioned above, one of the particles captures one axis or they alternately share axes.
-
-In addition, since both the W boson and the Z boson have zero spin, the constituent particles are thought to have spins pointing up and down, canceling each other out. It is also thought that the particles have a large mass due to their rotation (orbital angular momentum) when bound together.
-
-In addition, the three generations of elementary particles are thought to be related to the frequencies of the oscillation modes and their standing waves, but further consideration is needed.
-
-Further consideration is also needed regarding the Higgs particle, which is related to gravity (and the graviton, whose existence has not been confirmed).　However, if light is expressed as a light-sphere spreading in Minkowski space, acceleration can be expressed as the rotation of coordinates. As the equivalence principle of general relativity shows, gravity and acceleration cannot be distinguished. Therefore, expressing elementary particles as rotating vectors and oscillation modes (oscillation = rotation) may itself indicate gravity.
+Next, consider the case of neutrons (u,u,d). In the case of neutrons, one up quark shares one space axis and two down quarks share one space axis and one time axis, forming oscillation mode 3. Because of this extra time axis, the charge of oscillation mode 3 is negative 3/3 x two times = negative 6/3. This extra time axis makes oscillation mode 3 unstable, so the neutron lifetime is short.
 
 ## 6. Conclusion
 * Elementary particles can be expressed as a resultant vector of rotation vectors in four axial directions (three spatial axes plus one time axis), and the characteristics of the elementary particles depend on the type of oscillation mode of the rotation vector in each axial direction.
-* Oscillation mode I (no vibration of the rotating vector) represents photons, oscillation mode II (rotating vectors oscillate in phase) represents neutrinos, oscillation mode IV (rotating vectors on three axes vibrate with a phase shift of 120 degrees) represents electrons, oscillation mode V (one axis is constrained, and the remaining two axes vibrate with a phase shift of 90 degrees) represents up quarks, and oscillation mode VI (two axes are constrained, and the remaining axis oscillates) represents down quarks.
-* When quarks form hadrons, one or two of the four axes behave like electrons in oscillation mode IV and are confined and bound. As a result, the remaining axes behave as up quarks (oscillation mode V) or down quarks (oscillation mode VI). When the confinement (boundary) is released, they return to their original four-axis oscillation mode and immediately change into other elementary particles. Therefore, quarks do not exist alone.
+* Oscillation mode 1 represents photons, oscillation mode 2 represents neutrinos, oscillation mode 3 represents electrons.
+* Color confinement of quarks occurs via oscillation mode 3 in the case of protons and neutrons.
+* Quarks originally have rotation vectors that oscillate along four axes. The axes shared from quarks when forming protons and neutrons behaves like an electron (= oscillation mode 3).
+* The up quark shares the 1 spatial axis from the 4 axes with oscillation mode 3, which causes color confinement. Then, the rotation vector oscillates on the 2 spatial axes + 1 time axis, which are not shared, and has a positive 2/3 charge.
+* The down quark shares the 1 spatial axis and 1 time axis from the 4 axes with oscillation mode 3, which causes color confinement. Then, the rotation vector oscillates on the unshared 2 spatial axes and the 1 time axis, which is confined by color confinement, so it also has a positive 2/3 charge. However, oscillation mode 3, which causes color confinement, is equivalent to an electron and has a total negative 1/3 charge.
+* When the color confinement constraints are released, the quarks revert to their original four-axis oscillation mode and immediately transform into other elementary particles. Therefore, quarks do not exist alone.
+
+So, as mentioned above, photons, neutrinos, up quarks, and down quarks can be explained as oscillations of a rotating vector, but how do other elementary particles work?
+
+It is believed that gluons are responsible for the interactions between quarks, but in this theory gluons are not necessary, and it is thought that the oscillation fluctuations that occur when the constraints of oscillation mode 3 are disturbed are expressed as quantum phenomena.
+
+As for the W and Z bosons, since these elementary particles can only be observed indirectly by decaying into other elementary particles, they can be thought of as quantum representations of the oscillations that occur when oscillation mode 3 becomes disordered and breaks up and reconstructs, just like gluons. However, this can also be explained as follows.
+
+The W boson is thought to be composed of an electron (or positron) and an electron neutrino because it splits into them.
+
+However, considering that the lifetime of the W boson is very short, the oscillation mode of the trapped axes are not constrained as oscillation mode 3, but rather, just as there is an extra axis constrained by the neutron, one axis of the neutrino is captured by the electron (or, conversely, one axis of the electron is captured by the neutrino, or they alternately capture and share each other's axes).
+
+The Z boson decays into a pair of antiparticles. Since the Z boson has a very short lifetime, it is thought that, like the W boson mentioned above, one of the particles captures one axis, or they alternately share the axis.
+
+In addition, since both the W boson and the Z boson have zero spin, the constituent particles are thought to have spins pointing up and down, canceling each other out. It is also thought that the particles have a large mass due to their rotation (orbital angular momentum) when bound together.
+The three generations of elementary particles are thought to be related to the frequencies of the oscillation modes and their standing waves, but further consideration is needed.
+
