@@ -701,7 +701,7 @@ def preset_neutrino():
     rotation_velocity_controller.set_phase_deg_c(float(var_wp_c.get()))
 
 
-def preset_up_quark():
+def preset_quark():
     set_ticks(90)
     var_tick_op.set(1)
     var_axis_op.set(2)
@@ -732,7 +732,7 @@ def preset_up_quark():
     rotation_velocity_controller.set_phase_deg_c(float(var_wp_c.get()))
 
 
-def preset_down_quark():
+def preset_mode5():
     set_ticks(90)
     var_tick_op.set(1)
     var_axis_op.set(2)
@@ -771,9 +771,9 @@ def preset_selected(event):
     elif combo_preset.get() == option_preset[2]:
         preset_electron()
     elif combo_preset.get() == option_preset[3]:
-        preset_up_quark()
+        preset_quark()
     else:
-        preset_down_quark()
+        preset_mode5()
 
 
 def create_parameter_setter():
@@ -1093,8 +1093,8 @@ if __name__ == "__main__":
     # preset_photon()
     # preset_neutrino()
     # preset_electron()
-    # preset_up_quark()
-    # preset_down_quark()
+    # preset_quark()
+    # preset_mode5()
 
     anim = animation.FuncAnimation(fig, update, interval=100, save_count=100)
     root.mainloop()
