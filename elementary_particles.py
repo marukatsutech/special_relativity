@@ -1083,9 +1083,9 @@ if __name__ == "__main__":
     frm_preset = ttk.Labelframe(root, relief="ridge", text="Osc. preset", labelanchor="n")
     frm_preset.pack(side="left", fill=tk.Y)
 
-    option_preset = ["Photon", "Neutrino", "Electron", "Up quark", "Down quark"]
+    option_preset = ["Mode1:Photon", "Mode2:Neutrino", "Mode3:Electron", "Mode4:Quark", "Mode5:-"]
     variable_preset = tk.StringVar(root)
-    combo_preset = ttk.Combobox(frm_preset, values=option_preset, textvariable=variable_preset, width=10)
+    combo_preset = ttk.Combobox(frm_preset, values=option_preset, textvariable=variable_preset, width=15)
     combo_preset.set(option_preset[0])
     combo_preset.bind("<<ComboboxSelected>>", preset_selected)
     combo_preset.pack()
