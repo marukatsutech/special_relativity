@@ -1,4 +1,4 @@
-""" Elementary particles (rotation)"""
+""" Precession (rotation)"""
 import numpy as np
 from matplotlib.figure import Figure
 import matplotlib.animation as animation
