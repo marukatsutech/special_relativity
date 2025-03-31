@@ -26,7 +26,7 @@ phase_deg = 0.
 phase_deg_step = 4.
 
 """ Create figure and axes """
-title_ax0 = "Elementary particles (rotation mode)"
+title_ax0 = "Precession (rotation)"
 title_tk = title_ax0
 
 x_min = -2.
@@ -128,17 +128,17 @@ class ThreeAxes:
         self.y_axis_ab = [self.axis_ab[1], - self.axis_ab[1]]
         self.z_axis_ab = [self.axis_ab[2], - self.axis_ab[2]]
         self.line_axis_ab, = self.ax.plot(self.x_axis_ab, self.y_axis_ab, self.z_axis_ab,
-                                          label='Axis A-B', color="orange", ls="-.", linewidth=2)
+                                          label='Axis A-B', color="darkorange", ls="-.", linewidth=2)
 
-        self.vector_r = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
-                                       self.axis_r[0], self.axis_r[1], self.axis_r[2],
-                                       length=1, color="black", normalize=True, linewidth=2, alpha=1.0)
+        self.vector_a_b = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
+                                         self.axis_r[0], self.axis_r[1], self.axis_r[2],
+                                         length=1, color="darkorange", normalize=True, linewidth=2, alpha=1.0)
 
         self.x_r = []
         self.y_r = []
         self.z_r = []
         self.path_r, = self.ax.plot(np.array(self.x_r), np.array(self.y_r), np.array(self.z_r),
-                                    color="black", linewidth=1)
+                                    color="darkorange", linewidth=1)
 
     def set_phase_step_deg(self, value):
         self.phase_step_deg = value
@@ -149,18 +149,18 @@ class ThreeAxes:
         self.update_axes()
 
         self.axis_r = rot_matrix.apply(self.axis_r)
-        self.update_vector_r()
+        self.update_vector_a_b()
 
     def rotate_r_axis_ab(self):
         rot_matrix = Rotation.from_rotvec(np.deg2rad(self.phase_step_deg) * self.axis_ab)
         self.axis_r = rot_matrix.apply(self.axis_r)
-        self.update_vector_r()
+        self.update_vector_a_b()
 
-    def update_vector_r(self):
-        self.vector_r.remove()
-        self.vector_r = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
-                                       self.axis_r[0], self.axis_r[1], self.axis_r[2],
-                                       length=1, color="black", normalize=True, linewidth=2, alpha=1.0)
+    def update_vector_a_b(self):
+        self.vector_a_b.remove()
+        self.vector_a_b = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
+                                         self.axis_r[0], self.axis_r[1], self.axis_r[2],
+                                         length=1, color="darkorange", normalize=True, linewidth=2, alpha=1.0)
 
     def update_path(self):
         if True:
@@ -215,7 +215,7 @@ class ThreeAxes:
 
         self.clear_path()
         self.update_axes()
-        self.update_vector_r()
+        self.update_vector_a_b()
 
 
 def set_phase_deg_step(value):
@@ -229,15 +229,15 @@ def create_parameter_setter():
     frm_rot = ttk.Labelframe(root, relief="ridge", text="Rotations", labelanchor='n')
     frm_rot.pack(side="left", fill=tk.Y)
 
-    # var_rot_r_ab = tk.BooleanVar(root)
-    chk_rot_r_ab = tk.Checkbutton(frm_rot, text="Rotate vector R around axis A-B", variable=var_rot_r_ab)
-    chk_rot_r_ab.pack(anchor=tk.W)
-    var_rot_r_ab.set(False)
-
     # var_rot_all_r = tk.BooleanVar(root)
     chk_rot_all_r = tk.Checkbutton(frm_rot, text="Rotate all axes around vector R", variable=var_rot_all_r)
     chk_rot_all_r.pack(anchor=tk.W)
     var_rot_all_r.set(False)
+    
+    # var_rot_r_ab = tk.BooleanVar(root)
+    chk_rot_r_ab = tk.Checkbutton(frm_rot, text="Rotate vector R around axis A-B", variable=var_rot_r_ab)
+    chk_rot_r_ab.pack(anchor=tk.W)
+    var_rot_r_ab.set(False)
 
 
 def create_animation_control():
@@ -317,7 +317,7 @@ if __name__ == "__main__":
     three_axes = ThreeAxes(ax0, np.array([0., 0., 0.]))
 
     dummy0, = ax0.plot(np.array([0, 0]), np.array([0, 0]), np.array([0, 0]),
-                       color="black", linewidth=2, linestyle="-", label="Vector R")
+                       color="darkorange", linewidth=2, linestyle="-", label="Rotation vector A-B")
 
     ax0.legend(loc='lower right', fontsize=8)
 
