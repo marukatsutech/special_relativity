@@ -230,7 +230,7 @@ def create_parameter_setter():
     frm_rot.pack(side="left", fill=tk.Y)
 
     # var_rot_all_r = tk.BooleanVar(root)
-    chk_rot_all_r = tk.Checkbutton(frm_rot, text="Rotate all axes around vector R", variable=var_rot_all_r)
+    chk_rot_all_r = tk.Checkbutton(frm_rot, text="Rotate all axes around vector A-B", variable=var_rot_all_r)
     chk_rot_all_r.pack(anchor=tk.W)
     var_rot_all_r.set(False)
     
