@@ -22,8 +22,8 @@ vector_y_axis = np.array([0., 1., 0.])
 vector_z_axis = np.array([0., 0., 1.])
 
 """ Other parameters """
-phase_deg = 0.
-phase_deg_step = 4.
+# phase_deg = 0.
+# phase_deg_step = 4.
 
 """ Create figure and axes """
 title_ax0 = "Axes rotation"
@@ -99,7 +99,7 @@ class ThreeAxes:
         self.ax = ax
         self.xyz = xyz
         self.is_rotate_xyz = False
-        self.phase_step_deg = 1
+        self.phase_step_deg = 2
         self.scale_a = 0
         self.scale_b = 0
         self.scale_c = 0
