@@ -22,8 +22,8 @@ vector_y_axis = np.array([0., 1., 0.])
 vector_z_axis = np.array([0., 0., 1.])
 
 """ Other parameters """
-phase_deg = 0.
-phase_deg_step = 4.
+# phase_deg = 0.
+# phase_deg_step = 1.
 
 """ Create figure and axes """
 title_ax0 = "Precession (rotation)"
@@ -58,6 +58,7 @@ toolbar = NavigationToolbar2Tk(canvas, root)
 canvas.get_tk_widget().pack()
 
 """ Global objects of Tkinter """
+var_rot_a_c = tk.BooleanVar(root)
 var_rot_r_ab = tk.BooleanVar(root)
 var_rot_all_r = tk.BooleanVar(root)
 
@@ -98,7 +99,7 @@ class ThreeAxes:
         self.ax = ax
         self.xyz = xyz
         self.is_rotate_xyz = False
-        self.phase_step_deg = 1
+        self.phase_step_deg = 3
 
         self.axis_a = np.array([1., 0., 0.])
         self.axis_b = np.array([0., 1., 0.])
@@ -229,15 +230,20 @@ def create_parameter_setter():
     frm_rot = ttk.Labelframe(root, relief="ridge", text="Rotations", labelanchor='n')
     frm_rot.pack(side="left", fill=tk.Y)
 
+    # var_rot_a_c = tk.BooleanVar(root)
+    chk_rot_a_c = tk.Checkbutton(frm_rot, text="Rotate rotation vector A-B around axis C", variable=var_rot_a_c)
+    chk_rot_a_c.pack(anchor=tk.W)
+    var_rot_a_c.set(False)
+
+    # var_rot_r_ab = tk.BooleanVar(root)
+    chk_rot_r_ab = tk.Checkbutton(frm_rot, text="Rotate rotation vector A-B around axis A-B", variable=var_rot_r_ab)
+    chk_rot_r_ab.pack(anchor=tk.W)
+    var_rot_r_ab.set(False)
+
     # var_rot_all_r = tk.BooleanVar(root)
     chk_rot_all_r = tk.Checkbutton(frm_rot, text="Rotate all axes around vector A-B", variable=var_rot_all_r)
     chk_rot_all_r.pack(anchor=tk.W)
     var_rot_all_r.set(False)
-    
-    # var_rot_r_ab = tk.BooleanVar(root)
-    chk_rot_r_ab = tk.Checkbutton(frm_rot, text="Rotate vector A-B around axis A-B", variable=var_rot_r_ab)
-    chk_rot_r_ab.pack(anchor=tk.W)
-    var_rot_r_ab.set(False)
 
 
 def create_animation_control():
@@ -282,7 +288,8 @@ def draw_static_diagrams():
 
 
 def update_diagrams():
-    three_axes.rotate_axis_ab()
+    if var_rot_a_c.get():
+        three_axes.rotate_axis_ab()
     if var_rot_r_ab.get():
         three_axes.rotate_r_axis_ab()
     if var_rot_all_r.get():
