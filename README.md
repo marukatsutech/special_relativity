@@ -380,7 +380,7 @@ Fig. 4−3. Projection of light circle in 3 dimensions - 2
 
 ![image_ch3_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig5-1.png)
 
-Fig. 4-1. Spin of boson and fermion
+Fig. 5-1. Spin of boson and fermion
 
 (Try spin_boson_fermion.py for Fig. 4-1.)
 
@@ -726,14 +726,12 @@ The three generations of elementary particles are thought to be related to the f
 
 Fig. 5-3 oscillation modes and standard model of elementary particles physics
 
-# Chapter - 6. Elementary particles
+# Chapter - 6. Quantum spin and Light speed constancy - Special relativity-6
+How the principle of light speed constancy works.
 
 Watch my video for overview!
 
 [(https://youtu.be/EsmJpV8vKCc)](https://youtu.be/EsmJpV8vKCc)
-
-Quantum spin and Light speed constancy - Special relativity-6
-How the principle of light speed constancy works.
 
 ## 1. Introduction
 In Chapter 5, we considered the nature of elementary particles from the perspective of the oscillation modes of rotating vectors.
@@ -768,6 +766,8 @@ In this way, the space-time axis and electric charge are closely related, and el
 
 ![image_ch6_fig2-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig2-3.png)
 
+(Try electric_charges_interaction.py for Fig 2-3.)
+
 ## 3. Oscillation modes and rotation operation
 In Chapter 4, I considered that spin, a property of fermions, is the infinitesimal precession of a rotating vector. 
 I explained that the direction of the precessing rotating vector changes rapidly and randomly, resulting in superposition, resulting in a large overall precession angle of 45 degrees (however, I did not fully consider how this works).
@@ -791,7 +791,7 @@ Next, rotate all the coordinate axes around rotation vector A-B. Then, just like
 
 ![image_ch6_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig3-2.png)
 
-Try jjjjjjjjjjjjjjjjjjjjjjjjjjj
+(Try precession_rotation.py for Fig 3-2.)
 
 This is simply the resultant rotation vector of rotation vector A-B and rotation vector C, and if rotation vector A-B and rotation vector C are orthogonal and have the same length (= same rotation speed), then the resultant rotation vector will be 45 degrees as shown in the figure.
 
@@ -804,14 +804,14 @@ In the case of oscillation mode 3, the oscillation phases of rotation vectors A,
 In any case, when the rotation vector is rotated around an axis perpendicular to its direction, it undergoes precession.
 This is a double rotation, which adds another rotation to the rotation, and is consistent with what was explained in Chapter 3: single rotation is for photons and double rotation is for fermions, and the number of rotations is related to quantum spin.
 
-fig ttttttttttttttttttttt
+![image_ch3_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch3_fig5-1.png)
 
 The direction of the rotation vector will be the same regardless of its orientation as long as the orthogonal relationship is maintained, so we will simulate it by replacing it with rotation operations along the A-axis, B-axis, and C-axis, which are the internal coordinates of the elementary particle.
 As is obvious, when rotating around two axes, precession occurs at an angle of 45 degrees.
 
 ![image_ch6_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig3-5.png)
 
-Try jjjjjjjjjjjjjjjjjjjjjjjjjjj
+(Try electric_charges_interaction.py for Fig 2-3.)
 
 Next, we perform rotation around three axes. 
 Since oscillation mode 4, which is equivalent to rotation around two axes (= positive charge 2/3), is set as the up quark, the rotation around three axes should be the electron. 
@@ -899,6 +899,8 @@ Therefore, if the phase that is shifted by 90 degrees in oscillation mode 4 is m
 Furthermore, if the phase is slightly shifted rather than perfectly matched, it will rotate little by little while oscillating. This is thought to represent neutrino oscillation, but further consideration is needed.
 
 ![image_ch6_fig7-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig7-1.png)
+
+(Try elementary_particles.py for Fig 7-1.)
 
 ## 8. Review of precession and spin
 It was a mistake to think that the infinitesimal precession described in Chapter 4 would lead to a 45 degree precession.
