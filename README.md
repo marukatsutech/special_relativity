@@ -726,3 +726,203 @@ The three generations of elementary particles are thought to be related to the f
 
 Fig. 5-3 oscillation modes and standard model of elementary particles physics
 
+# Chapter - 6. Elementary particles
+
+Watch my video for overview!
+
+[(https://youtu.be/EsmJpV8vKCc)](https://youtu.be/EsmJpV8vKCc)
+
+Quantum spin and Light speed constancy - Special relativity-6
+How the principle of light speed constancy works.
+
+## 1. Introduction
+In Chapter 5, we considered the nature of elementary particles from the perspective of the oscillation modes of rotating vectors.
+
+In this chapter we further consider oscillation modes.
+
+We will then look back on our considerations so far and reconsider the principle of light speed constancy, which was the starting point of this theory and was discussed in Chapter 4 - The relationship between quantum mechanics and special relativity.
+
+## 2. Charges, Interactions, and Space-Time Axes
+In elementary particles that undergo electromagnetic interactions, such as electrons and quarks, Coulomb forces occur between the particles due to their electric charges.
+Coulomb force is a repulsive force between the same charges, such as positive charge and positive charge, or negative charge and negative charge, but an attractive force occurs between different charges, such as positive charge and negative charge.
+
+![image_ch6_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig2-1.png)
+
+In quantum field theory (quantum electrodynamics), the Coulomb force is carried out by virtual photons that arise between elementary particles.
+For example, in the case of electrons, the virtual photon generated between the electrons collides with the electron, giving it kinetic energy and generating a repulsive force.
+So, how can we explain the electromagnetic interaction of electric charges if we represent elementary particles in terms of oscillation modes?
+
+![image_ch6_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig2-2.png)
+
+In Chapter 5, I explained that the mechanism behind the positive and negative charges of electrons and quarks is related to the number of axes of oscillation (rotation). 
+If the oscillation (rotation) of one axis is considered to be a negative charge, then the oscillation of two axes is negative x negative = positive, and the oscllation of three axes is negative x negative x negative = negative.
+Since a virtual photon collides with an electron and exerts a repulsive force (moving in the opposite direction), the essence of the action of electric charges seems to be to reverse something. Then, how should we think about the attractive force?
+
+When considering the vector of the force direction in a two-dimensional plane, the direction can be reversed by rotating the vector by 180 degrees.
+In three dimensions, the direction of a vector can also be changed by inverting it (rotating it 180 degrees) relative to the coordinate axis.
+First, the initial direction of the vector is set to negative (if the C axis is considered to represent time as in Minkowski space, this results in a negative velocity).
+If it is then rotated 180 degrees around the A axis and then around the B axis, it will be inverted from its initial position with the C axis as the axis of symmetry and will point in the positive direction.
+
+If it is then rotated a further 180 degrees around the C axis, it will return to its original negative orientation.
+In this way, the space-time axis and electric charge are closely related, and electromagnetic interaction is the reversal (180 degree rotation) of the direction of oscillation(rotation). The positive/negative and magnitude of the electric charge depend on the number of rotation axes (degrees of freedom of rotation).
+
+![image_ch6_fig2-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig2-3.png)
+
+## 3. Oscillation modes and rotation operation
+In Chapter 4, I considered that spin, a property of fermions, is the infinitesimal precession of a rotating vector. 
+I explained that the direction of the precessing rotating vector changes rapidly and randomly, resulting in superposition, resulting in a large overall precession angle of 45 degrees (however, I did not fully consider how this works).
+
+In Chapter 5, I explained that elementary particles can be expressed as oscillation modes of rotating vectors on four axes (three spatial axes plus the time axis). 
+Precession appears in oscillation modes 3 and 4. 
+However, the angle of precession is too large to be considered infinitesimal. 
+Moreover, in oscilattion mode 4, which is thought to represent the up quark, the angle of precession is 45 degrees.
+
+The consideration that fermions have a 45 degree precession angle is the basis of the principle of  light speed constancy explained in Chapter 4. Therefore, we will consider why oscillation mode 4 precesses at a 45 degree angle.
+
+In oscillation mode 4, the oscillations of rotation vectors A and B are out of phase with each other by 90 degrees.
+The phase shift of 90 degrees is the same as the relationship between the sine and cosine curves of rotational motion.
+
+![image_ch6_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig3-1.png)
+
+Now, let's simulate the behavior of the rotation vector using only rotation operations, as follows.
+ Let the rotation vector equivalent to the resultant rotation vector of oscillation mode 4 be rotation vector A-B. 
+Then, rotate rotation vector A-B within plane A-B around axis C. 
+Next, rotate all the coordinate axes around rotation vector A-B. Then, just like oscillation mode 4, it undergoes precession at an angle of 45 degrees.
+
+![image_ch6_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig3-2.png)
+
+Try jjjjjjjjjjjjjjjjjjjjjjjjjjj
+
+This is simply the resultant rotation vector of rotation vector A-B and rotation vector C, and if rotation vector A-B and rotation vector C are orthogonal and have the same length (= same rotation speed), then the resultant rotation vector will be 45 degrees as shown in the figure.
+
+![image_ch6_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig3-3.png)
+
+In the case of oscillation mode 3, the oscillation phases of rotation vectors A, B, and C are shifted by 120 degrees, so the resultant rotation vector maintains the same length and rotates. However, because the length of the resultant rotation vector is longer than 1, the angle of precession is smaller than 45 degrees.
+
+![image_ch6_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig3-4.png)
+
+In any case, when the rotation vector is rotated around an axis perpendicular to its direction, it undergoes precession.
+This is a double rotation, which adds another rotation to the rotation, and is consistent with what was explained in Chapter 3: single rotation is for photons and double rotation is for fermions, and the number of rotations is related to quantum spin.
+
+fig ttttttttttttttttttttt
+
+The direction of the rotation vector will be the same regardless of its orientation as long as the orthogonal relationship is maintained, so we will simulate it by replacing it with rotation operations along the A-axis, B-axis, and C-axis, which are the internal coordinates of the elementary particle.
+As is obvious, when rotating around two axes, precession occurs at an angle of 45 degrees.
+
+![image_ch6_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig3-5.png)
+
+Try jjjjjjjjjjjjjjjjjjjjjjjjjjj
+
+Next, we perform rotation around three axes. 
+Since oscillation mode 4, which is equivalent to rotation around two axes (= positive charge 2/3), is set as the up quark, the rotation around three axes should be the electron. 
+However, the result of the simulation of rotation around three axes is the same as that in Chapter 5, where oscillation mode 1 (no oscillation) was considered to be a photon.
+
+In retrospect, this is obvious, but the above is self-evident from the rules for vector composition. 
+Unfortunately, the precession of the composite rotating vector of three axes is not 45 degrees.
+Is it possible to represent elementary particles using the oscillation modes and rotation operations of rotating vectors? 
+However, from the discussion so far, it seems that rotation operations are closely related to electric charges and quantum spin.
+
+![image_ch6_fig3-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig3-6.png)
+
+## 4. Time axis rotation vector and spin
+Next, let us consider the manipulation of rotation vectors, including the time axis rotation vector.
+First, a photon can be expressed as a single rotating vector. 
+Since a quantum has the properties of both a particle and a wave, if we consider a photon traveling in the A-axis direction as a wave, it oscillates on the spatial axis B and the time axis D as shown in the figure.
+
+![image_ch6_fig4-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig4-1.png)
+
+Next, we add rotation to the photon along the time axis (D axis) (add rotation vector D). 
+Then, as in the previous discussion, rotation vector A and rotation vector D precess at an angle of 45 degrees.
+Now, here is the problem. If we add another rotation vector to rotate around three axes, the precession angle will not be 45 degrees as mentioned in the previous section.
+
+![image_ch6_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig4-4.png)
+
+Therefore, the pair of rotation vector A and rotation vector D is considered to be one unit (this is called the rotation vector pair A-D).
+Then add the rotation vector pair B-D to the rotation vector pair A-D.
+Four-dimensional space cannot be drawn strictly, but if we give up on the coincidence of the time axes and prioritize the precession pattern, or prioritize the coincidence of the time axes, we will end up with something like the diagram.
+
+![image_ch6_fig4-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig4-3.png)
+
+Then, add the rotation vector pair C-D. This too cannot be drawn precisely, and if we maintain the orthogonality of the spatial axes, we cannot make the D axis completely coincident, and part of the D axis can only be drawn overlapping with the C axis.
+
+![image_ch6_fig4-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig4-4.png)
+
+The above theory seems complicated and strange. Also, considering the symmetry of space-time, each axis is thought to precess with space vectors. 
+However, vectors can be considered as a combination and can be simplified.
+Since all spatial axes are orthogonal to the time axis, we can think of this as a combination of the spatial axis rotation vectors A, B, and C in the rotation vector pair, and the three rotation vectors D in each pair (D in the A-D pair, D in the B-D pair, and D in the C-D pair are considered to be orthogonal to each other).
+
+![image_ch6_fig4-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig4-5.png)
+
+And since the resultant rotation vector of the rotation vectors of the three spatial axes and the resultant rotation vector of the three time axes should be orthogonal and of the same length, it can be thought that the whole is precessing at 45 degrees.
+
+![image_ch6_fig4-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig4-6.png)
+
+## 5. Relationship between rotation, charge and spin
+The above discussion can be summarized as follows (note that the arrows of the rotation vectors have been omitted).
+
+![image_ch6_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig5-1.png)
+
+The denominator of quantum spin indicates the number of rotation axes of the rotation vector (rotational degrees of freedom), and the number of rotation vector pairs represents the charge.
+In addition, the reason why a single rotating vector pair was not considered to be a down quark is that rotating a rotating vector (for example, rotating vector A) in the direction of the D axis, which is the time axis, means rotating it in the plane A-B (or plane C-A) perpendicular to the D axis, which also means rotating it around the C axis perpendicular to the plane A-B. 
+Therefore, it was thought that a single rotating vector pair does not exist.
+It is also consistent with the color confinement discussed in the next section.
+
+Also, what was oscillation mode 3? 
+Oscillation mode 3 was a hint for the idea of color confinement, but it did not fit with the mechanism of the light speed constancy. 
+This is because it was simulated with oscillations on three axes. 
+Although it is not possible to realize this, oscillations on four orthogonal axes may have produced the same results as above.
+(Alternatively, since there are three rotation vector pairs, six axes = six dimensions are required.)
+
+## 6. Reviews of color confinement
+n Chapter 5, I explained that oscillation mode 3, which represents electrons, is what causes color confinement. 
+However, as explained in the previous section, an electron is made up of three rotating vector pairs, and color confinement is also carried out by three rotating vector pairs.
+Therefore, rotating vectors on the time axis are added according to the number of pairs.
+
+![image_ch6_fig6-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig6-1.png)
+
+Also, the reason why the down quark is not treated as a single vector pair is due to the difference in mass (= energy) between up and down quarks, as explained in the previous section. The up quark has a mass of ≃2.2 MeV/c² and a positive charge of 2/3. The down quark has a mass of ≃4.7 MeV/c² and a negative charge of 1/3.
+As mentioned above, the charge is the number of rotating vector pairs, and the more the number of rotating vector pairs, the greater the rotational energy (= mass), but this relationship is reversed. 
+If we consider the mass of the down quark together with the part equivalent to the electron that functions the color confinement, the mass becomes larger by that amount, which explains the reversal of the relationship between mass and charge.
+
+It is also easily consistent with beta decay, in which a neutron changes into a proton.
+If we think about beta decay at the quark level, it is the process in which a down quark changes into an up quark, passing through a W boson and then into an electron and a neutrino, and the down quark can be thought of as containing something like an electron.
+Regarding the fact that neutrinos are produced in beta decay, the down quark can be considered a composite particle, so it has orbital momentum and its energy and spin are thought to correspond to those of the neutrino, but further consideration is required.
+
+![image_ch6_fig6-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig6-2.png)
+
+## 7. Review of neutrino model
+In Chapter 5, I explained that the neutrino is represented by oscillation mode 2, which is the resultant rotation vector of three-axis rotation vectors that oscillate in phase. However, the neutrino has a spin of 1/2 and should have two rotation components.
+It is the rotating vector pair that has spin 1/2. It is thought that it cannot exist alone, and even if it could exist alone, it would precess, which means that electromagnetic interaction with the photon would occur, which does not match the properties of the neutrino.
+
+Oscillation mode 4 is the same as a rotating vector pair, and oscillation and rotation are basically the same phenomenon. 
+Therefore, if the phase that is shifted by 90 degrees in oscillation mode 4 is matched, the length of the composite rotating vector oscillates as in oscillation mode 2 (this will be called oscillation mode 4-1).
+Furthermore, if the phase is slightly shifted rather than perfectly matched, it will rotate little by little while oscillating. This is thought to represent neutrino oscillation, but further consideration is needed.
+
+![image_ch6_fig7-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig7-1.png)
+
+## 8. Review of precession and spin
+It was a mistake to think that the infinitesimal precession described in Chapter 4 would lead to a 45 degree precession.
+However, the 45 degree precession due to the spin 1/2 of fermions arises naturally from the properties of rotation and space-time (orthogonality and symmetry).
+And as I said in Chapter 4, in Minkowski space photons and electrons always interact at an angle of 45 degrees. This is the mechanism behind the principle of the constancy of the speed of light.
+
+## 9. Conclusion
+* When a rotation vector is rotated in a direction perpendicular to its axis, the axis precesses at an angle of 45 degrees due to the interaction between the rotation of the rotation vector itself and the rotation in the perpendicular direction.
+* The time axis in four-dimensional space (Minkowski space) is perpendicular to the spatial axis, so the time axis also precesses at a 45 degree angle.
+* A state in which only the rotation of the rotation vector itself (single rotation) is spin 1, and a state in which a double rotation component in an orthogonal direction is added (rotation vector pair) is spin 1/2.
+* Elementary particles with electric charge, such as electrons and quarks, are composed of rotating vector pairs, and the number of rotating vector pairs indicates the magnitude of the electric charge.
+* Charged elementary particles such as electrons and quarks have spin 1/2, which causes their space-time axis to be tilted at a 45 degree angle in Minkowski space with respect to the space-time axis of a spin 1 photon, so they can only interact with a spin 1 photon at a 45 degree angle.
+* In Minkowski space, angles indicate speed. Therefore, the speed of a photon interacting with an electron or a quark is always constant at 45 degrees, and therefore the speed of light is constant.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
