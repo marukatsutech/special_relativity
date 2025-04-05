@@ -732,6 +732,37 @@ def preset_quark():
     rotation_velocity_controller.set_phase_deg_c(float(var_wp_c.get()))
 
 
+def preset_neutrino_new():
+    set_ticks(90)
+    var_tick_op.set(1)
+    var_axis_op.set(2)
+    three_arrow.set_is_rotate_xyz(False)
+    var_turn_op.set(1)
+    var_phase_stp.set(str(3))
+    set_phase_deg_step(float(var_phase_stp.get()))
+
+    var_amp_a.set(str(1.))
+    rotation_velocity_controller.set_amplitude_a(float(var_amp_a.get()))
+    var_wn_a.set(str(1.))
+    rotation_velocity_controller.set_wave_number_a(float(var_wn_a.get()))
+    var_wp_a.set(str(0))
+    rotation_velocity_controller.set_phase_deg_a(float(var_wp_a.get()))
+
+    var_amp_b.set(str(1.))
+    rotation_velocity_controller.set_amplitude_b(float(var_amp_b.get()))
+    var_wn_b.set(str(1.))
+    rotation_velocity_controller.set_wave_number_b(float(var_wn_b.get()))
+    var_wp_b.set(str(0))
+    rotation_velocity_controller.set_phase_deg_b(float(var_wp_b.get()))
+
+    var_amp_c.set(str(0.))
+    rotation_velocity_controller.set_amplitude_c(float(var_amp_c.get()))
+    var_wn_c.set(str(0.))
+    rotation_velocity_controller.set_wave_number_c(float(var_wn_c.get()))
+    var_wp_c.set(str(0))
+    rotation_velocity_controller.set_phase_deg_c(float(var_wp_c.get()))
+
+
 def preset_mode5():
     set_ticks(90)
     var_tick_op.set(1)
@@ -772,6 +803,8 @@ def preset_selected(event):
         preset_electron()
     elif combo_preset.get() == option_preset[3]:
         preset_quark()
+    elif combo_preset.get() == option_preset[4]:
+        preset_neutrino_new()
     else:
         preset_mode5()
 
@@ -1083,9 +1116,10 @@ if __name__ == "__main__":
     frm_preset = ttk.Labelframe(root, relief="ridge", text="Osc. preset", labelanchor="n")
     frm_preset.pack(side="left", fill=tk.Y)
 
-    option_preset = ["Mode1:Photon", "Mode2:Neutrino", "Mode3:Electron", "Mode4:Quark", "Mode5:-"]
+    option_preset = ["Mode1:Photon", "Mode2:Neutrino(?)", "Mode3:Electron(?)", "Mode4:Quark",
+                     "Mode4-1:Neutrino(new)", "Mode5:-"]
     variable_preset = tk.StringVar(root)
-    combo_preset = ttk.Combobox(frm_preset, values=option_preset, textvariable=variable_preset, width=15)
+    combo_preset = ttk.Combobox(frm_preset, values=option_preset, textvariable=variable_preset, width=18)
     combo_preset.set(option_preset[0])
     combo_preset.bind("<<ComboboxSelected>>", preset_selected)
     combo_preset.pack()
