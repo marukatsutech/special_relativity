@@ -726,7 +726,7 @@ The three generations of elementary particles are thought to be related to the f
 
 Fig. 5-3 oscillation modes and standard model of elementary particles physics
 
-# Chapter - 6. Quantum spin and Light speed constancy - Special relativity-6
+# Chapter - 6. Quantum spin and Light speed constancy
 How the principle of light speed constancy works.
 
 Watch my video for overview!
@@ -835,7 +835,7 @@ Next, we add rotation to the photon along the time axis (D axis) (add rotation v
 Then, as in the previous discussion, rotation vector A and rotation vector D precess at an angle of 45 degrees.
 Now, here is the problem. If we add another rotation vector to rotate around three axes, the precession angle will not be 45 degrees as mentioned in the previous section.
 
-![image_ch6_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig4-4.png)
+![image_ch6_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch6_fig4-2.png)
 
 Therefore, the pair of rotation vector A and rotation vector D is considered to be one unit (this is called the rotation vector pair A-D).
 Then add the rotation vector pair B-D to the rotation vector pair A-D.
