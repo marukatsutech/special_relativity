@@ -240,17 +240,15 @@ class ThreeAxes:
 
     def set_scale_a(self, value):
         self.scale_a = value
+        self.update_vectors()
 
     def set_scale_b(self, value):
         self.scale_b = value
+        self.update_vectors()
 
     def set_scale_c(self, value):
         self.scale_c = value
-
-
-def set_phase_deg_step(value):
-    global phase_deg_step
-    phase_deg_step = value
+        self.update_vectors()
 
 
 def create_parameter_setter():
@@ -336,7 +334,7 @@ def update_diagrams():
 
 
 def reset():
-    global is_play, phase_deg
+    global is_play
     cnt.reset()
     three_axes.reset()
 
@@ -347,6 +345,18 @@ def switch():
 
 
 def update(f):
+    if var_rot_a.get():
+        three_axes.set_scale_a(1)
+    else:
+        three_axes.set_scale_a(0)
+    if var_rot_b.get():
+        three_axes.set_scale_b(1)
+    else:
+        three_axes.set_scale_b(0)
+    if var_rot_c.get():
+        three_axes.set_scale_c(1)
+    else:
+        three_axes.set_scale_c(0)
     if is_play:
         cnt.count_up()
         update_diagrams()
