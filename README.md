@@ -956,15 +956,146 @@ And as I said in Chapter 4, in Minkowski space photons and electrons always inte
 * In Minkowski space, angles indicate speed. Therefore, the speed of a photon interacting with an electron or a quark is always constant at 45 degrees, and therefore the speed of light is constant.
 
 
+# Chapter - 7. Rotation, Spin and Mass
+
+What is mass?
+
+Watch my video for overview!
+
+[(https://youtu.be/9iO9gvuThDo)](https://youtu.be/9iO9gvuThDo)
+
+## 1. Introduction
+In Chapter 6, I explained that fermions can be represented by a rotating vector pair. 
+
+A rotating vector pair is a double rotation, and the idea of  double rotation comes from the ½-fold rotation symmetry and the path integral invented by Feynman, as explained in Chapter 3.
+
+Now that we understand that fermions can be explained by a combination of rotating vector pairs, we will consider the relationship between rotating vector pairs and path integrals, and consider the Planck constant and mass.
+
+## 2. Projection of rotation vector
+In the previous chapters, I have explained that a photon can be represented by a rotating vector (light-arrow), and a fermion can be represented by a rotating vector pair, which is a pair of a rotating vector in the direction of the space axis and a rotating vector in the direction of the time axis.
+
+When we represent a photon as a rotating vector, it may seem as if the photon is moving in a specific, fixed direction. 
+
+However as explained in Chapter 2, in this theory the direction of the rotating vector is not fixed; rather, it rotates (Chapter 3) or changes direction randomly (Chapter 5), and spreads out spherically in Minkowski space (light-sphere).
+
+Then, it is projected onto the entire spatial axis of the observer. It randomly interacts with the observer (fermion). 
+(And since fermions have spin 1/2, they only interact at a 45 degree angle in Minkowski space, i.e., at the speed of light c, so the speed of light remains constant (Chapter 6).)
+
+When the rotation vector of a photon is projected onto the observer's spatial axis, the phase of the rotation vector is projected according to its gradient. 
+
+This is because in Minkowski space, the phase θ = tan-1 (x/t), where x/t is the gradient. 
+
+![image_ch7_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig2-1.png)
+
+Fig. 2-1 Projection of rotation vector
+
+And because the gradient in Minkowski space indicates the speed, rotation vectors of any direction are projected onto the spatial axis at the same time as seen by the observer. This gives photons the properties of waves that propagate in space.
+
+![image_ch7_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig2-2.png)
+
+Fig. 2-2 Detail of the projection of rotation vector
+
+In the case of fermions, as explained in Chapter 3, due to the double rotation as shown in the figure, the phase of the rotation vector is proportional to the square of the projected position x (and the fact that the phase is proportional to the square of x is consistent with the path integral formula, which is equivalent to the Schrödinger wave function).
+
+![image_ch7_fig2-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig2-3.png)
+
+Fig. 2-3 Projection of rotation vector in chapter 3
+
+## 3. Projection of rotation vector pair
+Now that we know that fermions can be represented as rotating vector pairs, as explained in Chapter 6, let us try to reconcile the double rotation mentioned above with the case of rotating vector pairs.
+
+In a rotation vector pair, the two rotation vectors influence each other and precess at an angle of 45 degrees. Therefore, when considering the projection of the rotation vector (=light-arrow) of the rotation vector pair in the spatial axis direction, it is sufficient to tilt the phase rotation plane by 45 degrees.
+
+![image_ch7_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-1.png)
+
+Fig. 3-1 Phase surface of rotation vector pair
+
+This rotating vector is projected onto the observer's space plane according to its phase, just like with photons.
+
+At this time, because the phase surface is tilted by 45 degrees, the rotational speed of the rotating vector becomes √2 times as shown in the figure when it is projected onto the space plane (this is because the length of the wavelength, when the rotation is considered as a oscillation, appears shorter when projected).
+
+This projection is then rotated relative to the observer's time axis because it is affected by the precession rotation. The precession rotation speed is the resultant rotation vector of the vector pair, which is also multiplied by √2.
+
+Therefore, both phases change in the same way, and the phase is set to θ.
+
+![image_ch7_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-2.png)
+
+Fig. 3-2 Precession rotation speed of rotation vector pair
 
 
+The spatial rotation vector of the rotation vector pair is projected as shown in the figure.
 
+![image_ch7_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-3.png)
 
+Fig. 3-3 Projection of rotation vector pair
 
+In Chapter 3, the rotation plane of the fermion phase was not tilted, so it was difficult to find physical meaning in the relationship with the projected value and the path integral (proportional to the square of x), but this became clear when projecting the rotation vector pair.
 
+Also, the above projection only shows a projection in one direction, and if projected on the entire xy plane, it will look like the figure. 
 
+What is interesting here is that in the case of photons, projections appear radially from the central axis (z axis = time axis), but in the case of fermions, no phase projection appears inside the precession circle. This is thought to be related to Fermi's exclusion principle.
 
+![image_ch7_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-4.png)
 
+Fig. 3-4 Projection path of rotation vector pair
 
+(Try projection_rotation_vector_pair.py and projection_rotation_vector_pair_multi.py for Fig 3-4.)
 
+## 4. Projection of rotation vector pairs, and mass
+In the previous section, we were able to clarify the physical meaning of the relationship between the projection of the rotating vector pair representing the fermion and the path integral. 
 
+Next, we will consider the relationship between the projection of the rotating vector pair and the path integral formula. 
+
+The propagator formula for the path integral of a free particle is as follows.
+
+![image_ch7_fig4-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig4-1.png)
+
+Fig. 4-1 Propagator formula for the path integral
+
+The coefficients in this equation represent the spread of the wave function over time, the exponents represent the action, and the imaginary power of e represents the rotation from Euler's formula.
+
+![image_ch7_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig4-2.png)
+
+Fig. 4-2 Explanation of propagator formula
+
+Based on this, the equation introduced in Chapter 3, written by Brian Cox and Jeff Forshaw in the book THE QUANTUM UNIVERSE (and why anything that can happen, does) rewrites the relationship between the change in phase of the probability amplitude (number of rotations) and distance.
+
+![image_ch7_fig4-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig4-3.png)
+
+Fig. 4-3 Brian Cox and Jeff Forshaw formula
+
+The change in phase is proportional to x2/t, and if the change in m is large, the change in phase is also m times larger, so the phases at distant positions tend to cancel each other out more easily, and the probability amplitude tends to become smaller. 
+
+This equation means that elementary particles are difficult to find at distant positions and difficult to move, which corresponds to the fact in classical physics that the heavier the mass, the harder it is to move.
+
+![image_ch7_fig4-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig4-4.png)
+
+Fig. 4-4 Detail of Brian Cox and Jeff Forshaw formula
+
+![image_ch7_fig4-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig4-5.png)
+
+Fig. 4-5 Path integral
+
+Next, looking at the projection relationship of the rotating vector pair, the greater the rotation speed (frequency) of the rotating vector pair, the larger the projected phase. 
+
+Since this is the same as the relationship between mass (m) and phase described above, the rotation speed of the rotating vector pair and mass (m) can be considered to be the same. 
+
+In other words, mass is the rotation speed of the rotating vector pair itself (Here, the Planck constant can be considered as a proportional constant for the rotation speed and mass of the rotating vector pair, but further consideration is needed.).
+
+![image_ch7_fig4-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig4-6.png)
+
+Fig. 4-6 Relation between the projection of rotation vector pair and Brian Cox and Jeff Forshaw formula
+
+And when considering this theory (Light-sphere in Minkowski space), the rotation of the coordinate system indicates acceleration. Since mass generates gravity, it can be considered the source of gravity, and is consistent with the equivalence principle of general relativity (gravity = acceleration).
+
+![image_ch7_fig4-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig4-6.png)
+
+Fig. 4-7 Rotation in Minkowski space
+
+Note that the projection of the rotation vector pair described in the previous section represents a relationship that does not take into account temporal diffusion (before temporal diffusion is applied), and can therefore be related to a path integral that does not take into account temporal diffusion.
+ (In this theory, the time diffusion is considered to be the light-sphere expanding according to the Huygens-Fresnel principle as explained in Chapter 2, but further consideration is required.)
+
+## 5. Conclusion
+* The projection of the rotation vector pair can be related to a path integral that does not take into account the diffusion in time.
+* Looking at the projection relationship of a rotating vector pair, the greater the rotation speed (frequency) of the rotating vector pair, the greater the projected phase.
+* Therefore, the rotation speed (frequency) of the rotating vector pair and the mass (m) included in the path integral equation can be considered to be equivalent.
