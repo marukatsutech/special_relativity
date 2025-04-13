@@ -1092,7 +1092,7 @@ Fig. 4-6 Relation between the projection of rotation vector pair and Brian Cox a
 
 And when considering this theory (Light-sphere in Minkowski space), the rotation of the coordinate system indicates acceleration. Since mass generates gravity, it can be considered the source of gravity, and is consistent with the equivalence principle of general relativity (gravity = acceleration).
 
-![image_ch7_fig4-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig4-6.png)
+![image_ch7_fig4-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig4-7.png)
 
 Fig. 4-7 Rotation in Minkowski space
 
