@@ -1014,20 +1014,24 @@ This rotating vector is projected onto the observer's space plane according to i
 
 At this time, because the phase surface is tilted by 45 degrees, the rotational speed of the rotating vector becomes √2 times as shown in the figure when it is projected onto the space plane (this is because the length of the wavelength, when the rotation is considered as a oscillation, appears shorter when projected).
 
+![image_ch7_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-2.png)
+
+ig. 3-2 Projected rotation vector speed
+
 This projection is then rotated relative to the observer's time axis because it is affected by the precession rotation. The precession rotation speed is the resultant rotation vector of the vector pair, which is also multiplied by √2.
 
 Therefore, both phases change in the same way, and the phase is set to θ.
 
-![image_ch7_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-2.png)
+![image_ch7_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-3.png)
 
-Fig. 3-2 Precession rotation speed of rotation vector pair
+Fig. 3-3 Precession rotation speed of rotation vector pair
 
 
 The spatial rotation vector of the rotation vector pair is projected as shown in the figure.
 
-![image_ch7_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-3.png)
+![image_ch7_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-4.png)
 
-Fig. 3-3 Projection of rotation vector pair
+Fig. 3-4 Projection of rotation vector pair
 
 In Chapter 3, the rotation plane of the fermion phase was not tilted, so it was difficult to find physical meaning in the relationship with the projected value and the path integral (proportional to the square of x), but this became clear when projecting the rotation vector pair.
 
@@ -1035,9 +1039,9 @@ Also, the above projection only shows a projection in one direction, and if proj
 
 What is interesting here is that in the case of photons, projections appear radially from the central axis (z axis = time axis), but in the case of fermions, no phase projection appears inside the precession circle. This is thought to be related to Fermi's exclusion principle.
 
-![image_ch7_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-4.png)
+![image_ch7_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch7_fig3-5.png)
 
-Fig. 3-4 Projection path of rotation vector pair
+Fig. 3-5 Projection path of rotation vector pair
 
 (Try projection_rotation_vector_pair.py and projection_rotation_vector_pair_multi.py for Fig 3-4.)
 
