@@ -379,8 +379,8 @@ def set_size(value):
 def create_parameter_setter():
     frm_tilt = ttk.Labelframe(root, relief="ridge", text="Tilt (precession)", labelanchor="n")
     frm_tilt.pack(side="left", fill=tk.Y)
-    btn_play = tk.Button(frm_tilt, text="On/off", command=switch_tilt)
-    btn_play.pack(fill=tk.X)
+    btn_tilt = tk.Button(frm_tilt, text="On/off", command=switch_tilt)
+    btn_tilt.pack(fill=tk.X)
 
     # Phase per step
     frm_phase_step = ttk.Labelframe(root, relief="ridge", text="Phase(deg) per step", labelanchor='n')
@@ -438,7 +438,7 @@ def create_parameter_setter():
     var_cmap.set(1)
 
     # Size of scatter
-    frm_size = ttk.Labelframe(root, relief="ridge", text="Size", labelanchor='n')
+    frm_size = ttk.Labelframe(root, relief="ridge", text="Scatter size", labelanchor='n')
     frm_size.pack(side="left", fill=tk.Y)
 
     # var_size = tk.StringVar(root)
@@ -493,9 +493,9 @@ def update_diagrams():
         else:
             internal_phase.rotate_z()
 
-    phase = (np.cos(frequency * internal_phase.get_internal_phase()) + 1.) / 2.
+    magnitude_phase = (np.cos(frequency * internal_phase.get_internal_phase()) + 1.) / 2.
     vector = internal_phase.get_rotation_vector_spatial()
-    scatter_internal_phase.append(vector[0], vector[1], vector[2], phase)
+    scatter_internal_phase.append(vector[0], vector[1], vector[2], magnitude_phase)
 
 
 def reset():
