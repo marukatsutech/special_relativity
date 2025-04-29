@@ -276,6 +276,8 @@ class InternalPhase:
         self.rotation_vector_time.set_vector(self.vector_time[0], self.vector_time[1], self.vector_time[2])
         self.rotation_vector_phase.set_vector(self.vector_phase[0], self.vector_phase[1], self.vector_phase[2])
 
+        self.internal_phase = 0.
+
     def show_rotation_vector_time(self):
         self.rotation_vector_time.set_scale(1)
 
