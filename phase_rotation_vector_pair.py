@@ -359,7 +359,7 @@ def set_frequency(value):
 
 def set_cmap(value):
     if value == 1:
-        scatter_internal_phase.set_cmap("hsv")
+        scatter_internal_phase.set_cmap("bwr")
     elif value == 2:
         scatter_internal_phase.set_cmap("plasma")
     elif value == 3:
@@ -367,7 +367,7 @@ def set_cmap(value):
     elif value == 4:
         scatter_internal_phase.set_cmap("spring")
     elif value == 5:
-        scatter_internal_phase.set_cmap("bwr")
+        scatter_internal_phase.set_cmap("hsv")
 
 
 def set_size(value):
@@ -419,9 +419,10 @@ def create_parameter_setter():
     frm_cmap = ttk.Labelframe(root, relief="ridge", text="Phase color map", labelanchor='n')
     frm_cmap.pack(side="left", fill=tk.Y)
     # var_cmap = tk.IntVar()
-    rd_op_cmap1 = tk.Radiobutton(frm_cmap, text="hsv", value=1, variable=var_cmap,
+    rd_op_cmap1 = tk.Radiobutton(frm_cmap, text="bwr", value=1, variable=var_cmap,
                                  command=lambda: set_cmap(1))
     rd_op_cmap1.pack(side="left")
+
     rd_op_cmap2 = tk.Radiobutton(frm_cmap, text="plasma", value=2, variable=var_cmap,
                                  command=lambda: set_cmap(2))
     rd_op_cmap2.pack(side="left")
@@ -431,7 +432,7 @@ def create_parameter_setter():
     rd_op_cmap4 = tk.Radiobutton(frm_cmap, text="spring", value=4, variable=var_cmap,
                                  command=lambda: set_cmap(4))
     rd_op_cmap4.pack(side="left")
-    rd_op_cmap5 = tk.Radiobutton(frm_cmap, text="bwr", value=5, variable=var_cmap,
+    rd_op_cmap5 = tk.Radiobutton(frm_cmap, text="hsv", value=5, variable=var_cmap,
                                  command=lambda: set_cmap(5))
     rd_op_cmap5.pack(side="left")
 
@@ -527,7 +528,7 @@ if __name__ == "__main__":
     internal_phase = InternalPhase(ax0, np.deg2rad(phase_step_deg))
     internal_phase.hide_rotation_vector_time()
 
-    scatter_internal_phase = Scatter3D(ax0, 6, "hsv", 0, 1)
+    scatter_internal_phase = Scatter3D(ax0, 6, "bwr", 0, 1)
 
     anim = animation.FuncAnimation(fig, update, interval=100, save_count=100)
     root.mainloop()
