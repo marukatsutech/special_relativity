@@ -12,8 +12,6 @@ from mpl_toolkits.mplot3d import proj3d
 beta = 0.
 phi_t = 0.
 phi_x = 0.
-axis_t_observer = np.array([0., 1.])
-axis_x_observer = np.array([1., 0.])
 
 length_rod = 3.
 
@@ -161,12 +159,10 @@ def hyperbola_h(ax, a, b, line_style, line_width, color, alpha):
 
 
 def set_beta(value):
-    global beta, axis_t_observer, axis_x_observer
+    global beta
     global phi_t, phi_x
     global txt_beta, txt_beta1
     beta = value
-    axis_t_observer = np.array([beta, 1.])
-    axis_x_observer = np.array([1., beta])
 
     phi_t = np.arctan2(beta, 1.)
     phi_x = np.arctan2(1., beta)
