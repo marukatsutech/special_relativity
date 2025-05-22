@@ -163,6 +163,7 @@ def hyperbola_h(ax, a, b, line_style, line_width, color, alpha):
 def set_beta(value):
     global beta, axis_t_observer, axis_x_observer
     global phi_t, phi_x
+    global txt_beta, txt_beta1
     beta = value
     axis_t_observer = np.array([beta, 1.])
     axis_x_observer = np.array([1., beta])
@@ -171,6 +172,9 @@ def set_beta(value):
     phi_x = np.arctan2(1., beta)
 
     # print(np.rad2deg(phi_t), np.rad2deg(phi_x))
+
+    txt_beta.set_text("Beta(=v/c): " + str(beta))
+    txt_beta1.set_text("Beta(=v/c): " + str(beta))
 
     update_diagrams()
 
@@ -342,6 +346,8 @@ if __name__ == "__main__":
     txt_ct_p = ax0.text(0., y_max, "ct'", color="red")
     txt_x_p = ax0.text(x_max, 0., "x'", color="blue")
 
+    txt_beta = ax0.text(x_min + 0.5, y_max - 0.5, "Beta(=v/c): " + str(beta))
+
     dots_t1 = []
     dots_x1 = []
     dots_t2 = []
@@ -391,6 +397,8 @@ if __name__ == "__main__":
 
     txt_ct_p1 = ax1.text(0., y_max, "ct'", color="red")
     txt_x_p1 = ax1.text(x_max, 0., "x'", color="blue")
+
+    txt_beta1 = ax1.text(x_min + 0.5, y_max - 0.5, "Beta(=v/c): " + str(beta))
 
     hyperbola_h1 = HyperbolaHorizontal(ax1, length_rod, length_rod, "--", 0.5, "blue", 1.)
 
