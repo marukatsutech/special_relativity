@@ -10,9 +10,6 @@ from mpl_toolkits.mplot3d import proj3d
 
 """ Global variables """
 beta = 0.
-phi_t = 0.
-phi_x = 0.
-
 length_rod = 3.
 
 """ Animation control """
@@ -160,12 +157,8 @@ def hyperbola_h(ax, a, b, line_style, line_width, color, alpha):
 
 def set_beta(value):
     global beta
-    global phi_t, phi_x
     global txt_beta, txt_beta1
     beta = value
-
-    phi_t = np.arctan2(beta, 1.)
-    phi_x = np.arctan2(1., beta)
 
     # print(np.rad2deg(phi_t), np.rad2deg(phi_x))
 
