@@ -160,8 +160,6 @@ def set_beta(value):
     global txt_beta, txt_beta1
     beta = value
 
-    # print(np.rad2deg(phi_t), np.rad2deg(phi_x))
-
     txt_beta.set_text("Beta(=v/c): " + str(beta))
     txt_beta1.set_text("Beta(=v/c): " + str(beta))
 
