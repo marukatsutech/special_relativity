@@ -13,6 +13,7 @@ import matplotlib.patches as patches
 beta = 0.
 beta_sphere = 0.
 length_rod = 3.
+time = 0.
 
 """ Animation control """
 is_play = True
@@ -126,6 +127,35 @@ class ConcentricCircles:
             self.circles[i].set_color(self.color)
 
 
+class LightArrows:
+    def __init__(self):
+        self.time = 0.
+
+        self.light_r = ax0.quiver(0., 0., self.time, self.time, color="darkorange",
+                                  width=0.007, alpha=1.0, scale_units='xy', scale=1)
+        self.light_l = ax0.quiver(0., 0., - self.time, self.time, color="darkorange",
+                                  width=0.007, alpha=1.0, scale_units='xy', scale=1)
+
+        self.light_sphere = []
+        for i in range(16):
+            angle = np.deg2rad(i * 360. / 16.)
+            self.light_s = ax1.quiver(0., 0., self.time * np.cos(angle), self.time * np.sin(angle),
+                                      color="darkorange", width=0.007, alpha=1.0, scale_units='xy', scale=1)
+            self.light_sphere.append(self.light_s)
+
+    def set_time(self, value):
+        self.time = value
+        self.update_arrows()
+
+    def update_arrows(self):
+        self.light_r.set_UVC(self.time, self.time)
+        self.light_l.set_UVC(- self.time, self.time)
+
+        for i in range(16):
+            angle = np.deg2rad(i * 360. / 16.)
+            self.light_sphere[i].set_UVC(self.time * np.cos(angle), self.time * np.sin(angle))
+
+
 def hyperbola_v(ax, a, b, line_style, line_width, color, alpha):
     """ Vertical Hyperbola: y^2 / a^ 2 - x^2 / b^2 = 1 """
     y_u = np.linspace(a, y_max, 200)  # Upper branch
@@ -220,6 +250,17 @@ def create_parameter_setter():
         command=lambda: set_beta_sphere(float(var_beta_sphere.get())), width=4
     )
     spn_length.pack(side='left')
+
+    frm_time = ttk.Labelframe(root, relief="ridge", text="Time", labelanchor="n")
+    frm_time.pack(side='left', fill=tk.Y)
+
+    var_time = tk.StringVar(root)
+    var_time.set(str(time))
+    spn_time = tk.Spinbox(
+        frm_time, textvariable=var_time, format="%.1f", from_=0., to=5., increment=1.,
+        command=lambda: light_arrows.set_time(float(var_time.get())), width=4
+    )
+    spn_time.pack(side='left')
 
     frm_show = ttk.Labelframe(root, relief="ridge", text="Proper time and proper distance \nin Light-sphere diagram",
                               labelanchor='n')
@@ -461,6 +502,8 @@ if __name__ == "__main__":
                                                     1, "blue")
     concentric_circles_time.hide()
     concentric_circles_distance.hide()
+
+    light_arrows = LightArrows()
 
     # ax1.legend(loc='lower right', fontsize=8)
 
