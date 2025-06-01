@@ -63,6 +63,7 @@ canvas.get_tk_widget().pack()
 
 """ Global objects of Tkinter """
 var_sync = tk.BooleanVar(root)
+var_show = tk.BooleanVar(root)
 
 """ Classes and functions """
 
@@ -94,6 +95,35 @@ class Counter:
 
     def get(self):
         return self.count
+
+
+class ConcentricCircles:
+    def __init__(self, ax, xy, radius, radius_step, number, line_style, line_width,  color):
+        self.ax = ax
+        self.xy = xy
+        self.radius = radius
+        self.radius_step = radius_step
+        self.number = number
+        self.line_style = line_style
+        self.line_width = line_width
+        self.color = color
+
+        self.circles = []
+        for i in range(self.number):
+            r = self.radius + i * self.radius_step
+            circle = patches.Circle(xy=self.xy, radius=r, fill=False,
+                                    linewidth=self.line_width, linestyle=self.line_style, color=self.color)
+            self.ax.add_patch(circle)
+
+            self.circles.append(circle)
+
+    def hide(self):
+        for i in range(self.number):
+            self.circles[i].set_color("white")
+
+    def show(self):
+        for i in range(self.number):
+            self.circles[i].set_color(self.color)
 
 
 def hyperbola_v(ax, a, b, line_style, line_width, color, alpha):
@@ -154,6 +184,15 @@ def set_beta_sphere(value):
     update_diagrams()
 
 
+def show_hide(value):
+    if value:
+        concentric_circles_time.show()
+        concentric_circles_distance.show()
+    else:
+        concentric_circles_time.hide()
+        concentric_circles_distance.hide()
+
+
 def create_parameter_setter():
     frm_beta = ttk.Labelframe(root, relief="ridge", text="Beta=v/c", labelanchor="n")
     frm_beta.pack(side='left', fill=tk.Y)
@@ -181,6 +220,16 @@ def create_parameter_setter():
         command=lambda: set_beta_sphere(float(var_beta_sphere.get())), width=4
     )
     spn_length.pack(side='left')
+
+    frm_show = ttk.Labelframe(root, relief="ridge", text="Proper time and proper distance \nin Light-sphere diagram",
+                              labelanchor='n')
+    frm_show.pack(side="left", fill=tk.Y)
+
+    # var_show = tk.BooleanVar(root)
+    chk_show = tk.Checkbutton(frm_show, text="Show", variable=var_show,
+                              command=lambda: show_hide(float(var_show.get())))
+    chk_show.pack(side='left')
+    var_show.set(False)
 
 
 def create_animation_control():
@@ -210,7 +259,7 @@ def draw_static_diagrams():
     ax1.arrow(x_min, 0., x_max - x_min, 0., head_width=0.2, ec='black', color='black', length_includes_head=True)
     ax1.arrow(0., y_min, 0., y_max - y_min, head_width=0.2, ec='black', color='black', length_includes_head=True)
 
-    for j in range(1, 5):
+    for j in range(1, 7):
         circle = patches.Circle(xy=(0., 0.), radius=j, fill=False, linestyle="--", linewidth=0.5, color="magenta")
         ax1.add_patch(circle)
 
@@ -405,6 +454,13 @@ if __name__ == "__main__":
 
         dot_x2s, = ax1.plot(- j_, 0., "o", color="blue", markersize=3)
         dots_x2s.append(dot_x2s)
+
+    concentric_circles_time = ConcentricCircles(ax1, (0., 0.), 1.1, 1, 6, ":",
+                                                1, "red")
+    concentric_circles_distance = ConcentricCircles(ax1, (0., 0.), 0.9, 1, 6, ":",
+                                                    1, "blue")
+    concentric_circles_time.hide()
+    concentric_circles_distance.hide()
 
     # ax1.legend(loc='lower right', fontsize=8)
 
