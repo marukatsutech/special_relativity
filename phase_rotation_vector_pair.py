@@ -220,7 +220,7 @@ class InternalPhase:
         self.vector_tilt_center_axis = np.array([1., 0., 0.])
 
         self.light_circle = Circle3d(self.ax, 0., 0., 0., 1., "y",
-                                     1, "--", "red", 1)
+                                     1, "-", "red", 1)
         self.rotation_vector_time = Arrow3d(self.ax, 0., 0., 0.,
                                             self.vector_spatial[0], self.vector_spatial[1], self.vector_spatial[2],
                                             1, 2, "-", "gray", 1)
