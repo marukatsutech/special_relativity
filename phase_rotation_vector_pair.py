@@ -220,16 +220,16 @@ class InternalPhase:
         self.vector_tilt_center_axis = np.array([1., 0., 0.])
 
         self.light_circle = Circle3d(self.ax, 0., 0., 0., 1., "y",
-                                     1, "--", "darkorange", 1)
-        self.rotation_vector_spacial = Arrow3d(self.ax, 0., 0., 0.,
-                                               self.vector_spatial[0], self.vector_spatial[1], self.vector_spatial[2],
-                                               1, 2, "-", "red", 1)
+                                     1, "--", "red", 1)
         self.rotation_vector_time = Arrow3d(self.ax, 0., 0., 0.,
-                                            self.vector_time[0], self.vector_time[1], self.vector_time[2],
+                                            self.vector_spatial[0], self.vector_spatial[1], self.vector_spatial[2],
                                             1, 2, "-", "gray", 1)
+        self.rotation_vector_light = Arrow3d(self.ax, 0., 0., 0.,
+                                             self.vector_time[0], self.vector_time[1], self.vector_time[2],
+                                             1, 2, "-", "red", 1)
         self.rotation_vector_phase = Arrow3d(self.ax, 0., 0., 0.,
                                              self.vector_phase[0], self.vector_phase[1], self.vector_phase[2],
-                                             1, 2, "--", "darkorange", 1)
+                                             1, 2, "--", "red", 1)
         self.internal_phase = 0.
 
     def rotate_phase(self):
@@ -249,8 +249,8 @@ class InternalPhase:
         self.vector_phase_center_axis = rot_matrix.apply(self.vector_phase_center_axis)
         self.vector_phase = rot_matrix.apply(self.vector_phase)
 
-        self.rotation_vector_spacial.set_vector(self.vector_spatial[0], self.vector_spatial[1], self.vector_spatial[2])
-        self.rotation_vector_time.set_vector(self.vector_time[0], self.vector_time[1], self.vector_time[2])
+        self.rotation_vector_time.set_vector(self.vector_spatial[0], self.vector_spatial[1], self.vector_spatial[2])
+        self.rotation_vector_light.set_vector(self.vector_time[0], self.vector_time[1], self.vector_time[2])
         self.rotation_vector_phase.set_vector(self.vector_phase[0], self.vector_phase[1], self.vector_phase[2])
 
     def tilt(self, angle_tilt):
@@ -272,17 +272,17 @@ class InternalPhase:
 
         self.vector_tilt_center_axis = np.array([1., 0., 0.])
 
-        self.rotation_vector_spacial.set_vector(self.vector_spatial[0], self.vector_spatial[1], self.vector_spatial[2])
-        self.rotation_vector_time.set_vector(self.vector_time[0], self.vector_time[1], self.vector_time[2])
+        self.rotation_vector_time.set_vector(self.vector_spatial[0], self.vector_spatial[1], self.vector_spatial[2])
+        self.rotation_vector_light.set_vector(self.vector_time[0], self.vector_time[1], self.vector_time[2])
         self.rotation_vector_phase.set_vector(self.vector_phase[0], self.vector_phase[1], self.vector_phase[2])
 
         self.internal_phase = 0.
 
     def show_rotation_vector_time(self):
-        self.rotation_vector_time.set_scale(1)
+        self.rotation_vector_light.set_scale(1)
 
     def hide_rotation_vector_time(self):
-        self.rotation_vector_time.set_scale(0)
+        self.rotation_vector_light.set_scale(0)
 
     def get_rotation_vector_spatial(self):
         vector = self.rotation_vector_phase.get_vector()
