@@ -956,7 +956,7 @@ And as I said in Chapter 4, in Minkowski space photons and electrons always inte
 * In Minkowski space, angles indicate speed. Therefore, the speed of a photon interacting with an electron or a quark is always constant at 45 degrees, and therefore the speed of light is constant.
 
 
-# Chapter - 7. Rotation, Spin and Mass
+# Chapter - 8. Rotation, Spin and Mass
 
 What is mass?
 
@@ -1104,13 +1104,13 @@ Note that the projection of the rotation vector pair described in the previous s
 * Looking at the projection relationship of a rotating vector pair, the greater the rotation speed (frequency) of the rotating vector pair, the greater the projected phase.
 * Therefore, the rotation speed (frequency) of the rotating vector pair and the mass (m) included in the path integral equation can be considered to be equivalent.
 
-# Chapter - 7. Rotation and Space-time
+# Chapter - 8. Rotation and Space-time
 
 What is space-time?
 
 Watch my video for overview!
 
-[(https://youtu.be/gylxe47y5BI)](https://youtu.be/gylxe47y5BI)
+![(https://youtu.be/gylxe47y5BI)](https://youtu.be/gylxe47y5BI)
 
 ## 1. Introduction
 In Chapter 2, we discussed how a Light-sphere spreads spherically through Minkowski space, which is four-dimensional space-time, like waves spreading on the surface of water.
@@ -1122,7 +1122,7 @@ In this chapter, we will consider Light-spheres and space-time.
 The Huygens-Fresnel principle is the theory that elementary waves, which are small circular (spherical in 3D) waves, overlap to form a wavefront, and can explain phenomena such as light refraction and diffraction.
 Elementary waves generated at each point on a wavefront form the next wavefront, and the elementary waves of that wavefront form the next wavefront, and so on.
 
-[image_ch8_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig2-1.png)
+![image_ch8_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig2-1.png)
 
 Fig. 2-1 Huygens-Fresnel principle
 
@@ -1130,7 +1130,7 @@ On the other hand, what has been explained in this theory is that photons and fe
  How can we reconcile elementary waves propagating in a medium with vectors that move randomly?
  If the rotating vector were to disperse and spread in the same way that elementary waves disperse and spread, the problem of wave function collapse would arise.
 
-[image_ch8_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig2-2.png)
+![image_ch8_fig2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig2-2.png)
 
 Fig. 2-2 Do rotation vectors spread apart?
 
@@ -1144,13 +1144,13 @@ However, it can be indirectly recognized by cross sections and projections.
 For example, when a sphere passes by another in a two-dimensional world, the inhabitants of the two-dimensional world perceive the circle as the cross section of the sphere. 
 The sphere can also be recognized by projecting it so that the shadow of the light is reflected on it.
 
-[image_ch8_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig3-1.png)
+![image_ch8_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig3-1.png)
 
 Fig. 3-1 cross sections and shadow
 
 Four-dimensional objects can also be recognized in three dimensions as cross sections and projections, and the following figure shows a projection of a tesseract(4D hypercube) into three dimensions.
 
-[image_ch8_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig3-2.png)
+![image_ch8_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig3-2.png)
 
 Fig. 3-2 Tesseract(4D hypercube)
 
@@ -1159,7 +1159,7 @@ Next, let us consider how the Light-sphere is projected into three dimensions.
 In ordinary Minkowski space, there are proper time and proper distance, which are invariant properties under Lorentz transformation, and they are expressed by hyperbolas. (In the case of x, y, and c-t three axes, it is a hyperboloid).
 In the Light-sphere version of Minkowski space (hereafter called Light-sphere space), both the proper time and the proper distance are expressed by circles (spheres), and they overlap. 
 
-[image_ch8_fig4-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig4-1.png)
+![image_ch8_fig4-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig4-1.png)
 
 Fig. 4-1 Proper time and proper distance in Minkowski space and Light-sphere space
 
@@ -1167,19 +1167,19 @@ The Poincaré disk and the Klein disk are examples of the projection relationshi
 These are related to hyperbolic geometry, and the circumferences of the disks represents infinity. 
 When expressing the relationship between the hyperboloid and the disk, they are related through a semicircle (hemisphere) as shown in the following figure. 
 
-[image_ch8_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig4-2.png)
+![image_ch8_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig4-2.png)
 
 Fig. 4-2 Relation between Poincaré disk, Klein disk and hyperboloid
 
 The relationship in this figure and the projection relationship in Light-sphere space are similarly related to the distance from position zero to infinity on the circumference. 
 
-[image_ch8_fig4-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig4-3.png)
+![image_ch8_fig4-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig4-3.png)
 
 Fig. 4-3 Relation between Light-sphere , Poincaré disk, Klein disk and hyperboloid
 
 Since the upper side of the light cone in Minkowski space represents the future and the lower side represents the past, the upper hemisphere of the Light-sphere represents the future and the lower hemisphere represents the past.
 
-[image_ch8_fig4-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig4-4.png)
+![image_ch8_fig4-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig4-4.png)
 
 Fig. 4-4 Relation between Minkowski space and Light-sphere space
 
@@ -1188,14 +1188,14 @@ Let's now move away from the issue of projection for a moment and further compar
 As mentioned above, the hyperbola in Minkowski space represents proper time and proper distance. This hyperbola can be expressed by the following equation. 
 Here, as the coefficients a or b approach zero, the hyperbola approaches a straight line, which is the trajectory of light. 
 
-[image_ch8_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-1.png)
+![image_ch8_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-1.png)
 
 Fig. 5-1 hyperbola in Minkowski space
 
 From this, light can be considered to be the same as proper time and proper distance.
  If this is the case, and light in Light-sphere space is also considered to be the same as proper time and proper distance, the trajectory of light should be considered to be circular rather than radial. 
 
-[image_ch8_fig5-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-2.png)
+![image_ch8_fig5-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-2.png)
 
 Fig. 5-2 Trajectory of light in Minkowski space and Light-sphere space
 
@@ -1203,7 +1203,7 @@ Now, let's consider that something that rotates is a photon. Here, we call this 
 In this space, photons continue to rotate until they interact with a fermion. We also consider fermions to be something that rotates just like photons. However, in the case of fermions, we consider them to rotate doubly.
 We also consider that photons and fermions interact when their rotation phases match.
 
-[image_ch8_fig5-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-3.png)
+![image_ch8_fig5-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-3.png)
 
 Fig. 5-3 How a photon and a fermion interact in R-space
 
@@ -1211,14 +1211,14 @@ First, let’s consider photons.
 If you draw a diagram of something that continues to rotate, the trajectories will overlap, so we will shift the circle along the axis of rotation for each rotation.
 In this case, if the rotation speed is large, the shift interval is narrowed according to the ratio of the rotation speed. 
 
-[image_ch8_fig5-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-4.png)
+![image_ch8_fig5-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-4.png)
 
 Fig. 5-4 Photons in R-space
 
 This is to make the number of rotations correspond to the frequency of the photon, and photons travel at a constant speed regardless of the magnitude of their frequency.
 It is easier to understand this if you think of it as a helix rather than a line of circles, but for the purposes of the following discussion we will continue to explain it as a circle.
 
-[image_ch8_fig5-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-5.png)
+![image_ch8_fig5-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-5.png)
 
 Fig. 5-5 Frequency of photons in R-space
 
@@ -1229,14 +1229,14 @@ Then, it is possible to draw a diagram that resembles a light cone in Minkowski 
 
 The origin is the current rotation, the rotation above the origin is the future, and the circle below the origin is the past.
 
-[image_ch8_fig5-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-6.png)
+![image_ch8_fig5-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-6.png)
 
 Fig. 5-6 Future and past in R-space
 
 If you look at this diagram from the direction of the rotation axis, it becomes concentric circles, like a Light-sphere space.
  In Light-sphere space, the upper half of the concentric circles represents the future, and the lower half represents the past, but in this diagram (= R- space), the front of the display surface represents the future, and the back represents the past.
 
-[image_ch8_fig5-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-7.png)
+![image_ch8_fig5-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-7.png)
 
 Fig. 5-7 R-space and Light sphere space
 
@@ -1245,7 +1245,7 @@ Fermions are double rotated, and as explained in Chapter 6 and 7, two orthogonal
 Let's consider the two rotation vectors to be the same as a photon for now.
  If we consider the photon arrow as a rotation vector, the precessional rotation is the combination of the two rotation vectors, so the precessional rotation speed is √2 times that of the photon.
 
-[image_ch8_fig5-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-8.png)
+![image_ch8_fig5-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-8.png)
 
 Fig. 5-8 Fermions in R-space
 
@@ -1253,13 +1253,13 @@ Similar to the rule that determines the length of the photon arrow to be constan
 Because the rotation speed is √2 times that of the photon, the shift interval (length of the arrow) is narrowed by √2. 
 Therefore, while the length of the arrow as a rotation vector is √2 times that of the photon, the scale in R-space is 1/√2 of the photon. 
 
-[image_ch8_fig5-9](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-9.png)
+![image_ch8_fig5-9](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-9.png)
 
 Fig. 5-9 Relation between photons and fermions in R-space
 
 The radius of the circle is also 1/√2 of the photon radius. This can be illustrated as follows.
 
-[image_ch8_fig5-10](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-10.png)
+![image_ch8_fig5-10](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-10.png)
 
 Fig. 5-10 Photons and fermions in R-space
 
@@ -1267,13 +1267,13 @@ The circle of light expands according to the rotation number n, and the circle o
 When this relationship is applied to the Light-sphere space, they intersect as shown in the figure. 
 If the line connecting the intersection point and the center of the photon and fermion circles is taken as the phase, the phase difference (angle) is 45 degrees. 
 
-[image_ch8_fig5-11](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-11.png)
+![image_ch8_fig5-11](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-11.png)
 
 Fig. 5-11 How a photon and  a fermion spread in Light-sphere space
 
 This relationship where the photon circle and the fermion circle intersect is the same as the relationship when a photon reaches a fermion that is stationary (with zero relative velocity) with respect to the light source in Light-sphere space or Minkowski space.
 
-[image_ch8_fig5-12](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-12.png)
+![image_ch8_fig5-12](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-12.png)
 
 Fig. 5-12 How a photon and  a fermion spread in Light-sphere space or Minkowski space.
 
@@ -1281,14 +1281,14 @@ However, the expansion of the radius for each rotation of the photon and fermion
  In R-space, the intersection in Light-sphere space or Minkowski space corresponds to the rotation phase being aligned. 
 Since it is difficult to understand with a circle, if we think of R-space as a helix and unwind the helix and represent it on a graph, it will look like the figure below.
 
-[image_ch8_fig5-13](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-13.png)
+![image_ch8_fig5-13](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-13.png)
 
 Fig. 5-13 R-space with helix stype
 
 The vertical axis corresponds to time (called R-time), and the horizontal axis represents the rotation phase. 
 Since the precessing fermion rotates faster than light, the phase advances faster. Therefore, the slope becomes gentler.
 
-[image_ch8_fig5-14](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-14.png)
+![image_ch8_fig5-14](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-14.png)
 
 Fig. 5-14 How a photon and  a fermion spread in R-space with helix style
 
@@ -1296,14 +1296,14 @@ If the photon and fermion have the same origin, their lines will not intersect.
  To make their lines intersect, you just need to shift the origin of one of them in the time axis or phase direction.
 And the relationship will be the same whether you shift it in the time axis or phase direction.
 
-[image_ch8_fig5-15](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-15.png)
+![image_ch8_fig5-15](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-15.png)
 
 Fig. 5-15 How a photon and  a fermion intersect in R-space with helix style
 
 Then, the circle (helix) in R space is a circle in the Light-sphere space. 
 The direction of the phase in R space is the Light-arrow, and the direction of the Light-arrow indicates the speed, so the relative speed * time is the relative distance, and so the phase difference * R-time indicates the relative distance.
 
-[image_ch8_fig5-16](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-16.png)
+![image_ch8_fig5-16](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-16.png)
 
 Fig. 5-16 Relative distance in R-space
 
@@ -1311,7 +1311,7 @@ In the above discussion, we have considered R-space as a helix, but the degree o
 So, what is meant by a helix that does not progress?
 In the case of photons, they simply continue to rotate as shown in the figure. The arrows in the figure simply indicate the direction of rotation.
 
-[image_ch8_fig5-17](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-17.png)
+![image_ch8_fig5-17](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-17.png)
 
 Fig. 5-17 Photons without progress
 
@@ -1319,7 +1319,7 @@ In the case of fermions, the rotations are paired and they precess. (The reason 
 Therefore, the phase also moves as shown in the figure. 
 The difference between the phase movement of the fermion and the phase rotation of the photon creates a relative phase difference like a helix.
 
-[image_ch8_fig5-18](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-18.png)
+![image_ch8_fig5-18](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-18.png)
 
 Fig. 5-18 Photons and fermions without progress
 
@@ -1339,11 +1339,11 @@ So it can be considered as a rotating vector that rotates while proceeding throu
 The three degrees of freedom rotation vectors can be considered as a single resultant rotation vector. 
 Therefore, when they interact with each other, they behave as a single rotation vector (one degree of freedom rotation). This is wave function collapse.
 
-[image_ch8_fig6-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig6-1.png)
+![image_ch8_fig6-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig6-1.png)
 
 Fig. 6-1 Uncertainty principle
 
-[image_ch8_fig6-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig6-2.png)
+![image_ch8_fig6-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig6-2.png)
 
 Fig. 6-2 Resultant vector
 
@@ -1353,14 +1353,14 @@ A vector that precesses in R space is considered to be the same as a photon.
 The circle of rotation oscillates up and down when viewed in a certain phase.
  Oscillation can be considered as one aspect of the rotation.
 
-[image_ch8_fig6-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig6-3.png)
+![image_ch8_fig6-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig6-3.png)
 
 Fig. 6-3 Precession, oscillation and rotation of fermions
 
 This oscillation (rotation) corresponds to the rotation vector of the time axis of the rotation vector pair. 
 The reason for this oscillation (rotation) is that fermions, like photons, have three rotational degrees of freedom, and these three orthogonal rotations affect each of the rotation planes.
 
-[image_ch8_fig6-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig6-4.png)
+![image_ch8_fig6-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig6-4.png)
 
 Fig. 6-4 How fermions precess
 
@@ -1386,7 +1386,7 @@ Since the energy of a photon is E = hν (ν is a frequency and an aspect of rota
 And, just as the extension was given when relating R-space to the Light-sphere space, it may have an extension. 
 It is thought that the universe exists as something that rotates at the Planck length gathers together like an atomic nucleus, and sometimes overlaps.
 
-[image_ch8_fig7-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig7-1.png)
+![image_ch8_fig7-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig7-1.png)
 
 Fig. 7-1 R-space
 
