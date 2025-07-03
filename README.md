@@ -956,7 +956,7 @@ And as I said in Chapter 4, in Minkowski space photons and electrons always inte
 * In Minkowski space, angles indicate speed. Therefore, the speed of a photon interacting with an electron or a quark is always constant at 45 degrees, and therefore the speed of light is constant.
 
 
-# Chapter - 8. Rotation, Spin and Mass
+# Chapter - 7. Rotation, Spin and Mass
 
 What is mass?
 
@@ -1110,7 +1110,7 @@ What is space-time?
 
 Watch my video for overview!
 
-![(https://youtu.be/gylxe47y5BI)](https://youtu.be/gylxe47y5BI)
+[(https://youtu.be/gylxe47y5BI)](https://youtu.be/gylxe47y5BI)
 
 ## 1. Introduction
 In Chapter 2, we discussed how a Light-sphere spreads spherically through Minkowski space, which is four-dimensional space-time, like waves spreading on the surface of water.
@@ -1125,6 +1125,8 @@ Elementary waves generated at each point on a wavefront form the next wavefront,
 ![image_ch8_fig2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig2-1.png)
 
 Fig. 2-1 Huygens-Fresnel principle
+
+(Try wave_simulation_cell.py at https://github.com/marukatsutech/wave_simulation for Fig 3-4.)
 
 On the other hand, what has been explained in this theory is that photons and fermions are rotating vectors that change direction randomly.
  How can we reconcile elementary waves propagating in a medium with vectors that move randomly?
@@ -1154,6 +1156,8 @@ Four-dimensional objects can also be recognized in three dimensions as cross sec
 
 Fig. 3-2 Tesseract(4D hypercube)
 
+(Try hypercube.py at https://github.com/marukatsutech/hypercube for Fig 3-2.)
+
 ## 4. Minkowski Space and Projection
 Next, let us consider how the Light-sphere is projected into three dimensions. 
 In ordinary Minkowski space, there are proper time and proper distance, which are invariant properties under Lorentz transformation, and they are expressed by hyperbolas. (In the case of x, y, and c-t three axes, it is a hyperboloid).
@@ -1170,6 +1174,8 @@ When expressing the relationship between the hyperboloid and the disk, they are 
 ![image_ch8_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig4-2.png)
 
 Fig. 4-2 Relation between Poincaré disk, Klein disk and hyperboloid
+
+(Try poincare_klein_disk.py at https://github.com/marukatsutech/poincare_klein_disk for Fig 4-2.)
 
 The relationship in this figure and the projection relationship in Light-sphere space are similarly related to the distance from position zero to infinity on the circumference. 
 
