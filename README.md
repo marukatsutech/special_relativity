@@ -1126,7 +1126,7 @@ Elementary waves generated at each point on a wavefront form the next wavefront,
 
 Fig. 2-1 Huygens-Fresnel principle
 
-(Try wave_simulation_cell.py at https://github.com/marukatsutech/wave_simulation for Fig 3-4.)
+(Try wave_simulation_cell.py at https://github.com/marukatsutech/wave_simulation for Fig 2-1.)
 
 On the other hand, what has been explained in this theory is that photons and fermions are rotating vectors that change direction randomly.
  How can we reconcile elementary waves propagating in a medium with vectors that move randomly?
@@ -1197,6 +1197,8 @@ Here, as the coefficients a or b approach zero, the hyperbola approaches a strai
 ![image_ch8_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch8_fig5-1.png)
 
 Fig. 5-1 hyperbola in Minkowski space
+
+(Try hyperbola.py at for Fig 5-1.)
 
 From this, light can be considered to be the same as proper time and proper distance.
  If this is the case, and light in Light-sphere space is also considered to be the same as proper time and proper distance, the trajectory of light should be considered to be circular rather than radial. 
