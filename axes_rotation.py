@@ -15,6 +15,9 @@ from mpl_toolkits.mplot3d import proj3d
 
 """ Animation control """
 is_play = False
+is_path_a = False
+is_path_b = False
+is_path_c = False
 
 """ Axis vectors """
 vector_x_axis = np.array([1., 0., 0.])
@@ -60,6 +63,11 @@ canvas.get_tk_widget().pack()
 var_rot_a = tk.BooleanVar(root)
 var_rot_b = tk.BooleanVar(root)
 var_rot_c = tk.BooleanVar(root)
+
+var_path_a = tk.BooleanVar(root)
+var_path_b = tk.BooleanVar(root)
+var_path_c = tk.BooleanVar(root)
+
 var_phase_step = tk.StringVar(root)
 
 """ Classes and functions """
@@ -141,12 +149,6 @@ class ThreeAxes:
                                        self.axis_c[2] * self.scale_b,
                                        length=1, color="blue", normalize=True, linewidth=3, alpha=1.0)
 
-        self.x_a = []
-        self.y_a = []
-        self.z_a = []
-        self.path_a, = self.ax.plot(np.array(self.x_a), np.array(self.y_a), np.array(self.z_a),
-                                    color="red", linewidth=1)
-
     def set_phase_step_deg(self, value):
         self.phase_step_deg = value
 
@@ -169,15 +171,6 @@ class ThreeAxes:
                                        self.axis_c[0] * self.scale_c, self.axis_c[1] * self.scale_c,
                                        self.axis_c[2] * self.scale_c,
                                        length=1, color="blue", normalize=True, linewidth=3, alpha=1.0)
-
-    def update_path(self):
-        if True:
-            self.x_a.append(self.axis_a[0])
-            self.y_a.append(self.axis_a[1])
-            self.z_a.append(self.axis_a[2])
-        self.path_a.set_xdata(np.array(self.x_a))
-        self.path_a.set_ydata(np.array(self.y_a))
-        self.path_a.set_3d_properties(np.array(self.z_a))
 
     def rotate_all_axis_a(self):
         rot_matrix = Rotation.from_rotvec(np.deg2rad(self.phase_step_deg) * self.axis_a)
@@ -222,19 +215,12 @@ class ThreeAxes:
         self.z_axis_c = [self.axis_c[2], - self.axis_c[2]]
         self.line_axis_c.set_data_3d(self.x_axis_c, self.y_axis_c, self.z_axis_c)
 
-    def clear_path(self):
-        self.x_a = []
-        self.y_a = []
-        self.z_a = []
-        self.update_path()
-
     def reset(self):
         self.xyz = np.array([0., 0., 0.])
         self.axis_a = np.array([1., 0., 0.])
         self.axis_b = np.array([0., 1., 0.])
         self.axis_c = np.array([0., 0., 1.])
 
-        self.clear_path()
         self.update_axes()
         self.update_vectors()
 
@@ -250,11 +236,59 @@ class ThreeAxes:
         self.scale_c = value
         self.update_vectors()
 
+    def get_axis_a(self):
+        return self.axis_a
+
+    def get_axis_b(self):
+        return self.axis_b
+
+    def get_axis_c(self):
+        return self.axis_c
+
+
+class Path:
+    def __init__(self, ax, color):
+        self.ax = ax
+        self.color = color
+
+        self.is_draw_path = False
+
+        self.x_path = []
+        self.y_path = []
+        self.z_path = []
+        self.path, = self.ax.plot(np.array(self.x_path), np.array(self.y_path), np.array(self.z_path),
+                                  color=self.color, linewidth=1)
+
+    def append_path(self, position):
+        if self.is_draw_path:
+            self.x_path.append(position[0])
+            self.y_path.append(position[1])
+            self.z_path.append(position[2])
+            self.update_path()
+
+    def update_path(self):
+        self.path.set_data_3d(np.array(self.x_path), np.array(self.y_path), np.array(self.z_path))
+
+    def clear_path(self):
+        self.x_path = []
+        self.y_path = []
+        self.z_path = []
+        self.update_path()
+
+    def set_is_draw_path(self, value):
+        self.is_draw_path = value
+
 
 def set_phase_step_deg(value):
     global phase_step_deg
     phase_step_deg = value
     three_axes.set_phase_step_deg(phase_step_deg)
+
+
+def clear_path():
+    path_a.clear_path()
+    path_b.clear_path()
+    path_c.clear_path()
 
 
 def create_parameter_setter():
@@ -278,6 +312,25 @@ def create_parameter_setter():
     chk_rot_c.pack(anchor=tk.W)
     var_rot_c.set(False)
 
+    # Paths
+    frm_path = ttk.Labelframe(root, relief="ridge", text="Path", labelanchor='n')
+    frm_path.pack(side="left", fill=tk.Y)
+
+    # var_path_a = tk.BooleanVar(root)
+    chk_path_a = tk.Checkbutton(frm_path, text="Axis A", variable=var_path_a)
+    chk_path_a.pack(anchor=tk.W)
+    var_path_a.set(False)
+
+    # var_path_b = tk.BooleanVar(root)
+    chk_path_b = tk.Checkbutton(frm_path, text="Axis B", variable=var_path_b)
+    chk_path_b.pack(anchor=tk.W)
+    var_path_b.set(False)
+
+    # var_path_c = tk.BooleanVar(root)
+    chk_path_c = tk.Checkbutton(frm_path, text="Axis C", variable=var_path_c)
+    chk_path_c.pack(anchor=tk.W)
+    var_path_c.set(False)
+
     # phase_step
     frm_step = ttk.Labelframe(root, relief="ridge", text="Rotation phase per step(deg)", labelanchor='n')
     frm_step.pack(side="left", fill=tk.Y)
@@ -298,7 +351,7 @@ def create_animation_control():
     btn_play.pack(fill=tk.X)
     btn_reset = tk.Button(frm_anim, text="Reset", command=reset)
     btn_reset.pack(fill=tk.X)
-    btn_clear = tk.Button(frm_anim, text="Clear path", command=lambda: three_axes.clear_path())
+    btn_clear = tk.Button(frm_anim, text="Clear path", command=lambda: clear_path())
     btn_clear.pack(fill=tk.X)
 
 
@@ -348,7 +401,22 @@ def update_diagrams():
         three_axes.rotate_all_axis_c()
     else:
         three_axes.set_scale_c(0)
-    three_axes.update_path()
+
+    if var_path_a.get():
+        path_a.set_is_draw_path(True)
+        path_a.append_path(three_axes.get_axis_a())
+    else:
+        path_a.set_is_draw_path(False)
+    if var_path_b.get():
+        path_b.set_is_draw_path(True)
+        path_b.append_path(three_axes.get_axis_b())
+    else:
+        path_b.set_is_draw_path(False)
+    if var_path_c.get():
+        path_c.set_is_draw_path(True)
+        path_c.append_path(three_axes.get_axis_c())
+    else:
+        path_c.set_is_draw_path(False)
 
 
 def reset():
@@ -388,6 +456,15 @@ if __name__ == "__main__":
     create_parameter_setter()
 
     three_axes = ThreeAxes(ax0, np.array([0., 0., 0.]))
+
+    path_a = Path(ax0, "red")
+    path_a.set_is_draw_path(False)
+
+    path_b = Path(ax0, "green")
+    path_b.set_is_draw_path(False)
+
+    path_c = Path(ax0, "blue")
+    path_c.set_is_draw_path(False)
 
     ax0.legend(loc='lower right', fontsize=8)
 
