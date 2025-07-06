@@ -145,8 +145,8 @@ class ThreeAxes:
                                        length=1, color="green", normalize=True, linewidth=3, alpha=1.0)
 
         self.vector_c = self.ax.quiver(self.xyz[0], self.xyz[1], self.xyz[2],
-                                       self.axis_c[0] * self.scale_b, self.axis_c[1] * self.scale_b,
-                                       self.axis_c[2] * self.scale_b,
+                                       self.axis_c[0] * self.scale_c, self.axis_c[1] * self.scale_c,
+                                       self.axis_c[2] * self.scale_c,
                                        length=1, color="blue", normalize=True, linewidth=3, alpha=1.0)
 
     def set_phase_step_deg(self, value):
