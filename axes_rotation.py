@@ -22,8 +22,7 @@ vector_y_axis = np.array([0., 1., 0.])
 vector_z_axis = np.array([0., 0., 1.])
 
 """ Other parameters """
-# phase_deg = 0.
-# phase_deg_step = 4.
+phase_step_deg = 2.
 
 """ Create figure and axes """
 title_ax0 = "Axes rotation"
@@ -61,6 +60,7 @@ canvas.get_tk_widget().pack()
 var_rot_a = tk.BooleanVar(root)
 var_rot_b = tk.BooleanVar(root)
 var_rot_c = tk.BooleanVar(root)
+var_phase_step = tk.StringVar(root)
 
 """ Classes and functions """
 
@@ -251,6 +251,12 @@ class ThreeAxes:
         self.update_vectors()
 
 
+def set_phase_step_deg(value):
+    global phase_step_deg
+    phase_step_deg = value
+    three_axes.set_phase_step_deg(phase_step_deg)
+
+
 def create_parameter_setter():
     global var_rot_a, var_rot_b, var_rot_c
     # Rotations
@@ -271,6 +277,18 @@ def create_parameter_setter():
     chk_rot_c = tk.Checkbutton(frm_rot, text="Axis C", variable=var_rot_c)
     chk_rot_c.pack(anchor=tk.W)
     var_rot_c.set(False)
+
+    # phase_step
+    frm_step = ttk.Labelframe(root, relief="ridge", text="Rotation phase per step(deg)", labelanchor='n')
+    frm_step.pack(side="left", fill=tk.Y)
+
+    # var_phase_step = tk.StringVar(root)
+    var_phase_step.set(str(phase_step_deg))
+    spn_step = tk.Spinbox(
+        frm_step, textvariable=var_phase_step, format="%.0f", from_=-360, to=360, increment=1,
+        command=lambda: set_phase_step_deg(float(var_phase_step.get())), width=5
+    )
+    spn_step.pack(side="left")
 
 
 def create_animation_control():
