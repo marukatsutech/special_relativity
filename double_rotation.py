@@ -107,6 +107,6 @@ toolbar = NavigationToolbar2Tk(canvas, root)
 canvas.get_tk_widget().pack()
 
 # main loop
-anim = animation.FuncAnimation(fig, update, interval=50)
+anim = animation.FuncAnimation(fig, update, interval=50, save_count=100)
 root.mainloop()
 
