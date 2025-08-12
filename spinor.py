@@ -63,14 +63,6 @@ ax0.set_zlim(z_min, z_max)
 # ax0.set_facecolor("black")
 # ax0.axis('off')
 
-x_min = -2.
-x_max = 2.
-y_min = -2.
-y_max = 2.
-z_min = -2.
-z_max = 2.
-
-
 """ Embed in Tkinter """
 root = tk.Tk()
 root.title(title_tk)
@@ -157,7 +149,7 @@ def update_guide():
     global c_spin_axis_guide
     # Draw pass of spin axis
     c_spin_axis_guide.remove()
-    c_spin_axis_guide = Circle((0., 0.), r_spin_axis_guide, ec='blue', fill=False, linewidth=0.5, linestyle='--')
+    c_spin_axis_guide = Circle((0., 0.), r_spin_axis_guide, ec='gray', fill=False, linewidth=0.5, linestyle='--')
     ax0.add_patch(c_spin_axis_guide)
     art3d.pathpatch_2d_to_3d(c_spin_axis_guide, z=h_spin_axis_guide, zdir='z')
 
