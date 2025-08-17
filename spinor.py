@@ -29,6 +29,8 @@ tilt_angle_deg = - 70.
 r_spin_axis_guide = 0.
 h_spin_axis_guide = 0.
 
+gap = 0
+
 """ Animation control """
 is_play = False
 
@@ -166,7 +168,7 @@ def set_tilt(value):
                                           np.sin((tilt_angle_deg + 90.) * np.pi / 180.)])
     # update
     reset()
-    update_diagram()
+    update_diagram(theta_rad_spin_axis_arrow_anim)
     draw_pass_spin()
     update_guide()
 
@@ -175,7 +177,7 @@ def set_spin_s(value):
     global rot_spin_axis_arrow
     rot_spin_axis_arrow = float(value)
     reset()
-    update_diagram()
+    update_diagram(theta_rad_spin_axis_arrow_anim)
     draw_pass_spin()
 
 
@@ -183,8 +185,15 @@ def set_spin_l(value):
     global rot_light_arrow
     rot_light_arrow = float(value)
     reset()
-    update_diagram()
+    update_diagram(theta_rad_spin_axis_arrow_anim)
     draw_pass_spin()
+
+
+def set_gap(value):
+    global gap
+    gap = value
+    draw_pass_spin()
+    update_diagram(theta_rad_spin_axis_arrow_anim)
 
 
 def draw_pass_spin():
@@ -203,8 +212,11 @@ def draw_pass_spin():
                                                                   vector_rotated_spin_axis_arrow_z)
         vector_rotated_light_arrow = rot_matrix_spin_axis_arrow_rotated.apply(vector_rotated_light_arrow_z)
         u1, v1, w1 = vector_rotated_light_arrow[0], vector_rotated_light_arrow[1], vector_rotated_light_arrow[2]
-        x_light_arrow_pass.append(u1)
-        y_light_arrow_pass.append(v1)
+
+        adjust = 1 + np.cos(np.deg2rad(i * 1 + 90)) * gap
+
+        x_light_arrow_pass.append(u1 * adjust)
+        y_light_arrow_pass.append(v1 * adjust)
         z_light_arrow_pass.append(w1)
         theta_rad_spin_axis_arrow = theta_rad_spin_axis_arrow - rot_spin_axis_arrow * ((2. * np.pi) / 360)
         theta_rad_light_arrow = theta_rad_light_arrow + rot_light_arrow * ((2. * np.pi) / 360)
@@ -213,7 +225,7 @@ def draw_pass_spin():
     plt_light_arrow_pass.set_3d_properties(np.array(z_light_arrow_pass))
 
 
-def update_diagram():
+def update_diagram(spin_angle):
     global plt_light_circle, theta_rad_spin_axis_arrow_anim, theta_rad_light_arrow_anim
     global qvr_spin_axis_arrow, qvr_light_arrow
     # Rotation matrix (z axis)
@@ -263,47 +275,61 @@ def update_diagram():
     qvr_light_arrow = ax0.quiver(x1, y1, z1, u1, v1, w1, length=1, color='red', normalize=True,
                                  label='Light arrow)')
 
+    adjust = 1 + np.cos(spin_angle + np.deg2rad(270)) * gap
+
     magnitude_phase = (np.cos(theta_rad_spin_axis_arrow_anim) + 1) / 2.
-    scatter_internal_phase.append(vector_rotated_light_arrow[0], vector_rotated_light_arrow[1],
+    scatter_internal_phase.append(vector_rotated_light_arrow[0] * adjust, vector_rotated_light_arrow[1] * adjust,
                                   vector_rotated_light_arrow[2], magnitude_phase)
 
 
 def create_parameter_setter():
     # Parameter setting
     # Rotation speed
-    frm_spin = ttk.Labelframe(root, relief='ridge', text='Rotation speed', labelanchor='n')
-    frm_spin.pack(side='left', fill=tk.Y)
-    lbl_spin_s = tk.Label(frm_spin, text='Spin axis (blue arrow):')
-    lbl_spin_s.pack(side='left')
+    frm_spin = ttk.Labelframe(root, relief="ridge", text="Rotation speed", labelanchor='n')
+    frm_spin.pack(side="left", fill=tk.Y)
+    lbl_spin_s = tk.Label(frm_spin, text="Spin axis (blue arrow):")
+    lbl_spin_s.pack(side="left")
     var_spin_s = tk.StringVar(root)  # variable for spinbox-value
     var_spin_s.set(str(rot_spin_axis_arrow))  # Initial value
     spn_spin_s = tk.Spinbox(
         frm_spin, textvariable=var_spin_s, from_=-8, to=8, increment=1,
         command=lambda: set_spin_s(var_spin_s.get()), width=6
     )
-    spn_spin_s.pack(side='left')
-    lbl_spin_l = tk.Label(frm_spin, text='Light arrow (Orange arrow):')
-    lbl_spin_l.pack(side='left')
+    spn_spin_s.pack(side="left")
+    lbl_spin_l = tk.Label(frm_spin, text="Light arrow (Orange arrow):")
+    lbl_spin_l.pack(side="left")
     var_spin_l = tk.StringVar(root)  # variable for spinbox-value
     var_spin_l.set(str(rot_light_arrow))  # Initial value
     spn_spin_l = tk.Spinbox(
         frm_spin, textvariable=var_spin_l, from_=-8, to=8, increment=1,
         command=lambda: set_spin_l(var_spin_l.get()), width=6
     )
-    spn_spin_l.pack(side='left')
+    spn_spin_l.pack(side="left")
 
     # Tilt of rotation axis
-    frm_tilt = ttk.Labelframe(root, relief='ridge', text='Tilt', labelanchor='n')
-    frm_tilt.pack(side='left', fill=tk.Y)
-    lbl_tilt = tk.Label(frm_tilt, text='Angle(degree):')
-    lbl_tilt.pack(side='left')
+    frm_tilt = ttk.Labelframe(root, relief="ridge", text="Tilt", labelanchor="n")
+    frm_tilt.pack(side="left", fill=tk.Y)
+    lbl_tilt = tk.Label(frm_tilt, text="Angle(degree):")
+    lbl_tilt.pack(side="left")
     var_tilt = tk.StringVar(root)
     var_tilt.set(str(tilt_angle_deg))
     spn_tilt = tk.Spinbox(
         frm_tilt, textvariable=var_tilt, from_=-180., to=180., increment=1,
         command=lambda: set_tilt(var_tilt.get()), width=6
     )
-    spn_tilt.pack(side='left')
+    spn_tilt.pack(side="left")
+
+    # Adjustment to avoid intersections
+    frm_gap = ttk.Labelframe(root, relief="ridge", text='Gap to avoid intersections', labelanchor='n')
+    frm_gap.pack(side="left", fill=tk.Y)
+
+    var_gap = tk.StringVar(root)
+    var_gap.set(str(gap))
+    spn_gap = tk.Spinbox(
+        frm_gap, textvariable=var_gap, from_=-0., to=1., increment=0.01,
+        command=lambda: set_gap(float(var_gap.get())), width=6
+    )
+    spn_gap.pack(side='left')
 
 
 def create_animation_control():
@@ -338,7 +364,7 @@ def reset():
     cnt.reset()
     theta_rad_light_arrow_anim = 0.
     theta_rad_spin_axis_arrow_anim = 0.
-    update_diagram()
+    update_diagram(theta_rad_spin_axis_arrow_anim)
 
 
 def switch():
@@ -353,7 +379,7 @@ def update(f):
     global theta_rad_spin_axis_arrow_anim, theta_rad_light_arrow_anim
     if is_play:
         cnt.count_up()
-        update_diagram()
+        update_diagram(theta_rad_spin_axis_arrow_anim)
         # Change theta
         theta_rad_spin_axis_arrow_anim = theta_rad_spin_axis_arrow_anim - rot_spin_axis_arrow * ((2. * np.pi) / 360)
         theta_rad_light_arrow_anim = theta_rad_light_arrow_anim + rot_light_arrow * ((2. * np.pi) / 360)
@@ -401,7 +427,7 @@ if __name__ == "__main__":
     scatter_internal_phase = Scatter3D(ax0, 8, "plasma", 0, 1)
 
     set_tilt(tilt_angle_deg)
-    update_diagram()
+    update_diagram(theta_rad_spin_axis_arrow_anim)
     draw_pass_spin()
 
     # ax0.legend(loc='lower right', fontsize=8)
