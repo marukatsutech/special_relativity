@@ -1,4 +1,4 @@
-""" Rotation vector pair """
+""" Hopf link rotation vector pair """
 import numpy as np
 from matplotlib.figure import Figure
 import matplotlib.animation as animation
@@ -27,7 +27,7 @@ vector_y_axis = np.array([0., 1., 0.])
 vector_z_axis = np.array([0., 0., 1.])
 
 """ Create figure and axes """
-title_ax0 = "Rotation vector pair"
+title_ax0 = " Hopf link rotation vector pair"
 title_tk = title_ax0
 
 x_min = -2.
@@ -337,12 +337,12 @@ def create_parameter_setter():
     frm_rot.pack(side='left', fill=tk.Y)
 
     # var_rot_a_by_d = tk.IntVar(root)
-    chk_rot_a_by_d = tk.Checkbutton(frm_rot, text="Rotate A by D", variable=var_rot_a_by_d)
+    chk_rot_a_by_d = tk.Checkbutton(frm_rot, text="Rotate A by B", variable=var_rot_a_by_d)
     chk_rot_a_by_d.pack(side='left')
     var_rot_a_by_d.set(False)
 
     # var_rot_d_by_a = tk.IntVar(root)
-    chk_rot_d_by_a = tk.Checkbutton(frm_rot, text="Rotate D by A", variable=var_rot_d_by_a)
+    chk_rot_d_by_a = tk.Checkbutton(frm_rot, text="Rotate B by A", variable=var_rot_d_by_a)
     chk_rot_d_by_a.pack()
     var_rot_d_by_a.set(False)
 
@@ -451,7 +451,7 @@ if __name__ == "__main__":
     create_parameter_setter()
 
     rotation_vector_a = RotationVector(ax0, "red")
-    rotation_vector_b = RotationVector(ax0, "gray")
+    rotation_vector_b = RotationVector(ax0, "green")
 
     rotation_vector_a.rotate_all(np.deg2rad(-135), vector_y_axis)
     rotation_vector_a.set_phase(np.deg2rad(phase_init_a))
@@ -466,7 +466,7 @@ if __name__ == "__main__":
     path_b = Path(ax0, 2, "silver")
 
     plt_dummy1 = ax0.plot(0, 0, 0, color="red", linewidth=2, label="Rotation vector A")
-    plt_dummy2 = ax0.plot(0, 0, 0, color="gray", linewidth=2, label="Rotation vector D")
+    plt_dummy2 = ax0.plot(0, 0, 0, color="green", linewidth=2, label="Rotation vector B")
     ax0.legend(loc='lower right', fontsize=8)
 
     anim = animation.FuncAnimation(fig, update, interval=100, save_count=100)
