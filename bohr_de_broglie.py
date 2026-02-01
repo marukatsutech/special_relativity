@@ -399,6 +399,8 @@ def switch():
 
 
 def update(f):
+    txt_parameter.set_text(fr"Radius={r_z}, k={k_z}")
+
     if is_play:
         cnt.count_up()
         update_diagrams()
@@ -418,6 +420,10 @@ if __name__ == '__main__':
     waved_circle_z = WavedCircle3d(ax0, 0., 0., 0., 1., 1., "z", 1, '-', 'darkorange', 1)
 
     update_diagrams()
+
+    txt_parameter = ax0.text2D(x_min, y_max, fr"Radius={r_z}, k={k_z}", fontsize="12")
+    xz, yz, _ = proj3d.proj_transform(x_min + 0.5, y_max, z_max - 0.5, ax0.get_proj())
+    txt_parameter.set_position((xz, yz))
 
     # ax0.legend(loc='lower right', fontsize=8)
     # ax1.legend(loc='lower right', fontsize=8)
