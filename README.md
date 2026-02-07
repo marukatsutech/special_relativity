@@ -1702,7 +1702,7 @@ In R-space theory, the generation of elementary particles could not be explained
 
 ![image_ch9_fig6-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-1.png)
 
-Fig. 6-1 xxxxxxx
+Fig. 6-1 Generations of elementary particles
 
 The Hopf link rotation vector pair model has a size, as mentioned in the previous section. 
 We can think of this size as being expandable so that the combination of the minor link and major link can change. 
@@ -1711,7 +1711,7 @@ If we think of rotation as vibration, then vibration under the potential will be
 
 ![image_ch9_fig6-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-2.png)
 
-Fig. 6-2 xxxxxxx
+Fig. 6-2 Vibration of Hopf link vector pair
 
 The rotation of the minor link is considered to be a vibration, and there is a minimum period for this vibration (rotation) to be valid. 
 For the major link to change size and for vibration to be stable along its circumference, the circumference must be an integer multiple of the width of the minor link's vibration period. 
@@ -1719,9 +1719,9 @@ For the major link to change size and for vibration to be stable along its circu
 
 ![image_ch9_fig6-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-3.png)
 
-Fig. 6-3 xxxxxxx
+Fig. 6-3 Bohr-de Broglie model
 
-(Try xxxxxxxxx at https://github.com/marukatsutech/poincare_klein_disk for Fig 6-3.)
+(Try bohr_de_broglie.py at https://github.com/marukatsutech/special_relativity for Fig 6-3.)
 
 As the size of the major link increases, a force acts to return it to its original state.
 If this force is considered proportional to the circumference of the major link, it can be thought of as a harmonic oscillator driven by the restoring force of a spring, and energy levels are quantized and generated. 
@@ -1729,14 +1729,14 @@ Since energy is equivalent to mass, this principle generates generations (mass d
 
 ![image_ch9_fig6-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-4.png)
 
-Fig. 6-4 xxxxxxx
+Fig. 6-4 Quantized energy
 
 Furthermore, in R-space theory, mass is considered to be rotation itself, as explained in Chapter 7.
 The reason why there are only three generations is thought to be because there is a limit to the size of the major link (the spring's restoring force) (if the energy exceeds this, space-time cannot withstand it and it is transformed into a different combination of rotations = multiple elementary particles).
 
 ![image_ch9_fig6-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-5.png)
 
-Fig. 6-5 xxxxxxx
+Fig. 6-5 Limitation of generations
 
 ## 7. Weak interactions
 The weak interaction (weak force) appears in radioactive phenomena such as beta decay, where a W-boson is generated when a neutron changes into a proton, and this W-boson decays into an electron and an anti-electron neutrino. 
