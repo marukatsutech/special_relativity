@@ -1865,14 +1865,14 @@ Complex numbers represent rotations, and since two rotations can be considered, 
 
 ![image_ch9_fig8-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig8-1.png)
 
-Fig. 8-1 xxxxxxx
+Fig. 8-1 Spinor
 
 Applied to R-space theory, this results in a combination of a major link and a minor link. The minor link moves along the circumference of the major link. 
 The rotation of the minor link is the resultant vector of orthogonal rotation vectors, so if the direction of the minor link's movement is opposite to that of the major link, the movement due to the minor link's rotation is canceled out.
 
 ![image_ch9_fig8-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig8-2.png)
 
-Fig. 8-2 xxxxxxx
+Fig. 8-2 Spinor and Hopf link rotation vector pair
 
 Therefore, it can be seen that four sets of symmetries are broken.
 In the Standard Model, elementary particles are considered to be sizeless points, but in R-space theory, they have size and internal structure, so the cause of the symmetry breaking becomes clear.
@@ -1886,7 +1886,7 @@ As explained so far, complex numbers represent rotation, so this is three rotati
 
 ![image_ch9_fig9-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-1.png)
 
-Fig. 9-1 xxxxxxx
+Fig. 9-1 Color charge and SU(3) transformation
 
 However, in R-space theory, there is no equivalent to color charge, and as explained in Chapters 5 and 6, protons and neutrons are composed of three quanta equivalent to electrons that share their respective rotation axes. 
 This sharing corresponds to color confinement, and the quanta equivalent to electrons behave as up or down quarks depending on how they share the rotation axis.
@@ -1896,19 +1896,19 @@ In the quantum model explained in Chapter 6, three quanta have four (four-dimens
 These rotation axes are then shared, and the shared axes become like electrons, resulting in color confinement.
 In R-space theory, as explained in Chapter 8, time is the rotation of the rotation axes of the x-axis, y-axis, and z-axis components themselves that constitutes space-time, so the time axis is unnecessary. 
 
-![image_ch9_fig9-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-2.png)
-
-Fig. 9-2 xxxxxxx
-
 And when we apply the Hopf link rotation vector pairs that we have explained so far, we get the following figure.
 
-![image_ch9_fig9-3](https://github.com/marukatsutech/special_relativity/raw/main/image_ch6_fig6-1.png)
+![image_ch9_fig9-2](https://github.com/marukatsutech/special_relativity/raw/main/image_ch6_fig6-1.png)
 
-Fig. 9-3 Protons model
+Fig. 9-2 Protons model
 
 Quanta equivalent to three electrons provide the axes of each major link, and these three axes become electron-like (we will call this a shared quantum). 
 The quantum that provided one axis as the major link of the shared quantum behaves as a down quark together with the shared quantum (since the shared quantum is a three-axis, it has a negative charge of 3/3, and the donating quantum is a two-axis, so it has a positive charge of 2/3, for a total negative charge of 1/3). 
 The remaining two quanta each provide one axis to the shared quantum, so they become two-axis and behave as up quarks with a positive charge of +2/3. This shared quantum acts as the color confinement of the quark.
+
+![image_ch9_fig9-3](https://github.com/marukatsutech/special_relativity/raw/main/image_ch9_fig9-3.png)
+
+Fig. 9-3 Protons model with Hopf link vector pair
 
 Next, regarding neutrons, in Chapter 6 I explained that the time axis is provided by the shared quantum between the two quanta, so that the shared quantum has an electric charge equivalent to two electrons, and that this charge makes it neutral (zero charge in UDD).
 However, if there is no time axis (the essence of quanta and space-time is only the rotation of three axes), how should we think about this? This can be explained using SU(2)L symmetry, which was explained in Section 7.
@@ -1923,14 +1923,14 @@ As mentioned in Section 7, the W-boson has an electron and a neutrino component.
 
 ![image_ch9_fig9-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-5.png)
 
-Fig. 9-5 Neutrons model
+Fig. 9-5 Neutrons model with Hopf link vector pair
 
 As described above, quarks can be explained by the sharing of Hopf link rotation vector pairs and their rotation axes. 
 The color charge (color triplet) of SU(3) symmetry indicates the three axes of the shared quantum, and the 3x3 complex matrix of the SU(3) transformation indicates the transformation of the three axes of the three quanta.
 
 ![image_ch9_fig9-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-6.png)
 
-Fig. 9-6 xxxxxxx
+Fig. 9-6 Color charge in protons model with Hopf link vector pair 
 
 This model (the shared electron model) also explains the strong force acting on quarks. 
 As explained in Section 6 about generations, the size of the Hopf link of a quantum (in this case, the shared electron) expands and contracts like a spring. This corresponds to a gluon. 
@@ -1938,7 +1938,7 @@ The Hopf link is circular, and changes in size linearly, like the repulsive forc
 
 ![image_ch9_fig9-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-7.png)
 
-Fig. 9-7 xxxxxxx
+Fig. 9-7 Gluons in protons model with Hopf link vector pair 
 
 As the energy increases (the rotation speed increases), the size of the link increases and the repulsive force trying to return to its original shape also increases linearly. 
 This is consistent with the force exerted by the gluon (which is proportional to the distance, not inversely proportional to the square of the distance, as is the Coulomb force of electric charge). 
