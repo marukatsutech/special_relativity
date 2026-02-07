@@ -1450,15 +1450,15 @@ However, the object that undergoes this transformation is the wave function that
 
 ![image_ch9_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-1.png)
 
-Fig. 3-1 xxxxxxx
+Fig. 3-1 U(1) transformation
 
 Using Euler's formula e^iθ=cosθ+isinθ, e^iθ can be expressed as the following matrix. 
 
 ![image_ch9_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-2.png)
 
-Fig. 3-2 xxxxxxx
+Fig. 3-2 Matrix of rotational transformation
 
-This matrix is ​​the same as the matrix that performs a rotational transformation in plane coordinates.
+This matrix is the same as the matrix that performs a rotational transformation in plane coordinates.
 Transformation with U(1) symmetry involves rotating the phase of the wave function. 
 Rotating the phase at all positions by the same amount does not change the observed physical quantity. 
 
@@ -1467,7 +1467,8 @@ Because the observed physical quantity does not change when transformed (rotated
 
 ![image_ch9_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-3.png)
 
-Fig. 3-3 xxxxxxx
+Fig. 3-3 Global transformation
+
 
 Next, consider a state in which a local transformation—specifically, a rotation—has been applied, so that the rotating phase varies from point to point. 
 For example, imagine that the spiral spacing of the wave function becomes narrower, as illustrated in the figure. 
@@ -1485,31 +1486,27 @@ The following video shows how a gradient phase change is applied to the wave fun
 
 ![image_ch9_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-5.png)
 
-Fig. 3-5 xxxxxxx
+Fig. 3-5 Quantum in potential
 
-(Try xxxxxxxxx at https://github.com/marukatsutech/poincare_klein_disk for Fig 3-6.)
+(Try quantum_path_integral_potential.py at https://github.com/marukatsutech/quantum_path_integral_2/tree/master for Fig 3-5.)
 
 In R-space theory, photons are considered to be rotation vectors with orthogonal x-, y-, and z-axis components (three degrees of freedom). 
 In contrast, U(1) symmetry in the Standard Model is "Unitary group of degree 1," meaning rotations around one axis (one degree of freedom).
- Photons have a property called helicity, which allows them to rotate counterclockwise or clockwise around that axis. 
-
-![image_ch9_fig3-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-6.png)
-
-Fig. 3-6 xxxxxxx
+ Photons have a property called helicity, which allows them to rotate counterclockwise or clockwise around that axis.
 
 Thus, the number of degrees of freedom for photons in R-space theory differs from that of U(1) symmetry in the Standard Model. 
 However, because the rotation of the three coordinate components of a photon in R-space theory is a rotation vector, it can be considered to be combined into a rotation around a single axis, and is therefore considered to be the same as U(1) symmetry.
 
 ![image_ch9_fig3-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-6.png)
 
-Fig. 3-6 xxxxxxx
+Fig. 3-6 3-degrees rotation vectors and helicity
 
 The reason why photons in R-space theory have rotation components on three axes is that, as explained in Chapter 8, in R-space rotation itself is space-time, and three-dimensional space requires three rotations, i.e., three degrees of freedom.
  When the three degrees of freedom of a photon are observed, only one degree of freedom is observed as a composite vector.
 
-![image_ch9_fig3-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-8.png)
+![image_ch9_fig3-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-7.png)
 
-Fig. 3-8 xxxxxxx
+Fig. 3-7 Photon in R-space theory
 
 
 ## 4. SU(2) symmetry and the fermion as a rotating vector pairs
