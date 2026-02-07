@@ -1517,25 +1517,25 @@ Since rotation (position) on a sphere is determined by two values, latitude and 
 
 ![image_ch9_fig4-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig4-1.png)
 
-Fig. 4-1 xxxxxxx
+Fig. 4-1 Rotations on a circle
 
 In mathematics, an n-dimensional sphere is generally represented as S2. 
 A "complex rotation on a sphere" is S3, which is like a sphere in four-dimensional space. 
 While figures in four-dimensional space cannot be illustrated, four-dimensional figures can be illustrated by projecting them into three-dimensional space, just as a three-dimensional sphere can be projected as a shadow onto a two-dimensional surface. 
 An example of this is the Hypercube (Tesseract), where the vertices of a cube are rotated as shown in the following video.
 
-![image_ch9_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig4-2.png)
+![image_ch9_fig4-2](https://github.com/marukatsutech/special_relativity/raw/main/image_ch8_fig3-1.png)
 
-Fig. 4-2 xxxxxxx
+Fig. 4-2 Hypercube (Tesseract)
 
 In R-space theory, fermions, like photons, have rotation vectors with x-, y-, and z-axis components.
 However, because the rotation speed of these rotation vectors is high, the orthogonal rotation vectors influence each other. 
 As a result, the rotation plane of each axis oscillates, and each rotation axis undergoes precession. 
 These precessing rotation vectors are called rotation vector pairs.
 
-![image_ch9_fig4-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig4-3.png)
+![image_ch9_fig4-3](https://github.com/marukatsutech/special_relativity/raw/main/image_ch8_fig6-4.png)
 
-Fig. 4-3 xxxxxxx
+Fig. 4-3 Rotation vector pair
 
 There are four degrees of freedom, with the addition of the precessional rotation to the three-axis rotation vectors, i.e., three degrees of freedom. 
 Therefore, the rotation vector pair is thought to conform to a symmetry similar to the "rotation of a complex sphere" represented by SU(2).
@@ -1545,7 +1545,7 @@ Unfortunately, R-space theory lacks consideration of the weak force, which invol
 
 ![image_ch9_fig4-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig4-4.png)
 
-Fig. 4-4 xxxxxxx
+Fig. 4-4 Beta decay
 
 ## 5. Reconsideration of rotation vector pairs
 Before considering SU(2) symmetry in R-space theory, including the weak force, we reconsider the rotation vector pair.
