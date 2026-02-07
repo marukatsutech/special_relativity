@@ -1642,60 +1642,54 @@ If a magnetic field is then applied in the horizontal direction and observations
 
 Fig. 5-9 Hopf link rotation vector pair in Stern–Gerlach experiment
 
-If a magnetic field is then applied in the horizontal direction and observations are made, an external force(a magnetic field) is applied, which disrupts the combination of rotation vectors and causes the major link to be reconstructed in the horizontal direction, so the spin is now observed in the left-right direction.
-
-![image_ch9_fig5-10](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-10.png)
-
-Fig. 5-10 Hopf link rotation vector pair in Stern–Gerlach experiment
-
 Additionally, the reason why particles are attracted to the upper or lower side depending on the direction of rotation (clockwise or counterclockwise) can be explained as follows. 
 In R-space theory, interactions between charged particles occur when the phases of the elementary particles collide and invert, as described in Chapter 6. 
 When two phase components (two rotation axis components) collide, the result is negative (-) * negative (-) = positive (+), and when three phase components (three rotation axis components) collide, the result is negative (-) * negative (-) * negative (-) = negative (-).
 
-![image_ch9_fig5-11](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-11.png)
+![image_ch9_fig5-10](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-10.png)
 
-Fig. 5-11 Relation of axes and interactions
+Fig. 5-10 Relation of axes and interactions
 
 Since the source of a magnetic field is electron spin, the state in which a magnetic field is applied to electrons can be said to be an interaction between electrons with aligned spin axes. 
 If the rotational directions of the electron spins are the same, the spins cancel each other out, with one rotation axis component canceling out, resulting in an attractive force as each electron sees only two phase components of the other. 
 If the rotational directions of the electron spins are opposite, the spins do not cancel out, resulting in a repulsive force as each electron sees two phase components of the other.
 
-![image_ch9_fig5-12](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-12.png)
+![image_ch9_fig5-11](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-11.png)
 
-Fig. 5-12 Aligned spins
+Fig. 5-11 Aligned spins
 
 Furthermore, since the rotation vector pair of the minor link that rotates on the circumference of the major link has two axes (two phase components), if we think of it as a rotating positive charge, then this is consistent with the Ampere force in classical physics, where currents flowing in the same direction exert an attractive force, and currents flowing in the opposite direction exert a repulsive force.
 In addition, in a normal state, the direction of each electron spin changes randomly due to thermal vibration, etc., so three phase components are visible to each other and it is thought that a repulsive force is always present.
 
-![image_ch9_fig5-13](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-13.png)
+![image_ch9_fig5-12](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-12.png)
 
-Fig. 5-13 Ampere force
+Fig. 5-12 Ampere force
 
 It was explained that this Hopf link rotation vector pair model is composed of rotation vectors of three axes, but these three rotation axes are simply represented as basis vectors. 
 Vectors that are not bases can be expressed as combinations of basis vectors. If we consider the Hopf link as rotation vectors in all directions, it becomes a Hopf fibration. 
 A Hopf fibration is a decomposition of a three-dimensional sphere (S3) into "countless circles" and mapping them onto a two-dimensional sphere, and SU(2) symmetry, as mentioned above, is a "complex rotation of a sphere" and is equivalent to S3.
 
-![image_ch9_fig5-14](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-14.png)
+![image_ch9_fig5-13](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-13.png)
 
-Fig. 5-14 Hopf fibration
+Fig. 5-13 Hopf fibration
 
 In quantum mechanics, the quantum of a spin 1/2 particle such as an electron is represented by a two-component spinor (Pauli spinor). 
 A two-component spinor is a two-dimensional complex vector composed of two complex numbers. 
 If complex numbers are thought of as representing rotations, then a two-component spinor can be thought of as two rotations. 
 In this new rotating vector pair model, it is composed of three rotation components (and their precessions). 
 
-![image_ch9_fig5-15](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-15.png)
+![image_ch9_fig5-14](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-14.png)
 
-Fig. 5-15 Rotation and complex number
+Fig. 5-14 Rotation and complex number
 
 (Try complex_number.py at https://github.com/marukatsutech/complex_number for Fig 5-15.)
 
 However, if the rotating vector pair that makes up the minor link can only be observed as a resultant rotating vector, then the two rotation elements can be expressed as a spinor composed of two complex numbers.
 As described above, the new rotating vector pair model, the Hopf link rotating vector pair model, appears to be consistent with the spin transformation (U(1) transformation) and SU(2) symmetry.
 
-![image_ch9_fig5-16](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-16.png)
+![image_ch9_fig5-15](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-15.png)
 
-Fig. 5-16 spinor and Hopf link rotation vector pair
+Fig. 5-15 spinor and Hopf link rotation vector pair
 
 ## 6. Generation of elementary particles
 Before considering the weak force, which involves the transformation of elementary particle types, we take one more step and consider the generations of elementary particles.
