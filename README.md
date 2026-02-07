@@ -2017,10 +2017,3 @@ Furthermore, explaining the types of elementary particles through combinations o
 Everything is just a different state of vortex (rotation). 
 The universe is rotating.
 
-
-We don't know what is rotating in R-space, but we think that the rotating energy itself forms space-time. 
-What should we call this rotating something? 
-Until the mid-19th century, scientists searched for a medium through which light could travel.
- The rotating something is a little different from the image of light rippling, but if one aspect of rotation is vibration, it could be thought of as a wave. 
-Let's call this rotating something R-aether. 
-R is for rotation :-)
