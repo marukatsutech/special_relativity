@@ -1471,25 +1471,21 @@ Fig. 3-3 xxxxxxx
 
 Next, consider a state in which a local transformation—specifically, a rotation—has been applied, so that the rotating phase varies from point to point. 
 For example, imagine that the spiral spacing of the wave function becomes narrower, as illustrated in the figure. 
-In a wave function, the narrower the spiral spacing (that is, the larger the gradient of the phase), the faster the quantum motion represented by that wave function. 
-
-![image_ch9_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-4.png)
-
-Fig. 3-4 xxxxxxx
+In a wave function, the narrower the spiral spacing (that is, the larger the gradient of the phase), the faster the quantum motion represented by that wave function.
 
 In other words, the quantum is accelerated, and the observable physical quantities change accordingly. 
 To ensure that conservation laws are not violated, an electromagnetic potential (photons) must appear to compensate for this change.
 
-![image_ch9_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig5-1.png)
+![image_ch9_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig5-1.png)
 
-Fig. 3-5 Probability wave
+Fig. 3-4 Photon interaction
 
 The familiar facts that accelerating electrons requires applying an electric field (i.e., supplying photons), and that synchrotron radiation is produced when the direction of an electron’s motion is bent (accelerated) by a magnetic field, both arise from the conservation laws associated with this U(1) symmetry.
 The following video shows how a gradient phase change is applied to the wave function representing the quantum.
 
-![image_ch9_fig3-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-6.png)
+![image_ch9_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-5.png)
 
-Fig. 3-6 xxxxxxx
+Fig. 3-5 xxxxxxx
 
 (Try xxxxxxxxx at https://github.com/marukatsutech/poincare_klein_disk for Fig 3-6.)
 
@@ -1497,23 +1493,23 @@ In R-space theory, photons are considered to be rotation vectors with orthogonal
 In contrast, U(1) symmetry in the Standard Model is "Unitary group of degree 1," meaning rotations around one axis (one degree of freedom).
  Photons have a property called helicity, which allows them to rotate counterclockwise or clockwise around that axis. 
 
-![image_ch9_fig3-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-7.png)
+![image_ch9_fig3-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-6.png)
 
-Fig. 3-7 xxxxxxx
+Fig. 3-6 xxxxxxx
 
 Thus, the number of degrees of freedom for photons in R-space theory differs from that of U(1) symmetry in the Standard Model. 
 However, because the rotation of the three coordinate components of a photon in R-space theory is a rotation vector, it can be considered to be combined into a rotation around a single axis, and is therefore considered to be the same as U(1) symmetry.
 
-![image_ch9_fig3-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-8.png)
+![image_ch9_fig3-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-6.png)
 
-Fig. 3-8 xxxxxxx
+Fig. 3-6 xxxxxxx
 
 The reason why photons in R-space theory have rotation components on three axes is that, as explained in Chapter 8, in R-space rotation itself is space-time, and three-dimensional space requires three rotations, i.e., three degrees of freedom.
  When the three degrees of freedom of a photon are observed, only one degree of freedom is observed as a composite vector.
 
-![image_ch9_fig3-9](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-9.png)
+![image_ch9_fig3-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-8.png)
 
-Fig. 3-9 xxxxxxx
+Fig. 3-8 xxxxxxx
 
 
 ## 4. SU(2) symmetry and the fermion as a rotating vector pairs
