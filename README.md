@@ -1922,7 +1922,7 @@ However, if there is no time axis (the essence of quanta and space-time is only 
 
 ![image_ch9_fig9-4](https://github.com/marukatsutech/special_relativity/raw/main/image_ch5_fig5-3.png)
 
-Fig. 9-4 xxxxxxx
+Fig. 9-4 Neutrons model
 
 When a neutron changes into a proton through beta decay, it emits a W-boson. 
 As mentioned in Section 7, the W-boson has an electron and a neutrino component. This neutrino component is the second shared quantum.
