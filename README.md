@@ -1413,3 +1413,621 @@ Until the mid-19th century, scientists searched for a medium through which light
  The rotating something is a little different from the image of light rippling, but if one aspect of rotation is vibration, it could be thought of as a wave. 
 Let's call this rotating something R-aether. 
 R is for rotation :-)
+
+# Chapter - 9. Rotation and Space-time
+
+What is U(1) x SU(2) x SU(3) symmetry ?
+
+Watch my video for overview!
+
+[(https://youtu.be/B0nJmVNqZno)](https://youtu.be/B0nJmVNqZno)
+
+## 1. Introduction
+In previous chapters, we have considered that our universe is made up of R-space, with three orthogonal degrees of freedom for rotation.
+ These three orthogonal degrees of freedom influence each other, and as the rotation speed increases, the plane of rotation vibrates, causing each axis of rotation to precess. 
+Photons are considered to rotate slowly and not precess, while fermions are considered to rotate quickly and precess. 
+
+In the Standard Model of quantum mechanics, photons are considered to have U(1) symmetry, leptons such as electrons have SU(2) symmetry, and hadrons such as protons have SU(3) symmetry. 
+In this chapter, we compare my theory (hereafter referred to as R-space theory) with existing quantum mechanical symmetries and reconsider the nature of elementary particles discussed in Chapters 5 and 6.
+
+
+## 2. Gauge symmetry
+Symmetries include translational symmetry and rotational symmetry.
+ Regarding these symmetries, Noether's law (Noether's theorem) states that "whenever there is continuous symmetry, there is a corresponding conserved quantity." 
+This means that if an action is invariant under continuous transformations (i.e., symmetry), the quantity corresponding to that transformation is conserved.
+Spatial translational symmetry corresponds to the law of conservation of momentum, time translational symmetry corresponds to the law of conservation of energy, and rotational symmetry corresponds to the law of conservation of angular momentum.
+
+There are various types of symmetry, but the symmetry dealt with in the Standard Model of quantum mechanics is called gauge symmetry, and includes the following types:
+U(1) symmetry: Conservation of electric charge
+SU(2) symmetry: Conservation of weak isospin
+SU(3) symmetry: Conservation of color charge
+These symmetries are similar to rotational symmetries, but the object being rotated (transformed) is not an object (particle) in the classical physical sense, but a wave function.
+
+## 3. U(1) symmetry and the photon as a rotating vector
+Mathematically, U(1) is the “unitary group of degree 1,” consisting of complex numbers e^iθ with absolute value 1.
+It is like a "circle of radius 1" centered at the origin on the complex plane, and U(1) symmetry means that the essence does not change even if the angle (phase) is rotated by θ on this circle. 
+However, the object that undergoes this transformation is the wave function that describes electrons, etc., and it becomes the following equation.
+
+![image_ch9_fig3-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-1.png)
+
+Fig. 3-1 xxxxxxx
+
+Using Euler's formula e^iθ=cosθ+isinθ, e^iθ can be expressed as the following matrix. 
+
+![image_ch9_fig3-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-2.png)
+
+Fig. 3-2 xxxxxxx
+
+This matrix is ​​the same as the matrix that performs a rotational transformation in plane coordinates.
+Transformation with U(1) symmetry involves rotating the phase of the wave function. 
+Rotating the phase at all positions by the same amount does not change the observed physical quantity. 
+
+This is because the radius (squared) of a wave function at each position indicates the quantum observation probability, and rotating the phase globally does not change the radius at each position. 
+Because the observed physical quantity does not change when transformed (rotated) in this way, this is called symmetry (just like how a circle or sphere looks the same when rotated).
+
+![image_ch9_fig3-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-3.png)
+
+Fig. 3-3 xxxxxxx
+
+Next, consider a state in which a local transformation—specifically, a rotation—has been applied, so that the rotating phase varies from point to point. 
+For example, imagine that the spiral spacing of the wave function becomes narrower, as illustrated in the figure. 
+In a wave function, the narrower the spiral spacing (that is, the larger the gradient of the phase), the faster the quantum motion represented by that wave function. 
+
+![image_ch9_fig3-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-4.png)
+
+Fig. 3-4 xxxxxxx
+
+In other words, the quantum is accelerated, and the observable physical quantities change accordingly. 
+To ensure that conservation laws are not violated, an electromagnetic potential (photons) must appear to compensate for this change.
+
+![image_ch9_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-5.png)
+
+Fig. 3-5 xxxxxxx
+
+The familiar facts that accelerating electrons requires applying an electric field (i.e., supplying photons), and that synchrotron radiation is produced when the direction of an electron’s motion is bent (accelerated) by a magnetic field, both arise from the conservation laws associated with this U(1) symmetry.
+The following video shows how a gradient phase change is applied to the wave function representing the quantum.
+
+![image_ch9_fig3-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-6.png)
+
+Fig. 3-6 xxxxxxx
+
+(Try xxxxxxxxx at https://github.com/marukatsutech/poincare_klein_disk for Fig 3-6.)
+
+In R-space theory, photons are considered to be rotation vectors with orthogonal x-, y-, and z-axis components (three degrees of freedom). 
+In contrast, U(1) symmetry in the Standard Model is "Unitary group of degree 1," meaning rotations around one axis (one degree of freedom).
+ Photons have a property called helicity, which allows them to rotate counterclockwise or clockwise around that axis. 
+
+![image_ch9_fig3-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-7.png)
+
+Fig. 3-7 xxxxxxx
+
+Thus, the number of degrees of freedom for photons in R-space theory differs from that of U(1) symmetry in the Standard Model. 
+However, because the rotation of the three coordinate components of a photon in R-space theory is a rotation vector, it can be considered to be combined into a rotation around a single axis, and is therefore considered to be the same as U(1) symmetry.
+
+![image_ch9_fig3-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-8.png)
+
+Fig. 3-8 xxxxxxx
+
+The reason why photons in R-space theory have rotation components on three axes is that, as explained in Chapter 8, in R-space rotation itself is space-time, and three-dimensional space requires three rotations, i.e., three degrees of freedom.
+ When the three degrees of freedom of a photon are observed, only one degree of freedom is observed as a composite vector.
+
+![image_ch9_fig3-9](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-9.png)
+
+Fig. 3-9 xxxxxxx
+
+
+## 4. SU(2) symmetry and the fermion as a rotating vector pairs
+Mathematically, SU(2) is the “special unitary group of degree 2,” consisting of 2×2 complex unitary matrices with determinant 1.
+While U(1) is a "rotation on a circle," SU(2) is a symmetry similar to a complex "rotation on a sphere.
+" However, a rotation on a sphere does not simply mean a rotation on the surface of the sphere; every spherical surface has an additional degree of rotational freedom. 
+Since rotation (position) on a sphere is determined by two values, latitude and longitude, the sphere itself is two-dimensional, just like a plane. 
+
+![image_ch9_fig4-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig4-1.png)
+
+Fig. 4-1 xxxxxxx
+
+In mathematics, an n-dimensional sphere is generally represented as S2. 
+A "complex rotation on a sphere" is S3, which is like a sphere in four-dimensional space. 
+While figures in four-dimensional space cannot be illustrated, four-dimensional figures can be illustrated by projecting them into three-dimensional space, just as a three-dimensional sphere can be projected as a shadow onto a two-dimensional surface. 
+An example of this is the Hypercube (Tesseract), where the vertices of a cube are rotated as shown in the following video.
+
+![image_ch9_fig4-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig4-2.png)
+
+Fig. 4-2 xxxxxxx
+
+In R-space theory, fermions, like photons, have rotation vectors with x-, y-, and z-axis components.
+However, because the rotation speed of these rotation vectors is high, the orthogonal rotation vectors influence each other. 
+As a result, the rotation plane of each axis oscillates, and each rotation axis undergoes precession. 
+These precessing rotation vectors are called rotation vector pairs.
+
+![image_ch9_fig4-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig4-3.png)
+
+Fig. 4-3 xxxxxxx
+
+There are four degrees of freedom, with the addition of the precessional rotation to the three-axis rotation vectors, i.e., three degrees of freedom. 
+Therefore, the rotation vector pair is thought to conform to a symmetry similar to the "rotation of a complex sphere" represented by SU(2).
+However, as mentioned in Section 2, SU(2) symmetry implies that in the Standard Model, the weak force is induced by the conservation of weak isospin, and electrons and neutrinos are converted to each other through the intervention of the W boson. 
+
+Unfortunately, R-space theory lacks consideration of the weak force, which involves the conversion of elementary particle types.
+
+![image_ch9_fig4-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig4-4.png)
+
+Fig. 4-4 xxxxxxx
+
+## 5. Reconsideration of rotation vector pairs
+Before considering SU(2) symmetry in R-space theory, including the weak force, we reconsider the rotation vector pair.
+Elementary particles have a quantum number called spin that behaves like angular momentum; gauge particles that transmit force, such as photons and bosons, have a spin of 1, while elementary particles that make up matter, such as electrons and quarks, have a spin of 1/2. 
+Electrons also have a magnetic moment due to their spin.
+In an electromagnet, a magnetic moment is generated when current (flow of charge) rotates (circularly moves). 
+
+However, although electrons have an electric charge, it is not known how electrons, which are considered to be sizeless points, generate a magnetic moment (there is also a theory, such as superstring theory, that elementary particles are not sizeless points but extended strings).
+
+![image_ch9_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-1.png)
+
+Fig. 5-1 xxxxxxx
+
+The magnetic moment arising from the electron’s spin has been confirmed experimentally by the Stern–Gerlach experiment. 
+Curiously, although an electron (in practice, silver atoms are used in the experiment) behaves like a tiny magnet, its orientation is not “free to point anywhere.” 
+Instead, only two outcomes are allowed relative to the direction of the applied magnetic field: “up” or “down.” 
+
+![image_ch9_fig5-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-2.png)
+
+Fig. 5-2 xxxxxxx
+
+Furthermore, if an electron that has been measured to be spin‑up is measured again along the same vertical axis, it will again be observed as spin‑up.
+ However, if that same spin‑up electron is measured along a horizontal magnetic‑field direction, the spin does not simply disappear; instead, it is observed to be pointing left or right with equal probability of 50%.
+
+![image_ch9_fig5-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-3.png)
+
+Fig. 5-3 xxxxxxx
+
+In this way, the result of a spin measurement depends entirely on how the measurement is performed.  
+Spin may seem like a quantity with no concrete physical reality, yet the magnetic fields produced by magnets in the real world ultimately originate from the spins of electrons. 
+The transformations between the spin‑up and spin‑down states follow the symmetry of the group SU(2).
+However, in the Standard Model of quantum mechanics, it is said that the spin direction can be changed by an SU(2) transformation, but the gauge particle that changes the spin direction is not a W boson, but a U(1) photon.
+
+As explained in Chapter 6, spin in R-space theory is considered to result from the double rotation of a rotating vector pair. 
+However, there are two issues with this.
+First, the three axes (x, y, and z) cannot precess at a 45-degree angle while remaining orthogonal.
+If two axes are orthogonal, as shown in the figure, they can precess while maintaining a 45-degree angle, but the precession angle of the remaining axis is 90 degrees, and the speed of light changes only along that axis.
+
+![image_ch9_fig5-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-4.png)
+
+Fig. 5-4 xxxxxxx
+
+The other issue is that, while isotropy is required from the perspective of “Light speed constancy”, it must be anisotropic from the perspective of “spin”. 
+As mentioned above, the magnetic moment due to electron spin can change depending on how it is observed. 
+However, if it is observed to be pointing upward, subsequent observation of the magnetic moment in the up-down direction will again observe it as pointing upward. 
+This suggests that electrons have some kind of anisotropy.
+
+Therefore, we allow partial disruption of the orthogonal relationship between the three rotation axes. 
+Also, up until now, we have considered the rotation of a rotation vector or a rotation vector pair as the rotation of a point with no size, but we will now consider the rotation vector as a rotation moment and take into account the size of the rotation (the radius of the rotation moment).
+First, we create two unit circles on mutually orthogonal planes, with each circle centered on the other. 
+This is called a Hopf link. 
+
+
+![image_ch9_fig5-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-5.png)
+
+Fig. 5-5 xxxxxxx
+
+The rotation axes of these two circles are considered to be the x-axis and the y-axis rotation vectors in R-space theory, and they precess due to each other's influence, forming a rotation vector pair. 
+The resultant rotation vector of this rotation vector pair and the z-axis rotation vector form a further Hopf link.
+ In this case, the resultant rotation vector of the x-axis  and the y-axis rotation vectors is √2 times the x-axis and y-axis rotation vectors, because the x and y axes are orthogonal (Pythagoras' theorem). 
+Therefore, to balance with the z-axis rotation vector, the radius of the circle of z-axis is set to √2 times the unit circle.
+
+This new rotation vector pair model is called the Hopf link rotation vector pair model. 
+The rotation vector pair of the x-axis and y-axis components is called the minor link, and the resultant rotation vector of the x-axis and y-axis components and the z-axis component is called the major link. 
+
+![image_ch9_fig5-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-6.png)
+
+Fig. 5-6 xxxxxxx
+
+The combination of the rotation axes that make up the minor link and major link cannot be stabilized due to thermal vibration, and is constantly swapped. 
+(As explained in the next section, the Hopf link expands and contracts like a spring, so the relationship between the major link and minor link is constantly swapped as the size of the link oscillates.)
+In this Hopf link rotating vector pair model, although there is some disturbance in the orthogonal relationship between the x-axis component, y-axis component, and z-axis component, all axes precess at an angle of 45 degrees, so it is isotropic from the viewpoint of the constancy of the speed of light, but is anisotropic from the viewpoint of the magnetic moment because the radius of rotation of the Major link is large.
+
+The Stern–Gerlach experiment using this Hopf link rotation vector pair model can be explained as follows:
+In the absence of a magnetic field, the relationship between the major link and minor link is constantly swapped, but when a magnetic field is applied in the vertical direction, the major link aligns with the magnetic field. 
+It is then pulled upward or downward depending on the direction of rotation (clockwise or counterclockwise). 
+
+![image_ch9_fig5-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-7.png)
+
+Fig. 5-7 xxxxxxx
+
+The orientation of the major link is maintained unless an external force (measurement, electromagnetic radiation, etc.) is applied. 
+Therefore, if a magnetic field is subsequently applied in the vertical direction and measurements are taken, the spin direction measured will be the same as the initial spin direction. 
+
+![image_ch9_fig5-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-8.png)
+
+Fig. 5-8 xxxxxxx
+
+If a magnetic field is then applied in the horizontal direction and observations are made, an external force(a magnetic field) is applied, which disrupts the combination of rotation vectors and causes the major link to be reconstructed in the horizontal direction, so the spin is now observed in the left-right direction.
+
+![image_ch9_fig5-9](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-9.png)
+
+Fig. 5-9 xxxxxxx
+
+If a magnetic field is then applied in the horizontal direction and observations are made, an external force(a magnetic field) is applied, which disrupts the combination of rotation vectors and causes the major link to be reconstructed in the horizontal direction, so the spin is now observed in the left-right direction.
+
+![image_ch9_fig5-10](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-10.png)
+
+Fig. 5-10 xxxxxxx
+
+Additionally, the reason why particles are attracted to the upper or lower side depending on the direction of rotation (clockwise or counterclockwise) can be explained as follows. 
+In R-space theory, interactions between charged particles occur when the phases of the elementary particles collide and invert, as described in Chapter 6. 
+When two phase components (two rotation axis components) collide, the result is negative (-) * negative (-) = positive (+), and when three phase components (three rotation axis components) collide, the result is negative (-) * negative (-) * negative (-) = negative (-).
+
+![image_ch9_fig5-11](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-11.png)
+
+Fig. 5-11 xxxxxxx
+
+Since the source of a magnetic field is electron spin, the state in which a magnetic field is applied to electrons can be said to be an interaction between electrons with aligned spin axes. 
+If the rotational directions of the electron spins are the same, the spins cancel each other out, with one rotation axis component canceling out, resulting in an attractive force as each electron sees only two phase components of the other. 
+If the rotational directions of the electron spins are opposite, the spins do not cancel out, resulting in a repulsive force as each electron sees two phase components of the other.
+
+![image_ch9_fig5-12](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-12.png)
+
+Fig. 5-12 xxxxxxx
+
+Furthermore, since the rotation vector pair of the minor link that rotates on the circumference of the major link has two axes (two phase components), if we think of it as a rotating positive charge, then this is consistent with the Ampere force in classical physics, where currents flowing in the same direction exert an attractive force, and currents flowing in the opposite direction exert a repulsive force.
+In addition, in a normal state, the direction of each electron spin changes randomly due to thermal vibration, etc., so three phase components are visible to each other and it is thought that a repulsive force is always present.
+
+![image_ch9_fig5-13](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-13.png)
+
+Fig. 5-13 xxxxxxx
+
+It was explained that this Hopf link rotation vector pair model is composed of rotation vectors of three axes, but these three rotation axes are simply represented as basis vectors. 
+Vectors that are not bases can be expressed as combinations of basis vectors. If we consider the Hopf link as rotation vectors in all directions, it becomes a Hopf fibration. 
+A Hopf fibration is a decomposition of a three-dimensional sphere (S3) into "countless circles" and mapping them onto a two-dimensional sphere, and SU(2) symmetry, as mentioned above, is a "complex rotation of a sphere" and is equivalent to S3.
+
+![image_ch9_fig5-14](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-14.png)
+
+Fig. 5-14 xxxxxxx
+
+In quantum mechanics, the quantum of a spin 1/2 particle such as an electron is represented by a two-component spinor (Pauli spinor). 
+A two-component spinor is a two-dimensional complex vector composed of two complex numbers. 
+If complex numbers are thought of as representing rotations, then a two-component spinor can be thought of as two rotations. 
+In this new rotating vector pair model, it is composed of three rotation components (and their precessions). 
+
+![image_ch9_fig5-15](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-15.png)
+
+Fig. 5-15 xxxxxxx
+
+(Try xxxxxxxxx at https://github.com/marukatsutech/poincare_klein_disk for Fig 5-15.)
+
+However, if the rotating vector pair that makes up the minor link can only be observed as a resultant rotating vector, then the two rotation elements can be expressed as a spinor composed of two complex numbers.
+As described above, the new rotating vector pair model, the Hopf link rotating vector pair model, appears to be consistent with the spin transformation (U(1) transformation) and SU(2) symmetry.
+
+![image_ch9_fig5-16](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-16.png)
+
+Fig. 5-16 xxxxxxx
+
+## 6. Generation of elementary particles
+Before considering the weak force, which involves the transformation of elementary particle types, we take one more step and consider the generations of elementary particles.
+Electrons, neutrinos, and quarks have three pairs of elementary particles that have the same charge and spin but different masses, and these are called generations. 
+In R-space theory, the generation of elementary particles could not be explained, but by incorporating the structure of a Hopf link into this rotation vector pair and giving it a size, it can be explained as follows.
+
+![image_ch9_fig6-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-1.png)
+
+Fig. 6-1 xxxxxxx
+
+The Hopf link rotation vector pair model has a size, as mentioned in the previous section. 
+We can think of this size as being expandable so that the combination of the minor link and major link can change. 
+Furthermore, if we consider that space-time tends to suppress the size of the Hopf link rotation vector pair in order to stabilize it, then we can think of it as having a potential. 
+If we think of rotation as vibration, then vibration under the potential will be quantized.
+
+![image_ch9_fig6-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-2.png)
+
+Fig. 6-2 xxxxxxx
+
+The rotation of the minor link is considered to be a vibration, and there is a minimum period for this vibration (rotation) to be valid. 
+For the major link to change size and for vibration to be stable along its circumference, the circumference must be an integer multiple of the width of the minor link's vibration period. 
+(This is a relationship similar to the Bohr-de Broglie model, which describes an electron orbiting an atomic nucleus.)
+
+![image_ch9_fig6-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-3.png)
+
+Fig. 6-3 xxxxxxx
+
+(Try xxxxxxxxx at https://github.com/marukatsutech/poincare_klein_disk for Fig 6-3.)
+
+As the size of the major link increases, a force acts to return it to its original state.
+If this force is considered proportional to the circumference of the major link, it can be thought of as a harmonic oscillator driven by the restoring force of a spring, and energy levels are quantized and generated. 
+Since energy is equivalent to mass, this principle generates generations (mass differences) among elementary particles.
+
+![image_ch9_fig6-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-4.png)
+
+Fig. 6-4 xxxxxxx
+
+Furthermore, in R-space theory, mass is considered to be rotation itself, as explained in Chapter 7.
+The reason why there are only three generations is thought to be because there is a limit to the size of the major link (the spring's restoring force) (if the energy exceeds this, space-time cannot withstand it and it is transformed into a different combination of rotations = multiple elementary particles).
+
+![image_ch9_fig6-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6-5.png)
+
+Fig. 6-5 xxxxxxx
+
+## 7. Weak interactions
+The weak interaction (weak force) appears in radioactive phenomena such as beta decay, where a W-boson is generated when a neutron changes into a proton, and this W-boson decays into an electron and an anti-electron neutrino. 
+In the Standard Model, electrons and neutrinos have weak isospin, and electrons and anti-electron neutrinos are transformed through an SU(2)L transformation. (The "L" means left-handed; right-handed electrons do not have weak isospin and are therefore not affected by the weak interaction.) 
+
+![image_ch9_fig7-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-1.png)
+
+Fig. 7-1 xxxxxxx
+
+The W-boson is generated due to the conservation laws resulting from this SU(2)L symmetry.
+The formula for the SU(2)L transformation is as follows.
+The SU(2)L transformation is similar to rotation, but the object being rotated is a doublet representing the electron and neutrino fields (wave functions), which is a complex vector with eight components expressed as complex numbers.
+ The eight components are four components (up/down spin, particle/antiparticle) x two types of elementary particles (electrons and neutrinos).
+
+![image_ch9_fig7-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-2.png)
+
+Fig. 7-2 xxxxxxx
+
+Electrons and neutrinos have very different physical quantities. 
+Neutrinos have a very small mass, no electric charge, and do not interact electromagnetically. 
+As a result, neutrinos hardly react with other matter, and pass through the Earth, the Sun, and even our own bodies without any effect. 
+Also, because their mass is so small, this is similar to how photons pass through each other without interacting with each other (except for collisions between gamma rays). 
+Also, because their mass is so small, they can travel at speeds close to the speed of light.
+
+Neutrinos are something between photons and electrons. 
+We consider them to be something between the photon model (rotation vector) described in Section 3 and the electron model (Hopf link rotation  vector pair) described in Sections 5 and 6.
+
+![image_ch9_fig7-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-3.png)
+
+Fig. 7-3 xxxxxxx
+
+The precession angle of the rotating vector pair representing the electron is 45 degrees, but the precession angle of the neutrino is thought to be much smaller than 45 degrees. 
+This is because, in R-space theory, the precession angle of the rotating vector is related to the arrival speed of gauge particles such as photons. 
+As explained in previous chapters, the precession angle of the Hopf link rotating vector pair representing the electron is 45 degrees because the photon, a gauge particle relative to the electron, interacts at a 45-degree angle in Minkowski space, which is the projection of R-space. 
+
+![image_ch9_fig7-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-4.png)
+
+Fig. 7-4 xxxxxxx
+
+The interaction at a 45-degree angle in Minkowski space means that the interaction occurs at the speed of light. 
+The weak interaction only interacts over a very short distance. 
+This means that the arrival speed of the W boson, a gauge particle, is slow, and it interacts at a small angle in Minkowski space, which means that the precession angle is small. 
+(In the Standard Model, the W boson, a gauge particle of the weak force, is considered to have a short arrival distance due to its heavy mass.)
+
+![image_ch9_fig7-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-5.png)
+
+Fig. 7-5 xxxxxxx
+
+Neutrinos also have a property known as neutrino oscillation. 
+There are three generations of neutrinos: electron neutrinos, muon neutrinos, and tau neutrinos, and they change (oscillate) between these three generations. 
+The three neutrino generations correspond to electrons, muons, and tau particles, respectively.
+Taking this neutrino oscillation into account, the precession angle of neutrinos mentioned above can be considered to be changing (oscillating).
+
+![image_ch9_fig7-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-6.png)
+
+Fig. 7-6 xxxxxxx
+
+Since the three axes cannot precess while remaining orthogonal, the precession angles of the three axes are changed to balance the equation.
+From these facts, neutrinos can be considered to be in a state where their rotation vectors influence each other and precess, but they lack the rotational energy (rotational speed) to form a Hopf link rotation vector pair with a stable 45-degree precession.
+
+![image_ch9_fig7-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-7.png)
+
+Fig. 7-7 xxxxxxx
+
+In beta decay, where the weak interaction is active, the W-boson decays into an electron and an anti-electron neutrino.
+From the perspective of SU(2)L symmetry, the W-boson is a gauge particle necessary to maintain symmetry when an electron and an anti-electron neutrino transform, and is therefore the difference between the electron and the anti-electron neutrino. 
+It is a set of rotation vectors that combine the rotational components of the electron neutrino, which is the antiparticle of the electron and the anti-electron neutrino. 
+
+![image_ch9_fig7-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-8.png)
+
+Fig. 7-8 xxxxxxx
+
+Since the W-boson is a gauge particle with spin 1, it is thought that the precession is canceled out by the combined rotation of the electron and the electron neutrino. 
+And because the W-boson is in an unstable state with the rotational components of two elementary particles, it decays into an electron and an anti-electron neutrino in a short time.
+
+![image_ch9_fig7-9](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-9.png)
+
+Fig. 7-9 xxxxxxx
+
+Neutrinos come in generations such as electron neutrinos, muon neutrinos, and tau neutrinos, but the angle of precession of neutrinos oscillates, and no generation is stable. 
+The particles that convert between them, such as electrons, muons, and tau particles, have their own generations, and are in discrete oscillating states due to the mechanism explained in the previous section. 
+When these corresponding oscillating states are converted between them, they are observed as neutrino generations.
+
+![image_ch9_fig7-10](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-10.png)
+
+Fig. 7-10 xxxxxxx
+
+So far, we have defined elementary particles by whether they precess or not, and the angle of precession. 
+The precession angle of the photon, which is a gauge particle, is zero degrees (no precession). 
+The precession angle of neutrinos oscillates at 45 degrees or less. 
+The precession angle of charged particles such as electrons is 45 degrees.
+ The precession angle of the W boson, which is a gauge particle and has a charge, is 45 degrees, but the apparent precession angle is canceled out by the precession component of the neutrino, making it zero degrees. 
+
+From a symmetry perspective, then, there should be a particle with a precession angle of 45 degrees or more. 
+This is thought to be the Z boson.
+Z bosons are produced when neutrinos collide with other elementary particles, a process known as neutrino scattering. 
+Z bosons are bosons with zero charge and spin 1. They have a heavy mass and a short lifetime, decaying quickly into particles and antiparticles such as electrons and positrons. 
+
+![image_ch9_fig7-11](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-11.png)
+
+Fig. 7-11 xxxxxxx
+
+Z bosons are gauge particles that transmit forces like photons, but because they have mass, they also have spin, but the rotational components corresponding to the particle and antiparticle cancel each other out, so they are thought to behave like spin 1. 
+Furthermore, because there is a range of Z boson masses (they decay into various particle and antiparticle pairs), the precession angle of Z bosons is thought to oscillate like that of neutrinos. 
+Furthermore, particles with a precession angle of 90 degrees are also conceivable. These particles are thought to be axions, or dark matter.
+
+![image_ch9_fig7-12](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-12.png)
+
+Fig. 7-12 xxxxxxx
+
+As described above, leptons and their gauge particles can be explained in terms of rotation vectors and their precession. 
+SU(2) transformations are the rotation of complex vectors, which is the same as the rotation of a rotation vector. R-space theory is consistent with SU(2) symmetry and can also explain its mechanism (internal structure).
+However, in the Standard Model, the weak interaction is more accurately explained by SU(2) L-symmetry, not SU(2). 
+This L is left-handed, and this world distinguishes between right-handed and left-handed. This is called parity symmetry violation.
+Next, we'll consider this parity symmetry violation.
+
+## 8. Parity violation in weak interactions
+SU(2)L symmetry only affects left-handed elementary particles. 
+In the Standard Model, this is explained by the violation of parity symmetry.
+This phenomenon manifests in weak interactions such as beta decay. 
+Experiments have shown that electrons emitted during beta decay only fly in a specific direction (opposite to their spin). 
+It was previously thought that symmetry in the laws of physics meant that physical phenomena would not change even if the left and right sides were swapped, but our world distinguishes between right-handed and left-handed.
+
+In the Standard Model, elementary particles are represented by spinor-like complex vectors (two complex numbers). 
+Complex numbers represent rotations, and since two rotations can be considered, one right-handed and one left-handed, there are four possible 2x2 combinations. 
+
+![image_ch9_fig8-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig8-1.png)
+
+Fig. 8-1 xxxxxxx
+
+Applied to R-space theory, this results in a combination of a major link and a minor link. The minor link moves along the circumference of the major link. 
+The rotation of the minor link is the resultant vector of orthogonal rotation vectors, so if the direction of the minor link's movement is opposite to that of the major link, the movement due to the minor link's rotation is canceled out.
+
+![image_ch9_fig8-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig8-2.png)
+
+Fig. 8-2 xxxxxxx
+
+Therefore, it can be seen that four sets of symmetries are broken.
+In the Standard Model, elementary particles are considered to be sizeless points, but in R-space theory, they have size and internal structure, so the cause of the symmetry breaking becomes clear.
+As explained above, the lepton model in R-space theory is consistent with SU(2)L symmetry.
+
+## 9. SU(3) and Hopf link rotation vector pairs
+Mathematically, SU(3) is a "Special Unitary group of degree 3", a collection of 3x3 complex matrices with determinant 1 that are unitary matrices. 
+If U(1) is a "circle" and SU(2) is a "rotation of a sphere", then SU(3) has an additional dimension and is a symmetry that "allows three states to be freely interchanged".
+The object to be rotated (transformed) is a vector of three complex numbers called a color triplet, which corresponds to the color charge of a quark. 
+As explained so far, complex numbers represent rotation, so this is three rotations.
+
+![image_ch9_fig9-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-1.png)
+
+Fig. 9-1 xxxxxxx
+
+However, in R-space theory, there is no equivalent to color charge, and as explained in Chapters 5 and 6, protons and neutrons are composed of three quanta equivalent to electrons that share their respective rotation axes. 
+This sharing corresponds to color confinement, and the quanta equivalent to electrons behave as up or down quarks depending on how they share the rotation axis.
+Since R-space theory does not have color charge, before considering its relationship to SU(3), let us reconsider the models of protons and neutrons based on the idea of ​​the Hopf link rotation vector pair explained in Section 5.
+
+In the quantum model explained in Chapter 6, three quanta have four (four-dimensional) rotation axes, including the time axis, as shown in the following figure. 
+These rotation axes are then shared, and the shared axes become like electrons, resulting in color confinement.
+In R-space theory, as explained in Chapter 8, time is the rotation of the rotation axes of the x-axis, y-axis, and z-axis components themselves that constitutes space-time, so the time axis is unnecessary. 
+
+![image_ch9_fig9-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-2.png)
+
+Fig. 9-2 xxxxxxx
+
+And when we apply the Hopf link rotation vector pairs that we have explained so far, we get the following figure.
+
+![image_ch9_fig9-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-3.png)
+
+Fig. 9-3 xxxxxxx
+
+Quanta equivalent to three electrons provide the axes of each major link, and these three axes become electron-like (we will call this a shared quantum). 
+The quantum that provided one axis as the major link of the shared quantum behaves as a down quark together with the shared quantum (since the shared quantum is a three-axis, it has a negative charge of 3/3, and the donating quantum is a two-axis, so it has a positive charge of 2/3, for a total negative charge of 1/3). 
+The remaining two quanta each provide one axis to the shared quantum, so they become two-axis and behave as up quarks with a positive charge of +2/3. This shared quantum acts as the color confinement of the quark.
+
+Next, regarding neutrons, in Chapter 6 I explained that the time axis is provided by the shared quantum between the two quanta, so that the shared quantum has an electric charge equivalent to two electrons, and that this charge makes it neutral (zero charge in UDD).
+However, if there is no time axis (the essence of quanta and space-time is only the rotation of three axes), how should we think about this? This can be explained using SU(2)L symmetry, which was explained in Section 7.
+
+![image_ch9_fig9-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-4.png)
+
+Fig. 9-4 xxxxxxx
+
+When a neutron changes into a proton through beta decay, it emits a W-boson. 
+As mentioned in Section 7, the W-boson has an electron and a neutrino component. This neutrino component is the second shared quantum.
+ Neutrinos can be converted into electrons, and the rotation component corresponding to this neutrino behaves like an electron due to the rotation of the entire neutron.
+
+![image_ch9_fig9-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-5.png)
+
+Fig. 9-5 xxxxxxx
+
+As described above, quarks can be explained by the sharing of Hopf link rotation vector pairs and their rotation axes. 
+The color charge (color triplet) of SU(3) symmetry indicates the three axes of the shared quantum, and the 3x3 complex matrix of the SU(3) transformation indicates the transformation of the three axes of the three quanta.
+
+![image_ch9_fig9-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-6.png)
+
+Fig. 9-6 xxxxxxx
+
+This model (the shared electron model) also explains the strong force acting on quarks. 
+As explained in Section 6 about generations, the size of the Hopf link of a quantum (in this case, the shared electron) expands and contracts like a spring. This corresponds to a gluon. 
+The Hopf link is circular, and changes in size linearly, like the repulsive force of a spring. 
+
+![image_ch9_fig9-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-7.png)
+
+Fig. 9-7 xxxxxxx
+
+As the energy increases (the rotation speed increases), the size of the link increases and the repulsive force trying to return to its original shape also increases linearly. 
+This is consistent with the force exerted by the gluon (which is proportional to the distance, not inversely proportional to the square of the distance, as is the Coulomb force of electric charge). 
+When the size of the Hopf link reaches its limit, like an overstretched spring breaking, the Hopf link can no longer maintain its structure and decays into a different elementary particle.
+
+Furthermore, based on what has been explained so far, as the rotation speed (energy) of a rotating vector increases, the rotating vector precesses, the rotating vector pair, and the shared quantum combine into three quanta. 
+This corresponds to photon → electron → proton or neutron, but this mechanism does not result in photon → electron → antiproton or antineutron. 
+Furthermore, as explained in Section 8, electrons have restrictions on the combination of the rotation direction of the minor link and the rotation direction of the major link, breaking symmetry. 
+
+Since the rotation direction cannot be reversed, antielectrons and antiprotons do not generally appear. 
+Antiparticles appear as time reversals in Minkowski space, which is a projection of R-space. 
+Therefore, there is little antimatter in this universe.
+
+## 10. R-space theory and the Higgs field
+The Higgs boson, also known as the God particle, is a particle that gives elementary particles mass. 
+In the Standard Model, force-carrying gauge particles like photons, W bosons, and Z bosons are required to be massless. 
+However, in reality, W and Z bosons possess mass, and so the Higgs field—and the Higgs boson itself, which is observed as a particle—were necessary to provide that mass. 
+The Higgs boson was then discovered experimentally (though not by direct observation; rather, protons were collided, generating a Higgs boson with the resulting energy. 
+
+![image_ch9_fig10-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig10-1.png)
+
+Fig. 10-1 xxxxxxx
+
+The pattern of elementary particles that decayed matched the theoretical decay of the Higgs boson). 
+The Higgs field has viscosity, clinging to quanta that normally travel at the speed of light, creating resistance and slowing their movement, which is how mass is achieved. 
+The magnitude of this viscosity varies from particle to particle. The Higgs field affects elementary particles differently, resulting in differences in their masses. 
+However, it is unclear why the Higgs field affects each particle differently.
+
+In R-space theory, as explained in Chapter 7, rotation itself is mass. 
+And as explained in Chapter 8, when a photon interacts with a fermion, the phase (rotation component) in R-space is limited by the precession of the fermion's rotation vector, so the speed of light remains constant. 
+As a result, the observation results are projected onto the space we perceive (Minkowski space) (equivalent to a Boost transformation). 
+The phase of the projected rotation vector is proportional to the first power of the distance if the rotation vector does not precess, and proportional to the square of the distance if the rotation vector precesses. 
+
+![image_ch9_fig10-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig10-2.png)
+
+Fig. 10-2 xxxxxxx
+
+Therefore, it is observed as a quantum wave like a wave function. 
+In R-space theory, the only elementary particle that does not precess is the photon. Therefore, the W boson and Z boson, which precess, have mass.
+And a high rotation speed increases the density of the phase.
+ Because observation (interaction) operates within a certain width of spacetime, a high density weakens the influence of the interaction, resulting in less phase transformation. 
+A small change in phase means a small change in distance and a large mass.
+
+![image_ch9_fig10-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig10-3.png)
+
+Fig. 10-3 xxxxxxx
+
+Furthermore, quantum particles are observed probabilistically, and even heavy quanta can, although with a very small probability, travel far away in an instant. The R-space theory's explanation for this phenomenon is explained in Chapter 4.
+As described above, the R-space theory's rotation vector and Hopf link rotation vector pair model can explain the U(1) x SU(2) L x SU(3) symmetry and the types and generations of elementary particles. 
+The universe rotates naturally (stable) on three axes. As energy increases (the rotation speed increases), the rotation begins to deviate, the three axes twist, and a torus-like (donut-shaped) vortex forms. 
+
+With even higher energy, the vortex becomes even more complex. 
+The Higgs field is the force that suppresses this twisting (the force that tries to shorten the Hopf link). 
+The Higgs particle is a particle formed when space, energized by proton collisions, twists and acquires rotational energy. 
+The Higgs field is a property of space itself, and can be said to be a property of the R-aether in R-space theory.
+
+![image_ch9_fig10-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig10-4.png)
+
+Fig. 10-4 xxxxxxx
+
+## 11. Conclusions
+* All elementary particles are composed of a rotation vector, the R-aether rotating.
+* A photon is a composite rotation vector of three rotation vectors: the x-, y-, and the z-axis component.
+* If the rotation vector's rotation speed is high, the R-aether oscillates (expands and contracts), and begins an oscillatory precession. This is a neutrino.
+* If the rotation speed is even higher, the precession angle becomes 45 degrees, and the rotation vector forms a stable Hopf link rotation vector pair. This is an electron.
+* If the rotation speed is even higher, the R-aether stretches, the Hopf link widens, and the wave (rotation) quantization occurs due to the wave (rotation) relationship between the major link and minor link. This is the generation of elementary particles.
+* If the rotation speed is even higher, the precession angle becomes greater than 45 degrees, resulting in an oscillatory precession. This is the Z boson. However, in order to maintain the stability (symmetry) of the R-ether, it can only exist in a state where it pairs with the rotational component of an antiparticle, canceling out the precession, and therefore behaves as a gauge particle with zero precession. However, because it is not stable, it decays after a short time.
+* The W boson has a rotational component equivalent to that of an electron and neutrino, so it has charge and mass, but since the rotational components equivalent to that of an electron and neutrino cancel out, it behaves as a gauge particle.
+* If the rotation speed is even faster, the precession is 90 degrees. This is axion = dark matter.
+* If the rotation speed is even faster, the above precession does not hold (it cannot be more than 90 degrees), so a rotational vector equivalent to three more quanta forms the shared electron. These are the quarks that make up protons and neutrons.
+
+R-space theory started from the assertion that "light is a sphere" in order to explain the principle of the constancy of the speed of light in the theory of relativity, but has since gone on to encompass the workings of elementary particles and space itself.
+R-space theory can be considered an extension of Roger Penrose's twister theory, which states that space is created from light. 
+Furthermore, explaining the types of elementary particles through combinations of three-axis rotation vectors and their precession and Hopf links is also consistent with the position of superstring theory and composite particle theory, which states that elementary particles have an internal structure.
+
+Everything is just a different state of vortex (rotation). 
+The universe is rotating.
+
+
+We don't know what is rotating in R-space, but we think that the rotating energy itself forms space-time. 
+What should we call this rotating something? 
+Until the mid-19th century, scientists searched for a medium through which light could travel.
+ The rotating something is a little different from the image of light rippling, but if one aspect of rotation is vibration, it could be thought of as a wave. 
+Let's call this rotating something R-aether. 
+R is for rotation :-)
