@@ -1744,7 +1744,7 @@ In the Standard Model, electrons and neutrinos have weak isospin, and electrons 
 
 ![image_ch9_fig7-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-1.png)
 
-Fig. 7-1 xxxxxxx
+Fig. 7-1 Beta decay
 
 The W-boson is generated due to the conservation laws resulting from this SU(2)L symmetry.
 The formula for the SU(2)L transformation is as follows.
@@ -1753,7 +1753,7 @@ The SU(2)L transformation is similar to rotation, but the object being rotated i
 
 ![image_ch9_fig7-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-2.png)
 
-Fig. 7-2 xxxxxxx
+Fig. 7-2 SU(2)L transformation
 
 Electrons and neutrinos have very different physical quantities. 
 Neutrinos have a very small mass, no electric charge, and do not interact electromagnetically. 
@@ -1766,7 +1766,7 @@ We consider them to be something between the photon model (rotation vector) desc
 
 ![image_ch9_fig7-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-3.png)
 
-Fig. 7-3 xxxxxxx
+Fig. 7-3 Photon, Neutrino and electron
 
 The precession angle of the rotating vector pair representing the electron is 45 degrees, but the precession angle of the neutrino is thought to be much smaller than 45 degrees. 
 This is because, in R-space theory, the precession angle of the rotating vector is related to the arrival speed of gauge particles such as photons. 
@@ -1774,7 +1774,7 @@ As explained in previous chapters, the precession angle of the Hopf link rotatin
 
 ![image_ch9_fig7-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-4.png)
 
-Fig. 7-4 xxxxxxx
+Fig. 7-4 Interaction of photon and electron in Minkowski space
 
 The interaction at a 45-degree angle in Minkowski space means that the interaction occurs at the speed of light. 
 The weak interaction only interacts over a very short distance. 
@@ -1783,7 +1783,7 @@ This means that the arrival speed of the W boson, a gauge particle, is slow, and
 
 ![image_ch9_fig7-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-5.png)
 
-Fig. 7-5 xxxxxxx
+Fig. 7-5 Interaction of W boson and neutrino in Minkowski space
 
 Neutrinos also have a property known as neutrino oscillation. 
 There are three generations of neutrinos: electron neutrinos, muon neutrinos, and tau neutrinos, and they change (oscillate) between these three generations. 
@@ -1792,14 +1792,14 @@ Taking this neutrino oscillation into account, the precession angle of neutrinos
 
 ![image_ch9_fig7-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-6.png)
 
-Fig. 7-6 xxxxxxx
+Fig. 7-6 Neutrino oscillation
 
 Since the three axes cannot precess while remaining orthogonal, the precession angles of the three axes are changed to balance the equation.
 From these facts, neutrinos can be considered to be in a state where their rotation vectors influence each other and precess, but they lack the rotational energy (rotational speed) to form a Hopf link rotation vector pair with a stable 45-degree precession.
 
 ![image_ch9_fig7-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-7.png)
 
-Fig. 7-7 xxxxxxx
+Fig. 7-7 Vibrated precession of neutrino
 
 In beta decay, where the weak interaction is active, the W-boson decays into an electron and an anti-electron neutrino.
 From the perspective of SU(2)L symmetry, the W-boson is a gauge particle necessary to maintain symmetry when an electron and an anti-electron neutrino transform, and is therefore the difference between the electron and the anti-electron neutrino. 
@@ -1807,14 +1807,14 @@ It is a set of rotation vectors that combine the rotational components of the el
 
 ![image_ch9_fig7-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-8.png)
 
-Fig. 7-8 xxxxxxx
+Fig. 7-8 Interaction in symmetry
 
 Since the W-boson is a gauge particle with spin 1, it is thought that the precession is canceled out by the combined rotation of the electron and the electron neutrino. 
 And because the W-boson is in an unstable state with the rotational components of two elementary particles, it decays into an electron and an anti-electron neutrino in a short time.
 
 ![image_ch9_fig7-9](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-9.png)
 
-Fig. 7-9 xxxxxxx
+Fig. 7-9 W boson model
 
 Neutrinos come in generations such as electron neutrinos, muon neutrinos, and tau neutrinos, but the angle of precession of neutrinos oscillates, and no generation is stable. 
 The particles that convert between them, such as electrons, muons, and tau particles, have their own generations, and are in discrete oscillating states due to the mechanism explained in the previous section. 
@@ -1822,13 +1822,13 @@ When these corresponding oscillating states are converted between them, they are
 
 ![image_ch9_fig7-10](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-10.png)
 
-Fig. 7-10 xxxxxxx
+Fig. 7-10 Generations of neutrinos
 
 So far, we have defined elementary particles by whether they precess or not, and the angle of precession. 
 The precession angle of the photon, which is a gauge particle, is zero degrees (no precession). 
 The precession angle of neutrinos oscillates at 45 degrees or less. 
 The precession angle of charged particles such as electrons is 45 degrees.
- The precession angle of the W boson, which is a gauge particle and has a charge, is 45 degrees, but the apparent precession angle is canceled out by the precession component of the neutrino, making it zero degrees. 
+The precession angle of the W boson, which is a gauge particle and has a charge, is 45 degrees, but the apparent precession angle is canceled out by the precession component of the neutrino, making it zero degrees. 
 
 From a symmetry perspective, then, there should be a particle with a precession angle of 45 degrees or more. 
 This is thought to be the Z boson.
@@ -1837,7 +1837,7 @@ Z bosons are bosons with zero charge and spin 1. They have a heavy mass and a sh
 
 ![image_ch9_fig7-11](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-11.png)
 
-Fig. 7-11 xxxxxxx
+Fig. 7-11 Precession angles of elementary particles
 
 Z bosons are gauge particles that transmit forces like photons, but because they have mass, they also have spin, but the rotational components corresponding to the particle and antiparticle cancel each other out, so they are thought to behave like spin 1. 
 Furthermore, because there is a range of Z boson masses (they decay into various particle and antiparticle pairs), the precession angle of Z bosons is thought to oscillate like that of neutrinos. 
@@ -1845,7 +1845,7 @@ Furthermore, particles with a precession angle of 90 degrees are also conceivabl
 
 ![image_ch9_fig7-12](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig7-12.png)
 
-Fig. 7-12 xxxxxxx
+Fig. 7-12 Z boson and axion
 
 As described above, leptons and their gauge particles can be explained in terms of rotation vectors and their precession. 
 SU(2) transformations are the rotation of complex vectors, which is the same as the rotation of a rotation vector. R-space theory is consistent with SU(2) symmetry and can also explain its mechanism (internal structure).
