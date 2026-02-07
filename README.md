@@ -2014,6 +2014,7 @@ R-space theory started from the assertion that "light is a sphere" in order to e
 R-space theory can be considered an extension of Roger Penrose's twister theory, which states that space is created from light. 
 Furthermore, explaining the types of elementary particles through combinations of three-axis rotation vectors and their precession and Hopf links is also consistent with the position of superstring theory and composite particle theory, which states that elementary particles have an internal structure.
 
+
 Everything is just a different state of vortex (rotation). 
 The universe is rotating.
 
