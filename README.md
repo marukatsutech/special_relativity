@@ -1960,7 +1960,7 @@ The Higgs boson was then discovered experimentally (though not by direct observa
 
 ![image_ch9_fig10-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig10-1.png)
 
-Fig. 10-1 xxxxxxx
+Fig. 10-1 Higgs boson
 
 The pattern of elementary particles that decayed matched the theoretical decay of the Higgs boson). 
 The Higgs field has viscosity, clinging to quanta that normally travel at the speed of light, creating resistance and slowing their movement, which is how mass is achieved. 
@@ -1972,9 +1972,9 @@ And as explained in Chapter 8, when a photon interacts with a fermion, the phase
 As a result, the observation results are projected onto the space we perceive (Minkowski space) (equivalent to a Boost transformation). 
 The phase of the projected rotation vector is proportional to the first power of the distance if the rotation vector does not precess, and proportional to the square of the distance if the rotation vector precesses. 
 
-![image_ch9_fig10-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig10-2.png)
-
-Fig. 10-2 xxxxxxx
+![image_ch9_fig10-2a](https://github.com/marukatsutech/special_relativity/raw/main/image_ch7_fig3-4.png)
+![image_ch9_fig10-2b](https://github.com/marukatsutech/special_relativity/raw/main/image_ch7_fig3-5.png)
+Fig. 10-2 Projection path of rotation vector pair
 
 Therefore, it is observed as a quantum wave like a wave function. 
 In R-space theory, the only elementary particle that does not precess is the photon. Therefore, the W boson and Z boson, which precess, have mass.
@@ -1984,20 +1984,24 @@ A small change in phase means a small change in distance and a large mass.
 
 ![image_ch9_fig10-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig10-3.png)
 
-Fig. 10-3 xxxxxxx
+Fig. 10-3 Density of a rotation
 
 Furthermore, quantum particles are observed probabilistically, and even heavy quanta can, although with a very small probability, travel far away in an instant. The R-space theory's explanation for this phenomenon is explained in Chapter 4.
 As described above, the R-space theory's rotation vector and Hopf link rotation vector pair model can explain the U(1) x SU(2) L x SU(3) symmetry and the types and generations of elementary particles. 
 The universe rotates naturally (stable) on three axes. As energy increases (the rotation speed increases), the rotation begins to deviate, the three axes twist, and a torus-like (donut-shaped) vortex forms. 
+
+![image_ch9_fig10-4](https://github.com/marukatsutech/special_relativity/raw/main/image_ch4_fig3-3.png)
+
+Fig. 10-4 Probability of catching ant
 
 With even higher energy, the vortex becomes even more complex. 
 The Higgs field is the force that suppresses this twisting (the force that tries to shorten the Hopf link). 
 The Higgs particle is a particle formed when space, energized by proton collisions, twists and acquires rotational energy. 
 The Higgs field is a property of space itself, and can be said to be a property of the R-aether in R-space theory.
 
-![image_ch9_fig10-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig10-4.png)
+![image_ch9_fig10-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig10-5.png)
 
-Fig. 10-4 xxxxxxx
+Fig. 10-5 Higgs field and Higgs boson
 
 ## 11. Conclusions
 * All elementary particles are composed of a rotation vector, the R-aether rotating.
