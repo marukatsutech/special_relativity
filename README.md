@@ -1557,7 +1557,7 @@ However, although electrons have an electric charge, it is not known how electro
 
 ![image_ch9_fig5-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-1.png)
 
-Fig. 5-1 xxxxxxx
+Fig. 5-1 Magnetic moment of an electromagnet
 
 The magnetic moment arising from the electron’s spin has been confirmed experimentally by the Stern–Gerlach experiment. 
 Curiously, although an electron (in practice, silver atoms are used in the experiment) behaves like a tiny magnet, its orientation is not “free to point anywhere.” 
@@ -1565,14 +1565,14 @@ Instead, only two outcomes are allowed relative to the direction of the applied 
 
 ![image_ch9_fig5-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-2.png)
 
-Fig. 5-2 xxxxxxx
+Fig. 5-2 Stern–Gerlach experiment
 
 Furthermore, if an electron that has been measured to be spin‑up is measured again along the same vertical axis, it will again be observed as spin‑up.
  However, if that same spin‑up electron is measured along a horizontal magnetic‑field direction, the spin does not simply disappear; instead, it is observed to be pointing left or right with equal probability of 50%.
 
 ![image_ch9_fig5-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-3.png)
 
-Fig. 5-3 xxxxxxx
+Fig. 5-3 Stern–Gerlach experiment
 
 In this way, the result of a spin measurement depends entirely on how the measurement is performed.  
 Spin may seem like a quantity with no concrete physical reality, yet the magnetic fields produced by magnets in the real world ultimately originate from the spins of electrons. 
@@ -1586,7 +1586,7 @@ If two axes are orthogonal, as shown in the figure, they can precess while maint
 
 ![image_ch9_fig5-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-4.png)
 
-Fig. 5-4 xxxxxxx
+Fig. 5-4 Precession of axes
 
 The other issue is that, while isotropy is required from the perspective of “Light speed constancy”, it must be anisotropic from the perspective of “spin”. 
 As mentioned above, the magnetic moment due to electron spin can change depending on how it is observed. 
@@ -1601,7 +1601,9 @@ This is called a Hopf link.
 
 ![image_ch9_fig5-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-5.png)
 
-Fig. 5-5 xxxxxxx
+Fig. 5-5 Hopf link
+
+(Try hopf_link_rotation_vector_pair.py at https://github.com/marukatsutech/quantum_path_integral_2/tree/master for Fig 5-5.)
 
 The rotation axes of these two circles are considered to be the x-axis and the y-axis rotation vectors in R-space theory, and they precess due to each other's influence, forming a rotation vector pair. 
 The resultant rotation vector of this rotation vector pair and the z-axis rotation vector form a further Hopf link.
@@ -1613,7 +1615,7 @@ The rotation vector pair of the x-axis and y-axis components is called the minor
 
 ![image_ch9_fig5-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-6.png)
 
-Fig. 5-6 xxxxxxx
+Fig. 5-6 Hopf link rotation vector pair
 
 The combination of the rotation axes that make up the minor link and major link cannot be stabilized due to thermal vibration, and is constantly swapped. 
 (As explained in the next section, the Hopf link expands and contracts like a spring, so the relationship between the major link and minor link is constantly swapped as the size of the link oscillates.)
@@ -1625,26 +1627,26 @@ It is then pulled upward or downward depending on the direction of rotation (clo
 
 ![image_ch9_fig5-7](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-7.png)
 
-Fig. 5-7 xxxxxxx
+Fig. 5-7 Hopf link rotation vector pair in Stern–Gerlach experiment
 
 The orientation of the major link is maintained unless an external force (measurement, electromagnetic radiation, etc.) is applied. 
 Therefore, if a magnetic field is subsequently applied in the vertical direction and measurements are taken, the spin direction measured will be the same as the initial spin direction. 
 
 ![image_ch9_fig5-8](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-8.png)
 
-Fig. 5-8 xxxxxxx
+Fig. 5-8 Hopf link rotation vector pair in Stern–Gerlach experiment
 
 If a magnetic field is then applied in the horizontal direction and observations are made, an external force(a magnetic field) is applied, which disrupts the combination of rotation vectors and causes the major link to be reconstructed in the horizontal direction, so the spin is now observed in the left-right direction.
 
 ![image_ch9_fig5-9](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-9.png)
 
-Fig. 5-9 xxxxxxx
+Fig. 5-9 Hopf link rotation vector pair in Stern–Gerlach experiment
 
 If a magnetic field is then applied in the horizontal direction and observations are made, an external force(a magnetic field) is applied, which disrupts the combination of rotation vectors and causes the major link to be reconstructed in the horizontal direction, so the spin is now observed in the left-right direction.
 
 ![image_ch9_fig5-10](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-10.png)
 
-Fig. 5-10 xxxxxxx
+Fig. 5-10 Hopf link rotation vector pair in Stern–Gerlach experiment
 
 Additionally, the reason why particles are attracted to the upper or lower side depending on the direction of rotation (clockwise or counterclockwise) can be explained as follows. 
 In R-space theory, interactions between charged particles occur when the phases of the elementary particles collide and invert, as described in Chapter 6. 
@@ -1652,7 +1654,7 @@ When two phase components (two rotation axis components) collide, the result is 
 
 ![image_ch9_fig5-11](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-11.png)
 
-Fig. 5-11 xxxxxxx
+Fig. 5-11 Relation of axes and interactions
 
 Since the source of a magnetic field is electron spin, the state in which a magnetic field is applied to electrons can be said to be an interaction between electrons with aligned spin axes. 
 If the rotational directions of the electron spins are the same, the spins cancel each other out, with one rotation axis component canceling out, resulting in an attractive force as each electron sees only two phase components of the other. 
@@ -1660,14 +1662,14 @@ If the rotational directions of the electron spins are opposite, the spins do no
 
 ![image_ch9_fig5-12](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-12.png)
 
-Fig. 5-12 xxxxxxx
+Fig. 5-12 Aligned spins
 
 Furthermore, since the rotation vector pair of the minor link that rotates on the circumference of the major link has two axes (two phase components), if we think of it as a rotating positive charge, then this is consistent with the Ampere force in classical physics, where currents flowing in the same direction exert an attractive force, and currents flowing in the opposite direction exert a repulsive force.
 In addition, in a normal state, the direction of each electron spin changes randomly due to thermal vibration, etc., so three phase components are visible to each other and it is thought that a repulsive force is always present.
 
 ![image_ch9_fig5-13](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-13.png)
 
-Fig. 5-13 xxxxxxx
+Fig. 5-13 Ampere force
 
 It was explained that this Hopf link rotation vector pair model is composed of rotation vectors of three axes, but these three rotation axes are simply represented as basis vectors. 
 Vectors that are not bases can be expressed as combinations of basis vectors. If we consider the Hopf link as rotation vectors in all directions, it becomes a Hopf fibration. 
@@ -1675,7 +1677,7 @@ A Hopf fibration is a decomposition of a three-dimensional sphere (S3) into "cou
 
 ![image_ch9_fig5-14](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-14.png)
 
-Fig. 5-14 xxxxxxx
+Fig. 5-14 Hopf fibration
 
 In quantum mechanics, the quantum of a spin 1/2 particle such as an electron is represented by a two-component spinor (Pauli spinor). 
 A two-component spinor is a two-dimensional complex vector composed of two complex numbers. 
@@ -1684,16 +1686,16 @@ In this new rotating vector pair model, it is composed of three rotation compone
 
 ![image_ch9_fig5-15](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-15.png)
 
-Fig. 5-15 xxxxxxx
+Fig. 5-15 Rotation and complex number
 
-(Try xxxxxxxxx at https://github.com/marukatsutech/poincare_klein_disk for Fig 5-15.)
+(Try complex_number.py at https://github.com/marukatsutech/complex_number for Fig 5-15.)
 
 However, if the rotating vector pair that makes up the minor link can only be observed as a resultant rotating vector, then the two rotation elements can be expressed as a spinor composed of two complex numbers.
 As described above, the new rotating vector pair model, the Hopf link rotating vector pair model, appears to be consistent with the spin transformation (U(1) transformation) and SU(2) symmetry.
 
 ![image_ch9_fig5-16](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-16.png)
 
-Fig. 5-16 xxxxxxx
+Fig. 5-16 spinor and Hopf link rotation vector pair
 
 ## 6. Generation of elementary particles
 Before considering the weak force, which involves the transformation of elementary particle types, we take one more step and consider the generations of elementary particles.
