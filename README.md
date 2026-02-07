@@ -1480,9 +1480,9 @@ Fig. 3-4 xxxxxxx
 In other words, the quantum is accelerated, and the observable physical quantities change accordingly. 
 To ensure that conservation laws are not violated, an electromagnetic potential (photons) must appear to compensate for this change.
 
-![image_ch9_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig3-5.png)
+![image_ch9_fig3-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch4_fig5-1.png)
 
-Fig. 3-5 xxxxxxx
+Fig. 3-5 Probability wave
 
 The familiar facts that accelerating electrons requires applying an electric field (i.e., supplying photons), and that synchrotron radiation is produced when the direction of an electron’s motion is bent (accelerated) by a magnetic field, both arise from the conservation laws associated with this U(1) symmetry.
 The following video shows how a gradient phase change is applied to the wave function representing the quantum.
@@ -1909,9 +1909,9 @@ Fig. 9-2 xxxxxxx
 
 And when we apply the Hopf link rotation vector pairs that we have explained so far, we get the following figure.
 
-![image_ch9_fig9-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-3.png)
+![image_ch9_fig9-3](https://github.com/marukatsutech/special_relativity/raw/main/image_ch6_fig6-1.png)
 
-Fig. 9-3 xxxxxxx
+Fig. 9-3 Protons model
 
 Quanta equivalent to three electrons provide the axes of each major link, and these three axes become electron-like (we will call this a shared quantum). 
 The quantum that provided one axis as the major link of the shared quantum behaves as a down quark together with the shared quantum (since the shared quantum is a three-axis, it has a negative charge of 3/3, and the donating quantum is a two-axis, so it has a positive charge of 2/3, for a total negative charge of 1/3). 
@@ -1920,7 +1920,7 @@ The remaining two quanta each provide one axis to the shared quantum, so they be
 Next, regarding neutrons, in Chapter 6 I explained that the time axis is provided by the shared quantum between the two quanta, so that the shared quantum has an electric charge equivalent to two electrons, and that this charge makes it neutral (zero charge in UDD).
 However, if there is no time axis (the essence of quanta and space-time is only the rotation of three axes), how should we think about this? This can be explained using SU(2)L symmetry, which was explained in Section 7.
 
-![image_ch9_fig9-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-4.png)
+![image_ch9_fig9-4](https://github.com/marukatsutech/special_relativity/raw/main/image_ch5_fig5-3.png)
 
 Fig. 9-4 xxxxxxx
 
@@ -1930,7 +1930,7 @@ As mentioned in Section 7, the W-boson has an electron and a neutrino component.
 
 ![image_ch9_fig9-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9-5.png)
 
-Fig. 9-5 xxxxxxx
+Fig. 9-5 Neutrons model
 
 As described above, quarks can be explained by the sharing of Hopf link rotation vector pairs and their rotation axes. 
 The color charge (color triplet) of SU(3) symmetry indicates the three axes of the shared quantum, and the 3x3 complex matrix of the SU(3) transformation indicates the transformation of the three axes of the three quanta.
