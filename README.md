@@ -1414,13 +1414,15 @@ Until the mid-19th century, scientists searched for a medium through which light
 Let's call this rotating something R-aether. 
 R is for rotation :-)
 
-# Chapter - 9. Rotation and Space-time
+# Chapter - 9. Symmetry and Elementary particles
 
 What is U(1) x SU(2) x SU(3) symmetry ?
 
 Watch my video for overview!
 
 [(https://youtu.be/B0nJmVNqZno)](https://youtu.be/B0nJmVNqZno)
+
+[(https://youtu.be/y1tEkmEck40)](https://youtu.be/y1tEkmEck40)
 
 ## 1. Introduction
 In previous chapters, we have considered that our universe is made up of R-space, with three orthogonal degrees of freedom for rotation.
@@ -1615,7 +1617,14 @@ The rotation vector pair of the x-axis and y-axis components is called the minor
 
 ![image_ch9_fig5-6](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-6.png)
 
-Fig. 5-6 Hopf link rotation vector pair
+Fig. 5-6 Hopf link rotation vector pairs
+
+![image_ch9_fig5-6a](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-6a.png)
+
+Fig. 5-6a Electron model with Hopf link rotation vector pairs
+
+(Try electron_model.py at https://github.com/marukatsutech/quantum_path_integral_2/tree/master for Fig 5-6a.)
+
 
 The combination of the rotation axes that make up the minor link and major link cannot be stabilized due to thermal vibration, and is constantly swapped. 
 (As explained in the next section, the Hopf link expands and contracts like a spring, so the relationship between the major link and minor link is constantly swapped as the size of the link oscillates.)
