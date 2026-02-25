@@ -1428,6 +1428,8 @@ Watch my video for overview!
 
 [(https://youtu.be/y1tEkmEck40)](https://youtu.be/y1tEkmEck40)
 
+[(https://youtu.be/XMLOcmly_s4)](https://youtu.be/XMLOcmly_s4)
+
 ## 1. Introduction
 In previous chapters, we have considered that our universe is made up of R-space, with three orthogonal degrees of freedom for rotation.
  These three orthogonal degrees of freedom influence each other, and as the rotation speed increases, the plane of rotation vibrates, causing each axis of rotation to precess. 
@@ -2047,15 +2049,15 @@ The mechanism of generation based on this Hopf link rotation vector pair model i
 
 ![image_ch9_fig6_1-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_1-1.png)
 
-Fig 6.1-1
+Fig 6.1-1 Electron model
 
 First, the rotational speeds of the rotation vectors of the x-axis, y-axis, and z-axis in generation 1 are used as the basis (the vector length of each axis is 1).
 
- In generation 1, the length of the arrow of the minor link's resultant rotation vector (yellow) is the composite of the x-axis and y-axis, so it is √2 (Pythagoras' theorem). 
+In generation 1, the length of the arrow of the minor link's resultant rotation vector (yellow) is the composite of the x-axis and y-axis, so it is √2 (Pythagoras' theorem). 
 
  ![image_ch9_fig6_1-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_1-2.png)
 
-Fig 6.1-2
+Fig 6.1-2 Size of vectors
 
 The length of the arrow of the major link's z-axis (blue) is the z-axis itself, so it is the same as the lengths of the x-axis and y-axis, = 1. 
 
@@ -2063,25 +2065,25 @@ Instead, the radius of the phase circle (equivalent to the arm length of the rot
 
 ![image_ch9_fig6_1-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_1-3.png)
 
-Fig 6.1-3
+Fig 6.1-3 Vector length as rotation moment
 
-As the generation increases (energy increases), the rotational energy of each axis also increases. 
+As the generation increases (energy increases), the rotational energy of each axis also increases.
 
-Because the minor link absorbs the rotational energy as rotation, the rotation of the x-axis and y-axis becomes faster, and the rotation of the resultant rotation vector (yellow) becomes faster accordingly (the length of the rotation vector becomes longer). 
+Because the minor link absorbs the rotational energy as rotation, the rotation of the x-axis and y-axis becomes faster, and the rotation of the resultant rotation vector (yellow) becomes faster accordingly (the length of the rotation vector becomes longer).
 
 On the other hand, the z-axis absorbs energy over the length of the arm (the radius of the phase circle) without changing the rotation speed.
 
 ![image_ch9_fig6_1-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_1-4.png)
 
-Fig 6.1-4
+Fig 6.1-4 Expansion of phase circle
 
-When the rotation speed is changed, as shown in the figure, if the change in the rotation phase of the resultant rotation vector (yellow) is an integer multiple of the phase circle on the z-axis, the locus of the phase circle (yellow) becomes closed and stable, as shown in the figure, but if it is not an integer multiple, the locus does not close. 
+When the rotation speed is changed, as shown in the figure, if the change in the rotation phase of the resultant rotation vector (yellow) is an integer multiple of the phase circle on the z-axis, the locus of the phase circle (yellow) becomes closed and stable, as shown in the figure, but if it is not an integer multiple, the locus does not close.
 
 Therefore, a stable state is only achieved when the rotation speed is an integer multiple, resulting in a discretized (quantized) rotation speed, i.e., an energy level.
 
 ![image_ch9_fig6_1-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_1-5.png)
 
-Fig 6.1-5
+Fig 6.1-5 Locus of phase
 
 ## 6.2 Relationship with mass
 
@@ -2091,46 +2093,46 @@ The difference in mass (energy) between each generation of elementary particles 
 
 ![image_ch9_fig6_2-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_2-1.png)
 
-Fig 6.2-1
+Fig 6.2-1 Masses of electron, muon and tau particles
 
-If the mass (energy) of an electron is 1, the ratio of electrons, muons, and tau particles is 1 : 206.7 : 3477.1, which increases exponentially. 
+If the mass (energy) of an electron is 1, the ratio of electrons, muons, and tau particles is 1 : 206.7 : 3477.1, which increases exponentially.
 
-In R-space theory, as explained in Chapters 7 and 8, the rotation itself is mass. 
+In R-space theory, as explained in Chapters 7 and 8, the rotation itself is mass.
 
 However, as explained in the previous section, the rotation speed is discretized, but it only increases linearly with the generation.
 
 ![image_ch9_fig6_2-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_2-2.png)
 
-Fig 6.2-2
+Fig 6.2-2 Linear increase of rotation speed
 
 If we apply this ratio of 1 : 206.7 : 3477.1 as an exponential function, we get the following, which includes first-order terms and constants, but if we ignore these, it resembles the equation for a harmonic oscillator.
 
-From this, it can be thought that the size of the phase circle of the Hopf link rotation vector not only increases with the generation, but also oscillates like a spring while maintaining a certain range of size. 
+From this, it can be thought that the size of the phase circle of the Hopf link rotation vector not only increases with the generation, but also oscillates like a spring while maintaining a certain range of size.
 
 ![image_ch9_fig6_2-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_2-3.png)
 
-Fig 6.2-3
+Fig 6.2-3 Harmonic oscillator
 
-The oscillation can be thought of as a rotation. 
+The oscillation can be thought of as a rotation.
 
 Therefore, the rotation in the previous section is further amplified by the oscillation, and the rotation speed is thought to increase exponentially.
 
 ![image_ch9_fig6_2-4](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_2-4.png)
 
-Fig 6.2-4
+Fig 6.2-4 Oscillation of phase circle
 
-As energy increases, the phase circle of the major link first begins to oscillate (rotate). 
+As energy increases, the phase circle of the major link first begins to oscillate (rotate).
 
-This adds another rotation to the rotation of generation 1 (mathematically, it is multiplied), raising it to generation 2. 
+This adds another rotation to the rotation of generation 1 (mathematically, it is multiplied), raising it to generation 2.
 
-As energy increases further, the phase circle of the minor link also begins to oscillate (rotate), further multiplying the rotation. 
+As energy increases further, the phase circle of the minor link also begins to oscillate (rotate), further multiplying the rotation.
 
 ![image_ch9_fig6_2-5](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig6_2-5.png)
 
-Fig 6.2-5 
+Fig 6.2-5 Development of generation
 
-As a result, the rotation speed increases exponentially (multiplication * multiplication...). 
+As a result, the rotation speed increases exponentially (multiplication * multiplication...).
 
-Only three generations of elementary particles have been discovered. 
+Only three generations of elementary particles have been discovered.
 
 This is thought to be because generation 1: no oscillation of the phase circle, generation 2: oscillation of the major link phase circle, and generation 3: oscillation of the major and minor link phase circles, with no further oscillation modes.
