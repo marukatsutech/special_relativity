@@ -1,5 +1,9 @@
-# Special relativity: Why is the speed of light constant?
-# Chapter - 1. Light sphere
+# R-space theory
+  - Unification of Relativity and Quantum Mechanics
+
+Formerly titled "Special relativity"
+
+# Chapter - 1. Light sphere -  Why is the speed of light constant?
 
 ## 1. Introduction
 Einstein's principle of the constancy of the speed of light is a principle, 
@@ -1623,7 +1627,7 @@ Fig. 5-6 Hopf link rotation vector pairs
 
 Fig. 5-6a Electron model with Hopf link rotation vector pairs
 
-(Try electron_model.py at https://github.com/marukatsutech/quantum_path_integral_2/tree/master for Fig 5-6a.)
+(Try electron_model.py at https://github.com/marukatsutech/special_relativity/blob/main/ for Fig 5-6a.)
 
 
 The combination of the rotation axes that make up the minor link and major link cannot be stabilized due to thermal vibration, and is constantly swapped. 
@@ -2027,3 +2031,12 @@ Furthermore, explaining the types of elementary particles through combinations o
 Everything is just a different state of vortex (rotation). 
 The universe is rotating.
 
+# Chapter - 9.1 Symmetry and Elementary particles - Appendix: Electron model
+
+![image_ch9_fig5-6a](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-6a.png)
+
+Fig. 5-6a Electron model with Hopf link rotation vector pairs
+
+(Try electron_model.py at https://github.com/marukatsutech/special_relativity/blob/main/ for Fig 5-6a.)
+
+# Chapter - 9.2 Symmetry and Elementary particles - Appendix: Generation of Elementary particles
