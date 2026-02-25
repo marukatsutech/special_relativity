@@ -207,9 +207,11 @@ class GenerationApp:
         self.d_o_min = self.v_base * np.sqrt(2)   # Orbit of red and green
 
         # --- CREATE ROTATION VECTORS ---
-        self.rotation_vector_blue = RotationVector(self.ax, "blue", length=np.sqrt(2), radius=np.sqrt(2), scale_arrow=1., scale_radius=1.)
+        self.rotation_vector_blue = RotationVector(self.ax, "blue", length=1., radius=np.sqrt(2),
+                                                   scale_arrow=np.sqrt(2), scale_radius=1.)
         phase_point_blue = self.rotation_vector_blue.get_phase_point()
-        self.rotation_vector_yellow = RotationVector(self.ax, "orange", length=np.sqrt(2), radius=np.sqrt(2), scale_arrow=1., scale_radius=1.,
+        self.rotation_vector_yellow = RotationVector(self.ax, "orange", length=np.sqrt(2), radius=np.sqrt(2),
+                                                     scale_arrow=1., scale_radius=1.,
                                                      origin=phase_point_blue)
         self.rotation_vector_yellow.apply_rotation(np.pi/2, np.array([1., 0., 0.]))
 
@@ -235,10 +237,10 @@ class GenerationApp:
         slider_frame = ttk.Frame(self.root)
         slider_frame.pack(side=tk.BOTTOM, fill=tk.X, pady=5)
 
-        ttk.Label(slider_frame, text="Blue Circle Radius Scale:").pack(side=tk.LEFT, padx=5)
+        ttk.Label(slider_frame, text="Blue Circle Radius Scale:", style="Slider.TLabel").pack(side=tk.LEFT, padx=5)
 
         self.radius_val_var = tk.StringVar(value=f"{self.blue_radius_scale:.2f}")
-        self.radius_val_label = ttk.Label(slider_frame, textvariable=self.radius_val_var, width=5)
+        self.radius_val_label = ttk.Label(slider_frame, textvariable=self.radius_val_var, width=5, style="Slider.TLabel")
         self.radius_val_label.pack(side=tk.LEFT, padx=5)
 
         self.radius_slider = ttk.Scale(
