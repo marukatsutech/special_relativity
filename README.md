@@ -2159,9 +2159,21 @@ Since the W boson is a gauge particle, the resulting component should be in no p
 
 To achieve this, the neutrino model requires that the tilt of the rotation vector and the direction of the spin be opposite to those of the electron.
 
+![image_ch9_fig9_1-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9_1-1.png)
+
+Fig 9.1-1 AAA
+
 This direction is unstable because the minor link's direction of movement and the major link's rotation are opposite, so it is thought to oscillate. (This rotation direction is the direction in which the rotations are cancelled out in Section 8.)
 
+![image_ch9_fig9_1-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9_1-2.png)
+
+Fig 9.1-2 
+
 In order for the orientation of the major link to change in this way, it is thought that the precession of the minor link is also oscillating.
+
+![image_ch9_fig9_1-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9_1-3.png)
+
+Fig 9.1-3 
 
 These oscillations result in instability, as shown in Property 2. 
 
