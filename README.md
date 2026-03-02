@@ -2035,6 +2035,8 @@ The universe is rotating.
 
 # Chapter - 9.1 Symmetry and Elementary particles - Appendix: Electron model
 
+[(https://youtu.be/y1tEkmEck40)](https://youtu.be/y1tEkmEck40)
+
 ![image_ch9_fig5-6a](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig5-6a.png)
 
 Fig. 5-6a Electron model with Hopf link rotation vector pairs
@@ -2042,6 +2044,8 @@ Fig. 5-6a Electron model with Hopf link rotation vector pairs
 (Try electron_model.py at https://github.com/marukatsutech/special_relativity/blob/main/ for Fig 5-6a.)
 
 # Chapter - 9.2 Symmetry and Elementary particles - Appendix: Generation of Elementary particles
+
+[(https://youtu.be/XMLOcmly_s4)](https://youtu.be/XMLOcmly_s4)
 
 ## 6.1 Generation of electron model
 
@@ -2153,7 +2157,7 @@ In Section 7, I explained that neutrinos are particles with the following proper
 
 A model of neutrinos with these four properties is thought to be as follows.
 
-First, let's consider the third property: adding the precession component of a neutrino to an electron forms a W boson. 
+First, let's consider the third property: adding the precession component of a neutrino to an electron forms a W boson.
 
 Since the W boson is a gauge particle, the resulting component should be in no precession rotating vectors state like a photon. 
 
@@ -2161,27 +2165,27 @@ To achieve this, the neutrino model requires that the tilt of the rotation vecto
 
 ![image_ch9_fig9_1-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9_1-1.png)
 
-Fig 9.1-1 AAA
+Fig 9.1-1 Neutrino candidate
 
 This direction is unstable because the minor link's direction of movement and the major link's rotation are opposite, so it is thought to oscillate. (This rotation direction is the direction in which the rotations are cancelled out in Section 8.)
 
 ![image_ch9_fig9_1-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9_1-2.png)
 
-Fig 9.1-2 
+Fig 9.1-2 Oscillation of major link
 
 In order for the orientation of the major link to change in this way, it is thought that the precession of the minor link is also oscillating.
 
 ![image_ch9_fig9_1-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9_1-3.png)
 
-Fig 9.1-3 
+Fig 9.1-3 Oscillation of minor link
 
-These oscillations result in instability, as shown in Property 2. 
+These oscillations result in instability, as shown in Property 2.
 
-Furthermore, when the precession angle is 45 degrees and superposition with an electron (composition of rotation vectors) occurs, the precession cancels out and the composition behaves as a W boson. 
+Furthermore, when the precession angle is 45 degrees and superposition with an electron (composition of rotation vectors) occurs, the precession cancels out and the composition behaves as a W boson.
 
 Because the direction of the neutrino's precessional rotation is unstable, the W boson has a short lifetime.
 
-And because this precession angle varies between -45 degrees and +45 degrees, on average the precession is zero, resulting in an infinitesimal precession as shown in Property 1, and the movement speed of the W boson, the neutrino's gauge particle, is slow. 
+And because this precession angle varies between -45 degrees and +45 degrees, on average the precession is zero, resulting in an infinitesimal precession as shown in Property 1, and the movement speed of the W boson, the neutrino's gauge particle, is slow.
 
 In other words, the W boson's mass is observed to be heavy.
 
