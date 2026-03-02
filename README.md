@@ -2136,3 +2136,41 @@ As a result, the rotation speed increases exponentially (multiplication * multip
 Only three generations of elementary particles have been discovered.
 
 This is thought to be because generation 1: no oscillation of the phase circle, generation 2: oscillation of the major link phase circle, and generation 3: oscillation of the major and minor link phase circles, with no further oscillation modes.
+
+# Chapter - 9.3 Symmetry and Elementary particles - Appendix: Neutrino model
+
+## 9.1 Neutrino model
+
+In Section 7, I explained that neutrinos are particles with the following properties.
+
+1) Neutrinos are elementary particles somewhere between photons and electrons, and their precession is infinitesimal. As a result, the arrival speed of the W boson, the gauge particle corresponding to the neutrino, is slow.
+
+2) Rotation vectors influence each other and precess, but the rotational energy (rotation speed) is insufficient to form a stable Hopf link rotation vector pair with a 45-degree precession.
+
+3) Adding the neutrino precession component to the electron forms the W boson.
+
+4) Taking neutrino oscillation into account, the precession angle of the neutrino rotation vector mentioned above can be considered to change (oscillate).
+
+A model of neutrinos with these four properties is thought to be as follows.
+
+First, let's consider the third property: adding the precession component of a neutrino to an electron forms a W boson. 
+
+Since the W boson is a gauge particle, the resulting component should be in no precession rotating vectors state like a photon. 
+
+To achieve this, the neutrino model requires that the tilt of the rotation vector and the direction of the spin be opposite to those of the electron.
+
+This direction is unstable because the minor link's direction of movement and the major link's rotation are opposite, so it is thought to oscillate. (This rotation direction is the direction in which the rotations are cancelled out in Section 8.)
+
+In order for the orientation of the major link to change in this way, it is thought that the precession of the minor link is also oscillating.
+
+These oscillations result in instability, as shown in Property 2. 
+
+Furthermore, when the precession angle is 45 degrees and superposition with an electron (composition of rotation vectors) occurs, the precession cancels out and the composition behaves as a W boson. 
+
+Because the direction of the neutrino's precessional rotation is unstable, the W boson has a short lifetime.
+
+And because this precession angle varies between -45 degrees and +45 degrees, on average the precession is zero, resulting in an infinitesimal precession as shown in Property 1, and the movement speed of the W boson, the neutrino's gauge particle, is slow. 
+
+In other words, the W boson's mass is observed to be heavy.
+
+And because of this precession oscillation, the size of the phase circle of the neutrino's Hopf link is constantly changing rather than remaining constant, and this change (oscillation) is the fourth property and represents the neutrino generation (neutrino oscillation).
