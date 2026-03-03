@@ -2143,7 +2143,7 @@ This is thought to be because generation 1: no oscillation of the phase circle, 
 
 # Chapter - 9.3 Symmetry and Elementary particles - Appendix: Neutrino model
 
-## 9.1 Neutrino model
+## 8.1 Neutrino model
 
 In Section 7, I explained that neutrinos are particles with the following properties.
 
@@ -2165,19 +2165,19 @@ To achieve this, the neutrino model requires that the tilt of the rotation vecto
 
 ![image_ch9_fig9_1-1](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9_1-1.png)
 
-Fig 9.1-1 Neutrino candidate
+Fig 8.1-1 Neutrino candidate
 
 This direction is unstable because the minor link's direction of movement and the major link's rotation are opposite, so it is thought to oscillate. (This rotation direction is the direction in which the rotations are cancelled out in Section 8.)
 
 ![image_ch9_fig9_1-2](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9_1-2.png)
 
-Fig 9.1-2 Oscillation of major link
+Fig 8.1-2 Oscillation of major link
 
 In order for the orientation of the major link to change in this way, it is thought that the precession of the minor link is also oscillating.
 
 ![image_ch9_fig9_1-3](https://github.com/marukatsutech/special_relativity/blob/main/image_ch9_fig9_1-3.png)
 
-Fig 9.1-3 Oscillation of minor link
+Fig 8.1-3 Oscillation of minor link
 
 These oscillations result in instability, as shown in Property 2.
 
