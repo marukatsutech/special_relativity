@@ -140,7 +140,7 @@ class RotationVector:
         return p_vec
 
     def get_vector(self):
-        arrow_length = self.length_origin * self.scale_arrow * self.scale_radius
+        arrow_length = self.length_origin * self.scale_arrow # * self.scale_radius
         return self._basis_z * arrow_length
 
 
@@ -434,6 +434,9 @@ class GenerationApp:
         self.rotation_vector_yellow.set_tilt(angle_pr, precess_point_2)
 
         self.precession_base.set_arrow_scale(length)
+
+        self.rotation_vector_blue.set_radius_scale(radius)
+        self.rotation_vector_yellow.set_radius_scale(radius)
 
     def loop(self, frame):
         if self.is_playing:
