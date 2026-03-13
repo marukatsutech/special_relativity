@@ -130,7 +130,7 @@ class RotationVector:
         ])
 
         self.circle, = self.ax.plot(circle_points[:, 0], circle_points[:, 1], circle_points[:, 2],
-                                    linewidth=1, linestyle="-", color=self.color)
+                                    linewidth=2, linestyle="-", color=self.color)
 
         circle_points_r1 = np.array([
             (np.cos(t) * self.phase_base_a + np.sin(t) * self.phase_base_b)
