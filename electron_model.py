@@ -23,10 +23,12 @@ from matplotlib.patches import Circle
 # 1. RotationVector Class
 # ==========================================
 class RotationVector:
-    def __init__(self, ax, color, radius, orbit_radius, initial_precession=0.0, initial_phase=0.0, scale=1.0):
+    def __init__(self, ax, color, l_style, radius, sub_radius, orbit_radius, initial_precession=0.0, initial_phase=0.0, scale=1.0):
         self.ax = ax
         self.color = color
+        self.ls = l_style
         self.radius = radius
+        self.sub_radius = sub_radius
         self.orbit_radius = orbit_radius
         self.precession_angle = initial_precession
         self.phase = initial_phase
@@ -36,7 +38,7 @@ class RotationVector:
         self.trail_orig_x = deque(maxlen=1000)
         self.trail_orig_y = deque(maxlen=1000)
         self.trail_orig_z = deque(maxlen=1000)
-        self.plt_trail_orig, = self.ax.plot([], [], [], lw=1., color=color, alpha=0.8, visible=False)
+        self.plt_trail_orig, = self.ax.plot([], [], [], lw=4., color=color, alpha=0.4, visible=False)
 
         # Deques for marker trajectory
         self.trail_mark_x = deque(maxlen=1000)
@@ -45,7 +47,8 @@ class RotationVector:
         self.plt_trail_mark, = self.ax.plot([], [], [], lw=1., ls="--", color=color, alpha=0.8, visible=False)
 
         # Plot objects for visualization
-        self.plt_circle, = self.ax.plot([], [], [], lw=3, color=color, alpha=0.8)
+        self.plt_circle, = self.ax.plot([], [], [], lw=4, ls=self.ls, color=color, alpha=0.8)
+        self.plt_circle_sub, = self.ax.plot([], [], [], lw=4, ls="-", color=color, alpha=0.8)
         # self.plt_phase_line, = self.ax.plot([], [], [], lw=1.0, ls="--", color=color)
         # self.plt_marker, = self.ax.plot([], [], [], marker="o", ms=4, color=color)
         self.quiver_obj = None
@@ -99,13 +102,18 @@ class RotationVector:
         self.quiver_obj = self.ax.quiver(
             self.origin[0], self.origin[1], self.origin[2],
             self.basis_x[0], self.basis_x[1], self.basis_x[2],
-            length=self.scale, color=self.color, linewidth=4, arrow_length_ratio=0.3
+            length=self.scale, color=self.color, linewidth=4, arrow_length_ratio=0.3, ls=self.ls
         )
 
         # Update rotation circle
         theta = np.linspace(0, 2 * np.pi, 40)
         c_pts = (np.cos(theta)[:, None] * basis_y + np.sin(theta)[:, None] * basis_z) * self.radius + self.origin
         self.plt_circle.set_data_3d(c_pts[:, 0], c_pts[:, 1], c_pts[:, 2])
+
+        # Update rotation circle sub
+        theta_sub = np.linspace(0, 2 * np.pi, 40)
+        c_pts_sub = (np.cos(theta_sub)[:, None] * basis_y + np.sin(theta_sub)[:, None] * basis_z) * self.sub_radius + self.origin
+        self.plt_circle_sub.set_data_3d(c_pts_sub[:, 0], c_pts_sub[:, 1], c_pts_sub[:, 2])
 
         """
         # Calculate marker position
@@ -134,9 +142,9 @@ class RotationVector:
 # 2. RotationVectorPair Class
 # ==========================================
 class RotationVectorPair:
-    def __init__(self, ax, color1, color2, radius, orbit_radius, scale=1.0, phase_offset=0.0):
-        self.vec1 = RotationVector(ax, color1, radius, orbit_radius, 0.0 + phase_offset, np.pi, scale)
-        self.vec2 = RotationVector(ax, color2, radius, orbit_radius, np.pi + phase_offset, np.pi, scale)
+    def __init__(self, ax, color1, color2, l_style1, l_style2, radius, sub_radius, orbit_radius, scale=1.0, phase_offset=0.0):
+        self.vec1 = RotationVector(ax, color1, l_style1, radius, 0., orbit_radius, 0.0 + phase_offset, np.pi, scale)
+        self.vec2 = RotationVector(ax, color2, l_style2, radius, sub_radius, orbit_radius, np.pi + phase_offset, np.pi, scale)
 
     def step(self, d_phase, d_orbit, center_pos, rotation_axis, is_minor=False):
         for v in [self.vec1, self.vec2]:
@@ -198,17 +206,19 @@ class ElectronApp:
                                    command=lambda: self.toggle_trace("origin"))
         self.btn_orig.pack(side=tk.LEFT, padx=5)
 
+        """
         self.trace_mark_enabled = False
         self.btn_mark = ttk.Button(self.btn_frame, text="Trace Marker: OFF", style="BigFont.TButton",
                                    command=lambda: self.toggle_trace("marker"))
         self.btn_mark.pack(side=tk.LEFT, padx=5)
+        """
 
         ttk.Button(self.btn_frame, text="Reset Trace", style="BigFont.TButton",
                    command=self.reset_all_traces).pack(side=tk.LEFT, padx=5)
 
         # Matplotlib Figure Setup
         self.ax.set_box_aspect((1, 1, 1))
-        lim = 2.5
+        lim = 1.5
         self.ax.set_xlim(-lim, lim)
         self.ax.set_ylim(-lim, lim)
         self.ax.set_zlim(-lim, lim)
@@ -218,8 +228,10 @@ class ElectronApp:
         self.ax.set_title(self.title, fontsize=30)
 
         # Create Vector Pairs
-        self.pair_major = RotationVectorPair(self.ax, "blue", "darkorange", np.sqrt(2), np.sqrt(2) / 2.0, scale=np.sqrt(2))
-        self.pair_minor = RotationVectorPair(self.ax, "red", "green", 1.0, 0.5, scale=1.0, phase_offset=np.pi / 2)
+        self.pair_major = RotationVectorPair(self.ax, "blue", "darkorange", "-", "--",
+                                             1.0, 0.5, 0.5, scale=1.0)
+        self.pair_minor = RotationVectorPair(self.ax, "red", "green", "-", "-",
+                                             1.0, 0, 0.5, scale=1.0, phase_offset=np.pi / 2)
 
         self.update_all_vectors(0, 0, 0, 0)
         self.is_playing = False
@@ -240,7 +252,7 @@ class ElectronApp:
         # c01 = Circle((0, 0), np.sqrt(2)/2, ec='gray', ls=":", fill=False)
         # self.ax.add_patch(c01)
         # art3d.pathpatch_2d_to_3d(c01, z=0, zdir="y")
-        c02 = Circle((0, 0), np.sqrt(2)/2, ec='gray', ls=":", fill=False, linewidth=2)
+        c02 = Circle((0, 0), 0.5, ec='gray', ls="-", fill=False, linewidth=4)
         self.ax.add_patch(c02)
         art3d.pathpatch_2d_to_3d(c02, z=0, zdir="z")
 
@@ -278,7 +290,7 @@ class ElectronApp:
         if self.is_playing:
             # Mathematical speed ratios
             v_base = -0.05
-            self.update_all_vectors(v_base, v_base, v_base * 2, v_base * np.sqrt(2))
+            self.update_all_vectors(v_base, v_base, v_base * 1, v_base * 1)
             self.canvas.draw_idle()
 
 
