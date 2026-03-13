@@ -45,9 +45,9 @@ class RotationVector:
         self.plt_trail_mark, = self.ax.plot([], [], [], lw=1., ls="--", color=color, alpha=0.8, visible=False)
 
         # Plot objects for visualization
-        self.plt_circle, = self.ax.plot([], [], [], lw=1.2, color=color, alpha=0.6)
-        self.plt_phase_line, = self.ax.plot([], [], [], lw=1.0, ls="--", color=color)
-        self.plt_marker, = self.ax.plot([], [], [], marker="o", ms=4, color=color)
+        self.plt_circle, = self.ax.plot([], [], [], lw=3, color=color, alpha=0.8)
+        # self.plt_phase_line, = self.ax.plot([], [], [], lw=1.0, ls="--", color=color)
+        # self.plt_marker, = self.ax.plot([], [], [], marker="o", ms=4, color=color)
         self.quiver_obj = None
         self.origin = np.zeros(3)
         self.basis_x = np.array([0., 0., 1.])
@@ -107,11 +107,13 @@ class RotationVector:
         c_pts = (np.cos(theta)[:, None] * basis_y + np.sin(theta)[:, None] * basis_z) * self.radius + self.origin
         self.plt_circle.set_data_3d(c_pts[:, 0], c_pts[:, 1], c_pts[:, 2])
 
+        """
         # Calculate marker position
         p_pos = self.origin + (np.cos(self.phase) * basis_y + np.sin(self.phase) * basis_z) * self.radius
         self.plt_phase_line.set_data_3d([self.origin[0], p_pos[0]], [self.origin[1], p_pos[1]],
                                         [self.origin[2], p_pos[2]])
         self.plt_marker.set_data_3d([p_pos[0]], [p_pos[1]], [p_pos[2]])
+        """
 
         # Update origin trail
         self.trail_orig_x.append(self.origin[0])
@@ -119,11 +121,13 @@ class RotationVector:
         self.trail_orig_z.append(self.origin[2])
         self.plt_trail_orig.set_data_3d(list(self.trail_orig_x), list(self.trail_orig_y), list(self.trail_orig_z))
 
+        """
         # Update marker trail
         self.trail_mark_x.append(p_pos[0])
         self.trail_mark_y.append(p_pos[1])
         self.trail_mark_z.append(p_pos[2])
         self.plt_trail_mark.set_data_3d(list(self.trail_mark_x), list(self.trail_mark_y), list(self.trail_mark_z))
+        """
 
 
 # ==========================================
@@ -214,7 +218,7 @@ class ElectronApp:
         self.ax.set_title(self.title, fontsize=30)
 
         # Create Vector Pairs
-        self.pair_major = RotationVectorPair(self.ax, "blue", "gold", np.sqrt(2), np.sqrt(2) / 2.0, scale=np.sqrt(2))
+        self.pair_major = RotationVectorPair(self.ax, "blue", "darkorange", np.sqrt(2), np.sqrt(2) / 2.0, scale=np.sqrt(2))
         self.pair_minor = RotationVectorPair(self.ax, "red", "green", 1.0, 0.5, scale=1.0, phase_offset=np.pi / 2)
 
         self.update_all_vectors(0, 0, 0, 0)
@@ -236,7 +240,7 @@ class ElectronApp:
         # c01 = Circle((0, 0), np.sqrt(2)/2, ec='gray', ls=":", fill=False)
         # self.ax.add_patch(c01)
         # art3d.pathpatch_2d_to_3d(c01, z=0, zdir="y")
-        c02 = Circle((0, 0), np.sqrt(2)/2, ec='gray', ls=":", fill=False)
+        c02 = Circle((0, 0), np.sqrt(2)/2, ec='gray', ls=":", fill=False, linewidth=2)
         self.ax.add_patch(c02)
         art3d.pathpatch_2d_to_3d(c02, z=0, zdir="z")
 
