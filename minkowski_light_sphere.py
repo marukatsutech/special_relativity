@@ -355,18 +355,20 @@ def update_diagrams():
     else:
         bt = beta_sphere
 
-    vector_beta_t = np.array([bt, 1])
-    vector_beta_t = vector_beta_t / np.linalg.norm(vector_beta_t)
-    vector_beta_x = np.array([1., - bt])
-    vector_beta_x = vector_beta_x / np.linalg.norm(vector_beta_x)
-    if bt < 1:
-        quiver_t_observer1.set_offsets(np.array([- bt * x_max, y_min]))
-        quiver_t_observer1.set_UVC(bt * x_max * 2, y_max - y_min)
-        quiver_x_observer1.set_offsets(np.array([x_min, - bt * y_min]))
-        quiver_x_observer1.set_UVC(x_max - x_min, - bt * y_max * 2)
+    bt_rot = - bt
 
-        txt_ct_p1.set_position((bt * x_max, y_max))
-        txt_x_p1.set_position((x_max, - bt * y_max))
+    vector_beta_t = np.array([bt_rot, 1])
+    vector_beta_t = vector_beta_t / np.linalg.norm(vector_beta_t)
+    vector_beta_x = np.array([1., - bt_rot])
+    vector_beta_x = vector_beta_x / np.linalg.norm(vector_beta_x)
+    if bt_rot < 1:
+        quiver_t_observer1.set_offsets(np.array([- bt_rot * x_max, y_min]))
+        quiver_t_observer1.set_UVC(bt_rot * x_max * 2, y_max - y_min)
+        quiver_x_observer1.set_offsets(np.array([x_min, - bt_rot * y_min]))
+        quiver_x_observer1.set_UVC(x_max - x_min, - bt_rot * y_max * 2)
+
+        txt_ct_p1.set_position((bt_rot * x_max, y_max))
+        txt_x_p1.set_position((x_max, - bt_rot * y_max))
     else:
         quiver_t_observer1.set_offsets(np.array([x_min, vector_beta_t[1] * x_min / vector_beta_t[0]]))
         quiver_t_observer1.set_UVC(x_max * 2., vector_beta_t[1] * x_max / vector_beta_t[0] * 2.)
@@ -377,11 +379,11 @@ def update_diagrams():
         txt_x_p1.set_position((float(vector_beta_x[0] * y_min / vector_beta_x[1]), y_min))
 
     for j in range(len(dots_t1s)):
-        x_t = (j + 1) * np.cos(np.arctan2(1., bt))
-        y_t = (j + 1) * np.sin(np.arctan2(1., bt))
+        x_t = (j + 1) * np.cos(np.arctan2(1., bt_rot))
+        y_t = (j + 1) * np.sin(np.arctan2(1., bt_rot))
 
-        x_x = (j + 1) * np.cos(- np.arctan2(bt, 1.))
-        y_x = (j + 1) * np.sin(- np.arctan2(bt, 1.))
+        x_x = (j + 1) * np.cos(- np.arctan2(bt_rot, 1.))
+        y_x = (j + 1) * np.sin(- np.arctan2(bt_rot, 1.))
 
         dots_t1s[j].set_data([x_t], [y_t])
         dots_x1s[j].set_data([x_x], [y_x])
