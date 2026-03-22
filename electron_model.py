@@ -137,6 +137,13 @@ class RotationVector:
         self.plt_trail_mark.set_data_3d(list(self.trail_mark_x), list(self.trail_mark_y), list(self.trail_mark_z))
         """
 
+    def set_orbit_radius(self, value):
+        self.orbit_radius = value
+
+    def set_sub_radius(self, value):
+        if self.color == 'darkorange':
+            self.sub_radius = value
+
 
 # ==========================================
 # 2. RotationVectorPair Class
@@ -145,6 +152,9 @@ class RotationVectorPair:
     def __init__(self, ax, color1, color2, l_style1, l_style2, radius, sub_radius, orbit_radius, scale=1.0, phase_offset=0.0):
         self.vec1 = RotationVector(ax, color1, l_style1, radius, 0., orbit_radius, 0.0 + phase_offset, np.pi, scale)
         self.vec2 = RotationVector(ax, color2, l_style2, radius, sub_radius, orbit_radius, np.pi + phase_offset, np.pi, scale)
+
+        self.orbit_radius = orbit_radius
+        self.sub_radius = sub_radius
 
     def step(self, d_phase, d_orbit, center_pos, rotation_axis, is_minor=False):
         for v in [self.vec1, self.vec2]:
@@ -160,6 +170,12 @@ class RotationVectorPair:
     def reset_all_trails(self):
         self.vec1.reset_trails()
         self.vec2.reset_trails()
+
+    def set_orbit_radius(self, value):
+        self.orbit_radius = value
+        self.vec1.set_orbit_radius(self.orbit_radius)
+        self.vec2.set_orbit_radius(self.orbit_radius)
+        self.vec2.set_sub_radius(self.orbit_radius)
 
 
 # ==========================================
@@ -216,6 +232,17 @@ class ElectronApp:
         ttk.Button(self.btn_frame, text="Reset Trace", style="BigFont.TButton",
                    command=self.reset_all_traces).pack(side=tk.LEFT, padx=5)
 
+        # --- UI SPINBOX ---
+        label_orbit_r = tk.Label(root, text="Orbit Radius", font=24)
+        label_orbit_r.pack(side='left')
+        var_orbit_r = tk.StringVar(root)  # variable for spinbox-value
+        var_orbit_r.set(str(0.5))  # Initial value
+        s__orbit_r = tk.Spinbox(
+            root, textvariable=var_orbit_r, format="%.2f", from_=0.01, to=1., increment=0.01,
+            command=lambda: self.set_orbit_radius(float(var_orbit_r.get())), width=5, font=24
+        )
+        s__orbit_r.pack(side='left')
+
         # Matplotlib Figure Setup
         self.ax.set_box_aspect((1, 1, 1))
         lim = 1.5
@@ -228,10 +255,12 @@ class ElectronApp:
         self.ax.set_title(self.title, fontsize=30)
 
         # Create Vector Pairs
+        self.orbit_radius = 0.5
+
         self.pair_major = RotationVectorPair(self.ax, "blue", "darkorange", "-", "--",
-                                             1.0, 0.5, 0.5, scale=1.0)
+                                             1.0, 0.5, self.orbit_radius, scale=1.0)
         self.pair_minor = RotationVectorPair(self.ax, "red", "green", "-", "-",
-                                             1.0, 0, 0.5, scale=1.0, phase_offset=np.pi / 2)
+                                             1.0, 0, self.orbit_radius, scale=1.0, phase_offset=np.pi / 2)
 
         self.update_all_vectors(0, 0, 0, 0)
         self.is_playing = False
@@ -252,9 +281,35 @@ class ElectronApp:
         # c01 = Circle((0, 0), np.sqrt(2)/2, ec='gray', ls=":", fill=False)
         # self.ax.add_patch(c01)
         # art3d.pathpatch_2d_to_3d(c01, z=0, zdir="y")
-        c02 = Circle((0, 0), 0.5, ec='gray', ls="-", fill=False, linewidth=4)
-        self.ax.add_patch(c02)
-        art3d.pathpatch_2d_to_3d(c02, z=0, zdir="z")
+        # self.c02 = Circle((0, 0), 0.5, ec='gray', ls="-", fill=False, linewidth=4)
+        # self.ax.add_patch(self.c02)
+        # art3d.pathpatch_2d_to_3d(self.c02, z=0, zdir="z")
+
+        self.plt_circle_major, = self.ax.plot([], [], [], lw=4, ls='-', color='gray', alpha=1)
+        # Update rotation circle
+        # 1. Create the angle range
+        theta = np.linspace(0, 2 * np.pi, 40)
+
+        # 2. Define X, Y, and Z coordinates separately
+        x = self.orbit_radius * np.cos(theta)
+        y = self.orbit_radius * np.sin(theta)
+        z = np.zeros_like(theta)  # Keep it flat on the Z=0 plane
+
+        # 3. Update the plot
+        self.plt_circle_major.set_data_3d(x, y, z)
+
+    def set_orbit_radius(self, value):
+        self.pair_major.set_orbit_radius(value)
+        self.pair_minor.set_orbit_radius(value)
+        self.orbit_radius = value
+        # 2. Define X, Y, and Z coordinates separately
+        theta = np.linspace(0, 2 * np.pi, 40)
+        x = self.orbit_radius * np.cos(theta)
+        y = self.orbit_radius * np.sin(theta)
+        z = np.zeros_like(theta)  # Keep it flat on the Z=0 plane
+
+        # 3. Update the plot
+        self.plt_circle_major.set_data_3d(x, y, z)
 
     def toggle_play(self):
         self.is_playing = not self.is_playing
