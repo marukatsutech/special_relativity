@@ -11,11 +11,23 @@ import mpl_toolkits.mplot3d.art3d as art3d
 from mpl_toolkits.mplot3d import proj3d
 
 """ Global variables """
-phase_step_deg = 1.
+phase_step_deg = -1.
 phase_init_a = 180.
 phase_init_b = 0.
 offset_scale = 0.5
 size_phase_circle = 1.
+
+color_a = "red"
+color_a_path = "pink"
+line_width1 = 2.
+angle_a = -45.
+
+color_b = "red"
+color_b_path = "lime"
+line_width2 = 1.
+angle_b = -135.
+
+color_guide = "pink"    # lime, cyan
 
 """ Animation control """
 is_play = False
@@ -100,9 +112,10 @@ class Counter:
 
 
 class RotationVector:
-    def __init__(self, ax, color):
+    def __init__(self, ax, color, line_width):
         self.ax = ax
         self.color = color
+        self.line_width = line_width
 
         self.origin = np.array([0., 0., 0.])
         self.scale = 1.
@@ -130,7 +143,7 @@ class RotationVector:
         ])
 
         self.circle, = self.ax.plot(circle_points[:, 0], circle_points[:, 1], circle_points[:, 2],
-                                    linewidth=2, linestyle="-", color=self.color)
+                                    linewidth=self.line_width, linestyle="-", color=self.color)
 
         circle_points_r1 = np.array([
             (np.cos(t) * self.phase_base_a + np.sin(t) * self.phase_base_b)
@@ -419,10 +432,10 @@ def reset():
     rotation_vector_a.reset()
     rotation_vector_b.reset()
 
-    rotation_vector_a.rotate_all(np.deg2rad(-135), vector_y_axis)
+    rotation_vector_a.rotate_all(np.deg2rad(angle_a), vector_y_axis)
     rotation_vector_a.set_phase(np.deg2rad(phase_init_a))
 
-    rotation_vector_b.rotate_all(np.deg2rad(-45), vector_y_axis)
+    rotation_vector_b.rotate_all(np.deg2rad(-angle_b), vector_y_axis)
     rotation_vector_b.set_phase(np.deg2rad(phase_init_b))
 
     rotation_vector_a.set_orign(np.array([0., size_phase_circle / 2., 0.]))
@@ -450,23 +463,23 @@ if __name__ == "__main__":
     create_animation_control()
     create_parameter_setter()
 
-    rotation_vector_a = RotationVector(ax0, "red")
-    rotation_vector_b = RotationVector(ax0, "green")
+    rotation_vector_a = RotationVector(ax0, color_a, line_width1)
+    rotation_vector_b = RotationVector(ax0, color_b, line_width2)
 
-    rotation_vector_a.rotate_all(np.deg2rad(-135), vector_y_axis)
+    rotation_vector_a.rotate_all(np.deg2rad(angle_a), vector_y_axis)
     rotation_vector_a.set_phase(np.deg2rad(phase_init_a))
 
-    rotation_vector_b.rotate_all(np.deg2rad(-45), vector_y_axis)
+    rotation_vector_b.rotate_all(np.deg2rad(angle_b), vector_y_axis)
     rotation_vector_b.set_phase(np.deg2rad(phase_init_b))
 
     rotation_vector_a.set_orign(np.array([0., offset_scale, 0.]))
     rotation_vector_b.set_orign(np.array([0., - offset_scale, 0.]))
 
-    path_a = Path(ax0, 2, "pink")
-    path_b = Path(ax0, 2, "silver")
+    path_a = Path(ax0, 2, color_a_path)
+    path_b = Path(ax0, 2, color_b_path)
 
-    plt_dummy1 = ax0.plot(0, 0, 0, color="red", linewidth=2, label="Rotation vector A")
-    plt_dummy2 = ax0.plot(0, 0, 0, color="green", linewidth=2, label="Rotation vector B")
+    plt_dummy1 = ax0.plot(0, 0, 0, color=color_a, linewidth=2, label="Rotation vector A")
+    plt_dummy2 = ax0.plot(0, 0, 0, color=color_b, linewidth=2, label="Rotation vector B")
     ax0.legend(loc='lower right', fontsize=8)
 
     anim = animation.FuncAnimation(fig, update, interval=100, save_count=100)
