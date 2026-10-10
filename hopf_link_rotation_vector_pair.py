@@ -17,15 +17,15 @@ phase_init_b = 0.
 offset_scale = 0.5
 size_phase_circle = 1.
 
-color_a = "red"
+color_a = "green"
 color_a_path = "pink"
 line_width1 = 2.
-angle_a = -45.
+angle_a = -135.
 
 color_b = "red"
 color_b_path = "lime"
-line_width2 = 1.
-angle_b = -135.
+line_width2 = 2.
+angle_b = -45.
 
 color_guide = "pink"    # lime, cyan
 
